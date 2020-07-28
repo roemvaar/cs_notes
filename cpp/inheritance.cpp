@@ -10,7 +10,9 @@ using namespace std;
 
 // Base class - parent
 class Vehicle {
-    
+    protected:
+        int cost;
+
     private:
         string brand = "Ford";
  
@@ -29,6 +31,15 @@ class Vehicle {
 };
 
 
+class Engine {
+    
+    public:
+        int getNumberOfCylinders() {
+            return (4);
+        }
+};
+
+
 // Derived class - child
 class Car: public Vehicle {
     
@@ -43,14 +54,39 @@ class Car: public Vehicle {
         string getModel() {
             return model;
         }
+
+        void setCost(int carCost) {
+            cost = carCost;
+        }
+
+        int getCost() {
+            return cost;
+        }
+};
+
+
+// Derived class - grandchild
+class SportsCar: public Car, public Engine {
+    public:
+        SportsCar() {
+            cout << "Congrats on your new sports car!" << endl;
+        }
+
+        int getNumberOfCylinders() {
+            return(12);
+        }
 };
 
 
 int main() {
 
     Car myCar;
+    SportsCar myFerrari;
     myCar.honk();
+    myFerrari.setCost(100000);
     cout << myCar.getBrand() + " " + myCar.getModel() << endl;
+    cout << myFerrari.getNumberOfCylinders() << endl;
+    cout << "My Ferrari cost is " << myFerrari.getCost() << endl;
 
     return 0;
 }
