@@ -45,6 +45,8 @@ A preprocessing step performs macro substitution on program text, inclusion of o
 file, and conditional compilation.
 
 Local variables are typically "automatic" or created anew with each invocation. Variables
-may be internal to a function, external but known only within a single source file,or visible 
-to the entire program.
+may be:
 
+- Internal to a function 
+- External but known only within a single source file
+- Visible to the entire program.
