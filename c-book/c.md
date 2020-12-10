@@ -50,3 +50,6 @@ may be:
 - Internal to a function 
 - External but known only within a single source file
 - Visible to the entire program.
+
+C has the basic philosophy that programmers know what they are doing; it only 
+requires that they state their intentions explicitly.
