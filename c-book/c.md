@@ -44,6 +44,14 @@ e.g. using a header file.
 A preprocessing step performs macro substitution on program text, inclusion of other source 
 file, and conditional compilation.
 
+In C, all variables must be declared before they are used. A declaration announces the
+properties of variables; it consists of a type name and a list of variables, such as:
+
+```c
+    int fahr;
+    float interest;
+```
+
 Local variables are typically "automatic" or created anew with each invocation. Variables
 may be:
 
