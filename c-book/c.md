@@ -7,9 +7,16 @@ operating system or machine.
 
 C provides a variety of data types. The fundamental data types are:
 
-- Characters
-- Integer numbers of several sizes
-- Floating point numbers of several sizes
+| Data types | Description |
+| ---------- | ----------- |
+| char       | character - a single byte |
+| int        | integer     |
+| short      | short integer |
+| long       | long integer |
+| float      | floating point number |
+| double     | double-precision floating point |
+
+The sizes of these objects are machine-dependent.
 
 There are also derived data types, i.e. user defined data types, created with:
 
@@ -61,3 +68,4 @@ may be:
 
 C has the basic philosophy that programmers know what they are doing; it only 
 requires that they state their intentions explicitly.
+

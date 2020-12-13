@@ -16,3 +16,9 @@ data between functions is for the calling function to provide a list of values, 
 
 The statements of a function are enclosed in braces {}.
 
+If an arithmetic operator has integer operands, an integer operation is performed.
+If an arithmetic operator has one floating-point operand and one integer operand, however,
+the integer will be converted to floating point before the operation is done. Writing
+floating-point constants with explicit decimal points even when they have integral
+values emphasizes floating-point nature for human readers.
+

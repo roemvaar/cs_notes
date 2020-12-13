@@ -13,7 +13,7 @@ int main(void)
 
     for(i = 0; i < far_temps_size; i++)
     {
-        printf("%d\t %.2f\n", far_temps[i], ((5/9.0)* (far_temps[i] - 32.0)));
+        printf("%3d\t %6.2f\n", far_temps[i], ((5/9.0)* (far_temps[i] - 32.0)));
     }
     
     return 0;
