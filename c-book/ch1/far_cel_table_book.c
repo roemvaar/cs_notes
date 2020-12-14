@@ -3,7 +3,7 @@
 
 // Print Fahrenheit-Celsius table
 // for fahr = 0, 20, ..., 300; floating-point version
-int main()
+int main(void)
 {
     float fahr, celsius;
     int lower, upper, step;
