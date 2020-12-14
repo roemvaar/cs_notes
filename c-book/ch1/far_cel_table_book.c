@@ -14,6 +14,9 @@ int main()
 
     fahr = lower;
 
+    printf("Fahrenheit-Celsius Table\n\n");    // Ex 1.3 print a heading above the table
+    printf("%3s\t%6s\n","°F", "°C");
+
     while(fahr <= upper) 
     {
         celsius = (5.0 / 9.0) * (fahr - 32.0);
