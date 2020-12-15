@@ -22,3 +22,8 @@ the integer will be converted to floating point before the operation is done. Wr
 floating-point constants with explicit decimal points even when they have integral
 values emphasizes floating-point nature for human readers.
 
+The choice between *while* and *for* is arbitrary, based on which seems clearer.
+The *for* is usually appropriate for loops in which the initialization and increment
+are single statements and logically related, since it is more compact than *while* and
+it keeps the loop control statements together in one place.
+
