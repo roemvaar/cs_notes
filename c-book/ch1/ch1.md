@@ -27,3 +27,16 @@ The *for* is usually appropriate for loops in which the initialization and incre
 are single statements and logically related, since it is more compact than *while* and
 it keeps the loop control statements together in one place.
 
+It's bad practice to bury "magic numbers" in a program; they convey little information to 
+someone who might have to read the program later, and they are hard to change in a
+systematic way. One way to deal with magic numbers is to give them meaningful names. 
+
+A *#define* line defines a *symbolic name* or *symbolic constant* to be a particular string
+of characters:
+
+```c
+    #define name replacement text
+```
+
+Thereafter, any occurrence of *name* will be replaced by the corresponding replacement
+text. (At the preprocessing stage of the compilation process).
