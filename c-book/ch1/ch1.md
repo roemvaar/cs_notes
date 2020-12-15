@@ -40,3 +40,9 @@ of characters:
 
 Thereafter, any occurrence of *name* will be replaced by the corresponding replacement
 text. (At the preprocessing stage of the compilation process).
+
+The model of input and output supported by the standard library is very simple. Text input
+or output, regardless of where it originates or where it goes to, is dealt with as streams
+of characters. A **text stream** is a sequence of characters divided into lines; each line
+consists of zero or more characters followed by a new line character.
+
