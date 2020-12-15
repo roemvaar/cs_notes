@@ -11,31 +11,26 @@ void readFile();
 
 
 int main() {
-    
     createAndWriteFile();
     readFile();
 
     return 0;
-
 }
 
 
 void createAndWriteFile() {
- 
     // Create and open to a file
     fstream MyFile("example.txt");
 
     // Write to the file
     MyFile << "Files can be tricky, but it's fun enough!" << endl;
-    
+
     // Close file
     MyFile.close();
-
 }
 
 
 void readFile() {
-    
     // Create a text string, which is used to output the text file
     string textFromFile;
 
@@ -53,4 +48,3 @@ void readFile() {
     // Close file
     MyReadFile.close();
 }
-
