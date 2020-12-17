@@ -27,6 +27,35 @@ The *for* is usually appropriate for loops in which the initialization and incre
 are single statements and logically related, since it is more compact than *while* and
 it keeps the loop control statements together in one place.
 
+One of the nice things about while and for is that they test at the top of the loop, before
+proceeding with the body. If there's nothing to do, nothing is done, even if it means never
+going through the loop body.
+
+The grammatical rules of C require that a for statement have a body. If nothing needs to be
+done at the body of the *for loop*, you can add a *null statement*, i.e. an isolated
+semicolon, to satisfy the requirement, as you can see in the following example:
+
+```c
+    #include <stdio.h>
+
+
+    // Count characters in input
+    int main(void)
+    {
+        long nc;
+
+        for(nc = 0; getchar() != EOF; ++nc)
+        {
+            ;
+        }
+
+        printf("%d\n", nc);
+
+        return 0;
+    }
+
+```
+
 It's bad practice to bury "magic numbers" in a program; they convey little information to 
 someone who might have to read the program later, and they are hard to change in a
 systematic way. One way to deal with magic numbers is to give them meaningful names. 
@@ -45,4 +74,26 @@ The model of input and output supported by the standard library is very simple. 
 or output, regardless of where it originates or where it goes to, is dealt with as streams
 of characters. A **text stream** is a sequence of characters divided into lines; each line
 consists of zero or more characters followed by a new line character.
+
+The statement
+
+```c
+    ++nc;
+```
+
+presents a new operator, ++, which means *increment by one*. You could instead write
+
+```c
+    nc = nc + 1;
+```
+
+but ++nc is more concise and often more efficient. There is a corresponding operator -- to
+decrement by one. The operators can be either prefix operators (++nc) or postfix (nc++);
+these two forms have different values in expressions.
+
+The if statement tests the parenthesized condition, and if the condition is true, executes
+the statement (or group statements in braces) that follows.
+
+The double equals sign *==* is the C notation for "is equal to". This symbol is different
+than the single *=* symbol that C uses for assignment.
 

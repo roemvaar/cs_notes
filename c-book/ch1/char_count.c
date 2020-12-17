@@ -2,7 +2,7 @@
 
 
 // Program that counts characters.
-
+// ./a < test.txt
 
 int main(void)
 {
