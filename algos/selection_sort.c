@@ -35,7 +35,7 @@ int main(void)
     return 0;
 }
 
-
+// TODO: add option for ascending or descending order
 void selection_sort(int *array, int size)
 {
     int i;
