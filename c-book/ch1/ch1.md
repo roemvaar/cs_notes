@@ -97,3 +97,13 @@ the statement (or group statements in braces) that follows.
 The double equals sign *==* is the C notation for "is equal to". This symbol is different
 than the single *=* symbol that C uses for assignment.
 
+The **logical operators** available in c are:
+
+- **&&** AND
+- **||** OR
+- **!** NOT
+
+The operator && has higher precedences than the || operator. Expressions connected by &&
+or || are evaluated left to right, and it is guaranteed that evaluation will stop as soon
+as the truth or falsehood is known.
+
