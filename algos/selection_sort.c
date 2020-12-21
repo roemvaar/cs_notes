@@ -20,7 +20,7 @@ int main(void)
 {
     printf("Selection sort algorithm implementation in C\n");
     
-    int array[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+    int array[] = {1, 9, 8, 7, 7, 6, 5, 4, 3, 2, 1};
 
     // Unsorted array
     printf("Unsorted array\n"); 
@@ -42,13 +42,15 @@ void selection_sort(int *array, int size)
     int j;
     int smallest;
     
+    // Move boundary of unsorted array
     for(i = 0; i < size - 1; i++)
     {
         smallest = i;
 
+        // Find the minimum element in unsorted array
         for(j = i+1; j < size; j++)
         {
-            if(array[i] > array[j])
+            if(array[j] < array[smallest])
             {
                 smallest = j;
             }
@@ -73,7 +75,7 @@ void print_array(int * array, int size)
 
     for(i = 0; i < size; i++)
     {
-        printf("%d", array[i]);
+        printf("%d ", array[i]);
     }
 
     putchar('\n');
