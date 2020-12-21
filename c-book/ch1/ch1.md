@@ -107,3 +107,22 @@ The operator && has higher precedences than the || operator. Expressions connect
 or || are evaluated left to right, and it is guaranteed that evaluation will stop as soon
 as the truth or falsehood is known.
 
+The following example shows an if-else statement. *else* specifies an alternative action
+if the condition part of an if statement is false.
+
+```c
+    if(expression)
+        statement1
+    else
+        statement2
+
+```
+
+One and only one of the two statements associated with an if-else is performed. If the
+*statement* is true, *statement1* is executed; if not, *statement2* is executed. Each
+statement can be a single statement or several in braces.
+
+**Exercise 1.11** How would you test the word count program? What kind of input are most
+likely to uncover bugs if there are any?
+
+
