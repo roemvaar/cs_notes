@@ -129,3 +129,7 @@ or if you must ensure no items in the group occurs more than once.
 
 ## Data Structures
 
+* **Array**
+
+* **Linked Lists**
+

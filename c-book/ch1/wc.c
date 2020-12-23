@@ -30,7 +30,7 @@ int main(void)
         }
     }
     
-    printf("%d %d %d \n", nl, nw, nc);
+    printf("\n%d %d %d\n", nl, nw, nc);
 
     return 0;
 }

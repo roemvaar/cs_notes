@@ -125,4 +125,14 @@ statement can be a single statement or several in braces.
 **Exercise 1.11** How would you test the word count program? What kind of input are most
 likely to uncover bugs if there are any?
 
+[Tests](https://www.harishnote.com/2015/09/k-exercise-111-testing-word-count.html):
+
+  - Test 1: No input
+  - Test 2: One line without enter, i.e. without new line
+  - Test 3: One line
+  - Test 4: Multiple line
+  - Test 5: One big word as input
+
+In C, simple quotes *' '* delimit a single characters whereas double quotes *" "* are for
+strings.
 
