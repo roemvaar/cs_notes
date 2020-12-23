@@ -136,3 +136,13 @@ likely to uncover bugs if there are any?
 In C, simple quotes *' '* delimit a single characters whereas double quotes *" "* are for
 strings.
 
+**Arrays:**
+
+The declaration
+
+```c
+    int ndigit[10];
+```
+
+declares ndigit to be an array of 10 integers. Array subscripts always start at zero in C.
+
