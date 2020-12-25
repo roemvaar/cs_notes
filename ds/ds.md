@@ -133,3 +133,17 @@ or if you must ensure no items in the group occurs more than once.
 
 * **Linked Lists**
 
+Doubly Linked List
+
+*Array vs Linked Lists:*
+
+* **Tree**
+
+* **Binary Search Tree**
+
+* **Binary Heap**
+
+* **Graph**
+
+* **Hash Table**
+
