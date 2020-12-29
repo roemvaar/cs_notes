@@ -38,7 +38,7 @@ sort or bubble sort.
 
 Looking for specific information in memory is a key operation in computing.
 
-## Linear Search
+### Linear Search
 
 ```
     O(n)
@@ -47,7 +47,7 @@ Looking for specific information in memory is a key operation in computing.
 Look at the items one after the other, until you find the one you want, or check all
 items to realize it's not there.
 
-## Binary Search
+### Binary Search
 
 ```
     O(logn)
@@ -56,7 +56,7 @@ items to realize it's not there.
 The items must be in a sorted array. Each step of binary_search does a constant number
 of operations and discards half the input.
 
-## Search using a Hash Table
+### Search using a Hash Table
 
 ```
     O(1)
