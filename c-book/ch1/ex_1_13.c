@@ -7,6 +7,9 @@
 
 #define IN 1
 #define OUT 0
+#define MAXWORD 11
+#define MAXHIST 15    // Let's assume only 15 words can be inputted
+
 
 
 int main(void)
@@ -14,8 +17,13 @@ int main(void)
     int c;
     int c_count;
     int state;
+    int worrd[MAXWORD];
+    int i;
 
     c_count = 0;
+
+    for(i=0; i < 10; i++)
+        words[i] = 0;
     
     while((c = getchar()) != EOF)
     {
@@ -32,6 +40,9 @@ int main(void)
     }
 
     printf("Count = %d\n", c_count);
+
+    for(i = 0; i < 10; ++i)
+        printf("word[%d] = %d\n", i, words[i]);
 
     return 0;
 }

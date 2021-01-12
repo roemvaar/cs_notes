@@ -131,6 +131,35 @@ or if you must ensure no items in the group occurs more than once.
 
 * **Array**
 
+Array are a simple data structure for storing data elements of the same data type. Arrays are
+used as the basis for most other data structures. The elements are stored in neighboring (contiguous)
+memory locations. Arrays can hold up to N items.
+
+Terms:
+
+    - Element: each item stored in an array is called an element
+    - Index: each location of an element in an array has a numerical index, which is used to
+    identify the element
+    - Capacity: the number of elements that the array could hold, if it was full
+    - Length: the number of elements that the array currently has
+            
+Operations:
+
+    - Traverse: print all the array elements one by one
+    - Insertion: add an element at the given index
+    - Deletion: delete an element at the given index
+    - Search: search an element using the given index or by the value
+    - Update: update and element at a given index
+
+```c
+    // Declare an array of 10 int elements in C
+    int array[10];
+```
+
+In C, if an array is not defined, i.e. if you don't put anything inside, the array elements could
+contain completely random data. The array capacity must be decided when the array is created. The
+capacity cannot be changed later.
+
 * **Linked Lists**
 
 Doubly Linked List
@@ -147,3 +176,8 @@ Doubly Linked List
 
 * **Hash Table**
 
+
+### References
+
+- Computer Science Distilled
+- Leetcode
