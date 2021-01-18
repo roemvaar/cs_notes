@@ -137,19 +137,19 @@ memory locations. Arrays can hold up to N items.
 
 Terms:
 
-    - Element: each item stored in an array is called an element
-    - Index: each location of an element in an array has a numerical index, which is used to
+  - Element: each item stored in an array is called an element
+  - Index: each location of an element in an array has a numerical index, which is used to
     identify the element
-    - Capacity: the number of elements that the array could hold, if it was full
-    - Length: the number of elements that the array currently has
+  - Capacity: the number of elements that the array could hold, if it was full
+  - Length: the number of elements that the array currently has
             
 Operations:
 
-    - Traverse: print all the array elements one by one
-    - Insertion: add an element at the given index
-    - Deletion: delete an element at the given index
-    - Search: search an element using the given index or by the value
-    - Update: update and element at a given index
+  - Traverse: print all the array elements one by one
+  - Insertion: add an element at the given index
+  - Deletion: delete an element at the given index
+  - Search: search an element using the given index or by the value
+  - Update: update and element at a given index
 
 ```c
     // Declare an array of 10 int elements in C

@@ -22,7 +22,6 @@ int* sortedSquares(int* nums, int numsSize, int* returnSize)
     int right = numsSize - 1;
     int index;
     
-    
     // Allocate memory for return array
     *returnSize = numsSize;
     squared_nums = (int*)malloc(*returnSize * sizeof(int));
