@@ -5,44 +5,61 @@
 
 #include <stdio.h>
 
-#define IN 1
-#define OUT 0
-#define MAXWORD 11
-#define MAXHIST 15    // Let's assume only 15 words can be inputted
 
+#define IN 1    // Inside a word
+#define OUT 0   // Outside a word
+#define MAXWORD 15  // Counts up to this individual words
 
 
 int main(void)
 {
-    int c;
-    int c_count;
+    int c;  // Current character
+    int nc; // Character count
+    int wc; // Word count
+    int words[MAXWORD]; // Character count for each individual word
     int state;
-    int worrd[MAXWORD];
-    int i;
 
-    c_count = 0;
-
-    for(i=0; i < 10; i++)
-        words[i] = 0;
+    nc = wc = 0;
+    state = OUT;
     
-    while((c = getchar()) != EOF)
+    // Initialize individual word character counter in 0
+    for(int i = 0; i < MAXWORD; i++)
     {
-        if((c != ' ') || (c != '\t') || (c != '\n'))
-        {
-            state = IN;
-            c_count++;
-        }
-        else if(state == IN)
+        words[i] = 0;
+    }
+   
+    // Counts characters for each individual word
+    while((c = getchar()) != EOF && wc < MAXWORD)
+    {
+        if(c == ' ' || c == '\n' || c == '\t')
         {
             state = OUT;
-            c_count = 0;
+            words[wc] = nc;
+            nc = 0;
+            wc++;
+        }
+        else if(state == OUT)
+        {
+            state = IN;
+            nc++;
+        }
+        else
+        {
+            nc++;
         }
     }
-
-    printf("Count = %d\n", c_count);
-
-    for(i = 0; i < 10; ++i)
-        printf("word[%d] = %d\n", i, words[i]);
+      
+    // Prints character counter for each individual word
+    for(int i = 0; i < MAXWORD; i++)
+    {
+        //printf("words[%d] = %d\n", i, words[i]);
+        for(int j = 0; j < words[i]; j++)
+        {
+            printf("*");    
+        }
+        
+        printf("\n");
+    }
 
     return 0;
 }
