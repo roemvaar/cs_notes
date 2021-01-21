@@ -69,3 +69,12 @@ may be:
 C has the basic philosophy that programmers know what they are doing; it only 
 requires that they state their intentions explicitly.
 
+**Functions**
+
+In C, a function provides a convenient way to encapsulate some computation, which can be used
+without worrying about its implementation. With properly designed functions, it is possible to
+ignore how a job is done; knowing what is done is sufficient. C makes the use of functions easy,
+convenient and efficient; you will often see a short function defined and called only once, just
+because it clarifies some piece of code.
+
+
