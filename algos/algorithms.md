@@ -1,6 +1,13 @@
 # Algorithms
 
-Here is a list of the mos important algorithms every good coder should be familiar with.
+TODO: Must have - Algorithms - Sorting: know how to sort. Don't do bubble-sort. You should
+know the details of at least one nlog(n) sorting algorithm, preferably two (say, quicksort
+and merge sort).
+
+TODO: Must have - Algorithms - Breadth First Search, Depth First Search, Binary Search,
+Merge Sort and Quicksort
+
+Here is a list of the most important algorithms every good coder should be familiar with.
 
 ## Sorting
 
@@ -27,6 +34,8 @@ sort or bubble sort.
 ```
     O(nlogn)
 ```
+
+Merge sort can be highly useful in situations where quicksort is impractical.
 
 ### Quicksort
 
