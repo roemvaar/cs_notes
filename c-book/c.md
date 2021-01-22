@@ -77,4 +77,29 @@ ignore how a job is done; knowing what is done is sufficient. C makes the use of
 convenient and efficient; you will often see a short function defined and called only once, just
 because it clarifies some piece of code.
 
+The following code
+
+```c
+    int power(int base, int n);
+```
+
+declares the parameter types and names, and the type of the result that the function returns.
+
+We will generally use *parameter* for a variable named in the parenthesized list in a function
+definition, and argument for the value used in a call of the function. The value that power
+computes is returned to main by the return statement.
+
+There's a return statement at the end of main. Since main is a function like any other, it may
+return a value to its caller, which is in effect the environment in which the program was
+executed. Typically, a return value of zero implies normal termination; non-zero values signal
+unusual or erroneous termination conditions.
+
+Function calls:
+
+- Call by value: the called function is given the value of its arguments in temporary variables
+rather than the originals.
+- Call by reference: it is possible for a function to modify a variable in a calling routing.
+The caller must provide the address of the variable to be set (technically a pointer to the
+variable), and the called function must declare the parameter to be a pointer and access the
+variable indirectly through it.
 
