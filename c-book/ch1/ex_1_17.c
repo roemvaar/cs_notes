@@ -37,6 +37,11 @@ int main()
 int get_line(char line[], int maxline)
 {
     int size;
+
+    if(count > 80)
+    {
+
+    }
     
     return size;
 }
