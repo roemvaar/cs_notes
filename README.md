@@ -6,5 +6,6 @@ Contents:
 - [Big Oh Cheat Sheet](https://www.bigocheatsheet.com/)
 - [C K&R](https://github.com/roemvaar/algos-and-ds/tree/master/c-book)
 - [C++ Review](https://github.com/roemvaar/algos-and-ds/tree/master/cpp)
+- [Computer Systems](https://github.com/roemvaar/algos-and-ds/tree/master/comp-sys)
 - [Data Structures](https://github.com/roemvaar/algos-and-ds/tree/master/ds)
 - [Leetcode Problems](https://github.com/roemvaar/algos-and-ds/tree/master/leetcode)
