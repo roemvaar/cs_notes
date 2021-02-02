@@ -1,8 +1,19 @@
 # Linux
 
-## Linux - Boot process
+## Kernel Initialization
 
-*Check Embedde Linux Primer (book) in order to understand how Linux boots on embedded sytems
+When the power is applied to an embedded Linux system, a complex
+sequence of events is started. After a few tens of seconds, the
+Linux kernel is operational and has spawned a series of application
+Programs as specified by the system init scripts.
+
+Upon power-on, the bootloader in an embedded system is the first
+software to get processor control. After the bootloader has performed
+some low-level hardware initialization, control is passed to the Linux
+kernel. This can be done in two ways:
+
+1) A manual sequence of events to facilitate development process
+2) Automated startup sequence typical of a production environment
 
 ## Embedded Linux
 
