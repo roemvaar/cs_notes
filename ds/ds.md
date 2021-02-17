@@ -162,6 +162,24 @@ capacity cannot be changed later.
 
 * **Linked Lists**
 
+There are two types of linked lists: a singly-linked list and a doubly-linked list.
+
+The singly-linked list contains node that only point to the next node. The doubly-linked list
+has nodes that can point towards both the next and the previous node.
+
+A node has two parts: the data part and the next part (and the previous part in case of a doubly-
+linked list). The data part contains the stored data, and the next (and previous) part provides
+the address of the next node.
+
+The first node of a linked list is called the head, and the last node is called the tail. The
+list starts traversing from the head, while the tails ends the list pointing at NULL. 
+
+![linked_list](./img/linked_list.png)
+
+The linked list is a simple data structure, which is the basis for a surprising number of
+problem solutions regarding the handling of dynamic data.
+
+
 Doubly Linked List
 
 *Array vs Linked Lists:*
