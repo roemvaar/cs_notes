@@ -5,7 +5,6 @@
 
 void moveZeroes(int* nums, int numsSize)
 {
-    int zeroCount = 0;
     int currPos = 0;    // Position to store non-zero element
     
     // Store non-zero elements
@@ -16,14 +15,10 @@ void moveZeroes(int* nums, int numsSize)
             nums[currPos] = nums[i];
             currPos++;
         }
-        else
-        {
-            zeroCount++;
-        }
     }
     
     // Store zero elements at the end of the array
-    for(int i = numsSize - 1; i >= numsSize - zeroCount; i--)
+    for(int i = currPos; i < numsSize; i++)
     {
         nums[i] = 0;
     }
