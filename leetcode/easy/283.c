@@ -8,15 +8,6 @@ void moveZeroes(int* nums, int numsSize)
     int zeroCount = 0;
     int currPos = 0;    // Position to store non-zero element
     
-    // Count zeros
-    for(int i = 0; i < numsSize; i++)
-    {
-        if(nums[i] == 0)
-        {
-            zeroCount++;   
-        }
-    }
-    
     // Store non-zero elements
     for(int i = 0; i < numsSize; i++)
     {
@@ -24,6 +15,10 @@ void moveZeroes(int* nums, int numsSize)
         {
             nums[currPos] = nums[i];
             currPos++;
+        }
+        else
+        {
+            zeroCount++;
         }
     }
     
@@ -33,3 +28,4 @@ void moveZeroes(int* nums, int numsSize)
         nums[i] = 0;
     }
 }
+
