@@ -213,16 +213,16 @@ In C++, you could define a class for the list element:
 In C++, It usually makes more sense to define a
 [template](https://www.geeksforgeeks.org/templates-cpp/) for the list element.
 
-**Basic Linked List Operations:**
+Operations:
 
-- Tracking the head element: The head element must always be tracked; otherwise, the list will
-be lost. The pointer to the head of the list must be updated when a new element is inserted
-ahead of the first element or when the existing first element is removed from the list.
-
-- Traversing a list: Operations on any but the first element of a linked list require traversal
-of some elements of the list. Always test for the end of a linked list as you traverse it.
-
-- Inserting and deleting elements
+    - Tracking the head element: The head element must always be tracked; otherwise, the
+      list will be lost. The pointer to the head of the list must be updated when a new
+      element is inserted ahead of the first element or when the existing first element
+      is removed from the list.
+    - Traversing a list: Operations on any but the first element of a linked list require
+      traversal of some elements of the list. Always test for the end of a linked list as 
+      you traverse it.
+    - Inserting and deleting elements
 
 * **Tree**
 
