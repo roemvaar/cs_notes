@@ -4,31 +4,29 @@
 #include <stdio.h>
 
 #define MAXLINE 1000
+#define MINLINE 80
 
 int get_line(char line[], int maxline);
 
-int main()
+
+int main(void)
 {
-    int c;
-    int char_count;
+    int len;
+    char line[MAXLINE];
 
-    char_count = 0;
-
-    while((c = getchar()) != EOF)
+    while((len = get_line(line, MAXLINE)) > 0)
     {
-        if(c == '\n' && char_count > 80)
+        // Check if the line is greater than 1000 characters
+        if(line[len - 1] != '\n')
         {
-            printf("%d\n", char_count);
-            char_count = 0;
+            printf("The line is greater than 1000 characters:\n");
+            printf("%s\n", line);
         }
-
-        char_count++;
-     }
-    
-    // Check for new line 
-
-    // If count chars > 80... then print the line
-    // else don't do anything, just start reading next line
+        else if(len > MINLINE)
+        {
+            printf("%s\n", line);
+        }
+    }
 
     return 0;
 }
@@ -36,13 +34,23 @@ int main()
 
 int get_line(char line[], int maxline)
 {
-    int size;
+    int c;
+    int i;
 
-    if(count > 80)
+    for(i = 0; i < maxline - 1 && (c = getchar()) != EOF && c != '\n'; i++)
     {
-
+        line[i] = c;
     }
-    
-    return size;
+
+    if(c == '\n')
+    {
+        line[i] = c;
+        i++;
+    }
+
+    line[i] = '\0';
+
+    return i;
 }
+
 
