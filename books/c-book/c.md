@@ -103,3 +103,14 @@ The caller must provide the address of the variable to be set (technically a poi
 variable), and the called function must declare the parameter to be a pointer and access the
 variable indirectly through it.
 
+
+**Definition vs Declaration**
+
+"Definition" refers to the place where the variable is created or assigned storage;
+"Declaration" refers to places where the nature of the variable is stated but no storage is
+allocated.
+
+For further information, look at ["What is the difference between a definition and a
+declaration?"](https://stackoverflow.com/questions/1410563/what-is-the-difference-between-a-definition-and-a-declaration)
+on StackOverflow.
+
