@@ -46,3 +46,5 @@ Direct Memory Acess
 **Synchronization techqniques**
 
 Mutex vs Semaphores
+
+**Object Oriented Programming in C** - check this link http://vger.kernel.org/lkml/#s15-3
