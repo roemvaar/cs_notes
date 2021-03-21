@@ -56,3 +56,16 @@ and therefore access to a filesystem is mandatory to use modules.
 - This is not posible in the early boot procedure of the kernel, because no
 filesystem is available.
 
+## Kernel Compilation Results
+
+- **vmlinux**, the raw uncompressed kernel image, in the ELF format, useful
+for debugging purposes, but cannot be booted
+- arch/< arch >/boot/*Image, the final, usually compressed, kernel image that
+can be booted
+  - bzImage for x86, zImage for ARM, Image.gz for RISC-V, vmlinux.bing.gz for
+    ARC, etc.
+- arch/< arch >/boot/dts/*.dtb, compiled Device Tree files (on some
+architectures)
+- All kernel modules, spread over the kernel source tree, as .ko (kernel
+object) files.
+ 
