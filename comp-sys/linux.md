@@ -31,3 +31,9 @@ compiled for your native hardware architecture/processor
 
 These are the components of an embedded Linux distribution.
 
+## Drivers
+
+### Kernel Drivers vs User Space Drivers 
+
+User space driver vs Kernel space driver - checar el pdf de linux-kernel-slides.pdf p.46
+
