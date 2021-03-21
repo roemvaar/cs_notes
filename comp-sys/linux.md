@@ -37,3 +37,22 @@ These are the components of an embedded Linux distribution.
 
 User space driver vs Kernel space driver - checar el pdf de linux-kernel-slides.pdf p.46
 
+## Kernel or Module?
+
+The **kernel image** is a **single file**, resulting from the linking of all
+object files that correspond to features enabled in the configuration-
+
+- This is the file that gets loaded in memory by the bootloader
+- All included features are therefore available as soon as the kernel starts,
+at a time where no filesystem exists
+
+Some features (device drivers, filesystems, etc.) can however be compiled as
+**modules**.
+
+- These are plugings that can be laoded/unloaded dynamically to add/remove
+features to the kernel
+- Each **module is stored as a separate file in the filesystem** (.ko file),
+and therefore access to a filesystem is mandatory to use modules.
+- This is not posible in the early boot procedure of the kernel, because no
+filesystem is available.
+
