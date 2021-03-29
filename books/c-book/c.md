@@ -16,7 +16,9 @@ C provides a variety of data types. The fundamental data types are:
 | float      | floating point number |
 | double     | double-precision floating point |
 
-The sizes of these objects are machine-dependent.
+The sizes of these objects are machine-dependent. Each compiler is free to choose appropiate
+sizes for its own hardware, subject only to the restriction that shorts and ints are at least
+16 bits, longs are at least 32 bits, and short is no longer than int, which is no longer than long.
 
 There are also derived data types, i.e. user defined data types, created with:
 
@@ -24,6 +26,13 @@ There are also derived data types, i.e. user defined data types, created with:
 - Arrays
 - Structures
 - Unions
+
+The qualifier **signed** or **unsigned** may be applied to char or any integer. unsigned numbers
+are always positive or zero, and obey the laws of arithmetic modulo 2<sup>n</sup>, where n is the
+number of bits in the type. Example:
+
+- If chars are 8 bits, unsigned char variables have values between 0 and 255, while signed chars
+have values between -128 and 127 (in a two's complement machine).
 
 In C expressions are formed from operators and operands. 
 
@@ -105,6 +114,16 @@ variable indirectly through it.
 
 
 **Definition vs Declaration**
+
+According to R&K,
+
+- Declaration list the variables to be used, and state what type they have and perhaps what their
+initial values are.
+
+```c
+    int a;
+    float interest = 0.42;
+```
 
 "Definition" refers to the place where the variable is created or assigned storage;
 "Declaration" refers to places where the nature of the variable is stated but no storage is
