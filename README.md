@@ -1,11 +1,35 @@
 # Algorithms and Data Structures
 
-Contents:
+### Baseline of knowledge - Core Data Structures, Algorithms, and Concepts
 
-- [Algorithms](https://github.com/roemvaar/algos-and-ds/tree/master/algos)
-- [C K&R](https://github.com/roemvaar/algos-and-ds/tree/master/books/c-book)
-- [C++ Review](https://github.com/roemvaar/algos-and-ds/tree/master/cpp)
-- [Coding Challenge](https://github.com/alanrubik/Challenges)
-- [Computer Systems](https://github.com/roemvaar/algos-and-ds/tree/master/comp-sys)
-- [Data Structures](https://github.com/roemvaar/algos-and-ds/tree/master/ds)
-- [Leetcode Problems](https://github.com/roemvaar/algos-and-ds/tree/master/leetcode)
+This is a list of must-have knowledge.
+
+**Data Structures:**
+
+- Linked Lists
+- Trees, Tries, & Graphs
+- Stacks & Queues
+- Heaps
+- Vectors / ArrayLists
+- Hash Tables
+
+**Algorithms:**
+
+- Breadth-First Search
+- Depth-First Search
+- Binary Search
+- Merge Sort
+- Quick Sort
+
+**Concepts:**
+
+- Bit Manipulation
+- Memory (Stack vs Heap)
+- Recursion
+- Dynamic Programming 
+- Big O Time & Space
+
+For each of these topics, make sure you understand how to use and implement them and, where applicable
+the space and time complexity.
+
+Practice implementing from scratch each of the data structures and algorithms from this list.
