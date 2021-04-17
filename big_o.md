@@ -44,6 +44,8 @@ If there are two branches per recursive call, and we go as deep as N, therefore 
 
 Generally speaking, when you see an algorithm with multiple recursive calls, you're looking at exponential runtime.
 
+Memoization is a tecnique used to optimize exponential time recursive algorithms.
+
 ### Rate of increase for some of the common big O times
 
 From best to worst:
