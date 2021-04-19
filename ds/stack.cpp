@@ -11,13 +11,12 @@
 // number of elements - get the number of items currently in the stack
 
 
-#include <stdio.h>
+#include <iostream>
 
 
 int main(void)
 {
-    printf("Stack implementation in C\n");
-
+    std::cout << "Stack implementation in C++\n";
 
     return 0;
 }
