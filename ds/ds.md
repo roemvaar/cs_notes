@@ -234,6 +234,8 @@ Operations:
 
 * **Hash Table**
 
+How can we find things quickly in an unsorted array? with a hash table.
+
 
 ### References
 
