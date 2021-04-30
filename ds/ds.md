@@ -106,6 +106,8 @@ the corresponding files become less frequently accessed.
 Map (aka Dictionary) is used to store mappings between two objects: a key object and a
 value object. You can query a map with a key and get its associated value.
 
+Operations:
+
   - set(key, value): add a key-value mapping
   - delete(key): remove key and its associated value
   - get(key): retrieve the value that was associated to key
@@ -215,14 +217,14 @@ In C++, It usually makes more sense to define a
 
 Operations:
 
-    - Tracking the head element: The head element must always be tracked; otherwise, the
-      list will be lost. The pointer to the head of the list must be updated when a new
-      element is inserted ahead of the first element or when the existing first element
-      is removed from the list.
-    - Traversing a list: Operations on any but the first element of a linked list require
-      traversal of some elements of the list. Always test for the end of a linked list as 
-      you traverse it.
-    - Inserting and deleting elements
+  - Tracking the head element: The head element must always be tracked; otherwise, the
+    list will be lost. The pointer to the head of the list must be updated when a new
+    element is inserted ahead of the first element or when the existing first element
+    is removed from the list.
+  - Traversing a list: Operations on any but the first element of a linked list require
+    traversal of some elements of the list. Always test for the end of a linked list as 
+    you traverse it.
+  - Inserting and deleting elements
 
 * **Tree**
 

@@ -1,13 +1,8 @@
-// Linked Lists in C
+/* 
+ * Linked Lists in C
+ */ 
 
-#include <stdio.h>
-#include <stdbool.h>
-
-typedef struct IntElement
-{
-    struct IntElement *next;
-    int data;
-} IntElement;
+#include "linked_list.h"
 
 
 bool deleteElement(IntElement **head, IntElement *deleteMe)
@@ -56,18 +51,25 @@ void deleteList(IntElement **head)
 }
 
 
-int main(void)
+void traverseList(IntElement **head)
 {
-    printf("Linked Lists in C\n");
     
-    IntElement first;
-
-    first.next = NULL;
-    first.data = 5;
-
-    printf("first->next = %p\n", first.next);
-    printf("first->data = %d\n", first.data);
-
-    return 0;
 }
 
+
+void insertElement(IntElement **head, int position)
+{
+
+}
+
+
+int searchValue(IntElement **head, int target)
+{
+
+}
+
+
+void updateElement(IntElement **head, int position)
+{
+
+}
