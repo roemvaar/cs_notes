@@ -33,6 +33,11 @@ These are the components of an embedded Linux distribution.
 
 ## Drivers
 
+### Char vs Block Drivers
+
+- Char drivers: Character device drivers normally perform I/O in a byte stream.
+- Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. 
+
 ### Kernel Drivers vs User Space Drivers 
 
 User space driver vs Kernel space driver - checar el pdf de linux-kernel-slides.pdf p.46
