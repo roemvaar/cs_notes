@@ -11,6 +11,8 @@ Here is a list of the most important algorithms every good coder should be famil
 
 ## Sorting
 
+Sorting: know how to sort. Don't do bubble-sort. You should know the details of at least one n*log(n) sorting algorithm, preferably two (say, quicksort and merge sort). Merge sort can be highly useful in situations where quicksort is impractical, so take a look at it. - https://github.com/roemvaar/algos-and-ds/tree/master/algos/sort
+
 ### Selection Sort
 
 ```
@@ -89,4 +91,7 @@ until you find the one you want. There are two approaches to achieve this:
     new nodes, we go back to the previous node and continue the process.
 
     - **Breadth First Search (BFS)**
+    
+## Bitlogic
 
+Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or low level development - learn about endianness
