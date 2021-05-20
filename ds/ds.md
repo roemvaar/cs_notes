@@ -226,18 +226,24 @@ Operations:
     you traverse it.
   - Inserting and deleting elements
 
-* **Tree**
+* **Trees**
+
+(especially Binary Trees and Binary Search Trees) - basic tree construction (from a given array), traversal and manipulation algorithms. You should be familiar with binary trees, n-ary trees, and trie-trees at the very very least. Be familiar with at least one flavor of balanced binary tree, whether it's a red/black tree, a splay tree or an AVL tree. You should actually know how it's implemented. You should know about tree traversal algorithms: BFS and DFS, and know the difference between inorder, postorder and preorder.
 
 * **Binary Search Tree**
 
 * **Binary Heap**
 
-* **Graph**
+* **Graphs**
+
+https://github.com/roemvaar/algos-and-ds/blob/master/algos/graphs/graphs.md
+
 
 * **Hash Table**
 
 How can we find things quickly in an unsorted array? with a hash table.
 
+Hashtables are arguably the single most important data structure known to mankind. You absolutely have to know how they work. Again, it's like one chapter in one data structures book, so just go read about them. You should be able to implement one using only arrays in your favorite language, in about the space of one interview. - 1) Implement it in C from scratch - https://github.com/jamesroutley/write-a-hash-table 2) Solve leetcode problems using Python at least 3- https://github.com/roemvaar/algos-and-ds/blob/master/ds/hash_table.c
 
 ### References
 
