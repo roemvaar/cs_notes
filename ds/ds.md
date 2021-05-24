@@ -1,9 +1,11 @@
 # Data Structures
 
-*TODO: Complete contents of this file*
+A data structure is a data organization, management, and storage format that enables efficient access
+and modification. In other words, a data structure is a collection of data values, the relationship
+among them, and the functions or operations that can be applied to the data.
 
 - Abstract Data Type (ADT): describes how variables of a given type are operated. It provides a list 
-of operations but doesn't explain hwo data operations happen. 
+of operations but doesn't explain how data operations happen. 
 
 - Data Structures: describe how data is to be organized and accesed in the computer's memory. 
 They provide a way for implementing ADTs in data-handling modules.
@@ -162,7 +164,7 @@ In C, if an array is not defined, i.e. if you don't put anything inside, the arr
 contain completely random data. The array capacity must be decided when the array is created. The
 capacity cannot be changed later.
 
-* **Linked Lists**
+* **Linked List**
 
 There are two types of linked lists: a singly-linked list and a doubly-linked list.
 
@@ -226,24 +228,31 @@ Operations:
     you traverse it.
   - Inserting and deleting elements
 
-* **Trees**
+* **Tree**
 
 (especially Binary Trees and Binary Search Trees) - basic tree construction (from a given array), traversal and manipulation algorithms. You should be familiar with binary trees, n-ary trees, and trie-trees at the very very least. Be familiar with at least one flavor of balanced binary tree, whether it's a red/black tree, a splay tree or an AVL tree. You should actually know how it's implemented. You should know about tree traversal algorithms: BFS and DFS, and know the difference between inorder, postorder and preorder.
 
 * **Binary Search Tree**
 
+Operations:
+
 * **Binary Heap**
 
-* **Graphs**
+Operations:
+
+* **Graph**
 
 https://github.com/roemvaar/algos-and-ds/blob/master/algos/graphs/graphs.md
 
+Operations:
 
 * **Hash Table**
 
 How can we find things quickly in an unsorted array? with a hash table.
 
 Hashtables are arguably the single most important data structure known to mankind. You absolutely have to know how they work. Again, it's like one chapter in one data structures book, so just go read about them. You should be able to implement one using only arrays in your favorite language, in about the space of one interview. - 1) Implement it in C from scratch - https://github.com/jamesroutley/write-a-hash-table 2) Solve leetcode problems using Python at least 3- https://github.com/roemvaar/algos-and-ds/blob/master/ds/hash_table.c
+
+Operations:
 
 ### References
 
