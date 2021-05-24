@@ -74,3 +74,11 @@ architectures)
 - All kernel modules, spread over the kernel source tree, as .ko (kernel
 object) files.
  
+ ## Thread vs Process
+ 
+ ## Inter-Process Communication 
+ 
+ ## Synchronization and messaging mechanisms
+ 
+Semaphores, queues, etc.
+ 
