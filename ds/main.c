@@ -1,10 +1,19 @@
 #include <stdio.h>
-#include "linked_lists/linked_list.h"
+
+#include "arrays/arrays.h"
+#include "graphs/graphs.h"
+#include "hash_tables/hash_tables.h"
+#include "heaps/heaps.h"
+#include "linked_lists/linked_lists.h"
+#include "queues/queues.h"
+#include "stacks/stacks.h"
+#include "trees/trees.h"
+#include "vectors/vectors.h"
 
 
 int main(void)
 {
-    printf("Linked Lists in C\n");
+    printf("Data Structures in C\n");
     
     IntElement first;
 

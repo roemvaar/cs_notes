@@ -2,7 +2,7 @@
  * Linked Lists in C
  */ 
 
-#include "linked_list.h"
+#include "linked_lists.h"
 
 
 bool deleteElement(IntElement **head, IntElement *deleteMe)

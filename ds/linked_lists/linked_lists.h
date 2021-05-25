@@ -2,8 +2,8 @@
  * Linked Lists in C
  */ 
 
-#ifndef LINKED_LIST_H
-#define LINKED_LIST_H
+#ifndef LINKED_LISTS_H
+#define LINKED_LISTS_H
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -23,4 +23,4 @@ int searchValue(IntElement **head, int target);
 void updateElement(IntElement **head, int position);
 
 
-#endif  /* LINKED_LIST_H */
+#endif  /* LINKED_LISTS_H */

@@ -219,14 +219,13 @@ In C++, It usually makes more sense to define a
 
 Operations:
 
-  - Tracking the head element: The head element must always be tracked; otherwise, the
-    list will be lost. The pointer to the head of the list must be updated when a new
-    element is inserted ahead of the first element or when the existing first element
-    is removed from the list.
-  - Traversing a list: Operations on any but the first element of a linked list require
-    traversal of some elements of the list. Always test for the end of a linked list as 
-    you traverse it.
-  - Inserting and deleting elements
+  - Traversal: to traverse all the nodes one after another. Always test
+    for the end of a linked list, i.e. tail or NULL pointer, as you
+    traverse it
+  - Insertion: to add a node at the given position
+  - Deletion: to delete a node at a given position
+  - Searching: to search an element by value
+  - Updating: to update a node
 
 * **Tree**
 

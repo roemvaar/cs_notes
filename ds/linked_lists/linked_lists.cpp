@@ -6,11 +6,17 @@
 
 using namespace std;
 
+void mergeLinkedLists(LinkedList list_a, LinkedList list_b);
 
-class Node{
+
+class Node {
 public:
     int data;
     Node* next;
+};
+
+class LinkedList {
+
 };
 
 
@@ -46,3 +52,7 @@ int main()
     return 0;
 }
 
+void mergeLinkedLists(LinkedList list_a, LinkedList list_b) 
+{
+
+}
