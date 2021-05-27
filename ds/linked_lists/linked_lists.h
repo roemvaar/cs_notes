@@ -22,5 +22,4 @@ void insertElement(IntElement **head, int position);
 int searchValue(IntElement **head, int target);
 void updateElement(IntElement **head, int position);
 
-
 #endif  /* LINKED_LISTS_H */
