@@ -53,23 +53,38 @@ void deleteList(IntElement **head)
 
 void traverseList(IntElement **head)
 {
-    
+    return;   
 }
 
 
 void insertElement(IntElement **head, int position)
 {
-
+    return;
 }
 
 
 int searchValue(IntElement **head, int target)
 {
-
+    return 0;
 }
 
 
 void updateElement(IntElement **head, int position)
 {
+    return;
+}
+
+void printLinkedList(IntElement * pointer_to_head)
+{
+    IntElement * iterator;
+
+    iterator = pointer_to_head;
+
+    while(iterator != NULL) {
+        printf("%d ", iterator->data);
+        iterator = iterator->next;
+    }
+
+    printf("\n");
 
 }

@@ -1,4 +1,4 @@
-#ifndef
-#define
+#ifndef QUEUES_H
+#define QUEUES_H
 
-#endif
+#endif /* QUEUES_H */

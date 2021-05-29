@@ -1,4 +1,4 @@
-#ifndef
-#define 
+#ifndef HEAPS_H
+#define HEAPS_H
 
-#endif
+#endif /* HEAPS_H */

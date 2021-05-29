@@ -5,8 +5,9 @@
 #ifndef LINKED_LISTS_H
 #define LINKED_LISTS_H
 
-#include <stdio.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct IntElement
 {
@@ -21,5 +22,6 @@ void traverseList(IntElement **head);
 void insertElement(IntElement **head, int position);
 int searchValue(IntElement **head, int target);
 void updateElement(IntElement **head, int position);
+void printLinkedList(IntElement * pointer_to_head);
 
 #endif  /* LINKED_LISTS_H */
