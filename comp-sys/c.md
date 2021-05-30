@@ -40,4 +40,4 @@ the standard C runtime library are required.
 
   - **Static libraries**, also known as archives, conventionally have names that end with .a. Example,
     /usr/lib/libc.a for the standard C library. You can create your own static libraries using ar (for archive) program 
-    and compiling functions separately with gcc -c. [Example of a static library]()
+    and compiling functions separately with gcc -c. [Example of a static library](https://github.com/roemvaar/algos-and-ds/tree/master/books/linux-programming/libraries)
