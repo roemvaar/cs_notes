@@ -12,7 +12,7 @@ Preprocessors, compiler, assembler, and linker
 
 5. Difference between a switch and an if statement
 
-6. Heap vs Stack
+6. Common problems - segmentation fault, memory leaks
 
 7. C reserved words - private, volatile, static, etc. for both variables and functions.
 
