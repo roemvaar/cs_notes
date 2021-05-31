@@ -16,3 +16,6 @@ variable.
 The static variables are stored in the data segment of the memory. Different from the stack
 frame allocation for a certain function call, i.e., its value persists even after the function
 where it appears has returned.
+
+
+Info: https://stackoverflow.com/questions/14588767/where-in-memory-are-my-variables-stored-in-c
