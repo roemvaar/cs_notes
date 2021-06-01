@@ -40,4 +40,18 @@ the standard C runtime library are required.
 
   - **Static libraries**, also known as archives, conventionally have names that end with .a. Example,
     /usr/lib/libc.a for the standard C library. You can create your own static libraries using ar (for archive) program 
-    and compiling functions separately with gcc -c. [Example of a static library](https://github.com/roemvaar/algos-and-ds/tree/master/books/linux-programming/libraries)
+    and compiling functions separately with gcc -c. [Example of a static library](). For futher information how to
+    create a shared library check Introduction to Programming Linux book p.11. One disadvantage of static libraries is that
+    when you run many applications at the same time and they all use functions from the same library, you may end up with many
+    copies of the same functions in memory and indeed many copies in the program files themselves. This can consume a large
+    amount of valuable memory and disk space. Shared libraries can overcome this disadvantage.
+
+  - **Shared Libraries** have the so suffix, e.g., the shared version of the standard math library is /lib/libm.so. When a
+    program uses a shared library, it is linked in such a way that it doesn't contain function code itself, but references to
+    shared code that will be made available at run time. When the resulting program is loaded into memory to be executed, the
+    function references are resolved and calls are made to the shared library, which will be loaded into memory if needed. In
+    this way, the system can arrange for a single copy of a shared library to be used by many applications at once and stored
+    just once on the disk. An additional benefit is that the shared library can be updated independently of the applications
+    that rely on it.
+
+10. Keywords - const (in parameters), extern, static (functions, variables)

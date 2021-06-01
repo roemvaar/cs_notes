@@ -48,3 +48,5 @@ Direct Memory Acess
 Mutex vs Semaphores
 
 **Object Oriented Programming in C** - check this link http://vger.kernel.org/lkml/#s15-3
+
+**Cross-Compiling**
