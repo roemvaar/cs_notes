@@ -5,7 +5,41 @@
 #include "linked_lists.h"
 
 
-bool deleteElement(IntElement **head, IntElement *deleteMe)
+static IntElement * createNewElement()
+{
+    IntElement * newElement; 
+    newElement = (IntElement *)malloc(sizeof(IntElement));
+    
+    newElement->next = NULL;
+
+    return &newElement;
+}
+
+
+void traverseList(IntElement * pointer_to_head)
+{
+    IntElement * iterator;
+
+    iterator = pointer_to_head;
+
+    while(iterator != NULL) {
+        printf("%d ", iterator->data);
+        iterator = iterator->next;
+    }
+
+    printf("\n");
+
+}
+
+
+void reverseTraverseList(IntElement * pointer_to_head)
+{
+    return;
+}
+
+
+//bool deleteElement(IntElement **head, IntElement *deleteMe)
+void deleteElement()
 {
     IntElement *elem;
 
@@ -36,7 +70,7 @@ bool deleteElement(IntElement **head, IntElement *deleteMe)
 }
 
 
-void deleteList(IntElement **head)
+void deleteList(IntElement * pointer_to_head)
 {
     IntElement *deleteMe = *head;
 
@@ -51,21 +85,9 @@ void deleteList(IntElement **head)
 }
 
 
-void traverseList(IntElement **head)
-{
-    return;   
-}
-
-
-void insertElement(IntElement **head, int position)
+void insertElement()
 {
     return;
-}
-
-
-int searchValue(IntElement **head, int target)
-{
-    return 0;
 }
 
 
@@ -74,17 +96,8 @@ void updateElement(IntElement **head, int position)
     return;
 }
 
-void printLinkedList(IntElement * pointer_to_head)
+
+bool searchByValue(IntElement * pointer_to_head, int target)
 {
-    IntElement * iterator;
-
-    iterator = pointer_to_head;
-
-    while(iterator != NULL) {
-        printf("%d ", iterator->data);
-        iterator = iterator->next;
-    }
-
-    printf("\n");
-
+    return 0;
 }

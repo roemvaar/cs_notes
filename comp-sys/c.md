@@ -54,4 +54,8 @@ the standard C runtime library are required.
     just once on the disk. An additional benefit is that the shared library can be updated independently of the applications
     that rely on it.
 
+    In Linux, the program (dynamic loader) that takes care of loading shared libraries and resolving client program functions
+    references is called ld.so.
+
+
 10. Keywords - const (in parameters), extern, static (functions, variables)

@@ -11,17 +11,16 @@
 
 typedef struct IntElement
 {
-    struct IntElement *next;
+    struct IntElement * next;
     int data;
 } IntElement;
 
-//void deleteElement(IntElement **head, int postition);
-bool deleteElement(IntElement **head, IntElement *deleteMe);
-void deleteList(IntElement **head);
-void traverseList(IntElement **head);
-void insertElement(IntElement **head, int position);
-int searchValue(IntElement **head, int target);
+void traverseList(IntElement * pointer_to_head);
+void reverseTraverseList(IntElement * pointer_to_head);
+void deleteList(IntElement * pointer_to_head);
+void insertElement();
+void deleteElement();
 void updateElement(IntElement **head, int position);
-void printLinkedList(IntElement * pointer_to_head);
+bool searchByValue(IntElement * pointer_to_head, int target);
 
 #endif  /* LINKED_LISTS_H */

@@ -28,22 +28,18 @@ void testLinkedLists(void)
 {
     printf("Linked Lists in C\n");
 
-    // Create three int elements and pointer to head node
-    IntElement elem_1;
-    IntElement elem_2;
-    IntElement elem_3;
-    IntElement * pointer_to_head;
-
-    // Set data and links
-    pointer_to_head = &elem_1;
-
-    elem_1.data = 0;
-    elem_2.data = 1;
-    elem_3.data = 2;
-
-    elem_1.next = &elem_2;
-    elem_2.next = &elem_3;
-    elem_3.next = NULL;
-
+    insertElement(2, 0);
     printLinkedList(pointer_to_head);
+    printLinkedListReverse(pointer_to_head);
+
+    insertElement(4, 0);
+    printLinkedList(pointer_to_head);
+    printLinkedListReverse(pointer_to_head);
+
+
+    insertElement(6, 0);
+    printLinkedList(pointer_to_head);
+    printLinkedListReverse(pointer_to_head);
+
+
 }   
