@@ -1,22 +1,38 @@
 # C Programming Language
 
-1. C data types
+1. **C data types**
 
-2. What's a pointer? What's its size?
+int, float, double
 
-3. Null pointer and void pointer
+user defined (typedef): structs, unions, enums
 
-4. Compilation stages - what happens at each stage?
+2. **What's a pointer? What's its size?**
 
-Preprocessors, compiler, assembler, and linker
+It's a variable that holds the address of another variable. In this way, the variable that the
+pointer variable points to can be modified indirectly. 
 
-5. Difference between a switch and an if statement
+The size is system specific. Typically it has the same size as the processor word, e.g. in an ARM32
+board, the pointers typically have a 4 bytes size (32 bits).
 
-6. Common problems - segmentation fault, memory leaks
+3. **Null pointer and void pointer**
 
-7. C reserved words - private, volatile, static, etc. for both variables and functions.
+4. **Compilation stages - what happens at each stage?**
 
-8. Pointers to functions
+- Preprocessor:
+
+- Compiler: 
+
+- Assembler:
+
+- Linker
+
+5. **Difference between a switch and an if statement**
+
+6. **Common problems - segmentation fault, memory leaks**
+
+7. **C reserved words - const (in parameters), extern, private, volatile, static (functions, variables), etc. for both variables and functions.**
+
+8. **Pointers to functions**
 
 9. **Libraries**
 
@@ -57,5 +73,11 @@ the standard C runtime library are required.
     In Linux, the program (dynamic loader) that takes care of loading shared libraries and resolving client program functions
     references is called ld.so.
 
+    You can verify which libraries have been linked in this or any other program by using the
+    readelf command:
 
-10. Keywords - const (in parameters), extern, static (functions, variables)
+    ``` $ readelf -a myprog | grep "Shared library" ```
+
+    Shared libraries need a runtime linker, which you can expose using this:
+
+    ``` $ readelf -a myprog | grep "program interpreter" ```

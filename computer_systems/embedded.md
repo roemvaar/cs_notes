@@ -1,5 +1,7 @@
 # Embedded Systems
 
+**What is an embedded system?**
+
 **Characteristics of an embedded system**
 
 - Contains a processing engine, such as a general
@@ -20,7 +22,33 @@ software preintegrated.
 - Often is intended for applications without human
 intervention.
 
-**Tasks of a bootloader**
+**What is a microcontroller, microprocessor, SoC, and SoM?**
+
+- Microprocessor:
+
+- Microcontroller:
+
+- SoC (System on Chip):
+
+- SoM (System on Module):
+
+**Basic processor architecture**
+
+The ones most often found in embedded devices are Arm, MIPS, PowerPC, RISC-V, and
+x86, each in 32 and 64-bit variants, all of which have memory management units (MMU).
+
+**Bootloaders**
+
+TODO: A bootloader is a program that is in charge of initialize critical computer
+resources such as program memory and load the OS into the memory.
+
+TODO: how OS/Program is loaded?
+
+Types of bootloaders:
+
+Examples:
+
+Tasks of a bootloader:
 
 - Initialize critical hardware components, such as
 the SDRAM controller, I/O controllers and graphic 
@@ -37,6 +65,20 @@ include total memory size, clock rates, serial ports
 speeds and other low-level hardware-specific
 configuration data.
 
+**Bare metal programming**
+
+Infinite for loop
+
+**OS and RTOS concepts**
+
+Difference between an OS and RTOS:
+
+- OS (Operating System):
+
+- RTOS (Real-Time Operating System):
+
+Examples: FreeRTOS, QNX, VxWorks
+
 **What is DMA?**
 
 Direct Memory Acess
@@ -49,4 +91,25 @@ Mutex vs Semaphores
 
 **Object Oriented Programming in C** - check this link http://vger.kernel.org/lkml/#s15-3
 
-**Cross-Compiling**
+**Toolchains**
+
+- Native: this toolchain runs on the same type of system (sometimes the actual 
+system) as the program it generates.
+
+- Cross: this toolchain runs on a different type of system than the target, allowing
+the development to be done on a fast desktop PC and then loaded onto the embedded target
+for testing. This is known as cross-compiling.
+
+**Schematic basics** 
+
+How to read and understand schematics?
+
+**Hardware Debugging tools, Oscilloscope, Multimeter, Logic Analyzer, JTAG**
+
+**Software Debugging Tools: GDB**
+
+**Communication Interfaces/Devices**
+
+**Embedded peripherals: I2C, MDIO, GPIO, ADC, DAC, MII, USB**
+
+**External Communication Interfaces/Devices: CAN, LIN, Ethernet, Wi-Fi, Bluetooth, Modem, GPS, GMSL2**
