@@ -137,14 +137,30 @@ architectures)
 - All kernel modules, spread over the kernel source tree, as .ko (kernel
 object) files.
  
- ## Thread vs Process
+## Process vs Thread
+
+### Process
+
+Each running program, called a process, has a number of file descriptors associated with it.
+
+Under the Standard I/O Library, the equivalent of the low-level file descriptor is called a strem and is implemented
+as a pointer to a structure, a FILE *.
+
+Three file streams are automatically opened when a program is started. They are stdin, stdout and stderr. These are
+declared in stdio.h and represent the standard input, output and error output.
+
+### procfs - file system
+
+Linux provide a special file system, procfs, that is usually made available as the directory /proc. It contains many
+special files that allow higher-level access to driver and kernel information. Applications can read and write these
+files to get information and set parameters as long as they are running with the correct access permissions.
+
+### Inter-Process Communication 
  
- ## Inter-Process Communication 
- 
- ## Synchronization and messaging mechanisms
+### Synchronization and messaging mechanisms
  
 Semaphores, queues, etc.
- 
+
 ## Application Binary Interface
 
 The calling convention used for passing parameters between function calls. 
@@ -172,5 +188,31 @@ Main options of C libraries:
   - uClibc-ng: microcontroller C library
   - eglibc: obsolete, not longer maintained - DON'T USE IT
 
+## Useful commands
 
+* find
+* grep
+
+You use find to search your system for files, but you use grep to search files for strings.
+
+## System Calls and Device Drivers
+
+You can access and control files and devices using a small number of functions. These functions, known
+as *system calls*, are provided by UNIX (and Linux) directly, and are the interface to the operating
+system itself.
+
+At the hard of the operating system, the kernel, are a number of *device drivers*. These are a collection
+of low-level interfaces for controlling system hardware. To provide a similar interface, device drivers
+encapsulate all of the hardware-dependent features.
+
+Drivers examples:
+
+  - Tape Drive - knows hot to start the tape, wind it forward and backward, read and write to it, and so on.
+  It will also know that tapes have to be written to in blocks of a certain size. 
+
+  - Low-level Hard Disk - will only write whole numbers of disk sectors at a time, but will be able to access
+  any desired disk block directly, because the disk is a random access device.
+
+Device files in /dev are used in the same way; they can be opened, read, written, and closed. For example, the
+same *open* call used to access a regular file is used to access a user terminal, a printer, or a tape drive.
 
