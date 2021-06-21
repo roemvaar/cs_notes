@@ -81,3 +81,22 @@ the standard C runtime library are required.
     Shared libraries need a runtime linker, which you can expose using this:
 
     ``` $ readelf -a myprog | grep "program interpreter" ```
+
+10. **The C Library**
+
+The C library is not a single library file. It is composed of four main parts that together implement the POSIX API:
+
+  - libc: The main C library that contains the well-known POSIX functions such as printf, open, close, read, write, and so on.
+  - libm: Contains math functions such as cos, exp, and log
+  - libpthread: Contains all the POSIX thread functions with names beginning with pthread_
+  - librt: Has the real-time extensions to POSIX, including shared memory and asynchronous I/O
+
+The first one, libc, is always linked, in but the others have to be explicitly linked with the -l option.
+
+11. main() arguments
+
+When a Linux program written in C runs, it starts at the function main. For these programs, main is declared as
+
+```int main(int argc, char *argv[])```
+
+where argc is a count of the program arguments and argv is an array of character strings representing the arguments themselves.

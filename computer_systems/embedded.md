@@ -100,6 +100,17 @@ system) as the program it generates.
 the development to be done on a fast desktop PC and then loaded onto the embedded target
 for testing. This is known as cross-compiling.
 
+**Cross-Compiling**
+
+The are some common build systems, including the following:
+
+    - Pure Makefiles, where the toolchain is usually controlled by the make variable CROSS_COMPILE
+    - The GNU build system known as Autotools
+    - CMake (https://cmake.org)
+
+Both Autotools and makefiles are needed to build even a basic embedded Linux system. CMake is 
+cross-plaform.
+
 **Schematic basics** 
 
 How to read and understand schematics?

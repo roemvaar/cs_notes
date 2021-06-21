@@ -159,7 +159,7 @@ files to get information and set parameters as long as they are running with the
  
 ### Synchronization and messaging mechanisms
  
-Semaphores, queues, etc.
+Semaphores, queues, pipes, etc.
 
 ## Application Binary Interface
 

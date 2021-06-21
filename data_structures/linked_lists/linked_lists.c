@@ -34,6 +34,8 @@ void traverseList(IntElement * pointer_to_head)
 
 void reverseTraverseList(IntElement * pointer_to_head)
 {
+    
+
     return;
 }
 
