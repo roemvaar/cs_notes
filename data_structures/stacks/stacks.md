@@ -2,7 +2,7 @@
 
 ## Discuss the stack data structure. 
 
-![stack](./img/linked_list.png)
+![stack](../img/stack.jpg)
 
 A stack is a data structure that uses the FILO mechanism (First In, Last Out), i.e.,
 you only have access to the last element (top element) inserted to the stack.
@@ -22,14 +22,13 @@ of items currently in the stack.
 
 Useful for tasks that are divided in multiple subtasks:
 
-    - For implementing the "undo" feature in a text editor, every edition you make
-    is pushed onto a stack. Should you want to undo, the text editor pops and edition 
-    from the stack and reverts it.
+- For implementing the "undo" feature in a text editor, every edition you make is pushed onto a
+stack. Should you want to undo, the text editor pops and edition from the stack and reverts it.
 
-    - Stack region of memory: Used for tracking the return addresses, parameters, and 
-    local variables for subroutines.
+- Stack region of memory: Used for tracking the return addresses, parameters, and local variables
+for subroutines.
 
-    - Tracking tockens when parsing a programming language.
+- Tracking tockens when parsing a programming language.
 
 
 **Stack Implementation - Dynamic Arrays vs Linked Lists:**
