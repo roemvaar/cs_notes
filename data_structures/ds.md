@@ -34,12 +34,14 @@ Operations:
   - pop(): retrieve and remove the item on top of the stack
 
 More "advanced" stacks may provide more operations: to check whether the stack is empty,
-or to get the number of items currently in the stack.
+to get the top element but don't remove it from the stack (top ()), or to get the number 
+of items currently in the stack.
  
 *Use case:* For implementing the "undo" feature in a text editor, every edition you make
 is pushed onto a stack. Should you want to undo, the text editor pops and edition from the
 stack and reverts it.
 
+More on [stacks](./stacks/stacks.md)
 
 * **Queue**
 
