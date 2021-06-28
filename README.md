@@ -6,9 +6,12 @@ This is a list of must-have knowledge.
 
 **Data Structures:**
 
+- Arrays
 - Linked Lists
-- Trees, Tries, & Graphs
-- Stacks & Queues
+- Trees
+- Graphs
+- Stacks
+- Queues
 - Heaps
 - Vectors / ArrayLists
 - Hash Tables
@@ -23,6 +26,7 @@ This is a list of must-have knowledge.
 
 **Concepts:**
 
+- Divide and conquer
 - Bit Manipulation
 - Memory (Stack vs Heap)
 - Recursion
