@@ -61,7 +61,7 @@ From best to worst:
 
 ### Important concepts
 
-- **Drop the constans**
+- **Drop the constants**
 
 - **Drop the non-dominant terms**
 
