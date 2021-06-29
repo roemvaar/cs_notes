@@ -1,6 +1,22 @@
 # Bit Manipulation
 
-Bitwise operations and bit manipulation:
+## Bitwise operators in C/C++
+
+- **& (AND)**: takes two numbers as operands and does AND on every bit of the two numbers. True if both bits are true.
+- **| (OR)**: takes two numbers as operands and does OR on every bit of the two numbers. True if any of the two bits 
+is true.
+- **^ (XOR)**: takes two numbers as operands and does XOR on every bit of the two numbers. True if the two bits are
+differente.
+- **<< (left shift)**: takes two numbers, left shifts the bits of the first operand, the second operand decides the
+numbers of places to shift.
+- **>> (right shift)**: takes two numbers, right shifts the bits of the first operand, the second operand decides the
+number of places to shift.
+- **~ (NOT)**: takes one number and inverts all bits of it.
+
+TODO: Put truth table for each of the bitwise operators
+
+
+## Classic Bit Manipulation Problems
 
 - **Hamming Weight**
 
