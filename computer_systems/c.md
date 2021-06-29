@@ -2,7 +2,7 @@
 
 1. **C data types**
 
-int, float, double
+char, int, float, double
 
 user defined (typedef): structs, unions, enums
 
@@ -16,15 +16,54 @@ board, the pointers typically have a 4 bytes size (32 bits).
 
 3. **Null pointer and void pointer**
 
+void pointer are used as general-purpose pointers. They're good in the case that you don't priorly 
+know what data type to return from a function, such as in malloc. It's important to cast your
+pointer in order for you to be able to use it.
+
+A null pointer is a pointer which points nothing. Some uses of the null pointer are: a) To
+initialize a pointer variable when that pointer variable isn't assigned any valid memory address
+yet. b) To pass a null pointer to a function argument when we don't want to pass any valid memory
+address.
+
 4. **Compilation stages - what happens at each stage?**
 
-- Preprocessor:
+TODO: Add diagram of the compilation process
 
-- Compiler: 
+In order to compile hello.c, the following steps need to be done.
 
-- Assembler:
+- Preprocessor: the preprocessor takes care of commands that begin with #, e.g., #define, #include,
+#pragma, etc.
 
-- Linker
+  - Removes comments
+  - Expands macros
+  - Expands included files
+
+If you included a header file such as #include <stdio.h>, it will look for the stdio.h file and
+copy the header file into the source code file.
+
+The preprocessor also generates macro code and replaces symbolic constants defined using #define
+with their values.
+
+output: hello.i
+
+- Compiler: compiling is the second step. It takes the output of the preprocessor and generates
+assembly language, an intermediate human readable language, specific to the target processor.
+
+output: hello.s
+
+- Assembler: assembly is the third step of compilation. The assembler will convert the assembly
+code into pure binary code or machine code (zeros and ones). This code is also known as object
+code.
+
+output: hello.o
+
+- Linker: Linking is the final step of compilation. The linker merges all the object code from
+multiple modules into a single one. If we are using a function from libraries, linker will link
+our code with that library function code.
+
+In static linking, the linker makes a copy of all used library functions to the executable file.
+In dynamic linking, the code is not copied, it is donde by just placing the name of the library
+in the binary file.
 
 5. **Difference between a switch and an if statement**
 
@@ -93,10 +132,21 @@ The C library is not a single library file. It is composed of four main parts th
 
 The first one, libc, is always linked, in but the others have to be explicitly linked with the -l option.
 
-11. main() arguments
+11. **main() arguments**
 
 When a Linux program written in C runs, it starts at the function main. For these programs, main is declared as
 
 ```int main(int argc, char *argv[])```
 
 where argc is a count of the program arguments and argv is an array of character strings representing the arguments themselves.
+
+12. **Macros vs constants**
+
+Macros are handled by the pre-processor - the pre-processor does text replacement in your source
+file, replacing all occurances of 'A' with the literal 8.
+
+Constants are handled by the compiler. They have the added benefit of type safety.
+
+For the actual compiled code, with any modern compiler, there should be zero performance difference
+between the two.
+
