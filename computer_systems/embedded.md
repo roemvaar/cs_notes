@@ -89,6 +89,8 @@ Direct Memory Acess
 
 Mutex vs Semaphores
 
+https://www.ibm.com/docs/en/i/7.4?topic=techniques-synchronization-among-threads
+
 **Object Oriented Programming in C** - check this link http://vger.kernel.org/lkml/#s15-3
 
 **Toolchains**
