@@ -25,6 +25,9 @@ storing text, booleans and other simple data types in their variables.
 
 * **Stack**
 
+A list with the restriction that insertion and deletion can be performed only from one end,
+called the top.
+
 Used when we have a pile of items, and only work with its top item. The item on top is
 always the pile's most recently inserted one, i.e. LIFO (Last-In, First-Out).
 
@@ -35,7 +38,7 @@ Operations:
 
 More "advanced" stacks may provide more operations: to check whether the stack is empty,
 to get the top element but don't remove it from the stack (top ()), or to get the number 
-of items currently in the stack.
+of items currently in the stack. Operations are performed in constant time O(1).
  
 *Use case:* For implementing the "undo" feature in a text editor, every edition you make
 is pushed onto a stack. Should you want to undo, the text editor pops and edition from the
