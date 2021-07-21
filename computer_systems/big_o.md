@@ -1,14 +1,11 @@
-# Asymptotic Analisis 
+# Time Complexity and Space Complexity
 
-TODO: 
-
-- Read chapter in the beginning of one theory of computation book, so just go read it. 
-
-- https://www.youtube.com/watch?v=V42FBiohc6c&list=PL2_aWCzGMAwI9HK8YPVBjElbLbI3ufctn
-
-- CTCI chapter
+Time (and space) complexity is the measurement of an algorithm speed/runtime (or space usage in case of
+space complexity) as the size of input of the algorithm increases. 
 
 ## Big-O notation
+
+Big O notation is the notation used to describe the time complexity and space complexity of algorithms.
 
 **Algorithm runtime and space complexity analysis**
 
@@ -18,9 +15,14 @@ patterns come up again and again, and the rest you can derive.
 You need to know Big O, it's a MUST in order to understand the running complexity and
 memory footprint of the algorithms that you design and implement.
 
-### Logarithmic
+Variables used in Big O notation denote the sizes of inputs to algorithms. The following examples of
+common complexities and their Big O notations, ordered from fastest to slowest.
 
-**O(log N)**
+![big_o](./img/big_o.png)
+
+### Constant - O(1)
+
+### Logarithmic - O(log(n))
 
 log<sub>2</sub>N = k -> 2<sup>k</sup> = N
 
@@ -30,13 +32,15 @@ be a O(log N) runtime.
 This is the reason why finding an element in a balanced binary search tree is O(log N). With each comparison, we
 go either left or right. Half the nodes are on each side, so we cut the problem space in half each time.
 
-### Linear Runtime 
+### Linear - O(n)
 
-### Polinomial 
+### Log-Linear - O(nlog(n))
 
-### Square
+### Quadratic - O(n<sup>2</sup>)
 
-### Exponential
+### Polinomial - O(n<sup>c</sup>)
+
+### Exponential - O(c<sup>n</sup>)
 
 Recursive calls: O(branches<sup>depth</sup>)
 
@@ -46,20 +50,10 @@ Generally speaking, when you see an algorithm with multiple recursive calls, you
 
 Memoization is a tecnique used to optimize exponential time recursive algorithms.
 
-### Rate of increase for some of the common big O times
+### Factorial - O(n!)
 
-From best to worst:
 
-- O(log x)
-- O(x)
-- O(x log x)
-- O(x<sup>2</sup>)
-- O(2<sup>x</sup>)
-- O(x!)
-
-![big_o](./img/big_o.png)
-
-### Important concepts
+## Important concepts
 
 - **Drop the constants**
 
@@ -97,7 +91,6 @@ for(int a: arrA) {
 
 In this example, we do B chunks of work for each element in A. Therefore, the total
 amount of work is O(A * B).
-
 
 **Sources:**
 
