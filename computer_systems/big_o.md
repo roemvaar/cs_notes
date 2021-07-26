@@ -92,6 +92,9 @@ for(int a: arrA) {
 In this example, we do B chunks of work for each element in A. Therefore, the total
 amount of work is O(A * B).
 
+- **In the context of coding interviews, Big O notation is usually understood to describe**
+**the worst-case complexity of an algorithm**
+
 **Sources:**
 
 - [Big Oh Cheat Sheet](https://www.bigocheatsheet.com/)
