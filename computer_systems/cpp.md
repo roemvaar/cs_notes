@@ -284,3 +284,23 @@ compiler generates a constructor call at the point where the object is declared.
 Similarly, a destructor is guaranteed to be called when an object goes out of
 scope.So a constructor typically contains any initialization that an object needs
 and a destructor does any tidying up needed when an object is no longer needed.
+
+## Templates
+
+A template is a class or a function that we parameterize with a set of types or
+values. We use templates to represent concepts that are best understood as something
+very general from which we can generate specific types and functions by specifying
+arguments.
+
+Templates are powerful features of C++ which allows you to write generic programs.
+
+There are two types of templates, class templates and function templates.
+
+Templates are a compile-time mechanism, so their use incurs no run-time overhead
+compared to hand-crafted code.
+
+Don’t reinvent the wheel; use libraries
+
+## Containers
+
+Check ch. 9 - A C++ Tour

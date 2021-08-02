@@ -1,12 +1,15 @@
-#include "tic_tac_toe.h"
+// Exercise from Udacity Course "C++ for Programmers"
+
+#include <iostream>
+#include "mainFunctions.cpp"
+
+using namespace std;
 
 int main(void)
 {
-	Player playerX;
-	Player playerO;
-	
-	playerX.setName("Roberto");
-	playerO.setName("Alan");
-	
-    return 0;	
+	cout << "Tic Tac Toe Game! Let's play!" << endl;
+
+	playTicTacToe();
+
+	return 0;
 }
