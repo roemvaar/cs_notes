@@ -141,7 +141,12 @@ object) files.
 
 ### Process
 
-Each running program, called a process, has a number of file descriptors associated with it.
+"Everything in Unix that is not a file is a process"
+
+A process is a set of instructions loaded into memory.
+
+Each running program, called a process, has a number of file descriptors associated with it. PID = Numeric Process
+ID used for identification. ```ps``` command reports a snapshot of the current processes.
 
 Under the Standard I/O Library, the equivalent of the low-level file descriptor is called a strem and is implemented
 as a pointer to a structure, a FILE *.
