@@ -1,5 +1,14 @@
 # Linux
 
+## Kernel tasks:
+
+- System initialization: detects hardware resources and boots up the system
+- Process scheduling: determines when processes should run and for how long
+- Memory management: allocates memory on behalf of running processes
+- Security: Constantly verifies filesystem permissions, firewall rules
+- Provides buffers and caches to speed up hardware access
+- Implements standard network protocols and filesystem formats
+
 ## Kernel Initialization
 
 When the power is applied to an embedded Linux system, a complex
