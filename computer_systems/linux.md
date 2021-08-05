@@ -161,6 +161,14 @@ special files that allow higher-level access to driver and kernel information. A
 files to get information and set parameters as long as they are running with the correct access permissions.
 
 ### Inter-Process Communication 
+
+## Signals 
+
+Most fundamental inter-process communication:
+
+- Sent directly to processes, no user interface required
+- Programs associate actions with each signal
+- Signals are specified by name or number when sent (check ```man 7 signal``` for a list of signals names and numbers)
  
 ### Synchronization and messaging mechanisms
  
