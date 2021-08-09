@@ -238,3 +238,11 @@ Drivers examples:
 Device files in /dev are used in the same way; they can be opened, read, written, and closed. For example, the
 same *open* call used to access a regular file is used to access a user terminal, a printer, or a tape drive.
 
+## Frequently asked questions:
+
+- Difference between static and dynamic directories? Is /dev directory static or dynamic? - https://unix.stackexchange.com/questions/97642/what-does-it-mean-when-something-says-that-unix-device-files-are-static
+- Minimum directories needed in rootfs in order for the system be able to boot?
+- Systemv vs systemd
+- Remove a device from /dev
+- What's stored in /etc? Configuration files
+- How to configure USB port to only accept devices from a certain device - id vendor
