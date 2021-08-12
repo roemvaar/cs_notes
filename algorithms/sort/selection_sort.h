@@ -1,4 +1,7 @@
-#ifndef BINARY_SEARCH_H
-#define BINARY_SEARCH_H
+#ifndef SELECTION_SORT_H
+#define SELECTION_SORT_H
 
-#endif /* BINARY_SEARCH_H */
+void selection sort(int* array);
+
+#endif /* SELECTION_SORT_H */
+
