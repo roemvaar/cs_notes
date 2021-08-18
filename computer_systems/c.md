@@ -150,3 +150,22 @@ Constants are handled by the compiler. They have the added benefit of type safet
 For the actual compiled code, with any modern compiler, there should be zero performance difference
 between the two.
 
+### Inline Functions
+
+Both C99 and GNU C support inline functions. An inline functions is, as its name suggests, inserted inline
+into each function call site. 
+
+Developers use inline functions for small time-critical functions.
+
+Making large functions inline, specially those used more than once or that are not exceedingly time critical,
+is frowned upon.
+
+An inline function is declared when the keywords ```static``` and ```inline``` are used as part of the function
+definition. For example:
+
+```c
+    static inline void wolf(unsigned long tail_size);
+```
+
+
+
