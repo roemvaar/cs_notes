@@ -146,13 +146,33 @@ architectures)
 - All kernel modules, spread over the kernel source tree, as .ko (kernel
 object) files.
  
-## Process vs Thread
+## Process Management
+
+Understand the concept (definition) of the process and related concepts as threads. Then discuss how the 
+Linux kernel manage each process (how they are enumerated within the kernel, how are they created, and
+how they die). 
+
+Because running user applications is the reason we have operating systems, the process management is a crucial
+part of any OS kernel, including Linux.
 
 ### Process
 
 "Everything in Unix that is not a file is a process"
 
-A process is a set of instructions loaded into memory.
+A process is one of the fundamental abstractions in Unix operating systems. A process is a program (a set of instructions
+loaded into memory) in the midst (middle) of execution. 
+
+Process are, however, more than just the executing program code (often called the text section in Unix). They also include
+a set of resources such as:
+
+- Open files and pending signals
+- Internal kernel data
+- Processor state
+- A memory address space with one or more memory mappings
+- One or more threads of execution, and
+- A data section containing global variables
+
+Processes, in effect, are the living result of running program code.
 
 Each running program, called a process, has a number of file descriptors associated with it. PID = Numeric Process
 ID used for identification. ```ps``` command reports a snapshot of the current processes.
@@ -162,6 +182,25 @@ as a pointer to a structure, a FILE *.
 
 Three file streams are automatically opened when a program is started. They are stdin, stdout and stderr. These are
 declared in stdio.h and represent the standard input, output and error output.
+
+### Thread
+
+Threads of execution, often shortened to threads, are the objects of activity within the process. Each thread includes
+a unique:
+
+- Program counter
+- Process stack
+- Set of processor registers
+
+The kernel schedules individual threads, not processes.
+
+### Process vs Thread
+
+In traditional Unix systems, each process consists of one thread. In modern systems, multithreaded programs - those that
+consist of more than one thread - are common. 
+
+Linux has a unique implementation of threads: it does not differentiate between threads and
+processes. To Linux, a thread is just a special kind of process.
 
 ### procfs - file system
 
