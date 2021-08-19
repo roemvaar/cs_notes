@@ -210,6 +210,9 @@ files to get information and set parameters as long as they are running with the
 
 ### Inter-Process Communication 
 
+# TO DO: UPDATE PROCESS SECTION USING CH. 3 - how to create one - ch. 3 - Linux Kernels Development
+Another name for a process is a task
+
 ## Signals 
 
 Most fundamental inter-process communication:
