@@ -1,15 +1,13 @@
 # Algorithms
 
+Here is a list of the most important algorithms every good coder should be familiar with.
+
+
+## Sorting
+
 TODO: Must have - Algorithms - Sorting: know how to sort. Don't do bubble-sort. You should
 know the details of at least one nlog(n) sorting algorithm, preferably two (say, quicksort
 and merge sort).
-
-TODO: Must have - Algorithms - Breadth First Search, Depth First Search, Binary Search,
-Merge Sort and Quicksort
-
-Here is a list of the most important algorithms every good coder should be familiar with.
-
-## Sorting
 
 Sorting: know how to sort. Don't do bubble-sort. You should know the details of at least one n*log(n) sorting algorithm, preferably two (say, quicksort and merge sort). Merge sort can be highly useful in situations where quicksort is impractical, so take a look at it. - https://github.com/roemvaar/algos-and-ds/tree/master/algos/sort
 
@@ -34,25 +32,28 @@ sort or bubble sort.
 ### Merge Sort
 
 ```
-    O(nlogn)
+O(n log(n))
 ```
-
 Merge sort can be highly useful in situations where quicksort is impractical.
 
 ### Quicksort
 
 ```
-    O(nlogn)
+O(n log(n))
 ````
 
+
 ## Searching
+
+TODO: Must have - Algorithms - Breadth First Search, Depth First Search, Binary Search,
+Merge Sort and Quicksort
 
 Looking for specific information in memory is a key operation in computing.
 
 ### Linear Search
 
 ```
-    O(n)
+O(n)
 ```
 
 Look at the items one after the other, until you find the one you want, or check all
@@ -61,7 +62,7 @@ items to realize it's not there.
 ### Binary Search
 
 ```
-    O(logn)
+O(log(n))
 ```
 
 The items must be in a sorted array. Each step of binary_search does a constant number
@@ -91,7 +92,17 @@ until you find the one you want. There are two approaches to achieve this:
     new nodes, we go back to the previous node and continue the process.
 
     - **Breadth First Search (BFS)**
-    
+
+
 ## Bitlogic
 
 Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or low level development - learn about endianness
+
+
+## Greedy Algorithms
+
+Greedy algorithms optimize locally, hoping to end up with a global optimum. Greedy algorithms are easy to write and fast to run, so
+thy make good approximation algorithms.
+
+NP-Complete problems have no known fast solution. If you have an NP-Complete problem, your best bet is to use an approximation algorithm.
+
