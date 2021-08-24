@@ -2,6 +2,6 @@
 
 using namespace std;
 
-class MyString {
+class MyArray {
     
 };
