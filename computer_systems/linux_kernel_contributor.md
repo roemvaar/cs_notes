@@ -8,6 +8,24 @@
 
 ## Configure git
 
+### Setting up email client
+
+Use ```git send-email``` for sending patches. In your ```~/.gitconfig``` add the
+following information:
+
+```
+    [sendemail]
+        smtpuser = youremail@gmail.com
+        smtpserver = smtp.googlemail.com
+        smtpencryption = tls
+        smtpserver = 587
+```
+
+Configure app password on gmail https://support.google.com/mail/answer/185833?hl=en-GB.
+
+## Make fixes to sources
+
+### Create commit message
 
 ## Create patch
 
