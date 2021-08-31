@@ -40,6 +40,4 @@ void testLinkedLists(void)
     insertElement(6, 0);
     printLinkedList(pointer_to_head);
     printLinkedListReverse(pointer_to_head);
-
-
-}   
+}
