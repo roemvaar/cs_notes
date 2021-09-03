@@ -33,7 +33,7 @@ void MyString::end() {
  * Both MyString::size and Mystring::length are synonyms and return the same value.
  */
 size_t MyString::length() {
-	return 0;
+    return 0;
 }
 
 /* size() - Return length of string
@@ -45,8 +45,7 @@ size_t MyString::length() {
  * Both MyString::size and Mystring::length are synonyms and return the same value.
  */
 size_t MyString::size() {
-
-	return 0;
+    return 0;
 }
 
 /* max_size() - return maximum size of string
@@ -57,7 +56,8 @@ size_t MyString::size() {
  * it can still fail to allocate storage at any point before that length is reached.
  */
 size_t MyString::max_sixe() {
-	return 0;
+    // https://stackoverflow.com/questions/54536456/why-is-the-value-of-stdstringmax-size-strange
+    return ((UINT_MAX) / sizeof(size_t));
 }
 
 void MyString::clear() {
