@@ -109,8 +109,13 @@ A driver is a bit of code that runs in the kernel to talk to some hardware devic
 the hardware. Most every bit of hardware in your computer has an associated driver.¹ A large
 part of a running kernel is driver code.
 
-A driver may be built statically into the kernel file on disk.³ A driver may also be built
+A driver may be built statically into the kernel file on disk. A driver may also be built
 as a kernel module so that it can be dynamically loaded later. (And then maybe unloaded.)
+
+Each time the device driver is ginven a command, for example "move the read head to sector 42
+of the floppy disk" the device driver has a choice as to how it finds out that the command has
+completed. The device drivers can either poll the device or they can use interrupts. More info on
+[polling and interrupts] (https://tldp.org/LDP/tlk/dd/drivers.html#:~:text=8.1%C2%A0%20Polling%20and%20Interrupts).
 
 There are many different device drivers in the Linux kernel but they all share some common
 attributes:
