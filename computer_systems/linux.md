@@ -114,8 +114,10 @@ as a kernel module so that it can be dynamically loaded later. (And then maybe u
 
 ### Char vs Block Drivers
 
-- Char drivers: Character device drivers normally perform I/O in a byte stream.
-- Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. 
+- Char drivers: Character device drivers normally perform I/O in a byte stream. Non-buffered files
+that allow you to read and write data character by character.
+- Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. Buffered files that allow you to read and write
+only whole blocks of data.
 
 ### Kernel Drivers vs User Space Drivers 
 
