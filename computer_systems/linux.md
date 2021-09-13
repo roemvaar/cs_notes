@@ -112,12 +112,39 @@ part of a running kernel is driver code.
 A driver may be built statically into the kernel file on disk.³ A driver may also be built
 as a kernel module so that it can be dynamically loaded later. (And then maybe unloaded.)
 
-### Char vs Block Drivers
+There are many different device drivers in the Linux kernel but they all share some common
+attributes:
+
+- Kernel code: device drivers are part of the kernel, i.e., if they go wrong they can seriously
+damage the system.
+
+- Kernel interfaces: device drivers must provide a standard interface to the Linux kernel or to
+the subsystem that they are part of.
+
+- Kernel mechanisms and services: drivers make use of standard kernel services such as memory
+allocation, interrupt delivery and wait queues to operate.
+
+- Loadable: Most of the Linux device drivers can be loaded on demand as kernel modules when they're
+needed and unloaded when they are no longer being used. This makes the kernel adaptable and efficient
+with system's resources.
+
+- Configurable: Linux device drivers can be built into the kernel. Which devices are built is
+configurable when the kernel is compiled, i.e., they can be statically linked in the kernel or
+loaded during run-time as modules.
+
+- Dynamic: as the system boots and each device driver is initialized it looks for the hardware device
+that is controling. It does not matter if the device being controlled by a particular device driver
+does not exist. In this case the device driver is simply redundant and causes no harm apart from
+occupying a little of the system's memory.
+
+### Device driver types:
 
 - Char drivers: Character device drivers normally perform I/O in a byte stream. Non-buffered files
 that allow you to read and write data character by character.
 - Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. Buffered files that allow you to read and write
-only whole blocks of data.
+only whole blocks of data. Block devices are accessed via the buffer cache and may be randomly
+accessed, that is to say, any block can be read or written no matter where it is on the device.
+- Network drivers: devices are accessed via the BSD socket interface and other networking subsytems.
 
 ### Kernel Drivers vs User Space Drivers 
 
