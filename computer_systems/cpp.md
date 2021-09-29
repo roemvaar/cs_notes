@@ -304,3 +304,15 @@ Don’t reinvent the wheel; use libraries
 ## Containers
 
 Check ch. 9 - A C++ Tour
+
+## Dynamic Memory Allocation
+
+**keywords: new, delete, malloc, free**
+
+```new``` and ```malloc``` are used for dynamic memory allocation on the heap. The main difference
+is that ```new``` calls the constructor.
+
+```delete``` and ```free``` are used for deleting dynamic memory from the heap. The main difference
+is that ```delete``` calls the destructor.
+
+ 
