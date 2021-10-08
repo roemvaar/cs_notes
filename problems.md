@@ -6,4 +6,5 @@
 - Count and Say
 - Design a stack (linked list vs arrays/vectors)
 - Convert Sorted Array to Binary Search Tree
+- Hamming Distance (and Number of 1 Bits)
  
