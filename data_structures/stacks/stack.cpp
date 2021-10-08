@@ -25,7 +25,7 @@ class Stack {
 
 Stack::push(int data) 
 {
-
+    
 }
 
 Stack::pop()
@@ -50,7 +50,9 @@ int main(void)
     Stack myStack;
     
     for(int i = 1; i <= 10; i++) {
-                
+        myStack.push(1);
+        myStack.push(1);
+        myStack.push(1);
     }
 
     return 0;
