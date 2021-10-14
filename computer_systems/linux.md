@@ -219,6 +219,8 @@ a set of resources such as:
 
 Processes, in effect, are the living result of running program code.
 
+The ```fork()``` system call is used to create a new process.
+
 Each running program, called a process, has a number of file descriptors associated with it. PID = Numeric Process
 ID used for identification. ```ps``` command reports a snapshot of the current processes.
 
