@@ -219,7 +219,9 @@ a set of resources such as:
 
 Processes, in effect, are the living result of running program code.
 
-The ```fork()``` system call is used to create a new process.
+```fork()``` system call used to create a new process.
+```wait()``` system call used by process that stops its execution until one of its childs finish its execution.
+```exec()``` system call used when you want to run a program that is different from the calling program.
 
 Each running program, called a process, has a number of file descriptors associated with it. PID = Numeric Process
 ID used for identification. ```ps``` command reports a snapshot of the current processes.
@@ -326,6 +328,17 @@ Drivers examples:
 
 Device files in /dev are used in the same way; they can be opened, read, written, and closed. For example, the
 same *open* call used to access a regular file is used to access a user terminal, a printer, or a tape drive.
+
+## Shell
+
+**How does the shell work?**
+
+The shell is just a user program. It shows you a prompt and then waits for you to type something into it. You then
+type a command (i.e., the name of an executable program, plus any arguments) into it; in most cases, the shell then
+figures out where in the file system the executable resides, calls to create a new child process to run the command,
+```fork()``` calls some variant of to run the command, and then waits for the ```exec()``` command to complete by
+calling). When the child completes, the ```wait()``` shell returns from and prints out a prompt again, ready for your
+```wait()``` next command.
 
 ## Frequently asked questions:
 
