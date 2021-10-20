@@ -5,6 +5,10 @@
 
 #include <stdio.h>
 
+void merge_sort(int* array)
+{
+   return;
+}
 
 int main(void)
 {
