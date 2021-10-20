@@ -15,6 +15,16 @@ number of places to shift.
 
 TODO: Put truth table for each of the bitwise operators
 
+## Bitwise Operators Hacks
+
+1. Right shift (>>) operator is equivalent to division by 2
+2. Left shift (<<) operator is equivalent to multiplication by 2
+3. Use bitwise AND (&) operator to check even or odd number
+4. Store multiple flags in single variable - use bit masking to store multiple flags values in single variable
+5. Quickly find 1s and 2s complement of a number - 1 complemente (~), get 2 complement by adding 1 to 1 complement
+6. Conditional assignment using XOR (^)
+7. Find maximum or minimum without if...else
+8. Swap to numbers without third variable using XOR(^)
 
 ## Classic Bit Manipulation Problems
 
@@ -38,4 +48,5 @@ Better approach - [Brian Kernighan's Algorithm](https://github.com/alanrubik/Cha
 ```
 
 - **Reverse Bits**
+
  
