@@ -5,43 +5,31 @@
 #include "linked_lists.h"
 
 
-static IntElement * createNewElement()
+static IntElement *createNewElement()
 {
-    IntElement * newElement; 
+    IntElement *newElement; 
     newElement = (IntElement *)malloc(sizeof(IntElement));
-    
     newElement->next = NULL;
 
     return &newElement;
 }
 
 
-void traverseList(IntElement * pointer_to_head)
+void printListElements(IntElement *head)
 {
-    IntElement * iterator;
+    IntElement *elem;
+    elem = head;
 
-    iterator = pointer_to_head;
-
-    while(iterator != NULL) {
-        printf("%d ", iterator->data);
-        iterator = iterator->next;
+    while(elem != NULL) {
+        printf("%d ", elem->data);
+        elem = elem->next;
     }
 
     printf("\n");
-
 }
 
 
-void reverseTraverseList(IntElement * pointer_to_head)
-{
-    
-
-    return;
-}
-
-
-//bool deleteElement(IntElement **head, IntElement *deleteMe)
-void deleteElement()
+bool deleteElement(IntElement **head, IntElement *deleteMe)
 {
     IntElement *elem;
 
@@ -49,17 +37,14 @@ void deleteElement()
         return false;
 
     elem = *head;
-    if(deleteMe == *head)   // Special case for head 
-    {
+    if(deleteMe == *head) { // Special case for head 
         *head = elem->next;
         free(deleteMe);
         return true;
     }
 
-    while(elem)
-    {
-        if(elem->next == deleteMe)
-        {
+    while(elem) {
+        if(elem->next == deleteMe) {
             // elem is element preceding deleteMe
             elem->next = deleteMe->next;
             free(deleteMe);
@@ -67,12 +52,13 @@ void deleteElement()
         }
         elem = elem->next;
     }
+
     // deleteMe not found
     return false;
 }
 
 
-void deleteList(IntElement * pointer_to_head)
+void deleteList(IntElement **head)
 {
     IntElement *deleteMe = *head;
 
@@ -99,7 +85,17 @@ void updateElement(IntElement **head, int position)
 }
 
 
-bool searchByValue(IntElement * pointer_to_head, int target)
+bool isInList(IntElement **head, int target)
 {
-    return 0;
+    IntElement *elem;
+    elem = head;
+    
+    while(elem != NULL) {
+        if(elem->data == target)
+            return true;
+        elem = elem->next;
+    }
+
+    return false;
 }
+ 
