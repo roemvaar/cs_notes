@@ -9,18 +9,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct IntElement
-{
+typedef struct IntElement {
     struct IntElement *next;
     int data;
 } IntElement;
 
-void traverseList(IntElement *pointer_to_head);
-void reverseTraverseList(IntElement *pointer_to_head);
-void deleteList(IntElement *pointer_to_head);
-void insertElement();
-void deleteElement();
+void printListElements(IntElement *head);
+bool deleteElement(IntElement **head, IntElement *deleteMe);
+void deleteList(IntElement **head);
 void updateElement(IntElement **head, int position);
-bool searchByValue(IntElement *pointer_to_head, int target);
+bool isInList(IntElement **head, int target);
 
 #endif  /* LINKED_LISTS_H */
+ 
