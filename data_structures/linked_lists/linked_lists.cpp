@@ -8,10 +8,14 @@ using namespace std;
 
 void mergeLinkedLists(LinkedList list_a, LinkedList list_b);
 
-
+template<class> T
 class Node {
 public:
-    int data;
+    Node(x) {data = x, next = nullptr}
+    Node() {data = 0, next = nullptr}
+    ~Node() {}
+private:
+    T data;
     Node* next;
 };
 
