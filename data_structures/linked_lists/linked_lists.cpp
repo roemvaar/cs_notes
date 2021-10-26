@@ -19,9 +19,14 @@ private:
     Node* next;
 };
 
-class LinkedList {
 
-};
+void print_list(Node *n)
+{
+    while(n != NULL) {
+        cout << n->data << " ";
+        n = n->next;
+    }
+}
 
 
 int main()
