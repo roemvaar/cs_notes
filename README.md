@@ -32,6 +32,7 @@ This is a list of must-have knowledge.
 - Recursion
 - Dynamic Programming 
 - Big O Time & Space
+- Systems Design
 
 For each of these topics, make sure you understand how to use and implement them and, where applicable
 the space and time complexity.
