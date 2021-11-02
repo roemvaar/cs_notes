@@ -26,13 +26,14 @@ This is a list of must-have knowledge.
 
 **Concepts:**
 
-- Divide and conquer
-- Bit Manipulation
+- **Bit Manipulation** - must for embedded software
+- **Pointers** 
 - Memory (Stack vs Heap)
-- Recursion
-- Dynamic Programming 
 - Big O Time & Space
 - Systems Design
+- Divide and conquer
+- Recursion
+- Dynamic Programming 
 
 For each of these topics, make sure you understand how to use and implement them and, where applicable
 the space and time complexity.
