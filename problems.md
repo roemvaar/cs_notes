@@ -12,9 +12,15 @@
  
  ## Linked Lists
  
- [] Reverse a linked list
- [] Check if a linked list is acyclic
+ [ ] Reverse a linked list
+ 
+ [ ] Check if a linked list is acyclic
  
  ## Arrays
  
- [] Rotate an image - https://leetcode.com/problems/rotate-image/solution/
+ [ ] Rotate an image - https://leetcode.com/problems/rotate-image/solution/
+ 
+ ## Bit Manipulation
+ 
+ [ ] Hamming distance and number of 1s
+ 
