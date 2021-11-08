@@ -1,6 +1,7 @@
 // Bitwise operations in C
 
 #include <stdio.h>
+#include "bit_manipulation.h"
 
 
 int main(void)
@@ -15,4 +16,3 @@ int main(void)
   
     return 0;
 }
- 

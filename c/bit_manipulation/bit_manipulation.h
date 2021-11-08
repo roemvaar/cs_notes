@@ -1,0 +1,4 @@
+#ifndef BIT_MANIPULATION_H
+#define BIT_MANIPULATION_H
+
+#endif /* BIT_MANIPULATION_H */
