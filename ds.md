@@ -263,14 +263,24 @@ Operations:
 
 * **Hash Table**
 
+A hash table is dynamic set that is an effective data structure for implementing
+dictionaries. 
+
+Altough searching for an element in a hash table can take as long as O(n), in practice,
+hashing performs extremely well. Under reasonable assumptions, the average time to search
+for an element in a hash table is O(1).
+
 How can we find things quickly in an unsorted array? with a hash table.
 
-Hashtables are arguably the single most important data structure known to mankind. You absolutely have to know how they work. Again, it's like one chapter in one data structures book, so just go read about them. You should be able to implement one using only arrays in your favorite language, in about the space of one interview. - 1) Implement it in C from scratch - https://github.com/jamesroutley/write-a-hash-table 2) Solve leetcode problems using Python at least 3- https://github.com/roemvaar/algos-and-ds/blob/master/ds/hash_table.c
-
 Operations:
+
+  - Insert
+  - Search - O(1)
+  - Delete
 
 ### References
 
 - Computer Science Distilled
 - Leetcode
 - Programming Interviews Exposed
+- Introduction to Algorithms | CLRS
