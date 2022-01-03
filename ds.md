@@ -167,7 +167,16 @@ Operations:
 
 In C, if an array is not defined, i.e. if you don't put anything inside, the array elements could
 contain completely random data. The array capacity must be decided when the array is created. The
-capacity cannot be changed later.
+capacity cannot be changed later
+
+* **Strings**
+
+Strings are used for storing text. A string variable contains a collection of characters surrounded by
+double quotes.
+
+Immutability
+
+Operations:
 
 * **Linked List**
 
