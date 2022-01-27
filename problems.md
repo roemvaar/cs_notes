@@ -5,7 +5,7 @@
  ## Linked Lists
  
 - Reverse a linked list
-- Check if a linked list is acyclic
+- Check if a linked list is acyclic - slow and fast pointers
 - Linked List Flattening/Unflattening
  
  ## Arrays
@@ -17,7 +17,7 @@
 
 ## Strings
 
-- Camel Case 4
+- Camel Case 4 - HackerRank
 
  ## Bit Manipulation
 
