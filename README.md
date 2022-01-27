@@ -33,7 +33,13 @@ This is a list of must-have knowledge.
 - Systems Design
 - Divide and conquer
 - Recursion
-- Dynamic Programming 
+- Dynamic Programming
+
+## List of Curated Problems
+
+This is a curated list of problems that are nice to review before and interview.
+
+[Problem Set](./problems.md)
 
 For each of these topics, make sure you understand how to use and implement them and, where applicable
 the space and time complexity.
