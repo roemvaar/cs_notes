@@ -248,6 +248,8 @@ Operations:
 
 The height of a tree equals the height of its tallest subtree plus one.
 
+Tree Traversals (Inorder, Preorder and Postorder)
+
 * **Binary Search Tree**
 
 Binary Search Tree is a node-based binary tree data structure which has the following properties:
