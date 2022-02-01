@@ -192,11 +192,6 @@ the address of the next node.
 The first node of a linked list is called the head, and the last node is called the tail. The
 list starts traversing from the head, while the tails ends the list pointing at NULL. 
 
-![linked_list](./img/linked_list.png)
-
-The linked list is a simple data structure, which is the basis for a surprising number of
-problem solutions regarding the handling of dynamic data.
-
 In C, simplest singly linked list element:
 
 ```c
@@ -241,6 +236,8 @@ Operations:
   - Searching: to search an element by value
   - Updating: to update a node
 
+The linked list is a simple data structure, which is the basis for a surprising number of
+problem solutions regarding the handling of dynamic data.
 
 * **Tree**
 
@@ -248,13 +245,37 @@ Operations:
 
 The height of a tree equals the height of its tallest subtree plus one.
 
-Tree Traversals (Inorder, Preorder and Postorder)
+Types:
+  
+  - Binary Trees
+  - Binary Search Trees
+  - Heaps
+
+Operations:
+  
+  - Common Searches - Breadth-First Search, Depth-First Search
+  - Traversals (just like a search, except that instead of stopping when you find a particular target node, you visit every node in the tree) - Preorder, Inorder, Postorder
+
+**Breadth-First Search (BFS):** In BFS you start with the root, move left to right accross the second level, then move left to right accross the third level, and
+so forth. You continue the search until either you have examined all the nodes or you find the node you are searching for.
+
+**Depth-First Search (DFS):** A DFS follows one branch of the tree down as many levels as possible until the target node is found or the end is reached. When the search can't
+go down any farther, it is continued at the nearest ancestor with unexplored children.
+
+**Traversal - Preorder:** Performs the operation first on the node itself, then on its left descendants, and finally on its right descendants. In other words,
+a node is always operated on before any of its descendants.
+
+**Traversal - Inorder:** Performs the operation first on the node's left descendants, then on the node itself, and finally on its right descendants. In other words,
+the left subtree is operated on first, then the node itself, and then the node's right subtree.
+
+**Traversal - Postorder:** Performs the operation first on the node's left descendants, then on the node's right descendants, and finally on the node itself. In other
+words, a node is always operated on after all its descendants.
+
+Many tree operations can be implemented recursively. The recursive implementation may not be the most efficient, but it's often the best place to start.
 
 * **Binary Search Tree**
 
 Binary Search Tree is a node-based binary tree data structure which has the following properties:
-
-![bst](./img/bst.png)
 
 - The left subtree of a node contains only nodes with keys lesser than the node's key
 - The right subtree of a node contains only nodes with keys greater than the node's key
