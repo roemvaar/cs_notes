@@ -94,9 +94,17 @@ until you find the one you want. There are two approaches to achieve this:
     - **Breadth First Search (BFS)**
 
 
-## Bitlogic
+## Bitlogic / Bit Manipulation
 
-Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or low level development - learn about endianness
+For embedded software engineers, it's possibly the most important topic for interviews. 
+
+TODO:
+
+1) Solve all the easy and medium problems from Leetcode + at least 10 hard problems - https://leetcode.com/tag/bit-manipulation/
+2) https://leetcode.com/problems/sum-of-two-integers/discuss/84278/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+
+Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or 
+low level development - learn about endianness
 
 
 ## Greedy Algorithms
@@ -106,3 +114,27 @@ thy make good approximation algorithms.
 
 NP-Complete problems have no known fast solution. If you have an NP-Complete problem, your best bet is to use an approximation algorithm.
 
+
+## Recursion
+
+
+## Dynamic Programming
+
+Dynamic programming is about to always remember answers to the sub-problems you've already solved. We need to break up a problem
+into a series of overlapping sub-problems, and build up solutions to larger and larger sub-problems. If you are given a problem,
+which can be broken down into smaller sub-problems, and these smaller sub-problems can still be broken into smaller ones - and if
+you manage to find out that there are some over-lapping sub-problems, then you've encountered a DP problem.
+
+Some famous Dynamic Programming algorithms are:
+    
+    - Unix diff for comparing two files
+    - Bellman-Ford for shortest path routing in networks
+
+The core idea of Dynamic Programming is to avoid repeated work by remembering partial results and this concept finds its
+application in a lot of real life situations.
+
+The intuition behind dynamic programming is that we trade space for time, i.e. to say that instead of calculating all the
+states taking a lot of time but no space, we take up space to store the results of all the sub-problems to save time later.
+
+**Memoization** is a term describing an optimization technique where you cache previously computed results, and return the
+cached result when the same computation is needed again.
