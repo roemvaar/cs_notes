@@ -28,3 +28,22 @@ where it appears has returned.
 Explained really well using [linked lists](https://www.youtube.com/watch?v=VOQNf1VxU3Q).
 
 Info: https://stackoverflow.com/questions/14588767/where-in-memory-are-my-variables-stored-in-c
+
+## MMU (Memory Management Unit)
+
+Their purpose is to enable an operating system to exercise a high degree of management and control over its address space
+and the address space it allocates to processes.
+
+In traditional embedded systems, the OS and all the tasks had equal access rights to all resources in the system which lead
+to problems where a bug in a process could wipe out memory contents anywhere in the system.
+
+Legacy embedded operating systems view and manage system memory as a single large, flat address space. That is, a
+microprocessor's address space exists from 0 to the top of it's physical address range.
+  
+  - Access rights 
+  - Memory translation
+
+Advantages of using Linux on embedded systems:
+
+You have both the security of a protected address space that a virtual memory-based system gives you and the power and
+flexibility of a multiuser, multiprocessor system.
