@@ -243,6 +243,8 @@ problem solutions regarding the handling of dynamic data.
 
 (especially Binary Trees and Binary Search Trees) - basic tree construction (from a given array), traversal and manipulation algorithms. You should be familiar with binary trees, n-ary trees, and trie-trees at the very very least. Be familiar with at least one flavor of balanced binary tree, whether it's a red/black tree, a splay tree or an AVL tree. You should actually know how it's implemented. You should know about tree traversal algorithms: BFS and DFS, and know the difference between inorder, postorder and preorder.
 
+In order to solve tree related problems, it's important to deeply understand queues and recursion
+
 The height of a tree equals the height of its tallest subtree plus one.
 
 Types:
