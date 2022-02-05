@@ -83,6 +83,12 @@ Examples: FreeRTOS, QNX, VxWorks
 
 Direct Memory Acess
 
+**Timers**
+
+Time Based - Hardware timers are key components of most micro-controllers. In addition to being used to measure
+the passage of time - for examples, providing an alarm at regular intervals - timers are used to both generate and
+decode complex pulse train. A common use is the generation of a pulse width modulated signal for motor speed control.
+
 **What is a watchdog timer?**
 
 **Synchronization techqniques**
@@ -119,10 +125,21 @@ How to read and understand schematics?
 
 **Hardware Debugging tools, Oscilloscope, Multimeter, Logic Analyzer, JTAG**
 
-**Software Debugging Tools: GDB**
+**Debugging**
+
+[Debugging](./debugging.md)
 
 **Communication Interfaces/Devices**
 
-**Embedded peripherals: I2C, MDIO, GPIO, ADC, DAC, MII, USB**
+**Embedded peripherals / Interfaces:**
 
-**External Communication Interfaces/Devices: CAN, LIN, Ethernet, Wi-Fi, Bluetooth, Modem, GPS, GMSL2**
+    - I2C - synchronous serial interface
+    - GPIO
+    - Analog - ADC, DAC
+    - USB
+    - SPI - synchronous serial interface - (complex) color LCD display, 
+      SD flash memory card, (simple) EEPROM)
+
+**External Communication Interfaces/Devices:**
+
+CAN, LIN, Ethernet, Wi-Fi, Bluetooth, Modem, GPS, GMSL2, USART, UART
