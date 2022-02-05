@@ -109,6 +109,7 @@ NP-Complete problems have no known fast solution. If you have an NP-Complete pro
 
 ## Recursion
 
+[Recursion](./computer_systems/recursion.md)
 
 ## Dynamic Programming
 
