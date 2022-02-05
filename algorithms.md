@@ -96,15 +96,7 @@ until you find the one you want. There are two approaches to achieve this:
 
 ## Bitlogic / Bit Manipulation
 
-For embedded software engineers, it's possibly the most important topic for interviews. 
-
-TODO:
-
-1) Solve all the easy and medium problems from Leetcode + at least 10 hard problems - https://leetcode.com/tag/bit-manipulation/
-2) https://leetcode.com/problems/sum-of-two-integers/discuss/84278/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
-
-Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or 
-low level development - learn about endianness
+[Bit Manipulation](./computer_systems/bit_manipulation.md)
 
 
 ## Greedy Algorithms
