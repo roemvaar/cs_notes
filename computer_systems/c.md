@@ -2,9 +2,13 @@
 
 1. **C data types**
 
-char, int, float, double
+char, short, int, float, double
 
 user defined (typedef): structs, unions, enums
+
+C - Fixed-width integers types: C99 adds built-in fixed width integers - int8_t, uint8_t, int16_t, int32_t, int64_t, etc.
+
+In order to use these fixed-width integers, you need to: ```#include <stdint.h>```.
 
 2. **What's a pointer? What's its size?**
 
@@ -166,6 +170,4 @@ definition. For example:
 ```c
     static inline void wolf(unsigned long tail_size);
 ```
-
-
-
+ 
