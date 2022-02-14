@@ -2,7 +2,7 @@
 
 ### Baseline of knowledge - Core Data Structures, Algorithms, and Concepts
 
-This is a list of must-have knowledge.
+This is a list of must-have knowledge (master the bold ones).
 
 **Data Structures:**
 
@@ -12,22 +12,26 @@ This is a list of must-have knowledge.
 - Graphs
 - Stacks
 - Queues
-- Heaps
-- Vectors / ArrayLists
+- Heaps (Binary Heaps/Trees - mins or max heaps - logarithmic)
+- Dynamic Arrays - Vectors / ArrayLists
 - Hash Tables
 
 **Algorithms:**
 
-- Breadth-First Search
-- Depth-First Search
-- Binary Search
-- Merge Sort
-- Quick Sort
+- **Graph Traversal - Breadth-First Search**
+- **Graph Traversal - Depth-First Search**
+- **Binary Search**
+- **Reverse a Linked List**
+- Inverting a Binary Tree
+- **Sorting - Merge Sort** - Run - n*log(n)
+- **Sorting - Quick Sort** - Run - n*log(n)
+- Sliding Window Technique - two pointers
 
 **Concepts:**
 
 - **Bit Manipulation** - must for embedded software
-- **Pointers** 
+- **Pointers**
+- **Logarithms**
 - Memory (Stack vs Heap)
 - Big O Time & Space
 - Systems Design
