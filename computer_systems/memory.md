@@ -62,3 +62,8 @@ Advantages of using Linux on embedded systems:
 
 You have both the security of a protected address space that a virtual memory-based system gives you and the power and
 flexibility of a multiuser, multiprocessor system.
+
+## Virtual Memory Architecture
+
+## Paging
+ 
