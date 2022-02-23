@@ -1,5 +1,12 @@
 # Algorithms and Data Structures
 
+Algorithms and data structures implementations from scratch
+
+This project is only used as a personal effort to understand deeply how algorithms
+and data structures are implemented and how they work. By no means this project or
+should be treated as a professional/reliable implementation of the proposed algorithms
+and data structures.
+
 ### Baseline of knowledge - Core Data Structures, Algorithms, and Concepts
 
 This is a list of must-have knowledge (master the bold ones).
