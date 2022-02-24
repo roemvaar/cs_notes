@@ -20,7 +20,8 @@ This is a list of must-have knowledge (master the bold ones).
 - Stacks
 - Queues
 - Heaps (Binary Heaps/Trees - mins or max heaps - logarithmic)
-- Dynamic Arrays - Vectors / ArrayLists
+- Dynamic Arrays - Vectors / ArrayLists - a vector is implemented with an array. When the array hits capacity, the vector
+  will create a new array with double the capacity and copy all the elements over to the new array.
 - Hash Tables
 
 **Algorithms:**
