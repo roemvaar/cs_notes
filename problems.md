@@ -22,7 +22,8 @@
  ## Bit Manipulation
 
 - Hamming Distance (and Number of 1 Bits)
-- Operations using shifts - e.g. power of 2 - left shift
+- Operations using shifts - e.g. power of 2 - left shift+
+- isPowerOfTwo / isPowerOfFour
  
  ## Trees
 
