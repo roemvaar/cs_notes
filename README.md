@@ -9,16 +9,14 @@ and data structures.
 
 ### Baseline of knowledge - Core Data Structures, Algorithms, and Concepts
 
-This is a list of must-have knowledge (master the bold ones).
+This is a list of must-have knowledge 
 
 **Data Structures:**
 
-- Arrays
-- Linked Lists
-- Trees
-- Graphs
-- Stacks
-- Queues
+- Arrays - master pointers in C
+- Linked Lists - reverse a linked list, cycles
+- Trees, Tries, Graphs
+- Stacks & Queues
 - Heaps (Binary Heaps/Trees - mins or max heaps - logarithmic)
 - Dynamic Arrays - Vectors / ArrayLists - a vector is implemented with an array. When the array hits capacity, the vector
   will create a new array with double the capacity and copy all the elements over to the new array.
@@ -26,24 +24,18 @@ This is a list of must-have knowledge (master the bold ones).
 
 **Algorithms:**
 
-- **Graph Traversal - Breadth-First Search**
-- **Graph Traversal - Depth-First Search**
-- **Binary Search**
-- **Reverse a Linked List**
-- Inverting a Binary Tree
-- **Sorting - Merge Sort** - Run - n*log(n)
-- **Sorting - Quick Sort** - Run - n*log(n)
-- Sliding Window Technique - two pointers
+- Graph Traversal - Breadth-First Search
+- Graph Traversal - Depth-First Search
+- Binary Search
+- Sorting - Merge Sort - Run - n*log(n)
+- Sorting - Quick Sort - Run - n*log(n)
 
 **Concepts:**
 
 - **Bit Manipulation** - must for embedded software
-- **Pointers**
-- **Logarithms**
 - Memory (Stack vs Heap)
 - Big O Time & Space
 - Systems Design
-- Divide and conquer
 - Recursion
 - Dynamic Programming
 
