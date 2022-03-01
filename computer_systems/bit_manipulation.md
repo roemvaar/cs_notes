@@ -36,6 +36,8 @@ TODO: Put truth table for each of the bitwise operators
 7. Find maximum or minimum without if...else
 8. Swap to numbers without third variable using XOR(^)
 
+More cool tricks: https://en.wikipedia.org/wiki/Bit_array#:~:text=little%2Dendian%20machines).-,Basic%20operations,-%5Bedit%5D
+
 ## Classic Bit Manipulation Problems
 
 - **Hamming Weight**
