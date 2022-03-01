@@ -26,7 +26,7 @@ This is a list of must-have knowledge
 
 - Graph Traversal - Breadth-First Search
 - Graph Traversal - Depth-First Search
-- Binary Search
+- Binary Search - mid = low + (high - low) / 2; - to avoid overflow
 - Sorting - Merge Sort - Run - n*log(n)
 - Sorting - Quick Sort - Run - n*log(n)
 
