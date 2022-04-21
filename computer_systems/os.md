@@ -1,15 +1,25 @@
 # Operating Systems
 
-Learn about:
+TODO: OS definition
 
-- Processes, threads and concurrency issues - race conditions
-- Resources a process and a thread needs. 
-- How context switch works - how it's initiated by the OS and underlying hardware - in ARM, x86 and RISC-V.
-- IPC
-- Locks, mutexes, semaphores and monitors - how they work.
-- Deadlock and livelock - how to avoid them.
-- Scheduling
-- Multicore - Understand the fundamentals of concurrency constructs.
+Main concepts:
+
+1. **Virtualization**
+2. **Concurrency**
+3. **Persistence**
+
+- **Processes and Threads:** resources a process and a thread needs
+- **Process Scheduling:**
+- **Synchronization Mechanisms:** mutex/spinlock/semaphore/monitor
+- **Memory Management:** virtual memory/paging/translation
+- **Concurrency Issues** race conditions, deadlock and livelock and how to avoid them
+- **Producer and Consumer Problem:**
+- **Caching:** cache coherency/cache line
+- **Memory mapped IO/ IO Mapped IO**
+- **How context switch works** - how it's initiated by the OS and underlying hardware - in ARM, x86 and RISC-V
+- **IPC - Inter Process Communications**
+- **Multicore** - Understand the fundamentals of concurrency constructs
+
  
  ## Virtualization
  
