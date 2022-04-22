@@ -29,7 +29,8 @@ Operating Systems can be divided in three logical topics in order to be studied:
 
 ## Virtualization
 
-Virtualization of the CPU and memory.
+Virtualization of the CPU and memory. Turning a single CPU (or small set of them) into a seemingly infinite number of
+CPUs and thus allowing many programs to seemingly run at once is what we call **virtualizing the CPU**.
 
 ```
 "Let us take the most basic of resources, the CPU. Assume there is one physical CPU in a system (though now there are 
