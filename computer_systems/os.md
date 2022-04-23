@@ -46,6 +46,10 @@ is quite simple: it is a running program. The program itself is a lifeless thing
 instructions (and maybe some static data), waiting to spring into action. It is the operating system that takes these bytes and
 gets them running, transforming the program into something useful.
 
+Each process accesses its own private **virtual address space** or address space for short, which the OS somehow maps onto the
+physical memory of the machine. That's why two running programs may be using the "same" address, e.g., 0x20000, but they're
+completely different spaces in the actual physical memory.
+
 
 ## Concurrency
 
