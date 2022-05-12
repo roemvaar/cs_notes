@@ -321,3 +321,5 @@ calling). When the child completes, the ```wait()``` shell returns from and prin
 - Remove a device from /dev
 - What's stored in /etc? Configuration files
 - How to configure USB port to only accept devices from a certain device - id vendor
+- Why you should not use floating point numbers in kernel code? Because your code might need to run on lower-end processors
+  without a floating-point unit. In case that you need to use floating point numbers, you shall do these operations on user space.
