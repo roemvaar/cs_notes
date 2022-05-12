@@ -1,5 +1,12 @@
 # Linux
 
+## Linux Kernel Main Roles:
+
+- **Manage all the hardware resources**: CPU, memory, I/O
+- Provide a **set of portable, architecture and hardware independent APIs** to allow user
+  space applications and libraries to use the hardware resources.
+- **Handle concurrent accesses and usage** of hardware resources from different applications
+
 ## Kernel tasks:
 
 - System initialization: detects hardware resources and boots up the system
