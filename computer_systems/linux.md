@@ -290,6 +290,9 @@ Semaphores, queues, pipes, etc.
 
 ## Application Binary Interface
 
+[No stable Linux internal API](https://www.kernel.org/doc/html/latest/process/stable-api-nonsense.html). The internal kernel API to implement kernel code
+can undergo changes between two releases.  In-tree drivers are updated by the developer proposing the API change: works great for mainline code.
+
 The calling convention used for passing parameters between function calls. 
 
 For ARM exist the Extended ABI (EABI) and the Extended ABI Hard-Float (EABIHF) which
