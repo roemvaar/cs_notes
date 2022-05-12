@@ -88,6 +88,20 @@ Main options of C libraries:
   - uClibc-ng: microcontroller C library
   - eglibc: obsolete, not longer maintained - DON'T USE IT
 
+## Pseudo Filesystems
+
+Linux makes system and kernel information available in user space through **pseudo filesystems**, sometimes
+also called virtual filesystems.
+
+Pseudo filesystems allow applications to see directories and files that do not exist on any real storage: they
+are created and updated on the fly by the kernel.
+
+The two most important pseudo filesystems are:
+
+- ``proc``, usually mounted on ``/proc``: Operating system related information (process, memory management paramenter...)
+- ``sysfs``, usually mounted on ``/sys``: Representation of the system as a tree of devices connected by buses.
+  Information gathered by the kernel frameworks managing these devices.
+
 ## Drivers
 
 A driver is a bit of code that runs in the kernel to talk to some hardware device. It "drives"
