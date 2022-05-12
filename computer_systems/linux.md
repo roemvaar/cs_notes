@@ -288,6 +288,24 @@ The calling convention used for passing parameters between function calls.
 For ARM exist the Extended ABI (EABI) and the Extended ABI Hard-Float (EABIHF) which
 useas floating point registers. They are incompatible between each other.
 
+## Useful commands
+
+* find
+* grep
+
+You use find to search your system for files, but you use grep to search files for strings.
+
+## System Calls
+
+The main interface between the kernel and user space is the set of system calls.
+
+You can access and control files and devices using a small number of functions. These functions, known
+as *system calls*, are provided by UNIX (and Linux) directly, and are the interface to the operating
+system itself. About 400 system calls that provide the main kernel services.
+
+This system call interface is wrapped by the C library, and user space applications usually never
+make a system call directly but rather use the corresponding C library function.
+
 ## C Library
 
 The programming interface to the Unix operating system is defined in the C language,
@@ -308,18 +326,7 @@ Main options of C libraries:
   - uClibc-ng: microcontroller C library
   - eglibc: obsolete, not longer maintained - DON'T USE IT
 
-## Useful commands
-
-* find
-* grep
-
-You use find to search your system for files, but you use grep to search files for strings.
-
-## System Calls and Device Drivers
-
-You can access and control files and devices using a small number of functions. These functions, known
-as *system calls*, are provided by UNIX (and Linux) directly, and are the interface to the operating
-system itself.
+## Device Drivers
 
 At the hard of the operating system, the kernel, are a number of *device drivers*. These are a collection
 of low-level interfaces for controlling system hardware. To provide a similar interface, device drivers
@@ -334,7 +341,7 @@ Drivers examples:
   any desired disk block directly, because the disk is a random access device.
 
 Device files in /dev are used in the same way; they can be opened, read, written, and closed. For example, the
-same *open* call used to access a regular file is used to access a user terminal, a printer, or a tape drive.
+same *open* call used to access a regular file is used to access a user terminal, a printer, or a tape drive. 
 
 ## Shell
 
