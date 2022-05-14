@@ -1,0 +1,28 @@
+[user]
+    email = valenzuelarober@gmail.com
+    name = Roberto Valenzuela
+[color]
+    ui = true
+[push]
+    default = simple
+[grep]
+    lineNumber = true
+[core]
+    editor = vim
+[format]
+    signoff = true
+[sendemail]
+    confirm = auto
+    smtpServer = smtp.gmail.com
+    smtpServerPort = 587
+    smtpEncryption = tls
+    smtpUser = valenzuelarober@gmail.com
+[credential]
+    helper = store
+[safe]
+	directory = /home/roemvaar/linux_work/linux_mainline/
+	directory = /home/roemvaar/linux_work/linux_mainline
+	directory = /home/roemvaar/linux_work/linux_kselftest
+	directory = /home/roemvaar/linux_work/linux_stable
+[includeIf "gitdir:~/UWaterloo/"]
+    path = ~/UWaterloo/gitconfig-UWaterloo
