@@ -258,6 +258,10 @@ Operations:
   - Common Searches - Breadth-First Search, Depth-First Search
   - Traversals (just like a search, except that instead of stopping when you find a particular target node, you visit every node in the tree) - Preorder, Inorder, Postorder
 
+Usage:
+  
+  - Git trees - to keep track of commits, trees and blobs
+
 **Breadth-First Search (BFS):** In BFS you start with the root, move left to right accross the second level, then move left to right accross the third level, and
 so forth. You continue the search until either you have examined all the nodes or you find the node you are searching for.
 
