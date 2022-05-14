@@ -2,13 +2,21 @@
     email = valenzuelarober@gmail.com
     name = Roberto Valenzuela
 [color]
-    ui = true
+    ui = auto
 [push]
     default = simple
 [grep]
     lineNumber = true
 [core]
     editor = vim
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [format]
     signoff = true
 [sendemail]
@@ -20,9 +28,8 @@
 [credential]
     helper = store
 [safe]
-	directory = /home/roemvaar/linux_work/linux_mainline/
-	directory = /home/roemvaar/linux_work/linux_mainline
-	directory = /home/roemvaar/linux_work/linux_kselftest
-	directory = /home/roemvaar/linux_work/linux_stable
+    directory = /home/roemvaar/linux_work/linux_mainline
+    directory = /home/roemvaar/linux_work/linux_kselftest
+    directory = /home/roemvaar/linux_work/linux_stable
 [includeIf "gitdir:~/UWaterloo/"]
     path = ~/UWaterloo/gitconfig-UWaterloo

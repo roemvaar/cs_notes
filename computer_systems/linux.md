@@ -290,7 +290,7 @@ Semaphores, queues, pipes, etc.
 
 ## Application Binary Interface (in kernel interfaces)
 
-It's important to distinguish between the ``kernel to user-space API (interfaces)`` and the ``in kernel interfaces``. 
+It's important to distinguish between the ``kernel to user-space API (interfaces)`` and the ``in kernel interfaces``.
 
 [No stable Linux internal API](https://www.kernel.org/doc/html/latest/process/stable-api-nonsense.html). The internal kernel API to implement kernel code
 can undergo changes between two releases. In-tree drivers are updated by the developer proposing the API change: works great for mainline code.
