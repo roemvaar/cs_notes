@@ -49,3 +49,6 @@ For each of these topics, make sure you understand how to use and implement them
 the space and time complexity.
 
 Practice implementing from scratch each of the data structures and algorithms from this list.
+
+Testing with merge conflicts feature.
+
