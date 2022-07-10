@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "strings/myString.h"
+#include "Strings.h"
 
 
 int testMyStrings(void)
