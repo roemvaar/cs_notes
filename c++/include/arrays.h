@@ -24,27 +24,32 @@
 #include <iostream>
 
 /* TODO:
- * 1. Implement operations using ints
- * 2. Add templates to support different data types
+ * - configure cmake to autocompile
+ * - write unit test using gtest
+ * - make members private 
+ * - Implement operations using ints
+ * - Add templates to support different data types
+ * - Create namespace algos::
  */
 
 class MyArray 
 {
 public:
-    MyArray(int size) {};
-    MyArray(int size, int value) {};
-    ~MyArray();
+    MyArray(int size);
+    MyArray(int size, int value);
+    ~MyArray() {};
     int len();
     void traverse();
     int get_at(int index);
+    int get_first(int index, int value);
+    int get_last();
     void set_at(int index, int value);
-    void get_first(int index, int value);
-    void get_last();
     void set_first(int value);
     void set_last(int value);
 
 private:
-    const int maxArraySize = 1000;
+    const int capacity = 1000;
+    int lenght;
 };
 
 #endif /* ARRAYS_H */

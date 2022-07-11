@@ -6,7 +6,9 @@
  
 - Reverse a linked list
 - Check if a linked list is acyclic - slow and fast pointers
-- Linked List Flattening/Unflattening
+- Linked List Flattening/Unflattening (multi-level, PIE)
+- Implement the Linked List Push and Pop functions.
+Hint: Take care of pointer to pointer struct. Nodes to be created in memory with dynamic memory allocation.
  
  ## Arrays
  
@@ -25,10 +27,14 @@
 - Operations using shifts - e.g. power of 2 - left shift+
 - isPowerOfTwo / isPowerOfFour
 - isUnique
+- Rotate image - using bit manipulation (1 bit = 1 pixel)
+- Write an algorithm to reverse the bits of an UNSIGNED binary number
+- 
  
  ## Trees
 
 - Convert Sorted Array to Binary Search Tree
+- Invert a binary tree
 
  ## Hash Tables
  
