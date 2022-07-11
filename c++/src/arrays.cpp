@@ -47,3 +47,31 @@ void MyArray::set_at(int index, int value)
 {
     std::cout << "set_at()" << std::endl;
 }
+
+
+// get_first()
+void MyArray::get_first(int index, int value)
+{
+    std::cout << "get_first()" << std::endl;
+}
+
+
+// get_last()
+void MyArray::get_last()
+{
+    std::cout << "get_last()" << std::endl;
+}
+
+
+// set_first(value)
+void MyArray::set_first(int value)
+{
+    std::cout << "set_first()" << std::endl;
+}
+
+
+// set_last(value)
+void MyArray::set_last(int value)
+{
+    std::cout << "set_last()" << std::endl;
+}

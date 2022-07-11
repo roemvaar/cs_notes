@@ -5,12 +5,16 @@
  * 
  * Supported operations:
  *
- * 1. build(size) - create fixed-size array
- * 2. build(size, value) - create fixed-size array, initializes all positions with value
- * 3. len() - returns n
- * 4. traverse() - output all elements of the array from pos 0 to size - 1
- * 5. get_at(idx) - return xi (index i)
- * 6. set_at(idx, value) - adds value at position idx
+ * - build(size) - create fixed-size array
+ * - build(size, value) - create fixed-size array, initializes all positions with value
+ * - len() - returns n
+ * - traverse() - output all elements of the array from pos 0 to size - 1
+ * - get_at(idx) - return xi (index i)
+ * - set_at(idx, value) - adds value at position idx
+ * - get_first()
+ * - get_last()
+ * - set_first(value)
+ * - set_last(value)
  *
  */
 
@@ -34,7 +38,11 @@ public:
     void traverse();
     int get_at(int index);
     void set_at(int index, int value);
-    
+    void get_first(int index, int value);
+    void get_last();
+    void set_first(int value);
+    void set_last(int value);
+
 private:
     const int maxArraySize = 1000;
 };
