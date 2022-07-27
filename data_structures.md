@@ -140,75 +140,10 @@ or if you must ensure no items in the group occurs more than once.
 
 * Arrays
 
-* **Strings**
+* Strings
 
-Strings are used for storing text. A string variable contains a collection of characters surrounded by
-double quotes.
 
-Immutability
-
-Operations:
-
-* **Linked List**
-
-There are two types of linked lists: a singly-linked list and a doubly-linked list.
-
-The singly-linked list contains node that only point to the next node. The doubly-linked list
-has nodes that can point towards both the next and the previous node.
-
-A node has two parts: the data part and the next part (and the previous part in case of a doubly-
-linked list). The data part contains the stored data, and the next (and previous) part provides
-the address of the next node.
-
-The first node of a linked list is called the head, and the last node is called the tail. The
-list starts traversing from the head, while the tails ends the list pointing at NULL. 
-
-In C, simplest singly linked list element:
-
-```c
-    // The simplest linked list element
-    typedef struct Element
-    {
-        struct Element *next;
-        int data;
-    } Element;
-```
-
-In C++, you could define a class for the list element:
-
-```cpp
-    // A singly linked list in C++
-    class IntElement {
-        public:
-            IntElement(int value): next(NULL), data(value) {}
-            ~IntElement() {}
-
-            IntElement *getNext() const {return next;}
-            int value() const {return data;}
-            void setNext(IntElement *elem) {next = elem;}
-            void setValue(int value) {data = value;}
-
-        private:
-            IntElement *next;
-            int data;
-    };
-```
-
-In C++, It usually makes more sense to define a
-[template](https://www.geeksforgeeks.org/templates-cpp/) for the list element.
-
-Operations:
-
-  - Traversal: to traverse all the nodes one after another. Always test
-    for the end of a linked list, i.e. tail or NULL pointer, as you
-    traverse it
-  - Insertion: to add a node at the given position
-  - Deletion: to delete a node at a given position
-  - Searching: to search an element by value
-  - Updating: to update a node
-
-The linked list is a simple data structure, which is the basis for a surprising number of
-problem solutions regarding the handling of dynamic data.
+* Linked List
 
 * **Tree**
 
@@ -236,8 +171,7 @@ Usage:
 **Breadth-First Search (BFS):** In BFS you start with the root, move left to right accross the second level, then move left to right accross the third level, and
 so forth. You continue the search until either you have examined all the nodes or you find the node you are searching for.
 
-**Depth-First Search (DFS):** A DFS follows one branch of the tree down as many levels as possible until the target node is found or the end is reached. When the search can't
-go down any farther, it is continued at the nearest ancestor with unexplored children.
+* Depth-First Search (DFS)
 
 **Traversal - Preorder:** Performs the operation first on the node itself, then on its left descendants, and finally on its right descendants. In other words,
 a node is always operated on before any of its descendants.
@@ -286,6 +220,26 @@ Operations:
   - Insert
   - Search - O(1)
   - Delete
+
+
+## Amortization
+
+Operation takes T(n) amortized time if any k operations take <= k * T(n) time.
+
+(Particular kind of averaging. Averaging over the sequence of
+operations.)
+
+Some individual operations are expensive, but most operations are
+cheap, so you average all operations.
+
+Not as good as constant time, but it's almost as good.
+
+Examples:
+
+* Insert at the end of vector
+* Hash Table look-up
+
+
 
 ### References
 

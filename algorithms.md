@@ -5,11 +5,14 @@ Here is a list of the most important algorithms every good coder should be famil
 
 ## Sorting
 
-TODO: Must have - Algorithms - Sorting: know how to sort. Don't do bubble-sort. You should
+Insertion sort usually runs faster than merge sort for small input sizes, once the input size
+n becomes large enough, merge sort advantages insertion sort because of the lg n [1, p.12].
+
+<!-- TODO: Must have - Algorithms - Sorting: know how to sort. Don't do bubble-sort. You should
 know the details of at least one nlog(n) sorting algorithm, preferably two (say, quicksort
 and merge sort).
 
-Sorting: know how to sort. Don't do bubble-sort. You should know the details of at least one n*log(n) sorting algorithm, preferably two (say, quicksort and merge sort). Merge sort can be highly useful in situations where quicksort is impractical, so take a look at it. - https://github.com/roemvaar/algos-and-ds/tree/master/algos/sort
+Sorting: know how to sort. Don't do bubble-sort. You should know the details of at least one n*log(n) sorting algorithm, preferably two (say, quicksort and merge sort). Merge sort can be highly useful in situations where quicksort is impractical, so take a look at it. - https://github.com/roemvaar/algos-and-ds/tree/master/algos/sort -->
 
 ### Selection Sort
 
@@ -131,3 +134,7 @@ states taking a lot of time but no space, we take up space to store the results 
 
 **Memoization** is a term describing an optimization technique where you cache previously computed results, and return the
 cached result when the same computation is needed again.
+
+## References
+
+[1] CLRS - Introduction to Algorithms 4th Ed.
