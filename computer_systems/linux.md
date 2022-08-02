@@ -9,7 +9,7 @@
 
 ## Kernel tasks:
 
-- System initialization: detects hardware resources and boots up the system
+- System initialization: detects hardware resources and play a a roll on booting the system
 - Process scheduling: determines when processes should run and for how long
 - Memory management: allocates memory on behalf of running processes
 - Security: Constantly verifies filesystem permissions, firewall rules
