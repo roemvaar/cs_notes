@@ -1,16 +1,16 @@
 # C Programming Language
 
-1. **C data types**
+## **C data types**
 
-char, short, int, float, double
+* char, short, int, float, double
 
-user defined (typedef): structs, unions, enums
+* user defined (typedef): structs, unions, enums
 
-C - Fixed-width integers types: C99 adds built-in fixed width integers - int8_t, uint8_t, int16_t, int32_t, int64_t, etc.
+* C - Fixed-width integers types: C99 adds built-in fixed width integers - int8_t, uint8_t, int16_t, int32_t, int64_t, etc.
 
-In order to use these fixed-width integers, you need to: ```#include <stdint.h>```.
+  In order to use these fixed-width integers, you need to: ```#include <stdint.h>```.
 
-2. **What's a pointer? What's its size?**
+## **What's a pointer? What's its size?**
 
 It's a variable that holds the address of another variable. In this way, the variable that the
 pointer variable points to can be modified indirectly. 
@@ -18,29 +18,32 @@ pointer variable points to can be modified indirectly.
 The size is system specific. Typically it has the same size as the processor word, e.g. in an ARM32
 board, the pointers typically have a 4 bytes size (32 bits).
 
-3. **Null pointer and void pointer**
+## **Null pointer and void pointer**
 
 void pointer are used as general-purpose pointers. They're good in the case that you don't priorly 
 know what data type to return from a function, such as in malloc. It's important to cast your
 pointer in order for you to be able to use it.
 
-A null pointer is a pointer which points nothing. Some uses of the null pointer are: a) To
+A null pointer is a pointer which points to nothing. Some uses of the null pointer are: a) To
 initialize a pointer variable when that pointer variable isn't assigned any valid memory address
 yet. b) To pass a null pointer to a function argument when we don't want to pass any valid memory
 address.
 
-4. **Compilation stages - what happens at each stage?**
+## **Compilation stages - what happens at each stage?**
 
-TODO: Add diagram of the compilation process
+<!-- TODO: Add diagram of the compilation process -->
 
-In order to compile hello.c, the following steps need to be done.
+In order to compile hello.c, the following steps need to be taken:
 
-- Preprocessor: the preprocessor takes care of commands that begin with #, e.g., #define, #include,
-#pragma, etc.
+1) Preprocessor: the preprocessor performs one or many of the following
+task on the translation unit (.c file):
 
   - Removes comments
   - Expands macros
   - Expands included files
+
+It basically takes care of all the commands that begin with #, sucha as
+#define, #include, #pragma, etc.
 
 If you included a header file such as #include <stdio.h>, it will look for the stdio.h file and
 copy the header file into the source code file.
@@ -50,18 +53,18 @@ with their values.
 
 output: hello.i
 
-- Compiler: compiling is the second step. It takes the output of the preprocessor and generates
+2) Compiler: compiling is the second step. It takes the output of the preprocessor and generates
 assembly language, an intermediate human readable language, specific to the target processor.
 
 output: hello.s
 
-- Assembler: assembly is the third step of compilation. The assembler will convert the assembly
+3) Assembler: assembly is the third step of compilation. The assembler will convert the assembly
 code into pure binary code or machine code (zeros and ones). This code is also known as object
 code.
 
 output: hello.o
 
-- Linker: Linking is the final step of compilation. The linker merges all the object code from
+4) Linker: Linking is the final step of compilation. The linker merges all the object code from
 multiple modules into a single one. If we are using a function from libraries, linker will link
 our code with that library function code.
 
@@ -69,15 +72,15 @@ In static linking, the linker makes a copy of all used library functions to the 
 In dynamic linking, the code is not copied, it is donde by just placing the name of the library
 in the binary file.
 
-5. **Difference between a switch and an if statement**
+## **Difference between a switch and an if statement**
 
-6. **Common problems - segmentation fault, memory leaks**
+## **Common problems - segmentation fault, memory leaks**
 
-7. **C reserved words - const (in parameters), extern, private, volatile, static (functions, variables), etc. for both variables and functions.**
+## **C reserved words - const (in parameters), extern, private, volatile, static (functions, variables), etc. for both variables and functions.**
 
-8. **Pointers to functions**
+## **Pointers to functions**
 
-9. **Libraries**
+## **Libraries**
 
 Libraries are collections of precompiled functions that have been written to be reusable. Typically,
 they consists of sets of related functions to perform a common task. 
@@ -125,7 +128,7 @@ the standard C runtime library are required.
 
     ``` $ readelf -a myprog | grep "program interpreter" ```
 
-10. **The C Library**
+## The C Library
 
 The C library is not a single library file. It is composed of four main parts that together implement the POSIX API:
 
@@ -136,7 +139,7 @@ The C library is not a single library file. It is composed of four main parts th
 
 The first one, libc, is always linked, in but the others have to be explicitly linked with the -l option.
 
-11. **main() arguments**
+## main() arguments
 
 When a Linux program written in C runs, it starts at the function main. For these programs, main is declared as
 
@@ -144,7 +147,14 @@ When a Linux program written in C runs, it starts at the function main. For thes
 
 where argc is a count of the program arguments and argv is an array of character strings representing the arguments themselves.
 
-12. **Macros vs constants**
+## How to start a C program withouth main() function?
+
+## Macros
+
+A macro is a fragment of code which has been given a name. Whenever
+the name is used, it is replaced by the contents of the macro.
+
+## Using macros vs constants, what's the difference?
 
 Macros are handled by the pre-processor - the pre-processor does text replacement in your source
 file, replacing all occurances of 'A' with the literal 8.
@@ -171,3 +181,7 @@ definition. For example:
     static inline void wolf(unsigned long tail_size);
 ```
  
+## References
+
+[1] The C Programming Language. 2nd Edition by Brian Kernighan and
+Dennis Ritchie
