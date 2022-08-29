@@ -9,16 +9,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct IntElement {
+typedef struct node {
     struct IntElement *next;
     int data;
-} IntElement;
+} node_t;
 
-void printListElements(IntElement *head);
-bool deleteElement(IntElement **head, IntElement *deleteMe);
-void deleteList(IntElement **head);
-void updateElement(IntElement **head, int position);
-bool isInList(IntElement **head, int target);
+void printListElements(node_t *head);
+bool deleteElement(node_t **head, node_t *deleteMe);
+void deleteList(node_t **head);
+void updateElement(node_t **head, int position);
+bool isInList(node_t **head, int target);
 
 #endif  /* LINKED_LISTS_H */
- 

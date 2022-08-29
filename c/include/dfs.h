@@ -1,4 +1,9 @@
-#ifndef BFS_H
-#define BFS_H
+#ifndef DFS_H
+#define DFS_H
 
-#endif /* BFS_H */
+#include <stdlib.h>
+#include "trees.h"
+
+void depth_first_search(node_t *top, int target);
+
+#endif /* DFS_H */

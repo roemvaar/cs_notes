@@ -4,7 +4,6 @@
 
 #include "linked_lists.h"
 
-
 static IntElement *createNewElement()
 {
     IntElement *newElement; 
@@ -13,7 +12,6 @@ static IntElement *createNewElement()
 
     return &newElement;
 }
-
 
 void printListElements(IntElement *head)
 {
@@ -28,7 +26,6 @@ void printListElements(IntElement *head)
     printf("\n");
 }
 
-
 bool deleteElement(IntElement **head, IntElement *deleteMe)
 {
     IntElement *elem;
@@ -37,6 +34,7 @@ bool deleteElement(IntElement **head, IntElement *deleteMe)
         return false;
 
     elem = *head;
+
     if(deleteMe == *head) { // Special case for head 
         *head = elem->next;
         free(deleteMe);
@@ -57,7 +55,6 @@ bool deleteElement(IntElement **head, IntElement *deleteMe)
     return false;
 }
 
-
 void deleteList(IntElement **head)
 {
     IntElement *deleteMe = *head;
@@ -71,7 +68,6 @@ void deleteList(IntElement **head)
 
     *head = NULL;
 }
-
 
 void insertElement()
 {
@@ -98,4 +94,3 @@ bool isInList(IntElement **head, int target)
 
     return false;
 }
- 

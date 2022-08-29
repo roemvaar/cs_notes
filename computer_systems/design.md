@@ -49,7 +49,22 @@ like a JSON file.
 
 * A project is never finished: there will always be changes required and functions to add. It is an incremental approach.
 * Users get to see something working early
-* Start with tracing code - Developers build a structure to work in 
+* Start with tracing code - Developers build a structure to work in
+
+## Nest Allocations [1]
+
+The basic pattern for resource allocation can be extended for
+routines that need more than one resource at a time.
+
+Deallocate resources in the opposite order to that in which you
+allocate them. That way you won’t orphan resources if one resource
+contains references to another.
+
+When allocating the same set of resources in different places in
+your code, always allocate them in the same order. This will reduce
+the possibility of deadlock.
+
+
 
 ## References
 
