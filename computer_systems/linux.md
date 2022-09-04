@@ -102,6 +102,82 @@ The two most important pseudo filesystems are:
 - ``sysfs``, usually mounted on ``/sys``: Representation of the system as a tree of devices connected by buses.
   Information gathered by the kernel frameworks managing these devices.
 
+### procfs - file system
+
+Linux provide a special file system, procfs, that is usually made available as the directory /proc. It contains many
+special files that allow higher-level access to driver and kernel information. Applications can read and write these
+files to get information and set parameters as long as they are running with the correct access permissions.
+
+## Process Management
+
+Understand the concept (definition) of the process and related concepts as threads. Then discuss how the 
+Linux kernel manage each process (how they are enumerated within the kernel, how are they created, and
+how they die). 
+
+Because running user applications is the reason we have operating systems, the process management is a crucial
+part of any OS kernel, including Linux.
+
+### Context
+
+In Linux, each processor is doing exactly one of three things at any given moment:
+
+* In user-space, executing user code in a process
+* In kernel-space, in process context, executing on behalf of a specific process
+* In kernel-space, in interrupt context, not associated with a process, handling an interrupt
+
+![kernel_context](../img/kernel_context.png)
+
+### Process
+
+"Everything in Unix that is not a file is a process"
+
+A process is one of the fundamental abstractions in Unix operating systems. A process is a program (a set of instructions
+loaded into memory) in the midst (middle) of execution. 
+
+Process are, however, more than just the executing program code (often called the text section in Unix). They also include
+a set of resources such as:
+
+- Open files and pending signals
+- Internal kernel data
+- Processor state
+- A memory address space with one or more memory mappings
+- One or more threads of execution, and
+- A data section containing global variables
+
+Processes, in effect, are the living result of running program code.
+
+```fork()``` system call used to create a new process.
+```wait()``` system call used by process that stops its execution until one of its childs finish its execution.
+```exec()``` system call used when you want to run a program that is different from the calling program.
+
+Each running program, called a process, has a number of file descriptors associated with it. PID = Numeric Process
+ID used for identification. ```ps``` command reports a snapshot of the current processes.
+
+Under the Standard I/O Library, the equivalent of the low-level file descriptor is called a strem and is implemented
+as a pointer to a structure, a FILE *.
+
+Three file streams are automatically opened when a program is started. They are stdin, stdout and stderr. These are
+declared in stdio.h and represent the standard input, output and error output.
+
+### Thread
+
+Threads of execution, often shortened to threads, are the objects of activity within the process. Each thread includes
+a unique:
+
+- Program counter
+- Process stack
+- Set of processor registers
+
+The kernel schedules individual threads, not processes.
+
+### Process vs Thread
+
+In traditional Unix systems, each process consists of one thread. In modern systems, multithreaded programs - those that
+consist of more than one thread - are common. 
+
+Linux has a unique implementation of threads: it does not differentiate between threads and
+processes. To Linux, a thread is just a special kind of process.
+
 ## Drivers
 
 A driver is a bit of code that runs in the kernel to talk to some hardware device. It "drives"
@@ -205,71 +281,6 @@ architectures)
 - All kernel modules, spread over the kernel source tree, as .ko (kernel
 object) files.
  
-## Process Management
-
-Understand the concept (definition) of the process and related concepts as threads. Then discuss how the 
-Linux kernel manage each process (how they are enumerated within the kernel, how are they created, and
-how they die). 
-
-Because running user applications is the reason we have operating systems, the process management is a crucial
-part of any OS kernel, including Linux.
-
-### Process
-
-"Everything in Unix that is not a file is a process"
-
-A process is one of the fundamental abstractions in Unix operating systems. A process is a program (a set of instructions
-loaded into memory) in the midst (middle) of execution. 
-
-Process are, however, more than just the executing program code (often called the text section in Unix). They also include
-a set of resources such as:
-
-- Open files and pending signals
-- Internal kernel data
-- Processor state
-- A memory address space with one or more memory mappings
-- One or more threads of execution, and
-- A data section containing global variables
-
-Processes, in effect, are the living result of running program code.
-
-```fork()``` system call used to create a new process.
-```wait()``` system call used by process that stops its execution until one of its childs finish its execution.
-```exec()``` system call used when you want to run a program that is different from the calling program.
-
-Each running program, called a process, has a number of file descriptors associated with it. PID = Numeric Process
-ID used for identification. ```ps``` command reports a snapshot of the current processes.
-
-Under the Standard I/O Library, the equivalent of the low-level file descriptor is called a strem and is implemented
-as a pointer to a structure, a FILE *.
-
-Three file streams are automatically opened when a program is started. They are stdin, stdout and stderr. These are
-declared in stdio.h and represent the standard input, output and error output.
-
-### Thread
-
-Threads of execution, often shortened to threads, are the objects of activity within the process. Each thread includes
-a unique:
-
-- Program counter
-- Process stack
-- Set of processor registers
-
-The kernel schedules individual threads, not processes.
-
-### Process vs Thread
-
-In traditional Unix systems, each process consists of one thread. In modern systems, multithreaded programs - those that
-consist of more than one thread - are common. 
-
-Linux has a unique implementation of threads: it does not differentiate between threads and
-processes. To Linux, a thread is just a special kind of process.
-
-### procfs - file system
-
-Linux provide a special file system, procfs, that is usually made available as the directory /proc. It contains many
-special files that allow higher-level access to driver and kernel information. Applications can read and write these
-files to get information and set parameters as long as they are running with the correct access permissions.
 
 ### Inter-Process Communication 
 

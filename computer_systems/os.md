@@ -5,6 +5,19 @@ An OS is a body of software that is responsible for making it easy to run progra
 programs to share memory, enabling programs to interact with devices, and other fun stuff like that. The OS is in charge of making sure the system
 operates correctly and efficiently in an easy-to-use manner.
 
+According to [2], the operating system is considered the parts of the system responsible for basic use and administration.
+This includes the kernel and device drivers, boot loader, command shell or other user interface, and basic file and system
+utilities. It is the stuff you need - not a web browser or music players.
+
+On protected memory systems, the kernel has special "privilages" compared to user applications. This includes a protected
+memory space and full access to the hardware, called "kernel space". User applictions execute in "user-space". Applications
+running in user-space communicate with the kernel via system calls.
+
+![syscall](../img/syscall.png)
+
+When an application executes a system call, we say that the kernel is executing on behalf of the application. Furthermore,
+the application is said to be executing a system call in kernel-space, and the kernel is running in process context.
+
 Operating Systems can be divided in three logical topics in order to be studied:
 
 1. **Virtualization**
@@ -16,7 +29,13 @@ Operating Systems can be divided in three logical topics in order to be studied:
 
  - Processes and Threads: resources a process and a thread needs
  - Process Scheduling
- - Synchronization Mechanisms: mutex/spinlock/semaphore
+
+ - Synchronization Mechanisms: 
+ 
+Mutex/spinlock/semaphore
+
+To provide synchronization, the kernel can disable interrupts.
+
  - Memory Management: virtual memory/paging/translation
  - Concurrency Issues: race conditions, deadlock and livelock and how to avoid them
  - Producer and Consumer Problem
@@ -25,7 +44,15 @@ Operating Systems can be divided in three logical topics in order to be studied:
  - Context Switch: how context switch works, how it's initiated by the OS and underlying hardware - in ARM and x86
  - IPC - Inter Process Communications
  - Multicore: fundamentals of concurrency constructs
+ 
+ - Interrupts: 
+ 
+ When hardware wants to communicate with the system, it issues an interrupt that literrally interrupts
+ the processor, which in turn interrupts the kernel. A number identifies interrupts and the kernel uses this number
+ to execute a specific interrupt handler to process and respond to the interrupt.
 
+ In many OSs (including Linux), the interrupts don't run in process context. They run in an special interrupt context,
+ that is not associated with any process.
 
 ## Virtualization
 
@@ -67,7 +94,16 @@ Persistence via devices and file systems.
 - Graphics
 - Security
 
+## Kernel
+
+Typical components of a kernel are:
+
+- Interrupt handlers to service interrupt requests
+- A scheduler to share processor time among multiple processes
+- A memory management system to manage process adress spaces
+- System services such as networking and interprocess communication
 
 ### Resources
 
-- [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+[1] [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+[2] Linux Kernel Development (3rd Edition), Roberto Love

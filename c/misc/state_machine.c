@@ -56,7 +56,13 @@ transition_t state_transition[] = {
 
 int main(int argc, char* argv[])
 {
-    enu
+    state_codes_t cur_state = ENTRY_STATE;
+    ret_codes_t rc;
+    int (*state_fun)(void);
+
+    for(;;) {
+        state_fun = state[cur_state]
+    }
 
     return 0;
 }
