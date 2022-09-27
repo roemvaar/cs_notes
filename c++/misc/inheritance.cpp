@@ -30,7 +30,6 @@ class Vehicle {
         }
 };
 
-
 class Engine {
     
     public:
@@ -38,7 +37,6 @@ class Engine {
             return (4);
         }
 };
-
 
 // Derived class - child
 class Car: public Vehicle {
@@ -77,8 +75,8 @@ class SportsCar: public Car, public Engine {
         }
 };
 
-
-int main() {
+int main()
+{
 
     Car myCar;
     SportsCar myFerrari;
@@ -90,4 +88,3 @@ int main() {
 
     return 0;
 }
-

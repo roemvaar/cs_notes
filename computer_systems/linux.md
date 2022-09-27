@@ -1,4 +1,6 @@
-# Linux
+# Linux Kernel
+
+![Linux Kernel](../img/linux_kernel.png)
 
 ## Linux Kernel Main Roles:
 
@@ -108,7 +110,7 @@ Linux provide a special file system, procfs, that is usually made available as t
 special files that allow higher-level access to driver and kernel information. Applications can read and write these
 files to get information and set parameters as long as they are running with the correct access permissions.
 
-## Process Management
+## Process Management Subsystem
 
 Understand the concept (definition) of the process and related concepts as threads. Then discuss how the 
 Linux kernel manage each process (how they are enumerated within the kernel, how are they created, and
@@ -117,9 +119,20 @@ how they die).
 Because running user applications is the reason we have operating systems, the process management is a crucial
 part of any OS kernel, including Linux.
 
-### Context
+In Linux, at any time each of the processors (CPUs) is doing one of the following things:
 
-In Linux, each processor is doing exactly one of three things at any given moment:
+* Not associated with any process, serving hardware interrupt
+* Not associated with any process, serving softirq or tasklet
+* Running in kernel space, associated with a process (user context)
+* Running a process in user space
+
+### Process Scheduler
+
+The Linux scheduler is responsible for resource sharing in the system. There are different schedulers
+from which the developers can choose depending on its necessities. The main scheduler (default) is the
+[Completely Fair Scheduler - fair.c](https://elixir.bootlin.com/linux/v5.17.9/source/kernel/sched/fair.c#L11737). The [Real-Time - rt.c](https://elixir.bootlin.com/linux/v5.17.9/source/kernel/sched/rt.c#L2642) scheduler is used for real-time applications.
+
+### Context
 
 * In user-space, executing user code in a process
 * In kernel-space, in process context, executing on behalf of a specific process
@@ -341,3 +354,8 @@ calling). When the child completes, the ```wait()``` shell returns from and prin
 - How to configure USB port to only accept devices from a certain device - id vendor
 - Why you should not use floating point numbers in kernel code? Because your code might need to run on lower-end processors
   without a floating-point unit. In case that you need to use floating point numbers, you shall do these operations on user space.
+
+## Resources
+
+[1] https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html
+[2] https://blog.maxgio.me/posts/linux-scheduler-journey/
