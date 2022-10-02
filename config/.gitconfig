@@ -1,0 +1,19 @@
+[user]
+	name = Roberto Valenzuela
+	email = valenzuelarober@gmail.com
+[format]
+	signoff = true
+[core]
+	editor = vim
+[safe]
+	directory = /linux_work/linux_mainline
+[sendemail]
+	confirm = always
+	smtpServer = smtp.gmail.com
+	smtpServerPort = 587
+	smtpEncryption = tls
+	smtpUser = valenzuelarober@gmail.com
+[credential]
+	helper = store
+[init]
+	defaultBranch = main

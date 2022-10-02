@@ -66,20 +66,25 @@ Persistence via devices and file systems.
 - Graphics
 - Security
 
-## Kernel
 
-Typical components of a kernel are:
-
-- Interrupt handlers to service interrupt requests
-- A scheduler to share processor time among multiple processes
-- A memory management system to manage process adress spaces
-- System services such as networking and interprocess communication
-
-## Operating Systems - Interview Questions:
+## Operating Systems - 101:
 
 - **Operating System**
 
+Resource manager. Software that is responsible for making it easy to run programs
+(allowing to run many at the same time), allowing programs to share memory, enabling
+programs to interact with devices, and others. The operating system (OS) is in charge
+of making sure the system operates correctly and efficiently in an easy-to-use manner.
+
 - **Policy vs Mechanism**
+
+Policies are ways to choose which activities to perform.
+
+Mechanisms are the implementations that enforce policies, and often depend to some
+extent on the hardware on which the operatin system runs.
+
+Example: A process may be granted resources using the first come, first serve policy.
+This policy may be implemented using a queue of requests as a mechanism.
 
 - **Kernel**
 
@@ -87,6 +92,13 @@ The kernel is the core component of an operating system that has complete contro
 over every resource of a system. It is the portion of the operating system code that
 is always resident in memory and facilitates interactions between hardware and 
 software components.
+
+Typical components of a kernel are:
+
+    - Interrupt handlers to service interrupt requests
+    - A scheduler to share processor time among multiple processes
+    - A memory management system to manage process adress spaces
+    - System services such as networking and interprocess communication
 
 - **Process and Threads**
 
@@ -103,6 +115,29 @@ Threads (of execution) are the objects of activity within the process. Each thre
 includes a unique program counter, process stack, and a set of processor registers.
 
 - **States of a Process**
+
+    - Running - a process is running (executing instructions) on a processor.
+    - Ready - a process is ready to run but for some reason the OS has chosen not to run
+    it at this given moment.
+    - Blocked - a process has performed some kind of operation that makes it not ready to
+    run until some other event takes place.
+
+![Process State](../img/process_states.png)
+
+- **Context Switch**
+
+In short: a switch from one program to another is a context switch.
+
+The OS tracks certain information about each of the processes, such as memory related info (start of process memory, size, bottom of kernel stack), process ID, process state,
+etc. One important component of this information is the register context, which is a
+data structure that stores information about the contents of the registers about a
+certain process. The register context will hold, for a stopped process, the contents of
+its register state. When a process is stopped, its register state will be saved to this
+memory location; by restoring these registers the OS can resume running the process.
+
+Context switch is a technique where the register context of a certain (stopped) process
+is placed back into the actual physical registers of the processor so the OS can resume running the process.
+
 
 - **Scheduling**
 
@@ -140,9 +175,6 @@ TODO: cache coherency/cache line
 - **Memory mapped IO/ IO Mapped IO**
 
 
-- **Context Switch**
-
-TODO: how context switch works, how it's initiated by the OS and underlying hardware - in ARM and x86
 
 - **IPC - Inter Process Communications**
 

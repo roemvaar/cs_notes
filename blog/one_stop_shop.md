@@ -7,8 +7,8 @@ life easier when collaborating with others:
 * C Programming Language - 
 * C++ - Udacity C++ for Programmers
 * Git - [Git Book](https://git-scm.com/book/en/v2) (Ch.)
-* Bash -
-* Vim - 
+* Bash
+* Make
 
 ** Note: This blog entry only points to resources that can
 rapidly help you to grasp some concepts, but it's by no means an 

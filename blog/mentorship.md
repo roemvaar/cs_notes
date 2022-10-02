@@ -12,4 +12,11 @@
 Configuring a development system, git basics, writing kernel patches, testing patches, writing commit logs,
 sending patches, and working on feedback from the kernel community.
 
-## 
+## Areas to focus on
+
+* Kernel selftest framework - kselftest*
+* Kunit*
+* Documentation*
+* Perf tools*
+
+\* low hanging fruit
