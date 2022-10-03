@@ -346,16 +346,25 @@ calling). When the child completes, the ```wait()``` shell returns from and prin
 
 ## Frequently asked questions:
 
-- Difference between static and dynamic directories? Is /dev directory static or dynamic? - https://unix.stackexchange.com/questions/97642/what-does-it-mean-when-something-says-that-unix-device-files-are-static
-- Minimum directories needed in rootfs in order for the system be able to boot?
-- Systemv vs systemd
-- Remove a device from /dev
-- What's stored in /etc? Configuration files
-- How to configure USB port to only accept devices from a certain device - id vendor
+* Difference between static and dynamic directories? Is /dev directory static or dynamic? - https://unix.stackexchange.com/questions/97642/what-does-it-mean-when-something-says-that-unix-device-files-are-static
+
+* Minimum directories needed in rootfs in order for the system be able to boot?
+
+* Systemv vs systemd
+
+* Remove a device from /dev
+
+
+* What's stored in /etc?
+
+System configuration files
+
+*  How to configure USB port to only accept devices from a certain device - id vendor
 - Why you should not use floating point numbers in kernel code? Because your code might need to run on lower-end processors
   without a floating-point unit. In case that you need to use floating point numbers, you shall do these operations on user space.
 
 ## Resources
 
-[1] https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html
-[2] https://blog.maxgio.me/posts/linux-scheduler-journey/
+[1] [Linux Kernel Hacking](https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html)
+
+[2] [Linux Scheduler](https://blog.maxgio.me/posts/linux-scheduler-journey/)

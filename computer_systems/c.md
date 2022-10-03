@@ -180,6 +180,8 @@ definition. For example:
 ```c
     static inline void wolf(unsigned long tail_size);
 ```
+
+## Frequently Asked Questions
  
 ## References
 
