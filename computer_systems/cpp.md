@@ -315,4 +315,20 @@ is that ```new``` calls the constructor.
 ```delete``` and ```free``` are used for deleting dynamic memory from the heap. The main difference
 is that ```delete``` calls the destructor.
 
+## Frequently Asked Questions
+
+TODO:
+
+* Memory sections - heap vs stack, pros and cons of using each one, which other section can be used to store data?
+Namespaces - why is it a bad idea to use using namespace std (problem with cryptopp) - ambiguous byte https://github.com/weidai11/cryptopp/pull/438
+
+* How does the new keyword works? ListNode *res_iter = new ListNode(0)
+Prefix vs Postfix operators [https://en.cppreference.com/w/cpp/language/operator_incdec]
  
+* What’s an iterator in C++?
+An iterator is any object that, pointing to some element in a range of elements (such as an array or a container), has the ability to iterate through the elements of that range using a set of operators (with at least the increment (++) and dereference (*) operators).
+
+* What happens when I assign a number larger than INT_MAX to an int?
+Implementation-defined, check your compiler.
+
+* C++ vs C, when to choose one over the other? And how do they compare with each other in terms of running time and the complexity of their runtime needs

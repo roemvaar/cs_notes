@@ -182,6 +182,57 @@ definition. For example:
 ```
 
 ## Frequently Asked Questions
+
+TODO:
+Pointers provide for machine-independent address arithmetic.
+
+Compiling a C program - steps:
+
+Preprocessing - this step performs macro substitution on program text, inclusion of other source files, and conditional compilation
+Compiling
+Assembling
+Linking
+
+https://stackoverflow.com/questions/18840422/do-negative-numbers-return-false-in-c-c
+
+Macros: 1) Object Like 2) Function Like https://gcc.gnu.org/onlinedocs/cpp/Macros.html
+Where are (automatic) local variables stored in C?
+On the stack
+
+How can you run a program without main?
+How pointers know to which kind of data are they pointing to?
+
+What’s the size of an int, float, char?
+Machine-dependent
+
+Where are dynamic allocated variables stored in C?
+On the heap
+
+Which is better for a for loop, count up or count down? Hint: count down - some processors are faster comparing to zero
+
+Dynamic memory allocation - safest way to check that a pointer was created successfully with malloc and it’s not a NULL pointer
+assert(p != NULL);
+if(p == NULL) return(-1);
+
+Implement a Queue in C - Hacer la struct, y 4 funciones, Init, push, pop y destroy - general const void * - checar whatsapp Alan
+
+Malloc - Me pusieron a hacer mi propia implementación de malloc, lluego le subieron la dificultad diciendo que la memoria tenía que estar alineada a 16 (Alan, Apple 05/22)
+
+- C libraries: uClibc is much smaller than the glibc, the C library normally used with Linux distributions. While glibc is intended to fully support all relevant C standards across a wide range of hardware and kernel platforms, uClibc is specifically focused on embedded Linux systems.
+
+Macro, Function debug, Bit manipulation, State machine, Interpolation
+
+https://www.learn-c.org/en/Variables_and_Types
+
+Virtual Address Space of a C Program
+
+.stack:
+.data:
+.heap:
+
+static vs global (variables)?
+While static variables have scope over the file containing them making them accessible only inside a given file, global variables can be accessed outside the file too.
+
  
 ## References
 

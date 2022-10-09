@@ -363,8 +363,46 @@ System configuration files
 - Why you should not use floating point numbers in kernel code? Because your code might need to run on lower-end processors
   without a floating-point unit. In case that you need to use floating point numbers, you shall do these operations on user space.
 
+
+
+Buffer sharing: DMA Buf & ION
+Wait events/Wait queues
+ISR handling (Top half/Bottom half)
+Bottom Half - Tasklet/Workqueue/SoftIRQ
+Platform driver
+Driver probe (Module init, driver register, compatibility string)
+Device Tree (Device nodes and parsing)
+Clocks/Regulators/GPIO/Pinctrl
+IOMMU/MMU
+Timer Library
+IOCTL, notify dirent
+kmalloc/vmalloc
+kmap/mmap/ioremap
+sysfs/debugfs/procfs
+systemd/systemv
+/usr/sbin/init or /sbin/init is the executable starting the SysV initialization system. For compatibility reason, when systemd is installed, it's an alias to an executable of the systemd world.
+Initramfs - It is also possible to boot the system with a filesystem in memory: initramfs. Either from a compressed CPIO archive integrated into the kernel image. It is useful As an intermediate step before switching to a real root filesystem, located on devices for which drivers not part of the kernel image are needed (storage drivers, filesystem drivers, network drivers). This is always used on the kernel of desktop/server distributions to keep the kernel image size reasonable. https://www.kernel.org/doc/html/latest/filesystems/ramfs-rootfs-initramfs.html
+ 
+Drivers: insmod vs modprobe, lsmod, rmmod
+modprobe is the intelligent version of insmod. insmod simply adds a module where modprobe looks for any dependency (if that particular module is dependent on any other module) and loads them. source]
+1. Kernel/Hypervisor Knowledge: This is your core area of work so be prepare to discuss technologies listed on
+your resume. For example, if you list kernel or hypervisor specific technical competencies (such as: Linux
+kernel components like memory management, scheduling, I/O, IOMMU, network stack, and hypervisor
+technologies including QEMU, Xen, KVM), be ready to discuss your experience with these technologies.. Be familiar
+with OS topics like memory management, processes, threads, synchronization, paging, semaphores, and
+multithreading..
+
+* How to unload a built-in kernel driver?
+
+You can't, you need to rebuild the driver as a module. [4]
+
+
 ## Resources
 
 [1] [Linux Kernel Hacking](https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html)
 
 [2] [Linux Scheduler](https://blog.maxgio.me/posts/linux-scheduler-journey/)
+
+[3] [Linux Docs](https://docs.kernel.org/)
+
+[4] [Removing Built-In Module](https://unix.stackexchange.com/questions/61917/removing-builtin-modules-in-linux/61918#61918)

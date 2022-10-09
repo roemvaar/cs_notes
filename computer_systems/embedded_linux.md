@@ -50,3 +50,14 @@ development much easier.
 5. You need some means to load software when starting from scratch. JTAG is very
 common, but modern SoCs support SD and micro SD cards, or serial interfaces such
 as UART or USB.
+
+## Frequently Asked Questions
+
+TODO:
+Embedded Linux is the usage of the Linux kernel and various open-source components in embedded systems
+Components:
+Cross-compilation toolchain
+Bootloader
+Linux Kernel
+C Library
+Libraries and applications
