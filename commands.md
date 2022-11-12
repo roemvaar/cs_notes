@@ -1,45 +1,85 @@
 # Commands
 
-grep
+## Bash
 
-find
+``grep``
+
+``find``
+
+``watch`` - repeat command
+
+Run rsync of a large file over ssh
+
+* Compress directory
+
+``tar -zcvf file.tar.gz /path/to/dir/``
+
+* Extract files
+
+``tar -xzvf file.tar.gz``
+
+* Copy files from one machine to another using ssh
+
+``scp <source> <destination>``
+
+* To copy a file from B to A while logged into B
+
+``scp /path/to/file username@a:/path/to/destination``
+
+* To copy a file from B to A while logged into A
+
+``scp username@b:/path/to/file /path/to/destination``
 
 ## Git
 
-git checkout -b <branch_name>
+``git checkout -b <branch_name>``
 
-git push --set-upstream origin <branch_name>
+``git push --set-upstream origin <branch_name>``
 
-git format-patch -1 <sha>
+``git format-patch -1 <sha>``
 
-./scripts/checkpatch.pl -f <file>
+``./scripts/checkpatch.pl -f <file>``
 
-./scripts/checkpatch.pl <patch>
+``./scripts/checkpatch.pl <patch>``
 
-git send-email <patch>
+``git send-email <patch>``
 
-# Linux Kernel Modules
+## Linux Kernel Development
 
-sudo insmod <module>.ko
-sudo insmod args_module.ko name=roberto
+* Apply patches:
 
-sudo modprobe <module>
-sudo rmmod <module>
-sudo dmesg
+```patch -p1 < file.patch```
 
-sudo perf stat -e sched:sched_switch --timeout 1000
+```git apply --index file.patch```
 
-## Compress directory
-tar -zcvf file.tar.gz /path/to/dir/
+note: Prefer git apply in order to track new files that may be
+contained in the git patch
 
-## Extract files
-tar -xzvf file.tar.gz
+* Compiling a single source file: make path/file.o
 
-## Copy files from one machine to another using ssh
-scp <source> <destination>
+```make drivers/media/test-drivers/vimc/vimc-core.o```
 
-## To copy a file from B to A while logged into B
-scp /path/to/file username@a:/path/to/destination
+* Compiling at the directory level: make path
 
-## To copy a file from B to A while logged into A
-scp username@b:/path/to/file /path/to/destination
+```make drivers/media/test-drivers/vimc/```
+
+* Compile file as module, e.g., ```vimc```:
+
+```make M=drivers/media/test-drivers/vimc```
+
+note: It's better to use ```make menuconfig``` to configure the file
+as a module because of all the dependencies.
+
+``sudo insmod <module>.ko``
+
+``sudo insmod args_module.ko name=roberto``
+
+``sudo modprobe <module>``
+
+``sudo rmmod <module>``
+
+``sudo dmesg``
+
+Count context switches:
+
+``sudo perf stat -e sched:sched_switch --timeout 1000``
