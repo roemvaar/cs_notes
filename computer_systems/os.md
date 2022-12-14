@@ -100,6 +100,12 @@ Typical components of a kernel are:
     - A memory management system to manage process adress spaces
     - System services such as networking and interprocess communication
 
+- **Scheduler**
+
+The scheduling policy in a system must attempt to satisfy two
+conflicting goals: fast process response time (low latency) and
+maximal system utilization (high throughput).
+
 - **Process and Threads**
 
 A process is a program (object code) in the midst of execution and all data and resources
