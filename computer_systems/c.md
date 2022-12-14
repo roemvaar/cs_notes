@@ -76,7 +76,11 @@ in the binary file.
 
 ## **Common problems - segmentation fault, memory leaks**
 
-## **C reserved words - const (in parameters), extern, private, volatile, static (functions, variables), etc. for both variables and functions.**
+## **C reserved words - const (in parameters), extern, private, volatile, static (variables), etc. for both variables and functions.**
+
+**Static Functions:** Static functions in C are functions that are restricted to the same file in which they are defined. The functions in C
+are by default global. If we want to limit the scope of the function, we use the keyword static before the function. Doing so, restricts the
+scope of the function in other files, and the function remains callable only in the file in which it is defined.
 
 ## **Pointers to functions**
 
