@@ -1,5 +1,11 @@
 # C Programming Language
 
+## Must know concepts
+
+```
+* Pointers
+```
+
 ## **C data types**
 
 * char, short, int, float, double
