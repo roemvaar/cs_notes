@@ -1,5 +1,26 @@
 # Object Oriented Fundamentals
 
+## Must know concepts
+
+```
+- Classes
+- Objects
+- Interfaces
+- Inheritance
+- Polymorphism
+- Encapsulation
+- Abstraction
+- Inheritance
+- Composition
+- Inheritance vs Composition
+- Flexibility
+- Functionality
+- Design Pattern
+- Loosely coupled
+- Delegation
+```
+
+
 "Knowing concepts like abstraction, inheritance, and polymorphism do not make you a good object oriented designer. A design guru thinks about how to create flexible designs that are maintainable and that can cope with change."
 
 OOP Principles:
@@ -11,7 +32,7 @@ OOP Principles:
 
 Both inheritance and polymorphism relate to duplicate code and encapsulation, so starting out by looking places where you could use encapsulation to better your design is always a good idea.
 
-Flexibility
+## Flexibility
 
 Once you've gotten your software to work like it's supposed to, flexibility becomes a big deal. What if the customer wants to add new properties or features to the app? If you've got tons of duplicate code or confusing inheritance structures in your app, making changes is going to be a pain. 
 
@@ -26,6 +47,7 @@ In inheritance, the class being inherited from is called the superclass (or pare
 A subclass gets all the behaviour of its superclass automatically.
 
 A subclass can override its superclass's behaviour to change how a method works.
+
 
 
 ## Polymorphism

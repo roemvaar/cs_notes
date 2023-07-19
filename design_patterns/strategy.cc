@@ -3,7 +3,6 @@
  *
  * Strategy is a behavioral design pattern that lets you define a family of algorithms,
  * put each of them into a separete class, and make tehir objects interchangeable.
- * 
 */
 
 #include <algorithm>

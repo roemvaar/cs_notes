@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-typedef struct
+typedef struct 
 {
     size_t head;
     size_t tail;
@@ -15,7 +15,9 @@ typedef struct
     bool empty;
     bool full;
     void **elements;
-} queue;
+} _queue;
+
+typedef _queue queue;
 
 queue *queue_create(size_t size, size_t element_size);
 void queue_destroy(queue *q);

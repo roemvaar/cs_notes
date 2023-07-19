@@ -54,6 +54,24 @@ Anytime you see duplicate code, look for a place to encapsulate!
 ![img1](../img/ooa&d.png)
 ![img2](../img/ooa&d2.png)
 
+Favor composition over inheritance (design principle)
+
+Take what varies and "encapsulate" it so 
+it won't affect the rest of your code.
+
+The result? Fewer unintended consequences
+from code changes and more flexibility
+in your systems!
+
+Design Principle
+
+* Identify the aspects of your application
+that vary and separate them from what
+stays the same.
+
+* Program to an interface, not an 
+implementation.
+
 ## References
 
 - Head First Object Oriented Analysis and Design (book)

@@ -10,6 +10,8 @@ int main(void)
 
     num = 10;
     queue_enqueue(q, &num);
+    // q->head = 5;
+    // q->
     num = 15;
     queue_enqueue(q, &num);
     num = 2;
