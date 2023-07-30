@@ -31,4 +31,3 @@ module_exit(time_exit);
 MODULE_AUTHOR("Roberto Valenzuela <valenzuelarober@gmail.com>");
 MODULE_DESCRIPTION("Module that shows time alive");
 MODULE_LICENSE("GPL");
-

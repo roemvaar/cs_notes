@@ -6,7 +6,7 @@ ISA - Instruction Set Architecture
 
 Application.
 
-iMX.8 - Cortex A (mainly) for automotive applications
+* iMX.8 - Cortex A (mainly) for automotive applications
 
 ## ARM Cortex-M
 

@@ -24,11 +24,13 @@ pointer variable points to can be modified indirectly.
 The size is system specific. Typically it has the same size as the processor word, e.g. in an ARM32
 board, the pointers typically have a 4 bytes size (32 bits).
 
-## **Null pointer and void pointer**
+## **Void pointer**
 
-void pointer are used as general-purpose pointers. They're good in the case that you don't priorly 
+void pointers are used as general-purpose pointers. They're good in the case that you don't priorly 
 know what data type to return from a function, such as in malloc. It's important to cast your
 pointer in order for you to be able to use it.
+
+## **Null pointer**
 
 A null pointer is a pointer which points to nothing. Some uses of the null pointer are: a) To
 initialize a pointer variable when that pointer variable isn't assigned any valid memory address
@@ -246,5 +248,10 @@ While static variables have scope over the file containing them making them acce
  
 ## References
 
-[1] The C Programming Language. 2nd Edition by Brian Kernighan and
+[1] Book. The C Programming Language. 2nd Edition by Brian Kernighan and
 Dennis Ritchie
+
+[2] Book. Expert C Programming
+
+[3] Book. C Pocket Reference: C Syntax and Fundamentals 
+Book by Peter Prinz and Ulla Kirch-Prinz

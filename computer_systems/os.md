@@ -175,16 +175,6 @@ Scheduling algorithms:
     * Round Robin
     * Multilevel Queue Scheduling
 
-
-
-
-
-
-
-
-
-
-
 The kernel schedules individual threads, not processes.
 
 preemptive, non-preemptive, round robin, O(1), fair O(log n), FCFS

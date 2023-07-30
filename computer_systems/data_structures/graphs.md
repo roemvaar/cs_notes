@@ -1,4 +1,4 @@
-Graphs
+# Graphs
 
 Graphs are, like, really really important. More than you think. Even if you already think they're important, it's probably more than you think.
 

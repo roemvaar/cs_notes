@@ -1,5 +1,7 @@
 # RTOS
 
+Real-Time Operating System.
+
 ### Important Topics
 
 1. OS Concepts

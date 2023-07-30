@@ -66,4 +66,3 @@ flexibility of a multiuser, multiprocessor system.
 ## Virtual Memory Architecture
 
 ## Paging
- 

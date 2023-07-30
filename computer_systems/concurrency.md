@@ -11,7 +11,9 @@ program.
 Synchronization:
 
 - Mutex (locks)
+- Semaphores
 
 Communication:
 
 - Queues
+- Shared-memory
