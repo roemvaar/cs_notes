@@ -2,11 +2,6 @@
 
 For embedded software engineers, it's possibly the most important topic for interviews. 
 
-TODO:
-
-1) Solve all the easy and medium problems from Leetcode + at least 10 hard problems - https://leetcode.com/tag/bit-manipulation/
-2) https://leetcode.com/problems/sum-of-two-integers/discuss/84278/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
-
 Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or 
 low level development - learn about endianness
 
@@ -61,4 +56,16 @@ Better approach - [Brian Kernighan's Algorithm](https://github.com/alanrubik/Cha
 
 - **Reverse Bits**
 
- 
+
+## Bit Numbering (MSB vs LSB and Little Endian vs Big Endian)
+
+"The order in which the bytes are stored in data memory"
+
+MSB - Most Significant Bit (the bit in a multiple-bit binary number with the largest value)
+LSB - Least Significant Bit (the bit in a multiple-bit binary number with the smallest value)
+
+Big endian:
+MSB is stored in the first data memory address (lowest memory address) and LSB is stored in the last data memory address (highest memory address).
+
+Little endian:
+LSB in first memory address and MSB in the last.
