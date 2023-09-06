@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include "trees.h"
+
+#include <stdio.h>
 
 
 int main()
