@@ -5,8 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define ARRAY_SIZE 10
-
 
 int main(void)
 {
@@ -61,23 +59,45 @@ void array_destroy(array *a)
 }
 
 
-bool array_set(array *a, size_t index, void *element)
+void array_set(array *a, size_t index, void *element)
 {
-    int offset;
+    size_t offset;
 
-    offset = index * a->element_size;
+    if (a == NULL) {
+        fprintf(stderr, "failed to access array\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (index >= 0 && index < a->size) {
+        offset = index * a->element_size;
+    }
+    else {
+        fprintf(stderr, "index out of range\n");
+        exit(EXIT_FAILURE);
+    }
+    
     memcpy(a->elements + offset, element, a->element_size);
-
-    return true;
 }
 
 
-void *array_get(array *a, size_t index)
+void *array_get(const array *a, size_t index)
 {
     void *element;
-    int offset;
+    size_t offset;
 
-    offset = index * a->element_size;
+    if (a == NULL) {
+        fprintf(stderr, "failed to access array\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (index >= 0 && index < a->size) {
+        offset = index * a->element_size;
+    }
+    else {
+        fprintf(stderr, "index out of range\n");
+        exit(EXIT_FAILURE);
+    }
+
     element = a->elements + offset;
 
     return element;

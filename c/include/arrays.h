@@ -15,7 +15,7 @@ typedef _array array;
 
 array *array_create(size_t size, size_t element_size);
 void array_destroy(array *a);
-bool array_set(array *a, size_t index, void *element);
-void *array_get(array *a, size_t index);
+void array_set(array *a, size_t index, void *element);
+void *array_get(const array *a, size_t index);
 
 #endif // ARRAYS_H
