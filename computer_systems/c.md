@@ -39,8 +39,6 @@ address.
 
 ## **Compilation stages - what happens at each stage?**
 
-<!-- TODO: Add diagram of the compilation process -->
-
 In order to compile hello.c, the following steps need to be taken:
 
 1) Preprocessor: the preprocessor performs one or many of the following
@@ -195,7 +193,6 @@ definition. For example:
 
 ## Frequently Asked Questions
 
-TODO:
 Pointers provide for machine-independent address arithmetic.
 
 Compiling a C program - steps:

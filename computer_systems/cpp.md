@@ -317,8 +317,6 @@ is that ```delete``` calls the destructor.
 
 ## Frequently Asked Questions
 
-TODO:
-
 * Memory sections - heap vs stack, pros and cons of using each one, which other section can be used to store data?
 Namespaces - why is it a bad idea to use using namespace std (problem with cryptopp) - ambiguous byte https://github.com/weidai11/cryptopp/pull/438
 

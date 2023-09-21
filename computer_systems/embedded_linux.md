@@ -53,7 +53,6 @@ as UART or USB.
 
 ## Frequently Asked Questions
 
-TODO:
 Embedded Linux is the usage of the Linux kernel and various open-source components in embedded systems
 Components:
 Cross-compilation toolchain

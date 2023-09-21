@@ -18,7 +18,6 @@ numbers of places to shift.
 number of places to shift.
 - **~ (NOT)**: takes one number and inverts all bits of it.
 
-TODO: Put truth table for each of the bitwise operators
 
 ## Bitwise Operators Hacks
 

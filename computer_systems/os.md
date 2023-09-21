@@ -188,13 +188,13 @@ Process (task) vs Threads - Linux Love p. 24 51/468
  
 - **Synchronization Mechanisms** 
 
-TODO: Mutex/spinlock/semaphore
+Mutex/spinlock/semaphore
 
 To provide synchronization, the kernel can disable interrupts.
 
 - **Memory Management**
 
-TODO: virtual memory/paging/translation/segmentation and thrashing
+virtual memory/paging/translation/segmentation and thrashing
 
 Slab allocation
 Slab allocation is a memory management mechanism intended for the efficient memory allocation of objects. In comparison with earlier mechanisms, it reduces fragmentation caused by allocations and deallocations.
@@ -203,14 +203,14 @@ Slab allocation is a memory management mechanism intended for the efficient memo
 
 - **Concurrency Issues**
 
-TODO: race conditions, deadlock and livelock and how to avoid them
+race conditions, deadlock and livelock and how to avoid them
 
 - **Producer and Consumer Problem**
 
 
 - **Caching**
 
-TODO: cache coherency/cache line
+cache coherency/cache line
 
 
 - **Memory mapped IO/ IO Mapped IO**

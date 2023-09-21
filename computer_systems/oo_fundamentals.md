@@ -77,17 +77,15 @@ they are implemented through storage or through computation.
 
 * What's a virtual function?
 
-TODO: Polymorphism
+Polymorphism
 
 A virtual function is a member function that you expect to be redefined in derived classes.
 
 Use virtual functions instead of a constructor in order to make a program more flexible, i.e., you can change the classes that get instantiated by making a subclass of the base class and redefining those virtual functions.
 
 
-# TODO
+## Classes and objects - member functions and data members
 
-Classes and objects - member functions and data members
+## Object Oriented Design
 
-Object Oriented Design
-
-Delegation vs inheritance
+## Delegation vs inheritance

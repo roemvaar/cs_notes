@@ -39,10 +39,10 @@ x86, each in 32 and 64-bit variants, all of which have memory management units (
 
 **Bootloaders**
 
-TODO: A bootloader is a program that is in charge of initialize critical computer
+A bootloader is a program that is in charge of initialize critical computer
 resources such as program memory and load the OS into the memory.
 
-TODO: how OS/Program is loaded?
+how OS/Program is loaded?
 
 Types of bootloaders:
 
