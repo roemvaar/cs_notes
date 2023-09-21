@@ -8,12 +8,6 @@ Here is a list of the most important algorithms every good coder should be famil
 Insertion sort usually runs faster than merge sort for small input sizes, once the input size
 n becomes large enough, merge sort advantages insertion sort because of the lg n [1, p.12].
 
-<!-- TODO: Must have - Algorithms - Sorting: know how to sort. Don't do bubble-sort. You should
-know the details of at least one nlog(n) sorting algorithm, preferably two (say, quicksort
-and merge sort).
-
-Sorting: know how to sort. Don't do bubble-sort. You should know the details of at least one n*log(n) sorting algorithm, preferably two (say, quicksort and merge sort). Merge sort can be highly useful in situations where quicksort is impractical, so take a look at it. - https://github.com/roemvaar/algos-and-ds/tree/master/algos/sort -->
-
 ### Selection Sort
 
 ```
@@ -47,9 +41,6 @@ O(n log(n))
 
 
 ## Searching
-
-TODO: Must have - Algorithms - Breadth First Search, Depth First Search, Binary Search,
-Merge Sort and Quicksort
 
 Looking for specific information in memory is a key operation in computing.
 

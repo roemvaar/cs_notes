@@ -5,3 +5,4 @@ enable_testing()
 
 add_subdirectory(c)
 add_subdirectory(c++)
+add_subdirectory(design_patterns)

@@ -62,7 +62,7 @@ static void postorder_traversal(node_t *top)
     return;
 }
 
-/* TODO: Remove after unit testing is working correctly 
+/*
  * Driver code to test binary tree implementation
  */
 int main()
