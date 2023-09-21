@@ -1,45 +1,50 @@
+// #include "binary_search.h"
+
 #include <stdio.h>
-#include <binary_search.h>
-#include <bool.h>
 
-bool binarySearchRecursion(int *array, int left, int right, int target)
+
+int binary_search_recursive(int *array, size_t size, int target)
 {
-    bool isInArray = false;
-
-    printf("Binary Search (Recursion) in C");
-
-    return isInArray;
+    printf("Binary Search (Recursive) in C");
 }
 
-bool binarySearchIterative(int *array, int left, int right, int target)
-{
-    printf("Binary Search (Iterative) in C");
 
-}
-
-printArray(int *array, int size)
+int binary_search_iterative(int *array, size_t size, int target)
 {
-    printf("[");
-    for(int i = 0; i < size; i++) {
-        printf("%d, ", array[i]);
+    int index = -1;
+    int left = 0;
+    int right = size - 1;
+
+    while (left <= right) {
+        int mid = ((right - left) / 2) + left;
+
+        if (array[mid] == target) {
+            index = mid;
+            break;
+        }
+        else if (array[mid] < target) {
+            left = mid + 1;
+        }
+        else {
+            right = mid - 1;
+        }
     }
-    printf("]\n");
+
+    return index;
 }
 
-/* Driver code
- * TODO: Implement unit test
+
+/*
+ * Driver code
  */
 int main()
 {
-    int arrayA = {0,324,45,234,435,-2,0};
-    int arrayB = {0,324,45,234,435,-2,0};
+    // int array_a = {-2, 0, 45, 234, 324, 435};
+    int array_b[] = {-2, 0, 45, 234, 324, 435};
 
-    insertionSort(arrayA, sizeof(arrayA));
-    insertionSort(arrayB, sizeof(arrayB));
-
-    binarySearchRecursion(arrayA, 0, sizeof(arrayA), 0);
-    binarySearchIterative(arrayB, 0, sizeof(arrayB), 5);
-
+    // binary_search_recursive(array_a, sizeof(array_a) 0);
+    printf("%d\n", binary_search_iterative(array_b, sizeof(array_b), 324));
+    printf("%d\n", binary_search_iterative(array_b, sizeof(array_b), 5));
 
     return 0;
 }
