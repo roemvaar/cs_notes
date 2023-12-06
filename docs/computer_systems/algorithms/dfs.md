@@ -1,3 +1,10 @@
+---
+layout: default
+title: Depth-First Search (DFS)
+parent: Algorithms
+nav_order: 1
+---
+
 # Depth-First Search (DFS)
 
 A DFS follows one branch of the tree down as many levels as

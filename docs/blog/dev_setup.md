@@ -1,3 +1,10 @@
+---
+layout: default
+title: Configuring Development System
+parent: Blog
+nav_order: 2
+---
+
 # Configuring Development System
 
 ## Getting Sources and Building

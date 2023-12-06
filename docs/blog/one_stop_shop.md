@@ -1,3 +1,10 @@
+---
+layout: default
+title: One Stop Shop - Embedded Software Engineer
+parent: Blog
+nav_order: 4
+---
+
 # One Stop Shop - Embedded Software Engineer
 
 This is a list of resources that I consider are "must" knowledge for

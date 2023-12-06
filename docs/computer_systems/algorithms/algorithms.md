@@ -1,3 +1,11 @@
+---
+layout: default
+title: Algorithms
+nav_order: 1
+has_children: true
+permalink: /docs/computer_systems/algorithms
+---
+
 # Algorithms
 
 Here is a list of the most important algorithms every good coder should be familiar with.

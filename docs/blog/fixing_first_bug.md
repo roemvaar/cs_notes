@@ -1,3 +1,10 @@
+---
+layout: default
+title: Fixing First Bug
+parent: Blog
+nav_order: 3
+---
+
 # Fixing Your First Bug
 
 First thing first, configure your development setup, i.e., install tools,

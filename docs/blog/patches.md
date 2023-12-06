@@ -1,3 +1,10 @@
+---
+layout: default
+title: Patches
+parent: Blog
+nav_order: 5
+---
+
 # Patches
 
 Patch workflow:
