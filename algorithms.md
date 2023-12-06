@@ -92,6 +92,8 @@ until you find the one you want. There are two approaches to achieve this:
 
 [Bit Manipulation](./computer_systems/bit_manipulation.md)
 
+Must know: Logical operations, bit rotation, shifting, clearing.
+
 
 ## Greedy Algorithms
 

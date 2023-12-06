@@ -3,7 +3,9 @@
 For embedded software engineers, it's possibly the most important topic for interviews. 
 
 Bitwise operations / Bitlogic algorithms / Bit manipulation - You need to master this if you want to work in graphics or 
-low level development - learn about endianness
+low level development - learn about endianness.
+
+Must know: Logical operators, bit rotation, shifting, clearing.
 
 ## Bitwise operators in C/C++
 
@@ -68,3 +70,7 @@ MSB is stored in the first data memory address (lowest memory address) and LSB i
 
 Little endian:
 LSB in first memory address and MSB in the last.
+
+# References
+
+* https://mariokartwii.com/armv8/ch14.html
