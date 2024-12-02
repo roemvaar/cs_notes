@@ -1,3 +1,10 @@
+---
+layout: default
+title: Debugging
+parent: Computer Systems
+nav_order: 1
+---
+
 # Debugging
 
 Debugging is an art, and not a science. There is no step-by-step procedure or a single recipe for success when debugging a problem. Asking the following questions can help to understand and identify the nature of the problem and how best to solve it [1]:

@@ -1,3 +1,21 @@
+---
+layout: default
+title: Bit Manipulation
+parent: Algorithms
+nav_order: 1
+---
+
+# Bitlogic / Bit Manipulation
+
+<!-- [Bit Manipulation](./computer_systems/bit_manipulation.md) -->
+
+Must know:
+
+* Logical Operations 
+* Bit Rotation
+* Bit Shifting
+* Bit Clearing
+
 # Bit Manipulation
 
 For embedded software engineers, it's possibly the most important topic for interviews. 
@@ -19,7 +37,6 @@ numbers of places to shift.
 - **>> (right shift)**: takes two numbers, right shifts the bits of the first operand, the second operand decides the
 number of places to shift.
 - **~ (NOT)**: takes one number and inverts all bits of it.
-
 
 ## Bitwise Operators Hacks
 

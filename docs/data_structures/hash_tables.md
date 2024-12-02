@@ -1,3 +1,10 @@
+---
+layout: default
+title: Hash Tables
+parent: Data Structures
+nav_order: 1
+---
+
 # Hash Tables
 
 A **Hash Function** maps data, e.g. strings, to numbers. But there are some requirements for a hash function:

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Linked List
+parent: Data Structures
+nav_order: 1
+---
+
 # Linked List
 
 Can be used to implement other data structures, such as a dynamic array.

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Arrays
+parent: Data Structures
+nav_order: 1
+---
+
 # Arrays
 
 Array are a simple data structure for storing data elements of the same data type. Arrays are

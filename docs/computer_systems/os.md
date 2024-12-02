@@ -38,6 +38,124 @@ that's specific to a subsystem can crash the whole kernel. In the same scenario,
 this by killing the erroneous subsystem. The Linux kernel is an example of a monolithic kernel, and QNX
 is a microkernel.
 
+### Process
+
+A process is an abstraction of a running program. It is the program code that has been loaded into main
+memory so that it can be executed by the CPU. The program itself is a lifeless thing: it just sits there on
+disk, a bunch of instructions (and maybe some static data), waiting to spring into action.  It is the 
+operating system that takes these bytes and gets them running, transforming the program into something useful.
+
+Each process accesses its own private **virtual address space** or address space for short, which the OS 
+somehow maps onto the physical memory of the machine. That's why two running programs may be using the "same"
+address, e.g., 0x20000, but they're completely different spaces in the actual physical memory.
+
+**States of a Process**
+
+    - Running - a process is running (executing instructions) on a processor.
+    - Ready - a process is ready to run but for some reason the OS has chosen not to run
+    it at this given moment.
+    - Blocked - a process has performed some kind of operation that makes it not ready to
+    run until some other event takes place.
+
+Other states that I process may be in include `terminated`, `suspend ready`, and `suspend blocked`.
+
+The following figures shows the state transition that a given process can have.
+
+![Process State](../../img/process_states.png)
+
+### Process Scheduling
+
+The kernel does process scheduling to determine which process will execute. Scheduling handles the context 
+switch between a running process from the CPU and the selection of another (ready) process to be run on the
+basis of particular policies [3].
+
+Scheduling allows a system to be multiprogram ("multitask"), i.e., the systeme gives the illusion to the user
+that more than one program is running at the same time at a certain CPU.
+
+**Context Switch**
+
+In short: a switch from one program to another is a context switch.
+
+The OS tracks certain information about each of the processes, such as memory related info (start of process
+memory, size, bottom of kernel stack), task structure, process ID, and process state. A component of this 
+information is a data structure that stores the contents of the registers for a specific process called the
+register context. When a process is stopped, its register state will be saved to this memory location; by
+restoring these registers the OS can resume running the process.
+
+Context switch is a mechanism where the register context of a certain (stopped) process is placed back into
+the actual physical registers of the processor so the OS can resume running the process.
+
+**Categories of Scheduling**
+
+There are two categories of scheduling:
+
+    - Preemptive: the scheduler can interrupt the running process at any time, schedule another process and
+    resume the original process later. The OS allocates the resources to a process for a fixed amount of time.
+
+    - Non-preemptive: the resources can't be taken from a process until the process completes execution.
+
+Most modern systems are preemptive.
+
+
+## Concurrency
+
+### Concurrency Problems
+
+Common concurrency bugs can be divided in **deadlock** and **non-deadlock** bugs. Two types of non-deadlock
+bugs are **atomicity violation** bugs and **order violation** bugs.
+
+**Deadlock Bugs**
+
+**Non-Deadlock Bugs**
+
+The definition of an **atomicity violation** bug is "The desired serializability among multiple memory accesses
+is violated (i.e., a code region is intended to be atomic, but the automicity is not enforced during
+execution)."
+
+Thread 1: 
+```
+1 if (thd->proc_info) {
+2   ...
+3   printf("%d\n", thd->proc_info);
+4   ...
+5 }
+```
+
+Thread 2:
+```
+1 thd->proc_info = NULL;
+```
+
+An atomicity violation bug occurs if the Thread 1 is interrupted after it has check if `thd->proc_info` is
+not NULL and before printing the value by Thread 2. The solution to this bug is to add locks around the shared-
+variable references, ensuring that when either thread accesses the `proc_info` field, it has a locked held.
+
+**Order violation** definition is "The desired order between two (groups of) memory accesses is flipped (i.e.,
+A should always be executed before B, but the order is not enforeced during execution)."
+
+Thread 1: 
+```
+1 void init() {
+2   ...
+3   mThread = PR_CreateThread(mMain, ...);
+4   ...
+5 }
+```
+
+Thread 2:
+```
+1 void mMain(...) {
+2   ...
+3   mState = mThread->State;
+4   ...
+5 }
+```
+
+If Thread 2 runs before Thread 1, Thread 2 with a NULL pointer dereference because `mThread` hasn't been
+created yet. The fix to this type of bug is to enforce ordering. Condition variables is an easy and robuts way
+to add this style of synchronization.
+
+
 <!-- TO DO: Clean from here -->
 
 ### **Policy vs Mechanism**
@@ -63,7 +181,6 @@ the applications running on the system. Thus, while each applications thinks it 
 only one. And thus the OS has created a beautiful illusion: it has virtualized the CPU" [OSTEP]
 ```
 
-
 On protected memory systems, the kernel has special "privileges" compared to user applications. This includes a protected
 memory space and full access to the hardware, called "kernel space". User applications execute in "user-space".
 
@@ -71,93 +188,50 @@ When an application executes a system call, we say that the kernel is executing 
 the application is said to be executing a system call in kernel-space, and the kernel is running in process context.
 
 
-### Process Management
+### Process
 
-<!-- What resources a processes and a thread needs
-Task structure, process states, process creation, zombie and orphan process, context switch, queues - job, ready, wait -->
+<!-- 
+What resources a processes and a thread needs
+Task structure, process states, process creation, zombie and orphan process, context switch, queues - job, ready, wait
+-->
 
-One of the most fundamental abstractions that the OS provides to users: the process. The definition of a process, informally,
-is quite simple: it is a running program. The program itself is a lifeless thing: it just sits there on the disk, a bunch of
-instructions (and maybe some static data), waiting to spring into action. It is the operating system that takes these bytes and
-gets them running, transforming the program into something useful.
+**Task Structure**
 
-Each process accesses its own private **virtual address space** or address space for short, which the OS somehow maps onto the
-physical memory of the machine. That's why two running programs may be using the "same" address, e.g., 0x20000, but they're
-completely different spaces in the actual physical memory.
-
-**States of a Process**
-
-    - Running - a process is running (executing instructions) on a processor.
-    - Ready - a process is ready to run but for some reason the OS has chosen not to run
-    it at this given moment.
-    - Blocked - a process has performed some kind of operation that makes it not ready to
-    run until some other event takes place.
-
-![Process State](../../img/process_states.png)
-
-**Context Switch**
-
-In short: a switch from one program to another is a context switch.
-
-The OS tracks certain information about each of the processes, such as memory related
-info (start of process memory, size, bottom of kernel stack), process ID, process state,
-etc. One important component of this information is the register context, which is a
-data structure that stores information about the contents of the registers about a
-certain process. The register context will hold, for a stopped process, the contents of
-its register state. When a process is stopped, its register state will be saved to this
-memory location; by restoring these registers the OS can resume running the process.
-
-Context switch is a mechanism where the register context of a certain (stopped) process
-is placed back into the actual physical registers of the processor so the OS can resume
-running the process.
 
 ### Scheduling
 
-CPU Scheduling is a process of determining which process will own CPU for execution while another process is on hold. The process scheduling is the activity of the process
-manager that handles the context switch between a running process from the CPU and the
-selection of another (ready) process to be run on the basis of particular policies [3].
+**Context Switch**
 
-Scheduling allows for a system to be multiprogram ("multitask"), i.e., giving the
-illusion to the user that more than one program is running at the same time at a certain
-CPU.
+<!-- 
+**Scheduling Algorithms**
 
-Categories of scheduling:
+    - FIFO (First-In First-Out) or (FCFS - First Come First Serve)
+    - Shortest-Job-First (SFJ)
+    - Shortest Remaining Time
+    - Non-preemptive Priority
+    - Preemptive Priority
+    - Round Robin
+    - Multilevel Queue Scheduling
 
-    * Preemptive: the scheduler can interrupt the running process at any time, schedule
-    schedule something else and resume the original process later. The OS allocates the
-    resources to a process for a fixed amount of time.
-
-    * Non-preemptive: the resources can't be taken from a process until the process
-    completes execution.
-
-Scheduling algorithms:
-
-    * FIFO (First-In First-Out) or (FCFS - First Come First Serve)
-    * Shortest-Job-First (SFJ)
-    * Shortest Remaining Time
-    * Priority
-    * Round Robin
-    * Multilevel Queue Scheduling
+Multicore scheduling
 
 The kernel schedules individual threads, not processes. 
-preemptive, non-preemptive, round robin, O(1), fair O(log n), FCFS
+preemptive, non-preemptive, round robin, O(1), fair O(log n)
 
 The kernel stores the list of processes in a circular doubly linked list called the task list have 
 a look at process descriptros - struct task_struct.
 
 The scheduling policy in a system must attempt to satisfy two conflicting goals: fast process 
-response time (low latency) and maximal system utilization (high throughput).
-
-* Preemptive vs Non-preemptive
-* Algorithms (first come first serve, shortest job first, shortest remaining time first, non-preemptive
-priority scheduling, preemptive priority scheduling, round robin, priority scheduling)
-* Multicore scheduling
+response time (low latency) and maximal system utilization (high throughput). 
+-->
 
 ### Process Synchronization
 
 Mutex/spinlock/semaphore
 
 To provide synchronization, the kernel can disable interrupts.
+
+Synchronization Primitives: http://www.cs.columbia.edu/~hgs/os/sync.html
 
 ### Process vs Thread vs Task vs Job
 
@@ -187,7 +261,6 @@ interrupt.
 
 In many operating systems (including Linux), the interrupts don't run in process context. They run
 in an special interrupt context, that is not associated with any process.
-
 
 ## Memory Virtualization - Memory Management
 
