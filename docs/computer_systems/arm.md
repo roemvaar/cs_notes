@@ -6,6 +6,9 @@ ISA - Instruction Set Architecture
 
 https://mariokartwii.com/armv8
 
+* Execution levels
+* Exceptions (4 types: software, hardware, fast, exceptions)
+
 ## ARM Cortex-A
 
 Application.

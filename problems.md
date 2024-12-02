@@ -29,7 +29,6 @@ Hint: Take care of pointer to pointer struct. Nodes to be created in memory with
 - isUnique
 - Rotate image - using bit manipulation (1 bit = 1 pixel)
 - Write an algorithm to reverse the bits of an UNSIGNED binary number
-- 
  
  ## Trees
 

@@ -3,6 +3,35 @@
 #include <stdio.h>
 #include "bit_manipulation.h"
 
+int count_ones(uint32_t number)
+{
+    int count = 0;
+
+    for (int i = 0; i < 32; i++) {
+        if (number & 1) {
+            count++;
+        }
+
+        number = number << 1;
+    }
+
+    return count;
+}
+
+
+int missing_number(int *nums, int nums_size)
+{
+    int missing = 0;
+
+    for (int i = 0; i < nums_size; i++) {
+        missing ^= nums[i] ^ i;
+    }
+
+    missing ^= nums_size;
+
+    return missing;
+}
+
 
 int main(void)
 {
