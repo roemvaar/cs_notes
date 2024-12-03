@@ -5,7 +5,7 @@ parent: Data Structures
 nav_order: 1
 ---
 
-## Graphs
+# Graphs
 
 Graphs are important — more than you think. Even if you already think they're
 important, it's more than you think.

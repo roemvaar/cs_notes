@@ -5,7 +5,7 @@ parent: Data Structures
 nav_order: 1
 ---
 
-## Trees
+# Trees
 
 ### Must study problems:
 

@@ -5,6 +5,8 @@ parent: Data Structures
 nav_order: 1
 ---
 
+# Arrays
+
 ## (Static) Arrays
 
 Arrays are a simple data structure for storing data elements of the same data type.

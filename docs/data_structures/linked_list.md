@@ -5,17 +5,11 @@ parent: Data Structures
 nav_order: 1
 ---
 
-## Linked List
+# Linked List
+
+A linked list is a data structure that represents a sequence of nodes.
 
 Linked lists can implement other data structures, such as a dynamic array.
-
-Single node:
-
-[item | next]
-
-Singly linked list:
-
-head--->[ x_0 | * ]--->[ x_1 | * ]--->...--->[ x_n-1 | nullptr]
 
 There are two linked lists: a singly-linked list and a doubly-linked list.
 

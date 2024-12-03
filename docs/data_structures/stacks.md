@@ -5,7 +5,7 @@ parent: Data Structures
 nav_order: 1
 ---
 
-## Stacks
+# Stacks
 
 ### Discuss the stack data structure. 
 

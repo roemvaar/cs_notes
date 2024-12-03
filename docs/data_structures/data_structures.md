@@ -6,4 +6,4 @@ has_children: true
 permalink: /docs/data_structures
 ---
 
-## Data Structures
+# Data Structures
