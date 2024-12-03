@@ -1,3 +1,10 @@
+---
+layout: default
+title: Concurrency
+parent: Computer Systems
+nav_order: 1
+---
+
 # Concurrency
 
 **A C++ Tour - Ch. 13**

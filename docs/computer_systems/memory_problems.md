@@ -1,3 +1,10 @@
+---
+layout: default
+title: Memory Problems in C
+parent: Computer Systems
+nav_order: 1
+---
+
 ## Common Memory Problems in C
 
 * Using uninitialized values

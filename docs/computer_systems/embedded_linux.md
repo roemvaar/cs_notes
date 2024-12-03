@@ -1,3 +1,10 @@
+---
+layout: default
+title: Embedded Linux
+parent: Computer Systems
+nav_order: 1
+---
+
 # Embedded Linux
 
 Linux kernel is only a small component of an embedded system

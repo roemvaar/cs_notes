@@ -5,7 +5,7 @@ parent: Algorithms
 nav_order: 1
 ---
 
-# Bitlogic / Bit Manipulation
+# Bit Manipulation
 
 <!-- [Bit Manipulation](./computer_systems/bit_manipulation.md) -->
 
@@ -87,6 +87,15 @@ MSB is stored in the first data memory address (lowest memory address) and LSB i
 
 Little endian:
 LSB in first memory address and MSB in the last.
+
+## Must study problems:
+
+- Hamming Distance (and Number of 1 Bits)
+- Operations using shifts - e.g. power of 2 - left shift+
+- isPowerOfTwo / isPowerOfFour
+- isUnique
+- Rotate image - using bit manipulation (1 bit = 1 pixel)
+- Write an algorithm to reverse the bits of an UNSIGNED binary number
 
 # References
 

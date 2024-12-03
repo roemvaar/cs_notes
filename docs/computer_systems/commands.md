@@ -1,6 +1,13 @@
-# Commands
+---
+layout: default
+title: Commands
+parent: Computer Systems
+nav_order: 1
+---
 
-## Bash
+## Commands
+
+### Bash
 
 ``grep``
 
@@ -30,7 +37,7 @@ Run rsync of a large file over ssh
 
 ``scp username@b:/path/to/file /path/to/destination``
 
-## Git
+### Git
 
 ``git checkout -b <branch_name>``
 
@@ -44,7 +51,7 @@ Run rsync of a large file over ssh
 
 ``git send-email <patch>``
 
-## Linux Kernel Development
+### Linux Kernel Development
 
 * Apply patches:
 

@@ -1,9 +1,16 @@
-# Time Complexity and Space Complexity
+---
+layout: default
+title: Big O
+parent: Computer Systems
+nav_order: 1
+---
+
+## Time Complexity and Space Complexity
 
 Time (and space) complexity is the measurement of an algorithm speed/runtime (or space usage in case of
 space complexity) as the size of input of the algorithm increases. 
 
-## Big-O notation
+### Big-O notation
 
 Big O notation is the notation used to describe the time complexity and space complexity of algorithms.
 

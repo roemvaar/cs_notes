@@ -1,15 +1,22 @@
-# ARM
+---
+layout: default
+title: ARM
+parent: Computer Systems
+nav_order: 1
+---
+
+## ARM
 
 ISA - Instruction Set Architecture
 
-## ARMv8
+### ARMv8
 
 https://mariokartwii.com/armv8
 
 * Execution levels
 * Exceptions (4 types: software, hardware, fast, exceptions)
 
-## ARM Cortex-A
+### ARM Cortex-A
 
 Application.
 
@@ -17,16 +24,16 @@ Application.
 * BCM2711 - Broadcom chip used in Raspberry Pi 4 model B. Quad-core
 Cortex-A72 (ARM v8) 64-bit SoC @ 1.5 GHz.
 
-## ARM Cortex-M
+### ARM Cortex-M
 
 Microcontroller. Usually don't have MMU (memory management
 unit). 
 
-## ARM Cortex-R
+### ARM Cortex-R
 
 Real-time
 
-## Sources
+### Sources
 
 [Arm Fundamentals: Introduction to understanding Arm processors](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/arm-fundamentals-introduction-to-understanding-arm-processors)
  

@@ -20,5 +20,12 @@ When you're facing an NP-complete problem (or something that looks like it), you
   2.2 If you can't prove it, then ask someone else to solve it (jk lol), you need to try harder
       (either to come up with an efficient algorithm or to prove that's NP-complete)
 
+## Greedy Algorithms
+
+Greedy algorithms optimize locally, hoping to end up with a global optimum. Greedy algorithms are easy to write and fast to run, so
+thy make good approximation algorithms.
+
+NP-Complete problems have no known fast solution. If you have an NP-Complete problem, your best bet is to use an approximation algorithm.
+
 
 [1] CLRS - Introduction to Algorithms (4th Ed)

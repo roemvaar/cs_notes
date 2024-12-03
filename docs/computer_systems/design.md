@@ -1,3 +1,10 @@
+---
+layout: default
+title: Design
+parent: Computer Systems
+nav_order: 1
+---
+
 # Design Lessons
 
 ## Design by Contract

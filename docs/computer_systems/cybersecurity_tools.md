@@ -1,3 +1,10 @@
+---
+layout: default
+title: Cybersecurity Tools
+parent: Computer Systems
+nav_order: 1
+---
+
 # Cybersecurity Tools
 
 **binwalk:** a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.

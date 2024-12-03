@@ -1,3 +1,10 @@
+---
+layout: default
+title: Linux Kernel
+parent: Computer Systems
+nav_order: 1
+---
+
 # Linux Kernel
 
 ![Linux Kernel](../img/linux_kernel.png)

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Linux Kernel Contributor
+parent: Computer Systems
+nav_order: 1
+---
+
 # Linux Kernel Contributor
 
 ## Clone kernel 

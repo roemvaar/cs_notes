@@ -1,3 +1,10 @@
+---
+layout: default
+title: C
+parent: Computer Systems
+nav_order: 1
+---
+
 # C Programming Language
 
 ## Must know concepts

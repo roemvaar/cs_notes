@@ -1,3 +1,10 @@
+---
+layout: default
+title: Embedded
+parent: Computer Systems
+nav_order: 1
+---
+
 # Embedded Systems
 
 **What is an embedded system?**

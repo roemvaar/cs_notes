@@ -1,3 +1,10 @@
+---
+layout: default
+title: Design Patterns
+parent: Computer Systems
+nav_order: 1
+---
+
 # Design Patterns
 
 ## Must know concepts
