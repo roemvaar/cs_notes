@@ -12,15 +12,11 @@ n becomes large enough, merge sort advantages insertion sort because of the lg n
 
 ## Selection Sort
 
-```
-O(n<sup>2</sup>)O(n<sup>2</sup>)
-```
+O(n<sup>2</sup>).
 
 ## Insertion Sort
 
-```
-O(n<sup>2</sup>)
-```
+O(n<sup>2</sup>).
 
 Efficient for (quite) small data sets. It's very efficient at sorting nearly sorted
 datasets, even if they're huge.

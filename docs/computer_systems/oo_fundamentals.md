@@ -1,3 +1,10 @@
+---
+layout: default
+title: Object Oriented Fundamentals
+parent: Computer Systems
+nav_order: 1
+---
+
 # Object Oriented Fundamentals
 
 ## Must know concepts
@@ -19,7 +26,6 @@
 - Loosely coupled
 - Delegation
 ```
-
 
 "Knowing concepts like abstraction, inheritance, and polymorphism do not make you a good object oriented designer. A design guru thinks about how to create flexible designs that are maintainable and that can cope with change."
 

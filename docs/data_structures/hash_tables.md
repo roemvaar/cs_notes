@@ -44,3 +44,20 @@ keys map to the same slot, start a linked list at that slot.
 ### Must study problems:
 
 * Minimum Characters for Words - algoexpert 
+
+* **Hash Table**
+
+A hash table is dynamic set that is an effective data structure for implementing
+dictionaries. 
+
+Altough searching for an element in a hash table can take as long as O(n), in practice,
+hashing performs extremely well. Under reasonable assumptions, the average time to search
+for an element in a hash table is O(1).
+
+How can we find things quickly in an unsorted array? with a hash table.
+
+Operations:
+
+  - Insert
+  - Search - O(1)
+  - Delete

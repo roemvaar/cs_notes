@@ -5,7 +5,7 @@ parent: Computer Systems
 nav_order: 1
 ---
 
-## Common Memory Problems in C
+# Common Memory Problems in C
 
 * Using uninitialized values
 * Using memory that you don't know

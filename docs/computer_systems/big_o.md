@@ -5,7 +5,7 @@ parent: Computer Systems
 nav_order: 1
 ---
 
-## Time Complexity and Space Complexity
+# Time Complexity and Space Complexity
 
 Time (and space) complexity is the measurement of an algorithm speed/runtime (or space usage in case of
 space complexity) as the size of input of the algorithm increases. 

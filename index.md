@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-## Computer Science Notes by roemvaar
+# Computer Science Notes by roemvaar
 
 This page contains my notes on topics related to computer science.
 Remember that this is intended as a personal `second-brain`, and I 

@@ -98,11 +98,11 @@ decode complex pulse train. A common use is the generation of a pulse width modu
 
 **What is a watchdog timer?**
 
-**Synchronization techqniques**
+**Synchronization techniques**
 
 Mutex vs Semaphores
 
-https://www.ibm.com/docs/en/i/7.4?topic=techniques-synchronization-among-threads
+Synchronization techniques among threads by [IBM](https://www.ibm.com/docs/en/i/7.4?topic=techniques-synchronization-among-threads).
 
 **Object Oriented Programming in C** - check this link http://vger.kernel.org/lkml/#s15-3
 
@@ -134,18 +134,17 @@ How to read and understand schematics?
 
 **Debugging**
 
-[Debugging](./debugging.md)
+[Debugging](docs/computer_systems/debugging.md).
 
 **Communication Interfaces/Devices**
 
 **Embedded peripherals / Interfaces:**
 
-    - I2C - synchronous serial interface
-    - GPIO
-    - Analog - ADC, DAC
-    - USB
-    - SPI - synchronous serial interface - (complex) color LCD display, 
-      SD flash memory card, (simple) EEPROM)
+* I2C - synchronous serial interface
+* GPIO
+* Analog - ADC, DAC
+* USB
+* SPI - synchronous serial interface - (complex) color LCD display, SD flash memory card, (simple) EEPROM)
 
 **External Communication Interfaces/Devices:**
 

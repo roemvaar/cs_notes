@@ -1,3 +1,10 @@
+---
+layout: default
+title: Personal Setup
+parent: Computer Systems
+nav_order: 1
+---
+
 # Personal Setup
 
 ## Download Sources

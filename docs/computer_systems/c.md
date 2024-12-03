@@ -13,61 +13,62 @@ nav_order: 1
 * Pointers
 ```
 
-## **C data types**
+## C data types
 
 * char, short, int, float, double
 
-* user defined (typedef): structs, unions, enums
+* user-defined (typedef): structs, unions, enums
 
 * C - Fixed-width integers types: C99 adds built-in fixed width integers - int8_t, uint8_t, int16_t, int32_t, int64_t, etc.
 
-  In order to use these fixed-width integers, you need to: ```#include <stdint.h>```.
+To use these fixed-width integers, you need to: `#include <stdint.h>`.
 
-## **What's a pointer? What's its size?**
+## What's a pointer? What's its size?
 
 It's a variable that holds the address of another variable. In this way, the variable that the
 pointer variable points to can be modified indirectly. 
 
-The size is system specific. Typically it has the same size as the processor word, e.g. in an ARM32
-board, the pointers typically have a 4 bytes size (32 bits).
+The size is system-specific. Typically, it has the same size as the processor word, e.g. in an ARM32
+board, the pointers usually have a 4 byte size (32 bits).
 
-## **Void pointer**
+## Void Pointer
 
-void pointers are used as general-purpose pointers. They're good in the case that you don't priorly 
-know what data type to return from a function, such as in malloc. It's important to cast your
-pointer in order for you to be able to use it.
+Void pointers are used as general-purpose pointers. They're good if you don't know
+what data type to return from a function, such as in malloc. It's important to cast
+your pointer for you to use.
 
-## **Null pointer**
+## Null Pointer
 
-A null pointer is a pointer which points to nothing. Some uses of the null pointer are: a) To
-initialize a pointer variable when that pointer variable isn't assigned any valid memory address
-yet. b) To pass a null pointer to a function argument when we don't want to pass any valid memory
-address.
+A null pointer is a pointer which points to nothing. Some uses of the null pointer are: 
 
-## **Compilation stages - what happens at each stage?**
+* To initialize a pointer variable when that pointer variable hasn't been assigned any valid memory address yet.
 
-In order to compile hello.c, the following steps need to be taken:
+* To pass a null pointer to a function argument when we don't want to pass any valid memory address.
+
+## Compilation stages - What happens at each stage?
+
+To compile `hello.c`, the following steps need to be taken:
 
 1) Preprocessor: the preprocessor performs one or many of the following
 task on the translation unit (.c file):
 
-  - Removes comments
-  - Expands macros
-  - Expands included files
+* Removes comments
+* Expands macros
+* Expands included files
 
-It basically takes care of all the commands that begin with #, sucha as
+It takes care of all the commands that begin with #, such as
 #define, #include, #pragma, etc.
 
-If you included a header file such as #include <stdio.h>, it will look for the stdio.h file and
-copy the header file into the source code file.
+If you included a header file such as #include <stdio.h>, it will look for the stdio.h
+file and copy the header file into the source code file.
 
-The preprocessor also generates macro code and replaces symbolic constants defined using #define
-with their values.
+The preprocessor also generates macro code and replaces symbolic constants defined
+using #define with their values.
 
 output: hello.i
 
 2) Compiler: compiling is the second step. It takes the output of the preprocessor and generates
-assembly language, an intermediate human readable language, specific to the target processor.
+assembly language, an intermediate human readable language specific to the target processor.
 
 output: hello.s
 
@@ -78,32 +79,30 @@ code.
 output: hello.o
 
 4) Linker: Linking is the final step of compilation. The linker merges all the object code from
-multiple modules into a single one. If we are using a function from libraries, linker will link
+multiple modules into one. If we use a function from libraries, the linker will link
 our code with that library function code.
 
-In static linking, the linker makes a copy of all used library functions to the executable file.
-In dynamic linking, the code is not copied, it is donde by just placing the name of the library
+In static linking, the linker copies all used library functions to the executable file.
+In dynamic linking, the code is not copied; it is done by just placing the library's name
 in the binary file.
 
-## **Difference between a switch and an if statement**
+## Difference between a switch and an if statement
 
-## **Common problems - segmentation fault, memory leaks**
+## Common problems - segmentation fault, memory leaks
 
-## **C reserved words - const (in parameters), extern, private, volatile, static (variables), etc. for both variables and functions.**
+## C reserved words - const (in parameters), extern, private, volatile, static (variables), etc. for both variables and functions.
 
-**Static Functions:** Static functions in C are functions that are restricted to the same file in which they are defined. The functions in C
-are by default global. If we want to limit the scope of the function, we use the keyword static before the function. Doing so, restricts the
+**Static Functions:** Static functions in C are restricted to the same file in which they are defined. The functions in C
+are, by default, global. If we want to limit the function's scope, we use the keyword static before the function. Doing so restricts the
 scope of the function in other files, and the function remains callable only in the file in which it is defined.
 
-## **Pointers to functions**
+## Pointers to functions
 
-## **Libraries**
+## Libraries
 
-Libraries are collections of precompiled functions that have been written to be reusable. Typically,
-they consists of sets of related functions to perform a common task. 
+Libraries are collections of precompiled functions that have been written to be reusable. Typically, they consist of sets of related functions to perform a common task. 
 
-The C compiler (or more exactly, the linker) needs to be told which libraries to search, because
-by default it searches only the standard C library.
+The C compiler (or, more exactly, the linker) needs to be told which libraries to search because, by default, it searches only the standard C library.
 
 A library filename always starts with lib. Then follow the part indicating what library this is (like c for the C library,
 or m for the mathematical library). The last part starts with a dot (.), and specifies the type of library:

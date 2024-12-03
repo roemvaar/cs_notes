@@ -5,7 +5,7 @@ parent: Computer Systems
 nav_order: 1
 ---
 
-## ARM
+# ARM
 
 ISA - Instruction Set Architecture
 

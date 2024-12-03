@@ -13,16 +13,13 @@ What is a correct program? One that does no more and no less than it claims
 to do [2]. A function has some expectations about the system that it runs on:
 
 * Preconditions: It is the caller's responsibility to pass good data (parameters)
-* Postconditions: This implies that the function will conclude*.
+* Postconditions: This implies that the function will conclude.
 * Class invariants: A class ensures that this condition is always true from the
   perspective of a caller.
-
-\* What about scheduling, tho.
 
 If either party fails to live up to the terms of the contract, then a
 remedy (which was previously agreed to) is invoked—maybe an
 exception is raised, or the program terminates.
-
 
 ## How can you plan for the kind of architectural volatility demanding to
 ## integrate a new technology every now and then? You can’t.
@@ -58,7 +55,7 @@ like a JSON file.
 * Users get to see something working early
 * Start with tracing code - Developers build a structure to work in
 
-## Nest Allocations [1]
+## Nest Allocations
 
 The basic pattern for resource allocation can be extended for
 routines that need more than one resource at a time.
@@ -70,8 +67,6 @@ contains references to another.
 When allocating the same set of resources in different places in
 your code, always allocate them in the same order. This will reduce
 the possibility of deadlock.
-
-
 
 ## References
 

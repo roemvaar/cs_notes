@@ -7,7 +7,7 @@ nav_order: 1
 
 # Linux Kernel
 
-![Linux Kernel](../img/linux_kernel.png)
+<!-- ![Linux Kernel](../img/linux_kernel.png) -->
 
 ## Linux Kernel Main Roles:
 
@@ -85,7 +85,7 @@ of that interface; it is the gateway to the kernel for Linux programs. Even if y
 writing programs in another language, maybe Java or Python, the respective runtime support
 libraries will have to call the C library eventually.
 
-![c_library(./img/c_lib.jpg)
+<!-- ![c_library(./img/c_lib.jpg) -->
 
 Whenever the C library needs the services of the kernel, it will use the kernel system call
 interface to transition between user space and kernel space.
@@ -145,7 +145,7 @@ from which the developers can choose depending on its necessities. The main sche
 * In kernel-space, in process context, executing on behalf of a specific process
 * In kernel-space, in interrupt context, not associated with a process, handling an interrupt
 
-![kernel_context](../img/kernel_context.png)
+<!-- ![kernel_context](../img/kernel_context.png) -->
 
 ### Process
 
@@ -210,10 +210,10 @@ encapsulate all of the hardware-dependent features.
 
 Drivers examples:
 
-  - Tape Drive - knows hot to start the tape, wind it forward and backward, read and write to it, and so on.
+* Tape Drive - knows hot to start the tape, wind it forward and backward, read and write to it, and so on.
   It will also know that tapes have to be written to in blocks of a certain size. 
 
-  - Low-level Hard Disk - will only write whole numbers of disk sectors at a time, but will be able to access
+* Low-level Hard Disk - will only write whole numbers of disk sectors at a time, but will be able to access
   any desired disk block directly, because the disk is a random access device.
 
 Device files in /dev are used in the same way; they can be opened, read, written, and closed. For example, the
@@ -230,42 +230,42 @@ completed. The device drivers can either poll the device or they can use interru
 There are many different device drivers in the Linux kernel but they all share some common
 attributes:
 
-- Kernel code: device drivers are part of the kernel, i.e., if they go wrong they can seriously
+* Kernel code: device drivers are part of the kernel, i.e., if they go wrong they can seriously
 damage the system.
 
-- Kernel interfaces: device drivers must provide a standard interface to the Linux kernel or to
+* Kernel interfaces: device drivers must provide a standard interface to the Linux kernel or to
 the subsystem that they are part of.
 
-- Kernel mechanisms and services: drivers make use of standard kernel services such as memory
+* Kernel mechanisms and services: drivers make use of standard kernel services such as memory
 allocation, interrupt delivery and wait queues to operate.
 
-- Loadable: Most of the Linux device drivers can be loaded on demand as kernel modules when they're
+* Loadable: Most of the Linux device drivers can be loaded on demand as kernel modules when they're
 needed and unloaded when they are no longer being used. This makes the kernel adaptable and efficient
 with system's resources.
 
-- Configurable: Linux device drivers can be built into the kernel. Which devices are built is
+* Configurable: Linux device drivers can be built into the kernel. Which devices are built is
 configurable when the kernel is compiled, i.e., they can be statically linked in the kernel or
 loaded during run-time as modules.
 
-- Dynamic: as the system boots and each device driver is initialized it looks for the hardware device
+* Dynamic: as the system boots and each device driver is initialized it looks for the hardware device
 that is controling. It does not matter if the device being controlled by a particular device driver
 does not exist. In this case the device driver is simply redundant and causes no harm apart from
 occupying a little of the system's memory.
 
 ### Device driver types:
 
-- Char drivers: Character device drivers normally perform I/O in a byte stream. Non-buffered files
+* Char drivers: Character device drivers normally perform I/O in a byte stream. Non-buffered files
 that allow you to read and write data character by character.
-- Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. Buffered files that allow you to read and write
+* Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. Buffered files that allow you to read and write
 only whole blocks of data. Block devices are accessed via the buffer cache and may be randomly
 accessed, that is to say, any block can be read or written no matter where it is on the device.
-- Network drivers: devices are accessed via the BSD socket interface and other networking subsytems.
+* Network drivers: devices are accessed via the BSD socket interface and other networking subsytems.
 
 ### Kernel Drivers vs User Space Drivers 
 
 User space driver vs Kernel space driver - checar el pdf de linux-kernel-slides.pdf p.46
 
-Difference between drivers and modules: https://unix.stackexchange.com/questions/47208/what-is-the-difference-between-kernel-drivers-and-kernel-modules
+Difference between drivers and modules [here](https://unix.stackexchange.com/questions/47208/what-is-the-difference-between-kernel-drivers-and-kernel-modules).
 
 ## Kernel or Module?
 
@@ -301,10 +301,8 @@ architectures)
 - All kernel modules, spread over the kernel source tree, as .ko (kernel
 object) files.
  
-
 ### Inter-Process Communication 
 
-# TO DO: UPDATE PROCESS SECTION USING CH. 3 - how to create one - ch. 3 - Linux Kernels Development
 Another name for a process is a task
 
 ## Signals 
@@ -370,9 +368,7 @@ System configuration files
 - Why you should not use floating point numbers in kernel code? Because your code might need to run on lower-end processors
   without a floating-point unit. In case that you need to use floating point numbers, you shall do these operations on user space.
 
-
-
-Buffer sharing: DMA Buf & ION
+<!-- Buffer sharing: DMA Buf & ION
 Wait events/Wait queues
 ISR handling (Top half/Bottom half)
 Bottom Half - Tasklet/Workqueue/SoftIRQ
@@ -401,8 +397,7 @@ multithreading..
 
 * How to unload a built-in kernel driver?
 
-You can't, you need to rebuild the driver as a module. [4]
-
+You can't, you need to rebuild the driver as a module. [4] -->
 
 ## Resources
 

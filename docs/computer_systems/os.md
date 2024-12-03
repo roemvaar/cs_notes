@@ -1,3 +1,10 @@
+---
+layout: default
+title: Operating System
+parent: Computer Systems
+nav_order: 1
+---
+
 # Operating System (OS)
 
 An operating system (OS) is system software that manages computer hardware, software resources, and
@@ -368,24 +375,10 @@ Memory mapped IO / IO Mapped IO. Scheduling IO.
 
 ### File Systems
 
-
-
-
-
-
-
-
-
-
-
-
-
 - **IPC - Inter Process Communications**
 
 
 - **Interrupts** 
-
-
 
 ### Resources
 
@@ -394,9 +387,3 @@ Memory mapped IO / IO Mapped IO. Scheduling IO.
 [2] Linux Kernel Development (3rd Edition), Roberto Love
 
 [3] [Tutorials Point](https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm)
-
-
-<!-- TODO -->
-<!-- [] User Grammarly to check the grammar -->
-<!-- [] Add this to references: https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ -->
-<!-- [] Before interviews, make sure you can answer questions about all of these topics: https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ -->

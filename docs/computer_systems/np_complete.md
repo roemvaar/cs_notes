@@ -1,16 +1,26 @@
-# NP-complete Problems [1]
+---
+layout: default
+title: NP-Complete Problems
+parent: Computer Systems
+nav_order: 1
+---
 
-1) No efficient algorithm for an NP-complete problem has ever been found
-2) Nobody has ever proven that an efficient algorithm for one cannot exist, i.e., no one knows
+# NP-Complete Problems
+
+1. No efficient algorithm for an NP-complete problem has ever been found
+
+2. Nobody has ever proven that an efficient algorithm for one cannot exist, i.e., no one knows
    whether efficient algorithms exist for NP-complete problems
-3) The set of NP-complete has the property that if an efficient algorithm exist for any
+
+3. The set of NP-complete has the property that if an efficient algorithm exist for any
    of them, then efficient algorithms exist for all of them
-4) Several NP-complete problems are similar to problems for which we have efficient algorithms.
+
+4. Several NP-complete problems are similar to problems for which we have efficient algorithms.
    It's intriguing how a small change on the problem statement can change the efficiency of
    of the best known algorithm
  
 Note: Only decision problems - those with a "yes/no" answer - can be NP-complete.
-   
+
 When you're facing an NP-complete problem (or something that looks like it), you should:
 
 1. Spend sometime trying to figure out an efficient algorithm (remember that time > money)
@@ -26,6 +36,5 @@ Greedy algorithms optimize locally, hoping to end up with a global optimum. Gree
 thy make good approximation algorithms.
 
 NP-Complete problems have no known fast solution. If you have an NP-Complete problem, your best bet is to use an approximation algorithm.
-
 
 [1] CLRS - Introduction to Algorithms (4th Ed)

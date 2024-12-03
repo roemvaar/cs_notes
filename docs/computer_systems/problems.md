@@ -1,3 +1,10 @@
+---
+layout: default
+title: Problem Solving
+parent: Computer Systems
+nav_order: 1
+---
+
 # Problem Solving
 
 **Steps:**

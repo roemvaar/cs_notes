@@ -6,4 +6,4 @@ has_children: true
 permalink: /docs/computer_systems
 ---
 
-## Computer Systems
+# Computer Systems

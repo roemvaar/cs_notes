@@ -1,3 +1,10 @@
+---
+layout: default
+title: Memory in C
+parent: Computer Systems
+nav_order: 1
+---
+
 # Memory in C
 
 ### Memory Layout of C Programs
