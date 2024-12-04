@@ -172,7 +172,7 @@ Example of a class:
     };
 ```
 
-![vector](./img/vector.jpg)
+![vector](../../assets/img/vector.jpg)
 
 ## Declaration vs Definition
 

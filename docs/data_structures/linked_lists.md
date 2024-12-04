@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Linked List
+title: Linked Lists
 parent: Data Structures
 nav_order: 1
 ---
 
-# Linked List
+# Linked Lists
 
 A linked list is a data structure that represents a sequence of nodes.
 

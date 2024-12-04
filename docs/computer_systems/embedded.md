@@ -74,7 +74,7 @@ configuration data.
 
 **Bare metal programming**
 
-Infinite for loop
+Infinite for loop.
 
 **OS and RTOS concepts**
 
@@ -119,9 +119,9 @@ for testing. This is known as cross-compiling.
 
 The are some common build systems, including the following:
 
-    - Pure Makefiles, where the toolchain is usually controlled by the make variable CROSS_COMPILE
-    - The GNU build system known as Autotools
-    - CMake (https://cmake.org)
+* Pure Makefiles, where the toolchain is usually controlled by the make variable CROSS_COMPILE
+* The GNU build system known as Autotools
+* CMake (https://cmake.org)
 
 Both Autotools and makefiles are needed to build even a basic embedded Linux system. CMake is 
 cross-plaform.
@@ -134,11 +134,11 @@ How to read and understand schematics?
 
 **Debugging**
 
-[Debugging](docs/computer_systems/debugging.md).
+[Debugging](https://roemvaar.github.io/computer_science_notes/docs/computer_systems/debugging.html).
 
-**Communication Interfaces/Devices**
+**Communication Interfaces / Devices**
 
-**Embedded peripherals / Interfaces:**
+**Embedded Peripherals / Interfaces:**
 
 * I2C - synchronous serial interface
 * GPIO
@@ -146,6 +146,12 @@ How to read and understand schematics?
 * USB
 * SPI - synchronous serial interface - (complex) color LCD display, SD flash memory card, (simple) EEPROM)
 
-**External Communication Interfaces/Devices:**
+**External Communication Interfaces / Devices:**
 
-CAN, LIN, Ethernet, Wi-Fi, Bluetooth, Modem, GPS, GMSL2, USART, UART
+* CAN
+* LIN
+* Ethernet
+* Wi-Fi
+* Bluetooth
+* GPS
+* UART

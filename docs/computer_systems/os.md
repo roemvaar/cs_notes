@@ -68,7 +68,7 @@ Other states that I process may be in include `terminated`, `suspend ready`, and
 
 The following figures shows the state transition that a given process can have.
 
-![Process State](../../img/process_states.png)
+![process_states](../../assets/img/process_states.png)
 
 ### Process Scheduling
 
@@ -259,7 +259,7 @@ Process (task) vs Threads - Linux Love p. 24 51/468.
 
 Applications running in user-space communicate with the kernel via system calls.
 
-![syscall](../../img/syscall.png)
+![syscall](../../assets/img/syscall.png)
 
 When hardware wants to communicate with the system, it issues an interrupt that literrally 
 interrupts the processor, which in turn interrupts the kernel. A number identifies interrupts and

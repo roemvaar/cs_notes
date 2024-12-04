@@ -86,7 +86,7 @@ Donâ€™t gloss over a routine or piece of code involved in the bug because you â€
 
 ## Debugging Checklist
 
-![checklist](../img/debug_checklist.png)
+![checklist](../../assets/img/debug_checklist.png)
 
 ## Frequently Asked Questions
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Design
+title: Design Lessons
 parent: Computer Systems
 nav_order: 1
 ---
@@ -21,8 +21,7 @@ If either party fails to live up to the terms of the contract, then a
 remedy (which was previously agreed to) is invoked—maybe an
 exception is raised, or the program terminates.
 
-## How can you plan for the kind of architectural volatility demanding to
-## integrate a new technology every now and then? You can’t.
+## How can you plan for the kind of architectural volatility demanding to integrate a new technology every now and then? You can’t.
 
 What you can do is make it easy to change. Hide third-party
 APIs behind your own abstraction layers. Break your code into
@@ -71,4 +70,5 @@ the possibility of deadlock.
 ## References
 
 [1] Pragmatic Programmer
+
 [2] Bertrand Meyer (Object-Oriented Software Construction [Mey97])

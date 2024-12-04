@@ -9,7 +9,7 @@ nav_order: 1
 
 ### Discuss the stack data structure. 
 
-![stack](../img/stack.jpg)
+![stack](../../assets/img/stack.jpg)
 
 A stack is a data structure that uses the FILO mechanism (First In, Last Out), i.e., you only have access to the last element (top element) inserted into the stack.
 

@@ -7,7 +7,7 @@ nav_order: 1
 
 # Linux Kernel
 
-<!-- ![Linux Kernel](../img/linux_kernel.png) -->
+![linux_kernel](../../assets/img/linux_kernel.png)
 
 ## Linux Kernel Main Roles:
 
@@ -85,7 +85,7 @@ of that interface; it is the gateway to the kernel for Linux programs. Even if y
 writing programs in another language, maybe Java or Python, the respective runtime support
 libraries will have to call the C library eventually.
 
-<!-- ![c_library(./img/c_lib.jpg) -->
+![c_library](../../assets/img/c_lib.jpg)
 
 Whenever the C library needs the services of the kernel, it will use the kernel system call
 interface to transition between user space and kernel space.
@@ -145,7 +145,7 @@ from which the developers can choose depending on its necessities. The main sche
 * In kernel-space, in process context, executing on behalf of a specific process
 * In kernel-space, in interrupt context, not associated with a process, handling an interrupt
 
-<!-- ![kernel_context](../img/kernel_context.png) -->
+![kernel_context](../../assets/img/kernel_context.png)
 
 ### Process
 

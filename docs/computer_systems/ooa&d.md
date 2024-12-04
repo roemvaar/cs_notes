@@ -64,8 +64,9 @@ Use a textual description of the problem you're trying to solve to make sure tha
 
 Anytime you see duplicate code, look for a place to encapsulate!
 
-![img1](../img/ooa&d.png)
-![img2](../img/ooa&d2.png)
+![ooa&d](../../assets/img/ooa&d.png)
+
+![ooa&d2](../../assets/img/ooa&d2.png)
 
 Favor composition over inheritance (design principle)
 

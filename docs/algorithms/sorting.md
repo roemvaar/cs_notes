@@ -10,6 +10,11 @@ nav_order: 1
 Insertion sort usually runs faster than merge sort for small input sizes, once the input size
 n becomes large enough, merge sort advantages insertion sort because of the lg n [1, p.12].
 
+### Must Know
+
+* Merge sort
+* Quicksort
+
 ## Selection Sort
 
 O(n<sup>2</sup>).

@@ -25,7 +25,7 @@ memory footprint of the algorithms that you design and implement.
 Variables used in Big O notation denote the sizes of inputs to algorithms. The following examples of
 common complexities and their Big O notations, ordered from fastest to slowest.
 
-![big_o](./img/big_o.png)
+![big_o](../../assets/img/big_o.png)
 
 ### Constant - O(1)
 
