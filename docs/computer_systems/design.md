@@ -66,9 +66,3 @@ contains references to another.
 When allocating the same set of resources in different places in
 your code, always allocate them in the same order. This will reduce
 the possibility of deadlock.
-
-## References
-
-[1] Pragmatic Programmer
-
-[2] Bertrand Meyer (Object-Oriented Software Construction [Mey97])

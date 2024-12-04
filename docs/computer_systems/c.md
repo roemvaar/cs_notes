@@ -247,14 +247,3 @@ Virtual Address Space of a C Program
 
 static vs global (variables)?
 While static variables have scope over the file containing them making them accessible only inside a given file, global variables can be accessed outside the file too.
-
- 
-## References
-
-[1] Book. The C Programming Language. 2nd Edition by Brian Kernighan and
-Dennis Ritchie
-
-[2] Book. Expert C Programming
-
-[3] Book. C Pocket Reference: C Syntax and Fundamentals 
-Book by Peter Prinz and Ulla Kirch-Prinz

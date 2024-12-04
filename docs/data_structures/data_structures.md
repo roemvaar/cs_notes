@@ -157,27 +157,3 @@ or if you must ensure no items in the group occurs more than once.
 * **Graph**
 
 * **Hash Table**
-
-## Amortization
-
-Operation takes T(n) amortized time if any k operations take <= k * T(n) time.
-
-(Particular kind of averaging. Averaging over the sequence of
-operations.)
-
-Some individual operations are expensive, but most operations are
-cheap, so you average all operations.
-
-Not as good as constant time, but it's almost as good.
-
-Examples:
-
-* Insert at the end of vector
-* Hash Table look-up
-
-### References
-
-- Computer Science Distilled
-- Leetcode
-- Programming Interviews Exposed
-- Introduction to Algorithms, CLRS

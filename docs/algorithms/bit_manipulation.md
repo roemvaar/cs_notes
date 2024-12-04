@@ -90,7 +90,3 @@ LSB in the first memory address and MSB in the last.
 - isUnique
 - Rotate image - using bit manipulation (1 bit = 1 pixel)
 - Write an algorithm to reverse the bits of an UNSIGNED binary number
-
-## References
-
-* https://mariokartwii.com/armv8/ch14.html

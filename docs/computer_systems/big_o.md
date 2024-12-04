@@ -10,7 +10,7 @@ nav_order: 1
 Time (and space) complexity is the measurement of an algorithm speed/runtime (or space usage in case of
 space complexity) as the size of input of the algorithm increases. 
 
-### Big-O notation
+## Big-O notation
 
 Big O notation is the notation used to describe the time complexity and space complexity of algorithms.
 
@@ -27,9 +27,9 @@ common complexities and their Big O notations, ordered from fastest to slowest.
 
 ![big_o](../../assets/img/big_o.png)
 
-### Constant - O(1)
+## Constant - O(1)
 
-### Logarithmic - O(log(n))
+## Logarithmic - O(log(n))
 
 log<sub>2</sub>N = k -> 2<sup>k</sup> = N
 
@@ -39,15 +39,15 @@ be a O(log N) runtime.
 This is the reason why finding an element in a balanced binary search tree is O(log N). With each comparison, we
 go either left or right. Half the nodes are on each side, so we cut the problem space in half each time.
 
-### Linear - O(n)
+## Linear - O(n)
 
-### Log-Linear - O(nlog(n))
+## Log-Linear - O(nlog(n))
 
-### Quadratic - O(n<sup>2</sup>)
+## Quadratic - O(n<sup>2</sup>)
 
-### Polinomial - O(n<sup>c</sup>)
+## Polinomial - O(n<sup>c</sup>)
 
-### Exponential - O(c<sup>n</sup>)
+## Exponential - O(c<sup>n</sup>)
 
 Recursive calls: O(branches<sup>depth</sup>)
 
@@ -57,8 +57,7 @@ Generally speaking, when you see an algorithm with multiple recursive calls, you
 
 Memoization is a tecnique used to optimize exponential time recursive algorithms.
 
-### Factorial - O(n!)
-
+## Factorial - O(n!)
 
 ## Important concepts
 
@@ -101,6 +100,23 @@ amount of work is O(A * B).
 
 - **In the context of coding interviews, Big O notation is usually understood to describe**
 **the worst-case complexity of an algorithm**
+
+## Amortization
+
+Operation takes T(n) amortized time if any k operations take <= k * T(n) time.
+
+(Particular kind of averaging. Averaging over the sequence of
+operations.)
+
+Some individual operations are expensive, but most operations are
+cheap, so you average all operations.
+
+Not as good as constant time, but it's almost as good.
+
+Examples:
+
+* Insert at the end of vector
+* Hash Table look-up
 
 **Sources:**
 

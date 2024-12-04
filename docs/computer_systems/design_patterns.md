@@ -34,8 +34,3 @@ Each pattern has four essential elements:
 * Consequences
 
 Reuse successful designs by basing new designs on prior experience.
-
-## References
-
-* Head First Design Patterns (book)
-* Design Patterns: Elements of Reusable Object Oriented Software (book)
