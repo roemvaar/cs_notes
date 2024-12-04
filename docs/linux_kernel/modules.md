@@ -79,12 +79,16 @@ Code 1. Linux Kernel Module - Hello World (hello.c)
 
 3. Create the Makefile
 
-<!-- Figure 1. Makefile to compile an out-of-tree kernel module -->
+![makefile](../../assets/img/makefile.png)
+
+Makefile to compile an out-of-tree kernel module.
 
 4. Build using `make`
 
 5. Insert module to the host kernel using `sudo insmod hello.ko`
 
 6. Check module logs using `dmesg | tail`
+
+![dmesg](../../assets/img/dmesg.png)
 
 7. Remove the module `sudo rmmod hello`

@@ -32,3 +32,43 @@ We have three interrupt mechanisms:
 * **Workqueues:** run in process context. Workqueues provide a way to handle non-time-critical tasks asynchronously outside interrupt context.
 
 The primary criteria for differentiating the mechanisms are the context in which each runs.
+
+## Interrupt Mechanism
+
+1. Interrupt occurrence: hardware device generates an interrupt signal. CPU interrupts its current task and enters the interrupt handler.
+
+2. Interrupt handler: the interrupt handler executes to handle the interrupt. It performs time-critical and minimal processing to acknowledge and service the interrupt. For certain types of interrupts, the handler may schedule bottom half processing.
+
+3. Bottom half scheduling: if needed, the interrupt handler schedules, bottom half processing to handler less time-critical tasks or deferred work. Bottom halves are scheduled based on the nature of the processing required and the priority of the task.
+
+## What is an IRQ?
+
+An IRQ is an interrupt request from a device. Currently they can come in over a pin, or over a packet. Several devices may be connected to the same pin thus sharing an IRQ.
+
+An IRQ number is a kernel identifier used to talk about a hardware interrupt service. Typically this is an index into the global irq_desc array, but except for what linux/interrupt.h implements the details are architecture specific.
+
+An IRQ number is an enumeration of the possible interrupt sources on a machine. Typically what is enumerated is the number of input pins on all of the interrupt controllers in the system.
+
+Architectures can assign additional meaning to the IRQ numbers, and are encouraged to in the case where there is any manual configuration of the hardware involved. The ISA IRQs are a classic example of assigning this kind of additional meaning.
+
+The role of the interrupt handler depends entirely on the device and its reasons for issuing the interrupt. At a minimum, most interrupts handlers need to provide acknowledgement to the device that they received the interrupt. Devices that are more complex need to additionally send and receive data and perform extended work in the interrupt handler. The extended work is pushed as much as possible into the bottom half handler.
+
+## Reentrancy and Interrupt Handlers
+
+Interrupt handlers in Linux need not be reentrant. When a given interrupt handler is executing, the corresponding interrupt line is masked out on all processors, **preventing another interrupt on the same line from being received**. Normally all other interrupts are enabled, so other interrupts are serviced, but the current line is always disabled. Consequently, the same interrupt handler is never invoked concurrently to service a nested interrupt. This greatly simplifies writing your interrupt handler.
+
+You can have shared handlers. When the kernel receives an interrupt, it invokes sequentially each registered handler on the line.
+
+## How long is the interrupt latency in Linux?
+
+## Describe the process of exception handling, i.e., interrupt handling mechanism, in the Linux kernel
+
+The Linux kernel includes a variety of exception handlers for different types of interrupts, including hardware interrupts, software interrupts, and system calls.
+
+1. Saves the state of the interrupted process
+
+2. Determines the cause of the interrupt
+
+3. Executes the appropriate interrupt handler for the interrupt type
+
+4. Restores the state of the interrupted process and resumes its execution

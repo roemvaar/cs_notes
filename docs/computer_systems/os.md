@@ -45,6 +45,19 @@ that's specific to a subsystem can crash the whole kernel. In the same scenario,
 this by killing the erroneous subsystem. The Linux kernel is an example of a monolithic kernel, and QNX
 is a microkernel.
 
+### Microkernel vs Monolithic Kernel
+
+Linux supports the dynamic loading of kernel modules. Although the Linux kernel is monolithic, it can dynamically load and unload kernel code on demand.
+
+In a microkernel architecture the kernel contains just enough code that allows for message passing between different running processes. One of the advantages of this architecture is that the services are isolated and hence bugs in one service won’t impact other services. As such, if a service crashes we can restart it without affecting the whole system. This architecture imposes a modular approach to the kernel and offers memory protection between services but at a cost of performance. What is a simple function call between two services on a monolithic kernel now requires going through IPC and scheduling which will incur a performance penalty.
+
+Modern monolithic kernels use several approaches to be modular (like microkernels):
+
+* Components can be enabled or disabled at compile time
+* Support of loadable kernel modules at runtime
+* Organize the kernel in logical, independent subsystems
+* Strict interface but with low performance overhead: macros, inline functions, function pointers
+
 ### Process
 
 A process is an abstraction of a running program. It is the program code that has been loaded into main

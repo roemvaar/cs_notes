@@ -7,6 +7,8 @@ nav_order: 1
 
 # Device Drivers
 
+Most of the fundamental driver operations involve three important kernel data structures, called file_operations, file, and inode.
+
 The kernel code can be logically separated into core kernel code and device driver code. Device driver code is responsible for accessing particular devices, while the core kernel code is generic. 
 
 Char and block devices are accessed by filesystem nodes in the /dev directory. Block drivers have a completely different interface from the kernel's char drivers.
