@@ -18,6 +18,8 @@ In practice, the operating system's role is to provide programs with a consisten
 
 The kernel is a large, standalone program with detailed and explicit requirements on how its pieces are put together.
 
+Every software package used in a Linux system has its own release number, and there are often interdependencies across them.
+
 ## Main components of the Linux kernel?
 
 The core kernel is divided into multiple logic subsystems:

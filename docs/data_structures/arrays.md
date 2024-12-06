@@ -56,10 +56,3 @@ Operations:
 * delete_at(idx) - delete element at i, and shift all elements bigger than x_i+1 to
 the "left"
 * insert/delete at first/last (value)/()
-
-## Must study problems:
-
-* Rotate an image - https://leetcode.com/problems/rotate-image/solution/
-* Best Time to Buy and Sell Stock II
-* Count and Say
-* Design a stack (linked list vs arrays/vectors)

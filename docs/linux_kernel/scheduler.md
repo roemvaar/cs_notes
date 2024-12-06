@@ -7,6 +7,8 @@ nav_order: 1
 
 # Scheduler
 
+<!-- I/O Bound vs CPU Processing -->
+
 ## Scheduler Classes
 
 The Linux scheduler is modular, enabling different algorithms to schedule different processes. This modularity is called **scheduler classes**. Scheduler classes enable different, pluggable algorithms to coexist, scheduling their types of processes. Each scheduler class has a priority. The core kernel CPU scheduler code, defined in [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.11.5/source/kernel/sched/core.c), iterates over each scheduler class in order of priority. The highest priority scheduler class with a runnable process wins, selecting who runs next.

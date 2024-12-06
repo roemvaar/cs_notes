@@ -46,8 +46,3 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 Usage:
   
 * Git trees - to keep track of commits, trees and blobs
-
-## Must study problems:
-
-* Convert Sorted Array to Binary Search Tree
-* Invert a binary tree

@@ -41,10 +41,6 @@ Two keys have been assigned the same slot.
 There are multiple ways to deal with collisions. The simple one is this: if multiple
 keys map to the same slot, start a linked list at that slot.
 
-### Must study problems:
-
-* Minimum Characters for Words - algoexpert 
-
 * **Hash Table**
 
 A hash table is dynamic set that is an effective data structure for implementing

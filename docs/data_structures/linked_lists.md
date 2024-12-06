@@ -72,12 +72,5 @@ traverse it
 The linked list is a simple data structure, which is the basis for a surprising number of
 problem solutions regarding the handling of dynamic data.
 
-### Must study problems:
-
-* Reverse a linked list
-* Check if a linked list is acyclic - slow and fast pointers
-* Linked List Flattening/Unflattening (multi-level, PIE)
-* Implement the Linked List Push and Pop functions.
-
 **Hint:** Take care of the pointer-to-pointer structure. Nodes are to be created in
 memory with dynamic memory allocation.

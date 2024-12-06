@@ -13,7 +13,3 @@ characters surrounded by double quotes.
 Immutability
 
 ### Operations
-
-### Must study problems:
-
-* Camel Case 4 - HackerRank
