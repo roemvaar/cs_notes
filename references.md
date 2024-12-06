@@ -8,30 +8,28 @@ permalink: /docs/references
 
 # References
 
-* [CLRS] Introduction to Algorithms 4th Ed.
+* [CLRS] **Book**: *Introduction to Algorithms, 4th Edition* by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
 
-* [] https://mariokartwii.com/armv8/ch14.html
+* [MKARMv8] **Website**: ARMv8 Architecture Reference: [https://mariokartwii.com/armv8/ch14.html](https://mariokartwii.com/armv8/ch14.html)
 
-* [C] Book. The C Programming Language. 2nd Edition by Brian Kernighan and
-Dennis Ritchie
+* [C] **Book**: *The C Programming Language, 2nd Edition* by Brian Kernighan and Dennis Ritchie.
 
-* [2] Book. Expert C Programming
+* [Exp] **Book**: *Expert C Programming: Deep C Secrets* by Peter van der Linden.
 
-* [] Book. C Pocket Reference: C Syntax and Fundamentals 
-Book by Peter Prinz and Ulla Kirch-Prinz
+* [CPR] **Book**: *C Pocket Reference: C Syntax and Fundamentals* by Peter Prinz and Ulla Kirch-Prinz.
 
-* [LFD103] LFD103 - Linux Foundation
+* [LFD103] **Course**: *LFD103 - Introduction to Linux* by The Linux Foundation.
 
-* [] Head First Design Patterns (book)
+* [HFDP] **Book**: *Head First Design Patterns: A Brain-Friendly Guide* by Eric Freeman and Elisabeth Robson.
 
-* [] Design Patterns: Elements of Reusable Object Oriented Software (book)
+* [DP] **Book**: *Design Patterns: Elements of Reusable Object-Oriented Software* by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.
 
-* [] Pragmatic Programmer
+* [PP] **Book**: *The Pragmatic Programmer: Your Journey to Mastery* by Andrew Hunt and David Thomas.
 
-* [Mey97] Bertrand Meyer (Object-Oriented Software Construction)
+* [Mey97] **Book**: *Object-Oriented Software Construction, 2nd Edition* by Bertrand Meyer.
 
-* [] Head First Object Oriented Analysis and Design (book)
+* [HFOOAD] **Book**: *Head First Object-Oriented Analysis and Design* by Brett McLaughlin, Gary Pollice, and David West.
 
-* [] Computer Science Distilled
+* [CSD] **Book**: *Computer Science Distilled: Learn the Art of Solving Computational Problems* by Wladston Ferreira Filho.
 
-* [] Programming Interviews Exposed
+* [PIE] **Book**: *Programming Interviews Exposed: Secrets to Landing Your Next Job* by John Mongan, Noah Suojanen, and Eric Giguere.
