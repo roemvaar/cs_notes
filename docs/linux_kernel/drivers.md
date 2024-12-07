@@ -27,6 +27,8 @@ A character (char) device is one that can be accessed as a stream of bytes (like
 
 The only relevant difference between a char device and a regular file is that you can always move back and forth in the regular file, whereas most char devices are just data channels, which you can only access sequentially.
 
+### Write a character device driver
+
 ## Block Devices
 
 Block devices are hardware devices distinguished by the random access of fixed-size chunks of data. A block device is a device (e.g., a disk) that can host a filesystem.

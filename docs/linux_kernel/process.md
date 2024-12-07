@@ -10,3 +10,7 @@ nav_order: 1
 Linux implements the standard Unix process management APIs such as fork(), exec(), wait(), as well as standard POSIX threads.
 
 ## How does the Linux kernel handle process management?
+
+## Threads
+
+### Difference between threads and processes?

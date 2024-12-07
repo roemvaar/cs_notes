@@ -19,6 +19,8 @@ struct rq - main, per-CPU run queue data structure. In a computer, multiple proc
 * struct rt_rq
 * struct dl_rq
 
+![sched_classes](../../assets/img/sched_classes.jpg)
+
 ## Completely Fair Scheduler (CFS)
 
 Default scheduler in Linux, designed to fairly distribute CPU time among tasks. [CFS’s](https://docs.kernel.org/scheduler/sched-design-CFS.html) design can be summed up in: CFS models an “ideal, precise multitasking CPU” on real hardware.

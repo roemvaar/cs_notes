@@ -7,9 +7,9 @@ nav_order: 1
 
 # Completely Fair Scheduler (CFS)
 
-## Implementation of CFS
-
 `kernel/sched/fair.c`
+
+## Implementation of CFS
 
 ## Time Accounting
 
