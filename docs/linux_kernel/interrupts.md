@@ -45,7 +45,7 @@ The primary criteria for differentiating the mechanisms are the context in which
 
 An IRQ is an interrupt request from a device. Currently they can come in over a pin, or over a packet. Several devices may be connected to the same pin thus sharing an IRQ.
 
-An IRQ number is a kernel identifier used to talk about a hardware interrupt service. Typically this is an index into the global irq_desc array, but except for what linux/interrupt.h implements the details are architecture specific.
+An IRQ number is a kernel identifier used to talk about a hardware interrupt service. Typically this is an index into the global `irq_desc` array, but except for what Linux/interrupt.h implements the details are architecture specific.
 
 An IRQ number is an enumeration of the possible interrupt sources on a machine. Typically what is enumerated is the number of input pins on all of the interrupt controllers in the system.
 

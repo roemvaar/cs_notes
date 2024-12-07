@@ -8,4 +8,4 @@ permalink: /docs/algorithms
 
 # Algorithms
 
-Here is a list of the most important algorithms every software engineer should be familiar with.
+Here is a list of the most important algorithms every software engineer should know.

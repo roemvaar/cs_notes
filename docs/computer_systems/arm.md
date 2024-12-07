@@ -20,13 +20,13 @@ https://mariokartwii.com/armv8
 
 Application.
 
-* iMX.8 - Cortex A (mainly) for automotive applications
+* iMX.8 - Cortex-A (mainly) for automotive applications
 * BCM2711 - Broadcom chip used in Raspberry Pi 4 model B. Quad-core
 Cortex-A72 (ARM v8) 64-bit SoC @ 1.5 GHz.
 
 ### ARM Cortex-M
 
-Microcontroller. Usually don't have MMU (memory management
+Microcontroller. Usually, they don't have MMU (memory management
 unit). 
 
 ### ARM Cortex-R

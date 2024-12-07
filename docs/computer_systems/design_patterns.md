@@ -20,7 +20,7 @@ nav_order: 1
 
 Descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.
 
-Describes simple and elegant solutions to specific problems in object-oriented software design. Implementing this patterns represent more work than doing an ad hoc solution, but you gain in increased flexibility and reusability. Design patterns are divided in three:
+Describes simple and elegant solutions to specific problems in object-oriented software design. Implementing these patterns represents more work than doing an ad hoc solution, but you gain increased flexibility and reusability. Design patterns are divided into three:
 
 * Creational
 * Structural

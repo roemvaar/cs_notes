@@ -13,7 +13,7 @@ nav_order: 1
 * Pointers
 ```
 
-## C data types
+## C Data Types
 
 * char, short, int, float, double
 
@@ -28,20 +28,17 @@ To use these fixed-width integers, you need to: `#include <stdint.h>`.
 It's a variable that holds the address of another variable. In this way, the variable that the
 pointer variable points to can be modified indirectly. 
 
-The size is system-specific. Typically, it has the same size as the processor word, e.g. in an ARM32
-board, the pointers usually have a 4 byte size (32 bits).
+The size is system-specific. Typically, it is the same size as the processor word; e.g., in an ARM32 board, the pointers usually have a 4-byte size (32 bits).
 
 ## Void Pointer
 
-Void pointers are used as general-purpose pointers. They're good if you don't know
-what data type to return from a function, such as in malloc. It's important to cast
-your pointer for you to use.
+Void pointers are used as general-purpose pointers. They're good if you need to know what data type to return from a function, such as in malloc. It's important to cast your pointer for you to use.
 
 ## Null Pointer
 
 A null pointer is a pointer which points to nothing. Some uses of the null pointer are: 
 
-* To initialize a pointer variable when that pointer variable hasn't been assigned any valid memory address yet.
+* To initialize a pointer variable when that pointer variable has yet to be assigned a valid memory address.
 
 * To pass a null pointer to a function argument when we don't want to pass any valid memory address.
 
@@ -65,18 +62,17 @@ file and copy the header file into the source code file.
 The preprocessor also generates macro code and replaces symbolic constants defined
 using #define with their values.
 
-output: hello.i
+Output: hello.i
 
-2) Compiler: compiling is the second step. It takes the output of the preprocessor and generates
-assembly language, an intermediate human readable language specific to the target processor.
+2) Compiler: compiling is the second step. It takes the preprocessor's output and generates assembly language, an intermediate human readable language specific to the target processor.
 
-output: hello.s
+Output: hello.s
 
 3) Assembler: assembly is the third step of compilation. The assembler will convert the assembly
 code into pure binary code or machine code (zeros and ones). This code is also known as object
 code.
 
-output: hello.o
+Output: hello.o
 
 4) Linker: Linking is the final step of compilation. The linker merges all the object code from
 multiple modules into one. If we use a function from libraries, the linker will link
@@ -229,13 +225,13 @@ Dynamic memory allocation - safest way to check that a pointer was created succe
 assert(p != NULL);
 if(p == NULL) return(-1);
 
-Implement a Queue in C - Hacer la struct, y 4 funciones, Init, push, pop y destroy - general const void * - checar whatsapp Alan
+<!-- Implement a Queue in C - Hacer la struct, y 4 funciones, Init, push, pop y destroy - general const void * -->
 
-Malloc - Me pusieron a hacer mi propia implementación de malloc, lluego le subieron la dificultad diciendo que la memoria tenía que estar alineada a 16 (Alan, Apple 05/22)
+Malloc - Own implementation of malloc, then they increased the difficulty by saying that the memory had to be aligned to 16.
 
-- C libraries: uClibc is much smaller than the glibc, the C library normally used with Linux distributions. While glibc is intended to fully support all relevant C standards across a wide range of hardware and kernel platforms, uClibc is specifically focused on embedded Linux systems.
+* C libraries: uClibc is much smaller than glibc, and the C library is normally used with Linux distributions. While glibc is intended to fully support all relevant C standards across a wide range of hardware and kernel platforms, uClibc specifically focuses on embedded Linux systems.
 
-Macro, Function debug, Bit manipulation, State machine, Interpolation
+Macro, function debug, bit manipulation, state machine, interpolation.
 
 https://www.learn-c.org/en/Variables_and_Types
 
@@ -245,5 +241,6 @@ Virtual Address Space of a C Program
 .data:
 .heap:
 
-static vs global (variables)?
-While static variables have scope over the file containing them making them accessible only inside a given file, global variables can be accessed outside the file too.
+## Static vs global (variables)?
+
+While static variables have scope over the file, making them accessible only inside a given file, global variables can also be accessed outside the file.

@@ -7,13 +7,13 @@ nav_order: 1
 
 # Debugging
 
-Debugging is an art, and not a science. There is no step-by-step procedure or a single recipe for success when debugging a problem. Asking the following questions can help to understand and identify the nature of the problem and how best to solve it [1]:
+Debugging is an art and not a science. There is no step-by-step procedure or a single recipe for success when debugging a problem. Asking the following questions can help to understand and identify the nature of the problem and how best to solve it:
 
 * Is the problem easily reproducible?
 
 * Is there a reproducer or test that can trigger the bug consistently?
 
-* Are there any panic, or error, or debug messages in the dmesg when the bug is triggered?
+* When the bug is triggered, are there any panic, error, or debug messages in the dmesg?
 
 * Is reproducing the problem time-sensitive?
 
@@ -45,7 +45,7 @@ Failing Test Before Fixing Code - be able to reproduce the case with one command
 4. Read the Damn Error Message
     * Bad Results - What if it’s not a crash? What if it’s just a bad result? Understand the definition of fault, error, failure (from ECE 716)
 
-5. Use a debugger - make sure that you’re also seeing the incorrect value in the debugger.
+5. Use a debugger - ensure that you’re also seeing the incorrect value in the debugger.
     * Make sure you know how to move up and down the call stack and examine the local stack environment.
     * Keep notes of your process
 
@@ -55,8 +55,8 @@ Failing Test Before Fixing Code - be able to reproduce the case with one command
 
 8. Use binary chop (binary search) - with the stacktrace errors log, the releases between the current one and the last working, and with input data
 
-9. Loggin and/or tracing
-    * Debuggers generally focus on the state of the program now. Sometimes you need more—you need to watch the state of a program or a data structure over time.
+9. Logging and tracing
+    * Debuggers generally focus on the state of the program now. Sometimes, you need more—you must watch the state of a program or a data structure over time.
     * Tracing statements are those little diagnostic messages you print to the screen or to a file that say things such as “got here” and “value of x = 2.”
 
 10. Rubber Ducking - A very simple but particularly useful technique for finding the cause of a problem is simply to explain it to someone else.
@@ -68,7 +68,7 @@ Don’t gloss over a routine or piece of code involved in the bug because you �
 
 * Debugging
 * Tracing: is a specialized use of logging to record information about a program’s execution.
-* Profiling: is the process of measuring an application or system by running an analysis tool called a profiler. Profiling tools can focus on many aspects: function call times and count, memory usage, cpu load, and resource usage.
+* Profiling: measuring an application or system by running an analysis tool called a profiler. Profiling tools can focus on many aspects: function call times and count, memory usage, cpu load, and resource usage.
 
 ## Debugging Tools and Techniques
 

@@ -7,32 +7,21 @@ nav_order: 1
 
 # C++
 
-C++ is a compiled language. For a program to run, its source text has to be processed
-by a compiler, producing object files, which are combined by a linker yielding an
-executable program.
+C++ is a compiled language. For a program to run, its source text must be processed by a compiler, producing object files combined by a linker, yielding an executable program.
 
-When we talk about portability in C++ programs, we refer to source code portability,
-i.e. the source code can be succesfully compiled and run on a variety of systems.
+When we talk about portability in C++ programs, we refer to source code portability, i.e. the source code can be successfully compiled and run on various systems.
 
-C++ is a satically typed language. That is, the type of everyt entity (e.g. object,
-value, name, and expression) must be known to the compiler at its point of use. The
-type of an object determines the set of operations applicable to it.
+C++ is a statically typed language. The type of every entity (e.g., object, value, name, and expression) must be known to the compiler at its point of use. The type of an object determines the set of operations applicable to it.
 
-Every C++ program must have exactly one global function named main(). The program
-starts by executing that function.
+Every C++ program must have exactly one global function named main(). The program starts by executing that function.
 
 ## Functions
 
-The main way of getting something done on C++ is to call a function. A function can't
-be called unless it has been previously declared.
+The main way of getting something done in C++ is to call a function. A function can only be called if it has been previously declared.
 
-A function declaration gives the name of the function, the type of the value returned
-(if any) and the number and types of the arguments that must be supplied in a call.
+A function declaration gives the function's name, the type of the value returned (if any) and the number and types of the arguments that must be supplied in a call.
 
-**Function overloading**: If two functions are defined with the same name, but with
-different argument types, the compiler will choose the most appropiate function to
-invoke for each call. If two functions could be called, but neither is better than
-the other, the call is deemed ambiguous and the compiler gives an error.
+**Function overloading**: If two functions are defined with the same name but different argument types, the compiler will choose the most appropriate function to invoke for each call. If two functions could be called, but neither is better, the call would be deemed ambiguous, and the compiler would give an error.
 
 ## Types, Variables, and Arithmetic
 
@@ -52,26 +41,25 @@ C++ fundamental types: bool, char, int, double, unsigned
 A char variable is of the natural size to hold a character on a given machine
 (typically an 8-bit byte), and the sizes of other types are quoted in multiples of
 the size of a char. The size of a type is implementation-defined and can be obtained
-using the sizeof operator.
+using the `sizeof` operator.
 
-A constant cannot be left uninitialized and a variable should only be left
-uninitialized in extremely rare circumstances. Don't introduce a name until you have
-a suitable value for it.
+A constant cannot be left uninitialized, and a variable should only be left
+uninitialized in rare circumstances. Don't introduce a name until you have a suitable value for it.
 
 ## Scope and Lifetime
 
 A declaration introduces its name into a scope:
 
 - Local scope: a name declared in a function or lambda
-- Class scope: a name is called a member name (or class member name) if it is
+- Class scope: a name is called a member name (or class member name) if
   defined in a class, outside any function, lambda, or enum class.
-- Namespace scope: a name is called namespace member name if it is defined in
+- Namespace scope: a name is called namespace member name if defined in
   a namespaces outside any function, lambda, class, or enum class.
 
 A name not declared inside any other construct is called a global name and is said
 to be in the global namespace.
 
-**const**: means roughly "I promise not to change this value." This is used primarly
+**const**: means roughly "I promise not to change this value." This is used primarily
 to specify interfaces, so that data can be passed to functions without fear of it
 being modified. The compiler enforces the promise made by const.
 
@@ -100,22 +88,22 @@ Arrays are 0-indexed.
 
 A reference is similar to a pointer, except that you don't need to use a prefix
 
-- to access the valued referred to by the reference. Also, a reference cannot be
+- to access the value referred to by the reference. Also, a reference cannot be
   made to refer to a different object after its initialization.
 
-A pointer variable can hold the address of an object of the appropiate type:
+A pointer variable can hold the address of an object of the appropriate type:
 
 `char* p = &v[3] // p points to v's fourth element`
 `char x = *p; // *p is the object that p points to`
 
-Reference are useful for specifying function arguments.
+References are useful for specifying function arguments.
 
 `void sort(vector<double>& v); // sort v`
 
 By using a reference, we ensure that for a call sort(my_vec), we do not copy
 my_vec and that it really is my_vec that is sorted and not a copy of it.
 
-We try to ensure that a pointer always points to an object, so that dereferencing it
+We ensure that a pointer always points to an object so that dereferencing it
 is valid. When we don't have an object to point to or if we need to represent the
 notion of "no object available" (e.g., for an end of a list), we give the pointer the
 value _nullptr_ ("the null pointer"). There is only one _nullptr_ shared by all
@@ -126,7 +114,7 @@ pointer types:
 `int x = nullptr; // error: nullptr is a pointer not an integer`
 
 In older code, 0 or NULL is typically used instead of nullptr. However, using nullptr
-eliminates confusion between intergers (such as 0 or NULL) and pointers (such as nullptr).
+eliminates confusion between integers (such as 0 or NULL) and pointers (such as nullptr).
 
 ## User-Defined Types
 
@@ -146,17 +134,12 @@ eliminates confusion between intergers (such as 0 or NULL) and pointers (such as
 
 **Classes**
 
-Having the data specified separately from the operations on it has advantages. However, a tighter
-connection is something needed. In case that we want to keep the representation inaccesible to users,
-so as to ease use, guarantee consistent use of the data, and allow us to later improve the representation.
+Having the data specified separately from the operations on it has advantages. However, a tighter connection is something needed. If we want to keep the representation inaccessible to users, to ease use, guarantee consistent use of the data, and allow us to improve the representation later.
 
-To accomplish this, we have to distinguish between the interface to a type (to be used by all) and its
-implementation (which has access to the otherwise inaccesible data). The language mechanism for that is
+To accomplish this, we have to distinguish between the interface to a type (to be used by all) and its implementation (which has access to the otherwise inaccessible data). The language mechanism for that is
 called a class.
 
-A class is defined to have a set of _members_, which can be data, function, or type members. The
-interface is defined by the public members of a class, and private members are accessible only though
-that interface.
+A class is defined as having a set of _members_, which can be data, function, or type members. The interface is defined by the public members of a class, and private members are accessible only though that interface.
 
 Example of a class:
 
@@ -246,17 +229,15 @@ function is called an abstract class.
 
 A class hierarchy offers two kinds of benefits:
 
-- Interface inheritance: An object of a derived class can be used wherever an object
-  of a base class is required. That is, the base class acts as an interface for the
-  derived class.
+* Interface inheritance: An object of a derived class can be used wherever an object of a base class is required. The base class acts as an interface for the derived class.
 
-- Implementation inheritance: A base class provides functions or data that simplifies
+* Implementation inheritance: A base class provides functions or data that simplifies
   the implementation of derived classes. Such base classes often have data members and
   constructors.
 
 ## Class - Essential Operations
 
-Construction of objects plays a key role in many designs. This wide variety of uses
+The construction of objects plays a key role in many designs. This wide variety of uses
 is reflected in the range and flexibility of the language features supporting
 initialization.
 
@@ -282,15 +263,7 @@ complement of functions:
 
 ## Class - Constructor and Destructor
 
-Clearly, arranging code into classes and data into objects is a powerful organizing
-principle. Clearly also, dealing in classes and objects is inherently no less
-efficient than dealing with functions and data compared with C. Constructors and
-destructors, in C++, a constructor is a member function that is guaranteed to be
-called when an object is instantiated or created. This typically means that the
-compiler generates a constructor call at the point where the object is declared.
-Similarly, a destructor is guaranteed to be called when an object goes out of
-scope.So a constructor typically contains any initialization that an object needs
-and a destructor does any tidying up needed when an object is no longer needed.
+Clearly, arranging code into classes and data into objects is a powerful organizing principle. Clearly also, dealing in classes and objects is inherently no less efficient than dealing with functions and data compared with C. Constructors and destructors, in C++, a constructor is a member function that is guaranteed to be called when an object is instantiated or created. This typically means that the compiler generates a constructor call at the point where the object is declared. Similarly, a destructor is guaranteed to be called when an object goes out of scope. So a constructor typically contains any initialization that an object needs, and a destructor does any tidying up needed when an object is no longer needed.
 
 ## Templates
 
@@ -299,14 +272,13 @@ values. We use templates to represent concepts that are best understood as somet
 very general from which we can generate specific types and functions by specifying
 arguments.
 
-Templates are powerful features of C++ which allows you to write generic programs.
+Templates are powerful features of C++ which allow you to write generic programs.
 
-There are two types of templates, class templates and function templates.
+There are two types of templates: class templates and function templates.
 
-Templates are a compile-time mechanism, so their use incurs no run-time overhead
-compared to hand-crafted code.
+Templates are a compile-time mechanism, so their use incurs no runtime overhead compared to hand-crafted code.
 
-Don’t reinvent the wheel; use libraries
+Don't reinvent the wheel; use libraries.
 
 ## Containers
 
@@ -327,13 +299,13 @@ is that ```delete``` calls the destructor.
 * Memory sections - heap vs stack, pros and cons of using each one, which other section can be used to store data?
 Namespaces - why is it a bad idea to use using namespace std (problem with cryptopp) - ambiguous byte https://github.com/weidai11/cryptopp/pull/438
 
-* How does the new keyword works? ListNode *res_iter = new ListNode(0)
+* How does the `new` keyword work? ListNode *res_iter = new ListNode(0)
 Prefix vs Postfix operators [https://en.cppreference.com/w/cpp/language/operator_incdec]
  
 * What’s an iterator in C++?
 An iterator is any object that, pointing to some element in a range of elements (such as an array or a container), has the ability to iterate through the elements of that range using a set of operators (with at least the increment (++) and dereference (*) operators).
 
 * What happens when I assign a number larger than INT_MAX to an int?
-Implementation-defined, check your compiler.
+Implementation-defined: check your compiler.
 
-* C++ vs C, when to choose one over the other? And how do they compare with each other in terms of running time and the complexity of their runtime needs
+* C++ vs C, when should I choose one over the other? And how do they compare with each other in terms of running time and the complexity of their runtime needs

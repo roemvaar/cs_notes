@@ -16,7 +16,7 @@ Must know:
 
 For embedded software engineers, it's the most important topic for interviews.
 
-Bitwise operations, bitlogic algorithms, and bit manipulation are topics that you need to master this if you want to work
+Bitwise operations, bitlogic algorithms, and bit manipulation are topics that you need to master if you want to work
 in graphics or low-level development - learn about endianness.
 
 ## Bitwise Operators in C and C++
@@ -77,7 +77,9 @@ MSB - Most Significant Bit (the bit in a multiple-bit binary number with the lar
 LSB - Least Significant Bit (the bit in a multiple-bit binary number with the smallest value)
 
 Big-endian:
+
 MSB is stored in the first data memory address (lowest memory address), and LSB is stored in the last data memory address (highest memory address).
 
 Little-endian:
-LSB in the first memory address and MSB in the last.
+
+LSB is in the first memory address, and MSB is in the last.
