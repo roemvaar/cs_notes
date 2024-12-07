@@ -5,8 +5,15 @@ parent: Algorithms
 nav_order: 1
 ---
 
-# Techniques to Solve LeetCode Problems
+# Must Know Techniques to Solve LeetCode Problems
 
-## Two Pointers
-
-## Sliding Window
+* Two Pointers
+* Sliding Window
+* Divide and Conquer
+* Top K Elemenths
+* BFS
+* DFS
+* Back Tracking
+* Dynamic Programming
+    * Tabulation
+    * Memoization
