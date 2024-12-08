@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Linux Setup
-parent: Computer Systems
+parent: Development
 nav_order: 1
 ---
 
