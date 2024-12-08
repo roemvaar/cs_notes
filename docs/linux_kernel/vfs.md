@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Filesystem
 
-A filesystem type determines how information is organized on a block device in order to represent a tree of directories and files.
+A filesystem type determines how information is organized on a block device to represent a tree of directories and files.
 
 ## procfs and sysfs
 

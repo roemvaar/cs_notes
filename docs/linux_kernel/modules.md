@@ -7,7 +7,7 @@ nav_order: 1
 
 # Modules (Loadable Kernel Object)
 
-Every kernel module just registers itself in order to serve future requests, and its initialization function terminates immediately. The module's exit function gets invoked just before the module is unloaded.
+Every kernel module registers itself to serve future requests, and its initialization function terminates immediately. The module's exit function gets invoked just before the module is unloaded.
 
 A module is linked only to the kernel, and the only functions it can call are the ones exported by the kernel; there are no libraries to link to. Only functions that are part of the kernel itself may be used in kernel modules. Anything related to the kernel is declared in the kernel source tree headers. Most relevant headers live in `include/linux`, but other subdirectories of the `include` directory has been added to host material associated with specific kernel subsystems.
 
@@ -21,7 +21,7 @@ The Linux way of looking at devices distinguishes between three fundamental devi
 * **block module**
 * **network module**
 
-Despite being "monolithic" in the sense that the whole kernel runs in a single address space, the Linux kernel is modular, supporting the dynamic insertion and removal of code from itself at runtime.
+Despite being "monolithic" in that the whole kernel runs in a single address space, the Linux kernel is modular, supporting the dynamic insertion and removal of code from itself at runtime.
 
 Related subroutines, data, and entry and exit points are grouped in a single binary image, a loadable kernel object called a **module**.
 

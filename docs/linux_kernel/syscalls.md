@@ -9,7 +9,7 @@ nav_order: 1
 
 <!-- TODO: https://docs.kernel.org/core-api/entry.html#syscalls -->
 
-System calls are a set of APIs the kernel offers to the applications. Syscalls are used by applications to request a service from the OS. This may include hardware-related services, the creation and execution of new processes, and communication with integral kernel services such as process scheduling. System calls provide an essential interface between a process and the operating system.
+System calls are a set of APIs the kernel offers to the applications. Syscalls are used by applications to request a service from the OS. These calls may include hardware-related services, the creation and execution of new processes, and communication with integral kernel services such as process scheduling. System calls provide an essential interface between a process and the operating system.
 
 System calls are a set of APIs offered by the kernel. These APIs are different from regular library APIs because they are the boundary at which the execution mode switches from user mode to kernel mode.
 
@@ -40,6 +40,6 @@ Do not nest syscalls.
 
 ioctl (input/output control) is a system call for device-specific I/O operations and other operations which cannot be expressed by regular file semantics. It takes a parameter specifying a request code; the effect of a call depends completely on the request code. Request codes are often device-specific.
 
-Userspace applications typically make requests to the kernel by means of system calls. System calls are sometimes inappropriate for accessing non-standard hardware peripherals. Device drivers are modules that extend the kernel capabilities and help accessing hardware peripherals. An ioctl interface is a single system call by which userspace may communicate with device drivers.
+Userspace applications typically make requests to the kernel through system calls. System calls are sometimes inappropriate for accessing non-standard hardware peripherals. Device drivers are modules that extend the kernel capabilities and help access hardware peripherals. An ioctl interface is a single system call by which userspace may communicate with device drivers.
 
 Uses: hardware device configuration, terminal I/O, kernel extensions.
