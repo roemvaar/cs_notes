@@ -11,19 +11,19 @@ nav_order: 1
 
 ## Linux Kernel Main Roles:
 
-- **Manage all the hardware resources**: CPU, memory, I/O
-- Provide a **set of portable, architecture and hardware independent APIs** to allow user
+* **Manage all the hardware resources**: CPU, memory, I/O
+* Provide a **set of portable, architecture and hardware independent APIs** to allow user
   space applications and libraries to use the hardware resources.
-- **Handle concurrent accesses and usage** of hardware resources from different applications
+* **Handle concurrent accesses and usage** of hardware resources from different applications
 
 ## Kernel tasks:
 
-- System initialization: detects hardware resources and play a a roll on booting the system
-- Process scheduling: determines when processes should run and for how long
-- Memory management: allocates memory on behalf of running processes
-- Security: Constantly verifies filesystem permissions, firewall rules
-- Provides buffers and caches to speed up hardware access
-- Implements standard network protocols and filesystem formats
+* System initialization: detects hardware resources and play a a roll on booting the system
+* Process scheduling: determines when processes should run and for how long
+* Memory management: allocates memory on behalf of running processes
+* Security: Constantly verifies filesystem permissions, firewall rules
+* Provides buffers and caches to speed up hardware access
+* Implements standard network protocols and filesystem formats
 
 ## Kernel Initialization
 
@@ -47,19 +47,17 @@ your target device and includes a compiler, a linker, and runtime libraries.
 
 Tolchains examples:
 
-  - Based on components from *GNU* project (the majority of Linux systems use this)
-  - *Clang* compiler and the associated *Low Level Virtual Machine (LLVM)* project.
+* Based on components from *GNU* project (the majority of Linux systems use this)
+* *Clang* compiler and the associated *Low Level Virtual Machine (LLVM)* project.
 
 As of 2021, GNU toolchain is the most popular and mature toolchain for Linux.
 
 A standard GNU toolchain consists of three main components:
 
-  - Binutils: A set of binary utilities including the assembler and the linker.
-  - GNU Compiler Collection (GCC): These are the compilers for C and other
+* Binutils: A set of binary utilities including the assembler and the linker.
+* GNU Compiler Collection (GCC): These are the compilers for C and other
   languages.
-  - C library: A standardized application program interface (API) based on POSIX
-  specification, which is the main interface to the operating system kernel for
-  applications.
+* C library: A standardized application program interface (API) based on POSIX specification, which is the main interface to the operating system kernel for applications.
 
 Toolchains can be native and cross-toolchains.
 
@@ -92,10 +90,10 @@ interface to transition between user space and kernel space.
 
 Main options of C libraries:
 
-  - glibc: standard GNU C library. The most complete implementation of the POSIX API
-  - musl libc: good choice for systems with a limited amount of RAM and storage
-  - uClibc-ng: microcontroller C library
-  - eglibc: obsolete, not longer maintained - DON'T USE IT
+* glibc: standard GNU C library. The most complete implementation of the POSIX API
+* musl libc: good choice for systems with a limited amount of RAM and storage
+* uClibc-ng: microcontroller C library
+* eglibc: obsolete, not longer maintained - DON'T USE IT
 
 ## Pseudo Filesystems
 
@@ -107,8 +105,8 @@ are created and updated on the fly by the kernel.
 
 The two most important pseudo filesystems are:
 
-- ``proc``, usually mounted on ``/proc``: Operating system related information (process, memory management paramenter...)
-- ``sysfs``, usually mounted on ``/sys``: Representation of the system as a tree of devices connected by buses.
+* ``proc``, usually mounted on ``/proc``: Operating system related information (process, memory management paramenter...)
+* ``sysfs``, usually mounted on ``/sys``: Representation of the system as a tree of devices connected by buses.
   Information gathered by the kernel frameworks managing these devices.
 
 ### procfs - file system
@@ -157,12 +155,12 @@ loaded into memory) in the midst (middle) of execution.
 Process are, however, more than just the executing program code (often called the text section in Unix). They also include
 a set of resources such as:
 
-- Open files and pending signals
-- Internal kernel data
-- Processor state
-- A memory address space with one or more memory mappings
-- One or more threads of execution, and
-- A data section containing global variables
+* Open files and pending signals
+* Internal kernel data
+* Processor state
+* A memory address space with one or more memory mappings
+* One or more threads of execution, and
+* A data section containing global variables
 
 Processes, in effect, are the living result of running program code.
 
@@ -184,9 +182,9 @@ declared in stdio.h and represent the standard input, output and error output.
 Threads of execution, often shortened to threads, are the objects of activity within the process. Each thread includes
 a unique:
 
-- Program counter
-- Process stack
-- Set of processor registers
+* Program counter
+* Process stack
+* Set of processor registers
 
 The kernel schedules individual threads, not processes.
 
@@ -272,8 +270,8 @@ Difference between drivers and modules [here](https://unix.stackexchange.com/que
 The **kernel image** is a **single file**, resulting from the linking of all
 object files that correspond to features enabled in the configuration.
 
-- This is the file that gets loaded in memory by the bootloader
-- All included features are therefore available as soon as the kernel starts,
+* This is the file that gets loaded in memory by the bootloader
+* All included features are therefore available as soon as the kernel starts,
 at a time where no filesystem exists
 
 Some features (device drivers, filesystems, etc.) can however be compiled as
@@ -281,24 +279,24 @@ Some features (device drivers, filesystems, etc.) can however be compiled as
 You can insert the modules using insmod or remove it using rmmod, or use modprobe to
 do both tasks.
 
-- These are plugings that can be laoded/unloaded dynamically to add/remove
+* These are plugings that can be laoded/unloaded dynamically to add/remove
 features to the kernel
-- Each **module is stored as a separate file in the filesystem** (.ko file),
+* Each **module is stored as a separate file in the filesystem** (.ko file),
 and therefore access to a filesystem is mandatory to use modules.
-- This is not posible in the early boot procedure of the kernel, because no
+* This is not posible in the early boot procedure of the kernel, because no
 filesystem is available.
 
 ## Kernel Compilation Results
 
-- **vmlinux**, the raw uncompressed kernel image, in the ELF format, useful
+* **vmlinux**, the raw uncompressed kernel image, in the ELF format, useful
 for debugging purposes, but cannot be booted
-- arch/< arch >/boot/*Image, the final, usually compressed, kernel image that
+* arch/< arch >/boot/*Image, the final, usually compressed, kernel image that
 can be booted
-  - bzImage for x86, zImage for ARM, Image.gz for RISC-V, vmlinux.bing.gz for
+  * bzImage for x86, zImage for ARM, Image.gz for RISC-V, vmlinux.bing.gz for
     ARC, etc.
-- arch/< arch >/boot/dts/*.dtb, compiled Device Tree files (on some
+* arch/< arch >/boot/dts/*.dtb, compiled Device Tree files (on some
 architectures)
-- All kernel modules, spread over the kernel source tree, as .ko (kernel
+* All kernel modules, spread over the kernel source tree, as .ko (kernel
 object) files.
  
 ### Inter-Process Communication 
@@ -309,9 +307,9 @@ Another name for a process is a task
 
 Most fundamental inter-process communication:
 
-- Sent directly to processes, no user interface required
-- Programs associate actions with each signal
-- Signals are specified by name or number when sent (check ```man 7 signal``` for a list of signals names and numbers)
+* Sent directly to processes, no user interface required
+* Programs associate actions with each signal
+* Signals are specified by name or number when sent (check ```man 7 signal``` for a list of signals names and numbers)
  
 ### Synchronization and messaging mechanisms
  
@@ -359,7 +357,6 @@ calling). When the child completes, the ```wait()``` shell returns from and prin
 
 * Remove a device from /dev
 
-
 * What's stored in /etc?
 
 System configuration files
@@ -371,7 +368,6 @@ System configuration files
 <!-- Buffer sharing: DMA Buf & ION
 Wait events/Wait queues
 ISR handling (Top half/Bottom half)
-Bottom Half - Tasklet/Workqueue/SoftIRQ
 Platform driver
 Driver probe (Module init, driver register, compatibility string)
 Device Tree (Device nodes and parsing)
@@ -385,19 +381,14 @@ sysfs/debugfs/procfs
 systemd/systemv
 /usr/sbin/init or /sbin/init is the executable starting the SysV initialization system. For compatibility reason, when systemd is installed, it's an alias to an executable of the systemd world.
 Initramfs - It is also possible to boot the system with a filesystem in memory: initramfs. Either from a compressed CPIO archive integrated into the kernel image. It is useful As an intermediate step before switching to a real root filesystem, located on devices for which drivers not part of the kernel image are needed (storage drivers, filesystem drivers, network drivers). This is always used on the kernel of desktop/server distributions to keep the kernel image size reasonable. https://www.kernel.org/doc/html/latest/filesystems/ramfs-rootfs-initramfs.html
- 
-Drivers: insmod vs modprobe, lsmod, rmmod
-modprobe is the intelligent version of insmod. insmod simply adds a module where modprobe looks for any dependency (if that particular module is dependent on any other module) and loads them. source]
+
 1. Kernel/Hypervisor Knowledge: This is your core area of work so be prepare to discuss technologies listed on
 your resume. For example, if you list kernel or hypervisor specific technical competencies (such as: Linux
 kernel components like memory management, scheduling, I/O, IOMMU, network stack, and hypervisor
 technologies including QEMU, Xen, KVM), be ready to discuss your experience with these technologies.. Be familiar
 with OS topics like memory management, processes, threads, synchronization, paging, semaphores, and
 multithreading..
-
-* How to unload a built-in kernel driver?
-
-You can't, you need to rebuild the driver as a module. [4] -->
+ -->
 
 ## Resources
 

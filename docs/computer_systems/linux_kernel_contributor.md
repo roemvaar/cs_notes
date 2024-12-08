@@ -9,8 +9,8 @@ nav_order: 1
 
 ## Clone kernel 
 
-```
-    git clone <linux_website>
+```bash
+$ git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 ```
 
 ## Configure git
@@ -39,8 +39,8 @@ Configure app password on gmail https://support.google.com/mail/answer/185833?hl
 Before sending the patch, you first have to make sure it complies
 with the kernel development guidelines using:
 
-```
-    ./scripts/check_patch <patch_name>
+```bash
+$ ./scripts/check_patch <patch_name>
 ```
 
 ## Send patch through email

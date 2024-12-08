@@ -71,6 +71,14 @@ MODULE_DESCRIPTION("A Hello, World Module");
 
 Code 1. Linux Kernel Module - Hello World (hello.c)
 
+## insmod vs modprobe, lsmod, rmmod
+
+modprobe is the intelligent version of insmod. insmod simply adds a module where modprobe looks for any dependency (if that particular module is dependent on any other module) and loads them.
+
+## How to unload a built-in kernel driver?
+
+You can't, you need to rebuild the driver as a module.
+
 ## Steps to build and insert a module in Linux
 
 1. Install toolchain (build-essential) and Linux headers specific to the target Linux kernel
