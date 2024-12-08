@@ -19,7 +19,7 @@ struct rq - main, per-CPU run queue data structure. In a computer, multiple proc
 * struct rt_rq
 * struct dl_rq
 
-![sched_classes](../../assets/img/sched_classes.jpg)
+![sched_classes](../../../assets/img/sched_classes.jpg)
 
 ## Completely Fair Scheduler (CFS)
 

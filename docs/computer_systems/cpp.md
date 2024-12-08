@@ -15,6 +15,12 @@ C++ is a statically typed language. The type of every entity (e.g., object, valu
 
 Every C++ program must have exactly one global function named main(). The program starts by executing that function.
 
+<!-- Reference: https://techroles.wordpress.com/wp-content/uploads/2015/03/ikm-test-c11.pdf -->
+
+## C++ Types
+
+<!-- C++ Types measures understanding of basic C++ types and the rules for their declaration and use. -->
+
 ## Functions
 
 The main way of getting something done in C++ is to call a function. A function can only be called if it has been previously declared.
