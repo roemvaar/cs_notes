@@ -13,17 +13,17 @@ nav_order: 1
 
 ## Time Accounting
 
-All process schedulers must account for the time that a process runs. Linux keeps account for the time that each process runs, because it needs to ensure that each process runs only for its fair share of the processor. CFS uses the **scheduler entity structure**, `struct sched_entity` in `include/linux/sched.h`, to keep track of process accounting. The scheduler entity structure is embedded in the process descriptor, `struct task_struct`, as a member variable named se.
+All process schedulers must account for the time that a process runs. Linux keeps an account of the time that each process runs because it needs to ensure that each process runs only for its fair share of the processor. CFS uses the **scheduler entity structure**, `struct sched_entity` in `include/linux/sched.h`, to keep track of process accounting. The scheduler entity structure is embedded in the process descriptor, `struct task_struct`, as a member variable named se.
 
 ### Virtual Runtime (vruntime)
 
-The vruntime variable stores the virtual runtime of a process, which is the actual runtime (the amount of time spent running) normalized (or weighted) by the number of runnable processes. The virtual runtime’s units are nanoseconds. CFS uses vruntime to account for how long a process has run and thus how much longer it ought to run.
+The vruntime variable stores the virtual runtime of a process, which is the actual runtime (the amount of time spent running) normalized (or weighted) by the number of runnable processes. The virtual runtime’s units are nanoseconds. CFS uses vruntime to account for how long a process has run and, thus, how much longer it ought to run.
 
-The function [update_curr()](https://elixir.bootlin.com/linux/v6.11/source/kernel/sched/fair.c#L1156) in **`kernel/sched/fair.c`** mannages this accounting. `update_curr()` calculates the execution time of the current process and stores that value in `delta_exec`. The current process’s `vruntime` is then incremented by the weighted value.
+The function [update_curr()](https://elixir.bootlin.com/linux/v6.11/source/kernel/sched/fair.c#L1156) in **`kernel/sched/fair.c`** manages this accounting. `update_curr()` calculates the execution time of the current process and stores that value in `delta_exec`. The current process’s `vruntime` is then incremented by the weighted value.
 
-**`update_curr()` is invoked periodically by the system timer and also whenever a process becomes runnable or blocks, becoming unrunnable.** In this manner, vruntime is an accurate measure of the runtime of a given process and an indicator of what process should run next. 
+**`update_curr()` is invoked periodically by the system timer, and whenever a process becomes runnable or blocks, it becomes unrunnable.** In this manner, vruntime is an accurate measure of the runtime of a given process and an indicator of what process should run next. 
 
-On real hardware, we can run only a single task at once, thus we introduce the concept of “virtual runtime”. The virtual runtime of a task specifies when its next timeslice would start execution on the ideal multitasking CPU. In practice, the virtual runtime of a task is its actual runtime normalized to the total number of running tasks.
+On real hardware, we can run only a single task at once. Thus, we introduce the concept of “virtual runtime.” The virtual runtime of a task specifies when its next timeslice would start execution on the ideal multitasking CPU. In practice, the virtual runtime of a task is its actual runtime normalized to the total number of running tasks.
 
 In CFS the virtual runtime is expressed and tracked via the per-task p->se.vruntime (nanosec-unit) value. This value represents how much CPU time the task has used. This way, it’s possible to accurately timestamp and measure the “expected CPU time” a task should have gotten.
 
