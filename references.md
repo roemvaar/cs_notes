@@ -43,3 +43,5 @@ permalink: /docs/references
 * [RBIM] Forum Answer: Removing Built-In Modules in Linux on Unix Stack Exchange – https://unix.stackexchange.com/questions/61917/removing-builtin-modules-in-linux/61918#61918
 
 * [SGG] Website: Stanford Graphics Group – https://graphics.stanford.edu/
+
+* [C++11] Document: C++ PROGRAMMING (C++11 ISO STANDARD)  

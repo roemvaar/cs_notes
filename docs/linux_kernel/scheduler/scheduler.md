@@ -7,9 +7,15 @@ nav_order: 1
 
 # Scheduler
 
-<!-- I/O Bound vs CPU Processing -->
+In Figure 1, the relationship between the scheduler core, scheduling classes, and scheduling policies is presented.
+
+![sched_classes](../../../assets/img/sched_classes.jpg)
+
+Figure 1. Relationship of Scheduler Core, Classes, and Policies
 
 ## Scheduler Classes
+
+The Linux scheduler is modular, enabling different algorithms to schedule different types of processes. This modularity is called **scheduler classes**. Scheduler classes enable different, pluggable algorithms to coexist, scheduling their own types of processes. Each scheduler class has a priority. The core kernel CPU scheduler code, defined in [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.11.5/source/kernel/sched/core.c), iterates over each scheduler class in order of priority. The highest priority scheduler class that has a runnable process wins, selecting who runs next.
 
 The Linux scheduler is modular, enabling different algorithms to schedule different processes. This modularity is called **scheduler classes**. Scheduler classes enable different, pluggable algorithms to coexist, scheduling their types of processes. Each scheduler class has a priority. The core kernel CPU scheduler code, defined in [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.11.5/source/kernel/sched/core.c), iterates over each scheduler class in order of priority. The highest priority scheduler class with a runnable process wins, selecting who runs next.
 
@@ -19,7 +25,11 @@ struct rq - main, per-CPU run queue data structure. In a computer, multiple proc
 * struct rt_rq
 * struct dl_rq
 
-![sched_classes](../../../assets/img/sched_classes.jpg)
+![sched_classes](../../../assets/img/sched_classes.png)
+
+Figure 2. Scheduler Classes
+
+There are five scheduling classes, from higher to lower priority: Stop Class, Real-Time Class, Deadline Class, Completely Fair Scheduler (CFS) Class, and Idle Class.
 
 ## Completely Fair Scheduler (CFS)
 

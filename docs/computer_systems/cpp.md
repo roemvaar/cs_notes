@@ -21,55 +21,13 @@ Every C++ program must have exactly one global function named main(). The progra
 
 <!-- C++ Types measures understanding of basic C++ types and the rules for their declaration and use. -->
 
-## Functions
+## C++ Basic Concepts
 
-The main way of getting something done in C++ is to call a function. A function can only be called if it has been previously declared.
-
-A function declaration gives the function's name, the type of the value returned (if any) and the number and types of the arguments that must be supplied in a call.
-
-**Function overloading**: If two functions are defined with the same name but different argument types, the compiler will choose the most appropriate function to invoke for each call. If two functions could be called, but neither is better, the call would be deemed ambiguous, and the compiler would give an error.
-
-## Types, Variables, and Arithmetic
-
-Every name and every expression has a type that determines the operations that may be
-performed on it.
-
-A declaration is a statement that introduces a name into the program. It specifies a
-type for the named entity:
-
-- A _type_ defines a set of possible values and a set of operations (for an object)
-- An _object_ is some memory that holds a value of some type
-- A _value_ is a set of bits interpreted according to a type
-- A _variable_ is a named object
-
-C++ fundamental types: bool, char, int, double, unsigned
-
-A char variable is of the natural size to hold a character on a given machine
-(typically an 8-bit byte), and the sizes of other types are quoted in multiples of
-the size of a char. The size of a type is implementation-defined and can be obtained
-using the `sizeof` operator.
-
-A constant cannot be left uninitialized, and a variable should only be left
-uninitialized in rare circumstances. Don't introduce a name until you have a suitable value for it.
-
-## Scope and Lifetime
-
-A declaration introduces its name into a scope:
-
-- Local scope: a name declared in a function or lambda
-- Class scope: a name is called a member name (or class member name) if
-  defined in a class, outside any function, lambda, or enum class.
-- Namespace scope: a name is called namespace member name if defined in
-  a namespaces outside any function, lambda, class, or enum class.
-
-A name not declared inside any other construct is called a global name and is said
-to be in the global namespace.
-
-**const**: means roughly "I promise not to change this value." This is used primarily
-to specify interfaces, so that data can be passed to functions without fear of it
-being modified. The compiler enforces the promise made by const.
+<!-- C++ Basic Concepts evaluates the basic understanding of writing a C++ program. Also covers lambda functions. -->
 
 ## Pointers, Arrays and References
+
+<!-- Pointers and References determines understanding of the usage of pointers and references in C++ including static, dynamic and reinterpret types of casting. -->
 
 An array of elements of type char can be declared like this:
 
@@ -122,6 +80,99 @@ pointer types:
 In older code, 0 or NULL is typically used instead of nullptr. However, using nullptr
 eliminates confusion between integers (such as 0 or NULL) and pointers (such as nullptr).
 
+## C++ Const and Volatile Qualifiers
+
+<!-- C++ Const and Volatile Qualifiers measures the knowledge of the const/volatile qualifiers in C++ including purpose, correctness, consistency, conversion and casting. -->
+
+## C++ Templates
+
+<!-- C++ Templates checks basic understanding of function and class templates in C++. -->
+
+A template is a class or a function that we parameterize with a set of types or
+values. We use templates to represent concepts that are best understood as something
+very general from which we can generate specific types and functions by specifying
+arguments.
+
+Templates are powerful features of C++ which allow you to write generic programs.
+
+There are two types of templates: class templates and function templates.
+
+Templates are a compile-time mechanism, so their use incurs no runtime overhead compared to hand-crafted code.
+
+Don't reinvent the wheel; use libraries.
+
+## Exception Processing
+
+<!-- Exception Processing measures understanding of the support of exceptions provided by the C++
+Standard Library. This includes the concept, purpose, throwing and handling of exceptions. -->
+
+## Dynamic Memory Allocation
+
+<!-- Dynamic Memory Allocation determines understanding of dynamic memory support provided by the C++
+Standard Library. -->
+
+**keywords: new, delete, malloc, free**
+
+```new``` and ```malloc``` are used for dynamic memory allocation on the heap. The main difference
+is that ```new``` calls the constructor.
+
+```delete``` and ```free``` are used for deleting dynamic memory from the heap. The main difference
+is that ```delete``` calls the destructor.
+
+## Functions
+
+The main way of getting something done in C++ is to call a function. A function can only be called if it has been previously declared.
+
+A function declaration gives the function's name, the type of the value returned (if any) and the number and types of the arguments that must be supplied in a call.
+
+### Overloading
+
+<!-- Overloading assesses knowledge of C++ function and operator overloading. -->
+
+**Function overloading**: If two functions are defined with the same name but different argument types, the compiler will choose the most appropriate function to invoke for each call. If two functions could be called, but neither is better, the call would be deemed ambiguous, and the compiler would give an error.
+
+**Operator overloading**.
+
+## Types, Variables, and Arithmetic
+
+Every name and every expression has a type that determines the operations that may be
+performed on it.
+
+A declaration is a statement that introduces a name into the program. It specifies a
+type for the named entity:
+
+- A _type_ defines a set of possible values and a set of operations (for an object)
+- An _object_ is some memory that holds a value of some type
+- A _value_ is a set of bits interpreted according to a type
+- A _variable_ is a named object
+
+C++ fundamental types: bool, char, int, double, unsigned
+
+A char variable is of the natural size to hold a character on a given machine
+(typically an 8-bit byte), and the sizes of other types are quoted in multiples of
+the size of a char. The size of a type is implementation-defined and can be obtained
+using the `sizeof` operator.
+
+A constant cannot be left uninitialized, and a variable should only be left
+uninitialized in rare circumstances. Don't introduce a name until you have a suitable value for it.
+
+## Scope and Lifetime
+
+A declaration introduces its name into a scope:
+
+- Local scope: a name declared in a function or lambda
+- Class scope: a name is called a member name (or class member name) if
+  defined in a class, outside any function, lambda, or enum class.
+- Namespace scope: a name is called namespace member name if defined in
+  a namespaces outside any function, lambda, class, or enum class.
+
+A name not declared inside any other construct is called a global name and is said
+to be in the global namespace.
+
+**const**: means roughly "I promise not to change this value." This is used primarily
+to specify interfaces, so that data can be passed to functions without fear of it
+being modified. The compiler enforces the promise made by const.
+
 ## User-Defined Types
 
 **Structs**
@@ -138,7 +189,7 @@ eliminates confusion between integers (such as 0 or NULL) and pointers (such as 
     }
 ```
 
-**Classes**
+**Classes**.
 
 Having the data specified separately from the operations on it has advantages. However, a tighter connection is something needed. If we want to keep the representation inaccessible to users, to ease use, guarantee consistent use of the data, and allow us to improve the representation later.
 
@@ -162,6 +213,18 @@ Example of a class:
 ```
 
 ![vector](../../assets/img/vector.jpg)
+
+## Class
+
+### Class Creation and Usage
+
+<!-- Class Creation and Usage evaluates proficiency with user-defined types in C++ (including structures) --
+definition, declaration and usage. -->
+
+### Class Access Control
+
+<!-- Class Access Control measures understanding of C++ class access including access levels, base class
+member access, access modification and friends. -->
 
 ## Declaration vs Definition
 
@@ -241,6 +304,16 @@ A class hierarchy offers two kinds of benefits:
   the implementation of derived classes. Such base classes often have data members and
   constructors.
 
+## Inheritance
+
+<!-- Inheritance assesses proficiency in the use of inheritance in C++ as a tool for the reuse, extension and
+modification of existing types including inheritance access control and multiple inheritance. -->
+
+## Polymorphism
+
+<!-- Polymorphism determines proficiency in implementing polymorphism in C++ with the use of virtual
+functions including dynamic casting and RTTI. -->
+
 ## Class - Essential Operations
 
 The construction of objects plays a key role in many designs. This wide variety of uses
@@ -271,34 +344,33 @@ complement of functions:
 
 Clearly, arranging code into classes and data into objects is a powerful organizing principle. Clearly also, dealing in classes and objects is inherently no less efficient than dealing with functions and data compared with C. Constructors and destructors, in C++, a constructor is a member function that is guaranteed to be called when an object is instantiated or created. This typically means that the compiler generates a constructor call at the point where the object is declared. Similarly, a destructor is guaranteed to be called when an object goes out of scope. So a constructor typically contains any initialization that an object needs, and a destructor does any tidying up needed when an object is no longer needed.
 
-## Templates
+## C++ Containers Library
 
-A template is a class or a function that we parameterize with a set of types or
-values. We use templates to represent concepts that are best understood as something
-very general from which we can generate specific types and functions by specifying
-arguments.
+<!-- C++ Containers Library determines understanding and usage of C++ containers as well as iterators and
+algorithms that are applied to them. -->
 
-Templates are powerful features of C++ which allow you to write generic programs.
+Check ch. 9 - A C++ Tour.
 
-There are two types of templates: class templates and function templates.
+## C++ Regular Expressions Library
 
-Templates are a compile-time mechanism, so their use incurs no runtime overhead compared to hand-crafted code.
+<!-- C++ Regular Expressions Library tests knowledge of built-in facilities in C++, providing a standardized
+way to find, extract or modify patterns in text. -->
 
-Don't reinvent the wheel; use libraries.
+## C++ Multi-Threading Library
 
-## Containers
+<!-- C++ Multi-Threading Library assesses the understanding of the concepts and issues of multi-threading
+and the proper implementation using the C++ Threading support library -->
 
-Check ch. 9 - A C++ Tour
+## C++ Support Libraries
 
-## Dynamic Memory Allocation
+<!-- C++ Support Libraries determines awareness of, and ability to use, helpful utilities provided by the C++
+Standard Library. This is separate from the utilities and containers provided by the Standard Template
+Library -->
 
-**keywords: new, delete, malloc, free**
+## C++ Optimization
 
-```new``` and ```malloc``` are used for dynamic memory allocation on the heap. The main difference
-is that ```new``` calls the constructor.
-
-```delete``` and ```free``` are used for deleting dynamic memory from the heap. The main difference
-is that ```delete``` calls the destructor.
+<!-- C++ Optimization assesses knowledge of optimization techniques and practices used with C++, including
+optimizations performed by hand on C++ source code, and optimizations performed by C++ compilers. -->
 
 ## Frequently Asked Questions
 
