@@ -5,7 +5,7 @@ parent: Linux Kernel
 nav_order: 1
 ---
 
-# Linux Kernel Security
+# Security
 
 Any security check in the system is enforced by kernel code. If the kernel has security holes, then the system as a whole has holes. When running an official kernel, only the superuser, or an intruder who has succeeded in becoming privileged, can exploit the power of privileged code.
 

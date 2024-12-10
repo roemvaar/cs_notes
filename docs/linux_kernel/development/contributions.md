@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Linux Kernel Contributor
+title: Contributions
 parent: Development
 nav_order: 1
 ---
 
-# Linux Kernel Contributor
+# Contributions
 
 ## Clone kernel 
 

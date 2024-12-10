@@ -5,7 +5,7 @@ parent: Linux Kernel
 nav_order: 1
 ---
 
-# Linux Kernel Subsystems
+# Subsystems
 
 Here is a list of the Linux kernel subsystems that I'm most
 interested on:

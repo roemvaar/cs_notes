@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Linux Setup
+title: Setup
 parent: Development
 nav_order: 1
 ---
 
-# Linux Setup
+# Setup
 
 <!-- ## Test Bench
 
