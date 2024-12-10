@@ -8,7 +8,7 @@ permalink: /docs/linux_kernel
 
 # Linux Kernel
 
-## What is the Linux kernel and what is its purpose?
+## What is the Linux kernel, and what is its purpose?
 
 In typical OS architecture, the kernel is responsible for accessing and sharing the hardware securely and fairly with multiple applications.
 
@@ -18,7 +18,7 @@ In practice, the operating system's role is to provide programs with a consisten
 
 The kernel is a large, standalone program with detailed and explicit requirements on how its pieces are put together.
 
-Every software package used in a Linux system has its own release number, and there are often interdependencies across them.
+Every software package used in a Linux system has its release number, and there are often interdependencies across them.
 
 ## Main components of the Linux kernel?
 

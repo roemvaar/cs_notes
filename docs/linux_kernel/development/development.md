@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Tips:
 
-* Start your work from Linux mainline
+* Start your work from the Linux mainline
 
     * (Usually) You will send patches on top of mainline - unless it has a dependency on next
     * Check next for dependencies or to see if the problem was already fixed
@@ -32,7 +32,7 @@ nav_order: 1
 
     * Stack traces and logs
 
-    * Reproduce it. Use `.config` provided at syskaller and build kernel
+    * Reproduce it. Use `.config` provided at syzkaller and build kernel
 
     * Understand the code
 
@@ -46,7 +46,7 @@ nav_order: 1
 
     * Test your fix as much as you can
 
-    * Send patch to mentor for review
+    * Send the patch to mentor for review
 
 4. Send it upstream for review
 
