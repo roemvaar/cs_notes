@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Inter-Process Communication (IPC)
+title: IPC
 parent: Linux Kernel
 nav_order: 1
 ---
