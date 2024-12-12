@@ -55,7 +55,7 @@ Detailed instructions [here](https://krinkinmu.github.io/2020/07/05/beaglebone-s
 Boot on QEMU:
 
 ```bash
-$ qemu-system-x86_64 -kernel arch/x86/boot/bzImage -drive file=../qemu.img,index=0,media=disk,format=raw -append "root=/dev/sda console=ttyS0" --enable-kvm --nographic
+qemu-system-x86_64 -kernel arch/x86/boot/bzImage -drive file=../qemu.img,index=0,media=disk,format=raw -append "root=/dev/sda console=ttyS0" --enable-kvm --nographic
 ```
 
 Kill QEMU using `Ctrl-A x`.

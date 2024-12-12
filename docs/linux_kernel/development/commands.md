@@ -89,3 +89,10 @@ $ export CROSS_COMPILE=arm-linux-gnueabi-
 $ make omap2plus_defconfig
 $ make -j32
 ```
+
+### Display all running processes
+
+``` bash
+$ ps aux | less
+$ ps aux
+```
