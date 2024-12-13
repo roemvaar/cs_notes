@@ -15,12 +15,14 @@ Figure 1. Relationship of Scheduler Core, Classes, and Policies
 
 ## Scheduler Classes
 
-The Linux scheduler is modular, enabling different algorithms to schedule different types of processes. This modularity is called **scheduler classes**. Scheduler classes enable different, pluggable algorithms to coexist, scheduling their own types of processes. Each scheduler class has a priority. The core kernel CPU scheduler code, defined in [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.11.5/source/kernel/sched/core.c), iterates over each scheduler class in order of priority. The highest priority scheduler class that has a runnable process wins, selecting who runs next.
+The Linux scheduler is modular, enabling different algorithms to schedule different types of processes. This modularity is called **scheduler classes**. Scheduler classes enable
+different, pluggable algorithms to coexist, scheduling their own types of processes. Each scheduler class has a priority. The core kernel CPU scheduler code, defined in [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.11.5/source/kernel/sched/core.c), iterates over each scheduler class in order of priority. The highest priority scheduler class that has a
+runnable process wins, selecting who runs next.
 
 The Linux scheduler is modular, enabling different algorithms to schedule different processes. This modularity is called **scheduler classes**. Scheduler classes enable different, pluggable algorithms to coexist, scheduling their types of processes. Each scheduler class has a priority. The core kernel CPU scheduler code, defined in [kernel/sched/core.c](https://elixir.bootlin.com/linux/v6.11.5/source/kernel/sched/core.c), iterates over each scheduler class in order of priority. The highest priority scheduler class with a runnable process wins, selecting who runs next.
 
 struct rq - main, per-CPU run queue data structure. In a computer, multiple processes run at once. Active processes are placed in an array called a run que, or runqueue.
-   
+
 * struct cfs_rq
 * struct rt_rq
 * struct dl_rq

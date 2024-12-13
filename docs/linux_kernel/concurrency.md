@@ -7,9 +7,9 @@ nav_order: 1
 
 # Concurrency
 
-One way in which the kernel programming differs greatly from conventional application programming is the issue of concurrency. Most applications, with notable exceptions of multithreading applications, typically run sequentially, from the beginning to the end, without any need to worry about what else might be happening to change their environment.
+One way kernel programming differs greatly from conventional application programming is the concurrency issue. Most applications, with notable exceptions of multithreading applications, typically run sequentially, from the beginning to the end, without worrying about what else might be happening to change their environment.
 
-Kernel code does not run in such a simple world (sequentially from beginning to the end), and even the simplest kernel modules must be written with the idea that many things can be happening at once.
+Kernel code does not run in such a simple world (sequentially from beginning to end), and even the simplest kernel modules must be written with the idea that many things can happen simultaneously.
 
 There are many sources of concurrency in kernel programming:
 
@@ -29,9 +29,9 @@ Writing code that handles concurrency and avoids **race conditions** (situations
 
 ## Spinlocks
 
-SMP is difficult to implement, because it creates race conditions in the kernel if two processes run kernel functions that access the same memory locations.
+Symmetric Multiprocessing (SMP) is difficult to implement because it creates race conditions in the kernel if two processes run kernel functions that access the same memory locations.
 
-In order to support Symmetric Multiprocessing (SMP) the kernel must implement synchronization primitives (e.g., spinlocks) to guarantee that only one processor is executing a critical section.
+In SMP, the kernel must implement synchronization primitives (e.g., spinlocks) to guarantee that only one processor executes a critical section.
 
 <!-- Explain different locking mechanism and the various pros and cons of each
 Describe the difference between a Mutex and a Spinlock and why would you use one instead of the other?
