@@ -18,7 +18,7 @@ A stack is a data structure that uses the FILO mechanism (First In, Last Out), i
 * push(elem): add an item elem to the top of the stack
 * pop(): retrieve and remove the item on top of the stack
 
-More "advanced" stacks may provide more operations: to check whether the stack is
+More "advanced" stacks may provide more operations to check whether the stack is
 empty, to get the top element but don't remove it from the stack (top ()), or to get
 the number of items currently in the stack.
 

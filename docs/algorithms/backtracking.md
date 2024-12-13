@@ -22,10 +22,10 @@ you get rid of it.
 
 You make choices.
 
-You need to fundamentally think about your core choice. The core choice you are making at
-each step. This is how you take the decision at each step.
+You need to think about your core choice fundamentally. The core choice you are making at
+each step. This is how you decide on each step.
 
-In order to solve a "cell", you need to minimize the problem and find subproblems.
+To solve a "cell," you must minimize the problem and find subproblems.
 
 ### 2. Constraints
 
@@ -33,8 +33,7 @@ You have constraints on the choices.
 
 ### 3. Goal
 
-At the end you are going to converge towards to a goal. Our goal is to reach to the base
-cases.
+In the end, you are going to converge toward a goal. Our goal is to reach the base cases.
 
 ### Tips
 
