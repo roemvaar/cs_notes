@@ -7,6 +7,10 @@ nav_order: 1
 
 # Synchronization
 
+Symmetric Multiprocessing (SMP) is difficult to implement because it creates race conditions in the kernel if two processes run kernel functions that access the same memory locations.
+
+In SMP, the kernel must implement synchronization primitives (e.g., spinlocks) to guarantee that only one processor executes a critical section.
+
 The Linux kernel provides a family of syncrhonization methods that enable the
 developers to write efficient race-free code.
 
@@ -54,11 +58,45 @@ given atomic value. If the result is zero, it returns true; otherwise, it return
 
 The atomic operations are typically implemented as inline functions with inline assembly.
 
-### Atomnic Bitwise Operations
+### Atomic Bitwise Operations
 
 Family of functions that operate at the bit level. They are architecture-specific and defined in `<asm/bitops.h>`.
 
+```c
+unsigned long word = 0;
+
+set_bit(0, &word);              /* bit zero is now set (atomically) */
+set_bit(1, &word);              /* bit one is now set (atomically) */
+printk("%ul\n", word);          /* will print "3" */
+clear_bit(1, &word);            /* bit one is now unset */
+change_bit(0, &word);           /* bit zero is flipped; now it is unset (atomically) */
+```
+
+Other important functions are:
+
+* `test_and_set_bit()`
+* `test_and_clear_bit()`
+* `test_and_change_bit()`
+
+If you don't require atomicity (say, for example, because of a lock already protects
+your data), the nonatomic versions of all bitwise functions might be faster. For
+example, the nonatomic form of `set_bit()` is `__set_bit()`.
+
+Although it would be nice if every critical region consisted of code that did nothing
+more complicated than incrementing a variable, reality is harder.
+
 ## Spin Locks
+
+In real life, critical regions can span multiple functions.
+
+The most common lock in the Linux kernel is the spin lock. A spin lock is a lock that
+can be held by at most one thread of execution.
+
+```c
+spin_lock(&mr_lock);
+/* critical region */
+spin_unlock(&mr_lock);
+```
 
 ## Semaphores
 

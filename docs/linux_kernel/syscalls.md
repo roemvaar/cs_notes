@@ -7,7 +7,7 @@ nav_order: 1
 
 # System Calls
 
-<!-- TODO: https://docs.kernel.org/core-api/entry.html#syscalls -->
+System calls are the primary interface that the kernel provides to running processes.
 
 System calls are a set of APIs the kernel offers to the applications. Syscalls are used by applications to request a service from the OS. These calls may include hardware-related services, the creation and execution of new processes, and communication with integral kernel services such as process scheduling. System calls provide an essential interface between a process and the operating system.
 

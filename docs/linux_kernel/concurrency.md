@@ -26,16 +26,3 @@ As a consequence:
 * The code must take care to **access shared data in ways that prevent corruption of data**.
 
 Writing code that handles concurrency and avoids **race conditions** (situations in which an unfortunate order of execution causes undesirable behavior) requires thought and can be tricky. **Proper management of concurrency is required to write correct kernel code.** If you do not write your code with concurrency in mind, it will be subject to catastrophic failures that can be exceedingly difficult to debug.
-
-## Spinlocks
-
-Symmetric Multiprocessing (SMP) is difficult to implement because it creates race conditions in the kernel if two processes run kernel functions that access the same memory locations.
-
-In SMP, the kernel must implement synchronization primitives (e.g., spinlocks) to guarantee that only one processor executes a critical section.
-
-<!-- Explain different locking mechanism and the various pros and cons of each
-Describe the difference between a Mutex and a Spinlock and why would you use one instead of the other?
-https://elixir.bootlin.com/linux/v6.11.1/source/kernel/reboot.c#L751 GOOD EXAMPLE OF A MUTEX USE
-Why not use spinlocks for everything? -->
-
-[Example](https://elixir.bootlin.com/linux/v6.11/source/kernel/sched/sched.h#L1011) of a lock being used on the kernel.

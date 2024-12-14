@@ -7,6 +7,10 @@ nav_order: 1
 
 # Scheduler
 
+Running processes is the main point of using a computer. The Linux kernel CFS
+process scheduler comes close to providing an optimal solution for most use cases
+with good scalability.
+
 In Figure 1, the relationship between the scheduler core, scheduling classes, and scheduling policies is presented.
 
 ![sched_classes](../../../assets/img/sched_classes.jpg)
