@@ -34,14 +34,20 @@ permalink: /docs/references
 
 * [PIE] **Book**: *Programming Interviews Exposed: Secrets to Landing Your Next Job* by John Mongan, Noah Suojanen, and Eric Giguere.
 
-* [LKH] Documentation: Linux Kernel Hacking – https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html
+* [LKH] **Documentation**: Linux Kernel Hacking – https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html
 
-* [LSJ] Blog Post: Linux Scheduler Journey by Max Gio – https://blog.maxgio.me/posts/linux-scheduler-journey/
+* [LSJ] **Blog Post**: Linux Scheduler Journey by Max Gio – https://blog.maxgio.me/posts/linux-scheduler-journey/
 
-* [LKD] Documentation: Linux Docs – https://docs.kernel.org/
+* [Linux] **Documentation**: Linux Docs – https://docs.kernel.org/
 
-* [RBIM] Forum Answer: Removing Built-In Modules in Linux on Unix Stack Exchange – https://unix.stackexchange.com/questions/61917/removing-builtin-modules-in-linux/61918#61918
+* [LKD] **Book**: *Linux Kernel Development (3rd Edition)* by Roberto Love
 
-* [SGG] Website: Stanford Graphics Group – https://graphics.stanford.edu/
+* [RBIM] **Forum Answer**: Removing Built-In Modules in Linux on Unix Stack Exchange – https://unix.stackexchange.com/questions/61917/removing-builtin-modules-in-linux/61918#61918
 
-* [C++11] Document: C++ PROGRAMMING (C++11 ISO STANDARD)  
+* [SGG] **Website**: Stanford Graphics Group – https://graphics.stanford.edu/
+
+* [C++11] **Document**: C++ PROGRAMMING (C++11 ISO STANDARD)
+
+* [OSTEP] **Book**: *Operating Systems: Three Easy Pieces* by Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau https://pages.cs.wisc.edu/~remzi/OSTEP/.
+
+* [TP-Sched] **Website**: Tutorials Point - https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm
