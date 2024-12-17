@@ -1,7 +1,7 @@
 ---
 layout: default
 title: RISC-V
-parent: Computer Systems
+parent: Arch
 nav_order: 1
 ---
 

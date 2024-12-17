@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ARM
-parent: Computer Systems
+parent: Arch
 nav_order: 1
 ---
 
