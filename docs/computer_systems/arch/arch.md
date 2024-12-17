@@ -39,3 +39,9 @@ You need **registers between stages** to hold information produced in the previo
 ## Superscalar Processor
 
 ## Program Status Register
+
+## Big Endian vs Little Endian
+
+Most architectures nowadays use little-endian. Except for AVR that uses big-endian.
+
+One advantage of little-endian is that in small 8-bit processors you can start processing data as soon as you load the first byte.

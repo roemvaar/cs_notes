@@ -9,6 +9,8 @@ nav_order: 1
 
 ISA - Instruction Set Architecture
 
+ARMv7 is von Neumman architecture. ARMv9 uses Harvard architecture.
+
 ### ARMv8
 
 https://mariokartwii.com/armv8
@@ -32,6 +34,17 @@ unit).
 ### ARM Cortex-R
 
 Real-time
+
+## ARM Execution Levels
+
+The processor can be executing in different modes of operation, therefore different registers are available.
+
+ARM Execution Levels:
+
+* EL0 - User applications
+* EL1 - OS kernel (supervisor)
+* EL2 - Hypervisor
+* EL3 - Secure monitor
 
 ### Sources
 
