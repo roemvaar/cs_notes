@@ -15,6 +15,18 @@ User and kernel space may refer to memory protection or virtual address spaces a
 
 A module runs in **kernel space**, whereas applications run in **user space**. One of the roles of OSs is to account for the independent operation of programs and protection against unauthorized access to resources. The OS enforces this behaviour by implementing different operating modalities (or levels) in the CPU. All current processors have at least two protection levels. We refer to the execution modes as **kernel space** and **user space**.
 
+## Address Space
+
+Address space terms can have different meanings in different contexts.
+
+* **Physical** address space: the way the RAM and device memories are visible on the memory bus.
+
+* **Virtual** address space: the way the CPU sees the memory when the virtual memory module is activated (also called protected mode or paging enabled). The kernel is responsible for setting up a mapping that creates a virtual address space in which areas of this space are mapped to certain physical memory areas. Related to (virtual) address space:
+
+    * **Process** space: part of the virtual address space associated with a process. It is the “memory view” of processes. It is a continuous area that starts at zero.
+
+    * **Kernel** space: the kernel space is the “memory view” of the code that runs in kernel mode.
+
 ## Explain how data is transferred between userspace and kernel space
 
 Userspace applications typically request the kernel using system calls, whose code lies in the kernel space. Unix transfers execution from user space to kernel space whenever an application issues a **system call** or is suspended by a **hardware interrupt**.

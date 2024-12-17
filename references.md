@@ -51,3 +51,5 @@ permalink: /docs/references
 * [OSTEP] **Book**: *Operating Systems: Three Easy Pieces* by Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau https://pages.cs.wisc.edu/~remzi/OSTEP/.
 
 * [TP-Sched] **Website**: Tutorials Point - https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm
+
+* [OS-Wh] **Website**: Operating System CheatSheet Whimsical by Love Babbar - https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ

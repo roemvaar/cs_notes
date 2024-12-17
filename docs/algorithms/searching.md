@@ -27,6 +27,8 @@ O(log(n))
 The items must be in a sorted array. Each step of binary_search does a constant number
 of operations and discard half the input.
 
+![binsearch](../../assets/img/binsearch.png)
+
 ## Search using a Hash Table
 
 ```

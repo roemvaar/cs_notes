@@ -36,6 +36,8 @@ noinstr void syscall(struct pt_regs *regs, int nr)
 
 Do not nest syscalls.
 
+You can create a new system call, but DON'T DO IT. You need to stick to the available ones.
+
 ## Explain how ioctl works internally
 
 ioctl (input/output control) is a system call for device-specific I/O operations and other operations which cannot be expressed by regular file semantics. It takes a parameter specifying a request code; the effect of a call depends completely on the request code. Request codes are often device-specific.
