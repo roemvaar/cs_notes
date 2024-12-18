@@ -250,15 +250,6 @@ that is controling. It does not matter if the device being controlled by a parti
 does not exist. In this case the device driver is simply redundant and causes no harm apart from
 occupying a little of the system's memory.
 
-### Device driver types:
-
-* Char drivers: Character device drivers normally perform I/O in a byte stream. Non-buffered files
-that allow you to read and write data character by character.
-* Block drivers: Devices that support a file system are known as block devices. Drivers written for these devices are known as block device drivers. Buffered files that allow you to read and write
-only whole blocks of data. Block devices are accessed via the buffer cache and may be randomly
-accessed, that is to say, any block can be read or written no matter where it is on the device.
-* Network drivers: devices are accessed via the BSD socket interface and other networking subsytems.
-
 ### Kernel Drivers vs User Space Drivers 
 
 User space driver vs Kernel space driver - checar el pdf de linux-kernel-slides.pdf p.46
@@ -301,8 +292,6 @@ object) files.
  
 ### Inter-Process Communication 
 
-Another name for a process is a task
-
 ## Signals 
 
 Most fundamental inter-process communication:
@@ -328,13 +317,6 @@ The calling convention used for passing parameters between function calls.
 
 For ARM exist the Extended ABI (EABI) and the Extended ABI Hard-Float (EABIHF) which
 useas floating point registers. They are incompatible between each other.
-
-## Useful commands
-
-* find
-* grep
-
-You use find to search your system for files, but you use grep to search files for strings.
 
 ## Shell
 

@@ -7,6 +7,13 @@ nav_order: 1
 
 # Commands
 
+## Useful commands
+
+* find
+* grep
+
+You use find to search your system for files, but you use grep to search files for strings.
+
 ### GNU toolchain tuple:
 
 ```bash

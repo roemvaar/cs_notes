@@ -7,6 +7,8 @@ nav_order: 1
 
 # Process Management
 
+Another name for a process is a task.
+
 ## How does the Linux kernel handle process management?
 
 Linux implements the standard Unix process management APIs such as fork(), exec(), wait(), as well as standard POSIX threads.

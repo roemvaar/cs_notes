@@ -42,6 +42,6 @@ You need **registers between stages** to hold information produced in the previo
 
 ## Big Endian vs Little Endian
 
-Most architectures nowadays use little-endian. Except for AVR that uses big-endian.
+Most architectures nowadays use little-endian except for AVR, which uses big-endian.
 
-One advantage of little-endian is that in small 8-bit processors you can start processing data as soon as you load the first byte.
+One advantage of little-endian is that small 8-bit processors can start processing data as soon as you load the first byte.
