@@ -7,33 +7,28 @@ nav_order: 1
 
 # ARM
 
-ISA - Instruction Set Architecture
+ARM (Advanced RISC Machines) is a family of RISC instruction set architectures (ISAs) for computer processors.
 
-ARMv7 is von Neumman architecture. ARMv9 uses Harvard architecture.
+## ARM Versions
 
-### ARMv8
+ARMv7 is von Neumman architecture. ARMv9 uses Harvard architecture. [ARMv8](https://mariokartwii.com/armv8).
 
-https://mariokartwii.com/armv8
-
-* Execution levels
 * Exceptions (4 types: software, hardware, fast, exceptions)
 
-### ARM Cortex-A
+## ARM Cortex-A
 
 Application.
 
 * iMX.8 - Cortex-A (mainly) for automotive applications
-* BCM2711 - Broadcom chip used in Raspberry Pi 4 model B. Quad-core
-Cortex-A72 (ARM v8) 64-bit SoC @ 1.5 GHz.
+* BCM2711 - Broadcom chip used in Raspberry Pi 4 model B. Quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5 GHz.
 
-### ARM Cortex-M
+## ARM Cortex-M
 
-Microcontroller. Usually, they don't have MMU (memory management
-unit). 
+Microcontroller. Usually, they don't have MMU (memory management unit).
 
-### ARM Cortex-R
+## ARM Cortex-R
 
-Real-time
+Real-time.
 
 ## ARM Execution Levels
 
@@ -45,9 +40,3 @@ ARM Execution Levels:
 * EL1 - OS kernel (supervisor)
 * EL2 - Hypervisor
 * EL3 - Secure monitor
-
-### Sources
-
-[Arm Fundamentals: Introduction to understanding Arm processors](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/arm-fundamentals-introduction-to-understanding-arm-processors)
- 
-[BCM2711](https://www.raspberrypi.com/documentation/computers/processors.html#bcm2711)

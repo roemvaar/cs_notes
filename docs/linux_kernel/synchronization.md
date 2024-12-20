@@ -14,6 +14,17 @@ In SMP, the kernel must implement synchronization primitives (e.g., spinlocks) t
 The Linux kernel provides a family of syncrhonization methods that enable the
 developers to write efficient race-free code.
 
+
+### Use: Spin Locks vs Semaphores
+
+| **Requirement**                       | **Recommended Lock**           |
+| --------------------------------------| -------------------------------|
+| Low overhead locking                  | Spin lock is preferred         |
+| Short lock hold time                  | Spin lock is preferred         |
+| Long lock hold time                   | Mutex / Semaphore is preferred |
+| Need to lock from interrupt context   | Spin lock is required          |
+| Need to sleep while holding lock      | Mutex / Semaphore is required  |
+
 ## Atomic Operations
 
 **Atomic operations** provide instructions that execute atomically - without interruption. Atomicity ensures that instructions occur without interruption and

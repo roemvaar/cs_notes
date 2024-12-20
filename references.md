@@ -53,3 +53,7 @@ permalink: /docs/references
 * [TP-Sched] **Website**: Tutorials Point - https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm
 
 * [OS-Wh] **Website**: Operating System CheatSheet Whimsical by Love Babbar - https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ
+
+* [ARM] **Website**: Arm Fundamentals: Introduction to understanding Arm processors - https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/arm-fundamentals-introduction-to-understanding-arm-processors
+
+* [BCM2711] **Website**: BCM2711 Processor -https://www.raspberrypi.com/documentation/computers/processors.html#bcm2711
