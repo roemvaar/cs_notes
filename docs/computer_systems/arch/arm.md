@@ -17,18 +17,18 @@ ARMv7 is von Neumman architecture. ARMv9 uses Harvard architecture. [ARMv8](http
 
 ## ARM Cortex-A
 
-Application.
+Application processor cores for a performance-intensive systems.
 
 * iMX.8 - Cortex-A (mainly) for automotive applications
 * BCM2711 - Broadcom chip used in Raspberry Pi 4 model B. Quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5 GHz.
 
 ## ARM Cortex-M
 
-Microcontroller. Usually, they don't have MMU (memory management unit).
+Microcontroller cores for a wide range of embedded applications. Usually, they don't have MMU (memory management unit).
 
 ## ARM Cortex-R
 
-Real-time.
+High-performance cores for real-time applications.
 
 ## ARM Execution Levels
 
