@@ -65,7 +65,7 @@ Kill QEMU using `Ctrl-A x`.
 Show and modify contents of qemu-image.img:
 
 ```bash
-$ sudo losetup -f --show --partscan qemu.img
+sudo losetup -f --show --partscan qemu.img
 ```
 
 Detailed instructions [here](https://bootlin.com/doc/training/embedded-linux-qemu/embedded-linux-qemu-labs.pdf).

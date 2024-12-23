@@ -32,6 +32,8 @@ number of places to shift.
 number of places to shift.
 - **~ (NOT)**: takes one number and inverts all bits of it.
 
+![bitwise](../../assets/img/bitwise.png)
+
 ## Bitwise Operators Hacks
 
 1. Right shift (>>) operator is equivalent to division by 2

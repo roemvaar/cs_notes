@@ -92,3 +92,31 @@ Donâ€™t gloss over a routine or piece of code involved in the bug because you â€
 
 How do you approach debugging?
 System debugging
+
+## The 13 Golden Rules of Debugging by Sebastian Fischmeister
+
+1. **Understand the requirements**: make sure you build the right program, have the right environment and tests.
+
+2. **Make it fail**: find a clear error state; will also serve as an input for regression test; example: assert statements; with timing error, place a guard that checks whether something has been completed.
+
+3. **Simplify the test case**: complicated test cases complicate reasoning about the bug.
+
+4. **Read the right error message**
+
+5. **Check the plug**: check that all the connections are correct.
+
+6. **Separate facts from interpretetion**: revisit the processor specification; recheck some of your assumed knowledge.
+
+7. **Divide and conquer**: reduce the test case, test one assumption after the other.
+
+8. **Match the tool to the bug**: learn special tools.
+
+9. **One change at a time**: this is particularly deadly.
+
+10. **Keep an audit trail**: use a version control system with local branching.
+
+11. **Get a fresh view**: explain the code to your car - seriously!
+
+12. **If you didn't fix it, it ain't fixed**: changing code that works can only introduce new bugs.
+
+13. **Cover your bugfix with a regression test**: the easiest way to build up a test suite.

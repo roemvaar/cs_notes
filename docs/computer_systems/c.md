@@ -82,6 +82,8 @@ In static linking, the linker copies all used library functions to the executabl
 In dynamic linking, the code is not copied; it is done by just placing the library's name
 in the binary file.
 
+![compilation_process](../../assets/img/gcc_compilation_process.png)
+
 ## Difference between a switch and an if statement
 
 ## Common problems - segmentation fault, memory leaks
