@@ -23,6 +23,7 @@ permalink: /docs/must_study
 * Operations using shifts - e.g. power of 2 - left shift+
 * Rotate image - using bit manipulation (1 bit = 1 pixel)
 * Write an algorithm to reverse the bits of an UNSIGNED binary number
+* Boolean flags (e.g., 0 through ALPHABET_SIZE)
 
 ## Hash Tables
 

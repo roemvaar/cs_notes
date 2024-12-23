@@ -12,6 +12,8 @@ A **Hash Function** maps data, e.g. strings, to numbers. But there are some requ
 * It needs to be consistent
 * It should map words to different numbers
 
+A tree is a connected graph without cycles, i.e., a type of graph, but not all graphs are trees.
+
 ### Big O
 
 Average case:

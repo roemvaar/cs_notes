@@ -11,9 +11,17 @@ Symmetric Multiprocessing (SMP) is difficult to implement because it creates rac
 
 In SMP, the kernel must implement synchronization primitives (e.g., spinlocks) to guarantee that only one processor executes a critical section.
 
-The Linux kernel provides a family of syncrhonization methods that enable the
-developers to write efficient race-free code.
+The Linux kernel provides a family of synchronization methods that enable the developers to write kernel code that prevents race conditions, ensures the correct synchronization, and correctly runs on machines with multiple processors.
 
+**Methods:**
+
+* The simplest method of ensuring syncrhonization are the atomic operations.
+
+* Spin locks are the most common lock in the kernel, which provide a lightweight single-holder lock that busy waits while contended.
+
+* Semaphores are sleeping locks, can be used to protect multiple resources with a count.
+
+* A mutex is a semaphore with a count of one, also known as a binary semaphore.
 
 ### Use: Spin Locks vs Semaphores
 
@@ -100,8 +108,7 @@ more complicated than incrementing a variable, reality is harder.
 
 In real life, critical regions can span multiple functions.
 
-The most common lock in the Linux kernel is the spin lock. A spin lock is a lock that
-can be held by at most one thread of execution.
+The most common lock in the Linux kernel is the spin lock. A spin lock is a lock that can be held by at most one thread of execution. A spin lock provide a lightweight single-holder lock that busy waits while contended.
 
 ```c
 spin_lock(&mr_lock);
@@ -111,6 +118,8 @@ spin_unlock(&mr_lock);
 
 ## Semaphores
 
+Semaphores are sleeping lock. The main difference between a spin lock and a semaphore is that spin lock busy wait, i.e., no context switch is needed, and the semaphores sleep while waiting, i.e., context switch is needed.
+
 ## Mutexes
 
-## Preemption Disabling
+A mutex is a type of semaphore with a count of one, it is also known as a binary semaphore.

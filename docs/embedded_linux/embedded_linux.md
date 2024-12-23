@@ -7,3 +7,4 @@ permalink: /docs/embedded_linux
 ---
 
 # Embedded Linux
+

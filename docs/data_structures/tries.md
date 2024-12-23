@@ -27,6 +27,8 @@ There are some great benefits to using tries.
 
 For starters, the bulk of the work in creating a trie happens early. When first adding nodes, we must allocate memory for an array each time. As the trie grows in size, we have to do less work each time we add a value since it's likely that the nodes were initialized before with their values and references. Adding intermediate nodes becomes a lot easier.
 
+A trie is used to store the entire (English) language for quick prefix lookups. While a hash table can quickly look up wheter a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
+
 ## Big O
 
 The worst-case runtime for creating a trie structure is dependent on how many words the trie contains and how long they might potentially be, known as O(m*n) time, where m is the length of the longest word, and n is the total number of words.
