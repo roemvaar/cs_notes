@@ -59,7 +59,16 @@ Memory address translation provides a layer of indirection to enable additional 
 
 When a program tries to access an address a particular address, that doesn't mean that it will find it at that specific address, instead, thanks to virtual memory, there's a layer of indirection between these two addresses.
 
-Virtual memory enables:
+Uses of virtual memory:
+
+* Multitasking
+* Memory protection
+* Data security
+* Larger address space
+
+Microcontrollers used in embedded systems usually don't include an MMU, thus virtual memory is not immediately accessible to embedded systems programmers. What you can use in ARM microcontrollers is to use the MPU to mark memory regions as code or data to add an extra layer of memory protection.
+
+Virtual memory concepts:
 
 * **Paging**
 
@@ -77,7 +86,29 @@ Since access to the page table takes time, operating systems offer a Translation
 
 ![tlb](../../../assets/img/tlb.png)
 
+Paging has the disadvantage that if you want to group multiple pages together and assign them specific meaning, e.g., the program memory, you would have to do so for each page.
+
+All pages have the same size.
+
 * **Segmentation**
+
+Segmentation provides an alternative method for paging.
+
+Memory segmentation is an operating system memory management technique of dividing a computer's primary memory into segments or sections. In a computer system using segmentation, a reference to a memory location includes a value that identifies a segment and an offset (memory location) within that segment.
+
+![segmentation](../../../assets/img/segmentation.png)
+
+Segments or sections are also used in object files of compiled programs when they are linked together into a program image and when the image is loaded into memory.
+
+Segments can have a dynamic length.
+
+A problem when using segmentation is memory fragmentation. The solution for this is to use **segmentation** and **paging** together.
+
+![pag_and_seg](../../../assets/img/paging_segmentation.png)
+
+Everything in one picture:
+
+![mem_all_in_one](../../../assets/img/memory_all_in_one.png)
 
 * **Relocation**
 

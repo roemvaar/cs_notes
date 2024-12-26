@@ -54,6 +54,8 @@ The program counter (PC) holds the addres of the intruction to be fetched next. 
 
 ## Pipelining
 
+Sequential execution of instructions is inefficient. Pipelines break instructions into pieces and overlap stages. Processor pipelines improve performance.
+
 **Pipeline registers.**
 
 You need **registers between stages** to hold information produced in the previous cycles.
@@ -61,6 +63,14 @@ You need **registers between stages** to hold information produced in the previo
 ![pipeline](../../../assets/img/pipeline.png)
 
 ## Pipeline Hazards
+
+What problems can occur with pipelines? not every instruction might take exactly one instruction on the execution stage. 
+
+Jumps also cause problems becuase you might have fetched and decoded other two instructions.
+
+A **data stall** occurs when an instruction is delayed because it depends on the result of an earlier instruction that has not yet finished.
+
+A **control stall** is a delay in the instruction pipeline that occurs when a control hazard prevents the next instruction from executing on time. Control hazards happen when a decision needs to be made about a conditional branch before the condition or target can be calculated.
 
 ## Very Long Instruction Word (VLIW)
 

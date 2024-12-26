@@ -15,7 +15,21 @@ ARM assembly branching example:
 
 ## ARM Versions
 
-ARMv7 is von Neumman architecture. ARMv9 uses Harvard architecture. [ARMv8](https://mariokartwii.com/armv8).
+**ARMv7**
+
+ARMv7 is von Neumman architecture.
+
+ARMv7 has three stages: fetch, decode, and execute.
+
+**ARMv8**
+
+[ARMv8](https://mariokartwii.com/armv8).
+
+Raspberry Pi 4.
+
+**ARMv9**
+
+ARMv9 uses Harvard architecture.
 
 
 ## ARM Cortex-A
