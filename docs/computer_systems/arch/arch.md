@@ -7,13 +7,41 @@ nav_order: 1
 
 # Computer Architecture
 
-## Central Processing Unit
+Simplified version of instruction execution on a computer:
+
+1. Processor fetches instruction from memory
+2. Processor executes the instruction
+3. Goto 1
+
+In reality, it is more complex because of:
+
+* Pipelining
+* VLIW
+* Superscalar architectures (PowerPC 970)
+
+From an embedded software engineer perspective, it's important to understand how processors execute instructions in order to understand the timing of the code we write and to ensure that our system will meet its timing requirements, this way, we can understand what are the influences that different instructions can have on the execution time of a function.
+
+## Von Neumman vs Harvard
+
+The Von Neumman architecture has a shared data and program memory.
+
+The Harvard architecture has a separate data and program memory. With Harvard architecture, you can fetch the instruction and data associated with it in parallel. This is useful for streaming applications where you need to read data from a sensor, and fetch the instruction to process that data.
+
+A disadvantage of the Harvard architecture is the memory fragmentation caused by not being able to store data in the instruction memory, or instructions on the data memory.
+
+## Central Processing Unit (CPU)
 
 ## Memory
 
+The processor fetches the instruction from memory.
+
 ## Processor Registers
 
-## Program Counter
+Program status register: negative bit, zero bit, carry bit, overflow bit.
+
+## Program Counter (PC)
+
+The program counter (PC) holds the addres of the intruction to be fetched next. The PC increments to the next instruction or it will jump to a a branch in case of a jump instruction.
 
 ## Complex Instruction Set Computers (CISC)
 

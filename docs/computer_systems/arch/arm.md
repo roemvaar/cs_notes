@@ -9,11 +9,14 @@ nav_order: 1
 
 ARM (Advanced RISC Machines) is a family of RISC instruction set architectures (ISAs) for computer processors.
 
+ARM assembly branching example:
+
+![arm_branching](../../../assets/img/arm_branching.png)
+
 ## ARM Versions
 
 ARMv7 is von Neumman architecture. ARMv9 uses Harvard architecture. [ARMv8](https://mariokartwii.com/armv8).
 
-* Exceptions (4 types: software, hardware, fast, exceptions)
 
 ## ARM Cortex-A
 
@@ -40,3 +43,12 @@ ARM Execution Levels:
 * EL1 - OS kernel (supervisor)
 * EL2 - Hypervisor
 * EL3 - Secure monitor
+
+## ARM Exceptions
+
+Four types of exceptions:
+
+* Software
+* Hardware
+* Fast
+* Exceptions
