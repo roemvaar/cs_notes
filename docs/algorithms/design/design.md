@@ -1,17 +1,23 @@
 ---
 layout: default
-title: Techniques
+title: Design
 parent: Algorithms
 nav_order: 1
 ---
 
-# Must Know Techniques to Solve LeetCode Problems
+# Designing Algorithms
+
+You can choose from a wide range of algorithm design techniques.
+
+Insertion sort uses the **incremental** method.
+
+## Must Know Techniques to Solve LeetCode Problems
 
 * Two Pointers
     * Slow and Fast
 * Prefix Sum
 * Sliding Window
-* Divide and Conquer
+* Divide-and-conquer
     * Merge Sort
 * Top K Elements
 * BFS

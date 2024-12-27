@@ -7,7 +7,9 @@ nav_order: 1
 
 # Time Complexity and Space Complexity
 
-Time (and space) complexity is the measurement of an algorithm's speed/runtime (or space usage in case of space complexity) as the size of input of the algorithm increases. 
+Time (and space) complexity is the measurement of an algorithm's speed/runtime (or space usage in case of space complexity) as the size of input of the algorithm increases.
+
+We usually consider one algorithm to be more efficient than another if its worst-case running time has a lower order of growth.
 
 ## Big-O notation
 

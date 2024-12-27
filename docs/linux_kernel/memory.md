@@ -13,3 +13,36 @@ Linux memory management is a complex subsystem that deals with:
 * Management of the virtual memory: paging, swapping, demand paging, copy on write
 * User services: user address space management (e.g., mmap(), brk(), shared memory)
 * Kernel services: SL*B allocators, vmalloc
+
+## Pages
+
+The kernel treats physical pages as the basic unit of memory management.
+
+Although the processor's smallest addresable unit is a byte or a word, the memory management unit (MMU, the hardware that manages memory and performs virtual to physical address translations) typically deals with pages.
+
+Therefore, the MMU maintains the system's page tables with page-size granularity. In terms of virtual memory, pages are the smallest unit that matters.
+
+Each architecture defines its page size. Typically:
+
+* Most 32-bit architectures have 4KB pages
+* Most 64-bit architectures have 8KB pages
+
+The kernel represents every physical page on the system with a struct page structure.
+
+## Zones
+
+Some pages, because of their physical address in memory, cannot be used for certain tasks. Because of this limitation, the kernel divides pages into different zones.
+
+The kernel uses the zones to group pages of similar properties.
+
+The use and layout of the memory zones is architecture-dependent.
+
+## Getting Pages
+
+The kernel provides one low-level mechanism for requesting memory, along with several interfaces to access it.
+
+```c
+struct page *alloc_pages(gfp_t gfp_mask, unsigned int order);
+```
+
+This allocates 2^order (that is, 1 << order) contiguous physical pages and return a pointer to the first page's page structure; on error it returns NULL.
