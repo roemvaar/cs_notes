@@ -7,17 +7,17 @@ nav_order: 1
 
 # Memory
 
-In this page we discuss memory, memory hierarchy, caching, and virtual memory in modern embedded systems.
+This page discusses memory, memory hierarchy, caching, and virtual memory in modern embedded systems.
 
 ## Cache
 
-Cache is the fastest and most expensive memory that you can have in your computer system. The cache memory is inside the processor.
+The cache is the fastest and most expensive memory that you can have in your computer system. The cache memory is inside the processor.
 
-Cache is a very limited amount of memory that you have in your system, hence you need to have a main memory.
+The cache is a very limited amount of memory in your system. Hence, you need to have a main memory.
 
 ![memory](../../../assets/img/memory.png)
 
-Cache is a small and fast memory to keep the working set of a program close to the computation.
+The cache is a small and fast memory that keeps the working set of a program close to the computation.
 
 Processors might have multiple levels of caches before you need to go find your data at main memory.
 
@@ -45,19 +45,17 @@ A conflict miss occurs when you try to load two consecutive memory areas into th
 
 ## Memory Hierarchy
 
-The memory hierarchy says that the fastest the memory is the lowest its capacity and the more expensive it is. The cheaper memory is thus slower and we can get bigger capacity.
+The memory hierarchy says that the faster the memory is, the lower its capacity and the more expensive it is. The cheaper memory is thus slower, and we can get a bigger capacity.
 
-Accessing memory in main memory is slower than accessing data in cache.
-
-<!-- TODO: Add a digram of memory diagram -->
+Accessing memory in the main memory is slower than accessing data in the cache.
 
 ## Virtual Memory and Memory Address Translation
 
 Virtual memory is enabled by memory address translation.
 
-Memory address translation provides a layer of indirection to enable additional functionality where the address that a program is trying to access is not the same as the physical address in memory where this data is located.
+Memory address translation provides a layer of indirection to enable additional functionality where the address a program tries to access is not the same as the physical address in memory where this data is located.
 
-When a program tries to access an address a particular address, that doesn't mean that it will find it at that specific address, instead, thanks to virtual memory, there's a layer of indirection between these two addresses.
+When a program tries to access an address a particular address, that doesn't mean that it will find it at that specific address; instead, thanks to virtual memory, there's a layer of indirection between these two addresses.
 
 Uses of virtual memory:
 
@@ -102,7 +100,7 @@ Segments or sections are also used in object files of compiled programs when the
 
 Segments can have a dynamic length.
 
-A problem when using segmentation is memory fragmentation. The solution for this is to use **segmentation** and **paging** together.
+A problem when using segmentation is memory fragmentation. The solution is to use **segmentation** and **paging** together.
 
 ![pag_and_seg](../../../assets/img/paging_segmentation.png)
 
@@ -115,6 +113,3 @@ Everything in one picture:
 * **Swapping**
 
 * **Authorization**
-
-<!-- 
-TODO: Read William Stallings book: Operating Systems: internals and design  principles - Chapter on virtual memory -->
