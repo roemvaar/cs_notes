@@ -64,13 +64,13 @@ Uses of virtual memory:
 * Data security
 * Larger address space
 
-Microcontrollers used in embedded systems usually don't include an MMU, thus virtual memory is not immediately accessible to embedded systems programmers. What you can use in ARM microcontrollers is to use the MPU to mark memory regions as code or data to add an extra layer of memory protection.
+Microcontrollers used in embedded systems usually don't include an MMU. Thus, virtual memory is not immediately accessible to embedded systems programmers. In ARM microcontrollers, you can use the MPU to mark memory regions as code or data to add an extra layer of memory protection.
 
 Virtual memory concepts:
 
 * **Paging**
 
-In a system with paging, what the process see is a virtual address.
+In a system that uses memory paging, the process sees a virtual address.
 
 ![paging](../../../assets/img/paging.png)
 
@@ -84,7 +84,7 @@ Since access to the page table takes time, operating systems offer a Translation
 
 ![tlb](../../../assets/img/tlb.png)
 
-Paging has the disadvantage that if you want to group multiple pages together and assign them specific meaning, e.g., the program memory, you would have to do so for each page.
+Paging has the disadvantage that if you want to group multiple pages and assign them specific meaning, e.g., the program memory, you would have to do so for each page.
 
 All pages have the same size.
 

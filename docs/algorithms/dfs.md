@@ -9,7 +9,7 @@ nav_order: 1
 
 Depth-First Search (DFS) is a tree and graph traversal algorithm. DFS visit the nodes in the three or graphs.
 
-A DFS follows one branch of the tree down as many levels as possible until the target node is found or the end is reached.
+A DFS follows one tree branch down as many levels as possible until the target node is found or the end is reached.
 
 When the search can't go down any further, it is continued at the the nearest ancestor with unexplored children.
 
@@ -21,7 +21,7 @@ In DFS, we start at the root (or another arbitrarily selected node) and explore 
 
 In DFS, we visit a node a and then iterate through each of a's neighbours. When visiting a node b that is a neighbour of a, we visit all of b's neighbours before going on to a's other neighbours. That is exhaustively searches b's branch before any of its other neighbours.
 
-The pseudocode below implement DFS:
+The pseudocode below implements DFS:
 
 ```c++
 void dfs(Node root)
@@ -38,4 +38,4 @@ void dfs(Node root)
 }
 ```
 
-Note that pre-order and other forms of tree traversal are a form of DFS. The key difference is that when implementing this algorithm for a graph, we must check if the node has been visited. If we don't we risk getting stuck in an infinite loop.
+Note that pre-order and other forms of tree traversal are a form of DFS. The key difference is that when implementing this algorithm for a graph, we must check if the node has been visited. If we don't, we risk getting stuck in an infinite loop.

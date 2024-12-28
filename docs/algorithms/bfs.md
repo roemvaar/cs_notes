@@ -40,4 +40,4 @@ void bfs(Node root)
 }
 ```
 
-If you are asked to implement BFS, the key thing to remember is the use of the queue. The rest of the algorithm flows from this fact.
+If you are asked to implement BFS, the key thing to remember is using a queue. The rest of the algorithm flows from this fact.
