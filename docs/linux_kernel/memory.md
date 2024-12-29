@@ -46,3 +46,11 @@ struct page *alloc_pages(gfp_t gfp_mask, unsigned int order);
 ```
 
 This allocates 2^order (that is, 1 << order) contiguous physical pages and return a pointer to the first page's page structure; on error it returns NULL.
+
+## Slab Layer
+
+Allocating and freeing data structures is one of the most common operations inside any kernel. To facilitate frequent allocations and deallocations of data, programmers often introduce free lists. A free list contains a block of available, already allocated, data structures. When code requires a new instance of a data structure, it can grab one of the structures off the free list rather than allocate the sufficient amount of memory and set it up for the data structure. Later, when the data structure is no longer needed, it is returned to the free list instead of deallocated. In this sense, the free list acts as an object cache, caching a frequently used type of object.
+
+The problem with this is that there's no global control of the free lists. A potential problem is when the system is running low on memory, there's no way for the kernel to modify (shrink the size) the free lists.
+
+To remedy this, the Linux kernel provides the slab layer (also called the slab allocator). The slab layer acts as a generic data structure-caching layer.

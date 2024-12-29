@@ -84,6 +84,8 @@ Since access to the page table takes time, operating systems offer a Translation
 
 ![tlb](../../../assets/img/tlb.png)
 
+The TLB (translation lookaside buffer) is a hardware cache used by most architectures to cache the mapping of virtual addresses to physical addresses. This greatly improves the performance of the system, because most memory access is done via virtual addressing.
+
 Paging has the disadvantage that if you want to group multiple pages and assign them specific meaning, e.g., the program memory, you would have to do so for each page.
 
 All pages have the same size.
