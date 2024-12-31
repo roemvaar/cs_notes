@@ -19,7 +19,7 @@ The cache is a very limited amount of memory in your system. Hence, you need to 
 
 The cache is a small and fast memory that keeps the working set of a program close to the computation.
 
-Processors might have multiple levels of caches before you need to go find your data at main memory.
+Processors might have multiple levels of caches before finding data in the main memory.
 
 ### Cache Concepts
 
@@ -70,7 +70,7 @@ Virtual memory concepts:
 
 * **Paging**
 
-In a system that uses memory paging, the process sees a virtual address.
+The process sees a virtual address in a system that uses memory paging.
 
 ![paging](../../../assets/img/paging.png)
 
@@ -84,7 +84,7 @@ Since access to the page table takes time, operating systems offer a Translation
 
 ![tlb](../../../assets/img/tlb.png)
 
-The TLB (translation lookaside buffer) is a hardware cache used by most architectures to cache the mapping of virtual addresses to physical addresses. This greatly improves the performance of the system, because most memory access is done via virtual addressing.
+The TLB (translation lookaside buffer) is a hardware cache used by most architectures to cache the mapping of virtual addresses to physical addresses. TLB greatly improves the system's performance because most memory access is done via virtual addressing.
 
 Paging has the disadvantage that if you want to group multiple pages and assign them specific meaning, e.g., the program memory, you would have to do so for each page.
 
