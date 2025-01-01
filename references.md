@@ -57,3 +57,5 @@ permalink: /docs/references
 * [ARM] **Website**: Arm Fundamentals: Introduction to understanding Arm processors - https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/arm-fundamentals-introduction-to-understanding-arm-processors
 
 * [BCM2711] **Website**: BCM2711 Processor -https://www.raspberrypi.com/documentation/computers/processors.html#bcm2711
+
+* [Rust-Concepts] **Website**: Rust Core Concepts List - https://dev.to/ashsajal/rust-core-concepts-list-27of
