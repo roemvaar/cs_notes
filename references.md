@@ -59,3 +59,5 @@ permalink: /docs/references
 * [BCM2711] **Website**: BCM2711 Processor -https://www.raspberrypi.com/documentation/computers/processors.html#bcm2711
 
 * [Rust-Concepts] **Website**: Rust Core Concepts List - https://dev.to/ashsajal/rust-core-concepts-list-27of
+
+* [C++11 ISO Standard] **Website**: C++ Programming (C++11 ISO STANDARD) - https://techroles.wordpress.com/wp-content/uploads/2015/03/ikm-test-c11.pdf

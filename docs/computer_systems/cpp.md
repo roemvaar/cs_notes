@@ -15,11 +15,22 @@ C++ is a statically typed language. The type of every entity (e.g., object, valu
 
 Every C++ program must have exactly one global function named main(). The program starts by executing that function.
 
-<!-- Reference: https://techroles.wordpress.com/wp-content/uploads/2015/03/ikm-test-c11.pdf -->
-
 ## C++ Types
 
-<!-- C++ Types measures understanding of basic C++ types and the rules for their declaration and use. -->
+<!-- 
+
+C++ Types measures understanding of basic C++ types and the rules for their declaration and use.
+
+https://en.cppreference.com/w/cpp/language/types
+
+-->
+
+The following types are collectively called fundamental types:
+
+* void
+* std::nullptr_t
+* integral types
+* floating-point types
 
 ## C++ Basic Concepts
 

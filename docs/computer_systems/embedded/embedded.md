@@ -45,25 +45,61 @@ The ones most often found in embedded devices are Arm, MIPS, PowerPC, RISC-V, an
 
 **Bootloaders**
 
-A bootloader is a program in charge of initializing critical computer resources such as program memory and loading the OS into the memory.
+A bootloader is a program in charge of initializing critical computer resources, such as program memory, and loading the OS into the memory. It serves as a bridge between the firmware and the operating system, ensuring th system is properly configured to begin execution of higher-level software.
 
-How OS/Program is loaded?
+How does the bootloader loads the OS/Program?
+
+1. Power-On / Reset: after the system is powered on or reset, the processor starts executing code from a predefined memory location, usually set by the hardware.
+
+2. Execution of bootloader: the firmware locates and hands over control to the bootloader, typically residing in non-volatile storage (e.g., flash memory or ROM).
+
+3. Hardware initialization: the bootloader initializes critical hardware, including memory controllers, I/O devices, and other peripherals.
+
+4. Operating system image location: the bootloader locates the operating system image, which could be stored in local storage (HDD, SSD, eMMC) or a remote server (via network boot).
+
+5. OS loading: the bootloader loads the OS image into RAM, preparing it for execution.
+
+6. Control handover: the bootloader passes control to the OS kernel, along with necessary system configuration data.
 
 Types of bootloaders:
 
+* Stage-1 Bootloader: A minimal bootloader that loads a more complex Stage-2 bootloader. Commonly used in multi-stage boot processes.
+
+* Stage-2 Bootloader: A more feature-complete bootloader that initializes more hardware and loads the operating system. Examples include GRUB or LILO.
+
+* Primary Bootloader: Resides in the first sector of the boot device (e.g., MBR) and initiates the OS loading process.
+
+* Secondary Bootloader: Used in systems requiring additional steps to load the OS, often containing more advanced capabilities.
+
+* Network Bootloader: Supports booting the system over a network using protocols like PXE (Preboot Execution Environment).
+
 Examples:
+
+* GRUB (GNU GRUB): A widely used bootloader for Linux and other operating systems.
+
+* LILO (Linux Loader): An older Linux bootloader, now largely replaced by GRUB.
+
+* UEFI Boot Manager: Used in systems with Unified Extensible Firmware Interface.
+
+* U-Boot: A versatile bootloader for embedded systems.
+
+* Windows Boot Manager: The default bootloader for Microsoft Windows operating systems.
 
 Tasks of a bootloader:
 
-* Initialize critical hardware components, such as the SDRAM controller, I/O controllers and graphic controllers.
+* Initialize Critical Hardware: Configure SDRAM controller, I/O controllers, graphics controllers, and other essential components.
 
-* Initializes system memory in preparation for passing control to the operating system.
+* Prepare System Memory: Initialize and map system memory to prepare for OS loading.
 
-* Allocate system resources, such as memory and interrupt circuits, to peripheral controllers as necessary.
+* Allocate Resources: Manage resources like memory and interrupt circuits for peripheral devices.
 
-* Provides a mechanism for locating and loading your operating system image.
+* Locate OS Image: Find the operating system image in storage or over a network.
 
-* Loads the operating system, then passes control to it, passing any required startup information. This information can include total memory size, clock rates, serial port speeds and other low-level hardware-specific configuration data.
+* Load OS Kernel: Load the OS kernel and pass control to it, along with essential configuration data such as:
+
+    * Total memory size
+    * Processor clock rates
+    * Peripheral configuration (e.g., serial port settings)
 
 **Bare metal programming**
 
@@ -78,7 +114,6 @@ Difference between an OS and RTOS:
 * RTOS (Real-Time Operating System)
 
 Examples: FreeRTOS, QNX, VxWorks
-
 **What is DMA?**
 
 Direct Memory Acess

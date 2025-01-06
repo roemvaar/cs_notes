@@ -73,7 +73,7 @@ Detailed instructions [here](https://bootlin.com/doc/training/embedded-linux-qem
 Is there other process using the image?
 
 ```bash
-$ qemu-system-x86_64 -kernel arch/x86/boot/bzImage -drive file=../qemu-image.img,index=0,media=disk,format=raw -append "root=/dev/sda console=ttyS0" --enable-kvm --nographic
+qemu-system-x86_64 -kernel arch/x86/boot/bzImage -drive file=../qemu-image.img,index=0,media=disk,format=raw -append "root=/dev/sda console=ttyS0" --enable-kvm --nographic
 qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
 qemu-system-x86_64: Failed to get "write" lock
 Is another process using the image [../qemu-image.img]?
