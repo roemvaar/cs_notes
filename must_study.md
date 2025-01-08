@@ -42,3 +42,7 @@ permalink: /docs/must_study
 
 * Convert sorted array into binary search tree (BST)
 * Invert a binary tree
+
+## Linked List
+
+* Reverse a linked list
