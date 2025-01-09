@@ -9,6 +9,8 @@ nav_order: 1
 
 This is a list of the core concepts that every Rust programmer should know, for more information go to the [Rust-Concepts] website.
 
+Test your Rust code online [here](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021).
+
 ## Ownership and Borrowing
 
 **Ownership** is a fundamental concept in Rust. Each value in Rust has a single owner. When the owner goes out of scope, the value is dropped (cleaned up).

@@ -151,22 +151,26 @@ An atomicity violation bug occurs if Thread 1 is interrupted after it has checke
 
 **Order violation** definition is "The desired order between two (groups of) memory accesses is flipped (i.e., A should always be executed before B, but the order is not enforeced during execution)."
 
-Thread 1: 
-```
-1 void init() {
-2   ...
-3   mThread = PR_CreateThread(mMain, ...);
-4   ...
-5 }
+Thread 1:
+
+```c
+void init()
+{
+    ...
+    mThread = PR_CreateThread(mMain, ...);
+    ...
+}
 ```
 
 Thread 2:
-```
-1 void mMain(...) {
-2   ...
-3   mState = mThread->State;
-4   ...
-5 }
+
+```c
+void mMain(...)
+{
+    ...
+    mState = mThread->State;
+    ...
+}
 ```
 
 If Thread 2 runs before Thread 1, Thread 2 has a NULL pointer dereference because `mThread` hasn't been created yet. The fix to this type of bug is to enforce ordering. Condition variables are an easy and robust way to add this style of synchronization.

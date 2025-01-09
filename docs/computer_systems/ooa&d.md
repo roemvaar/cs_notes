@@ -27,14 +27,17 @@ Functionality is a key concept, you need to get things working correctly as dema
 
 ## Object-oriented methodologies:
 
-- Write a problem statement, single out the nouns and verbs, and create corresponding classes and operations.
-- Focus on the collaborations and responsibilities in your system
-- Model the real world and translate the objects found during anaylisis into design.
+* Write a problem statement, single out the nouns and verbs, and create corresponding classes and operations.
+
+* Focus on the collaborations and responsibilities in your system.
+
+* Model the real world and translate the objects found during anaylisis into design.
 
 ## Characteristics of a well design object oriented system:
 
-- All well-structured object oriented architectures are full of patterns
-- Pay careful attention to the common collaborations among its objects
+* All well-structured object oriented architectures are full of patterns.
+
+* Pay careful attention to the common collaborations among its objects.
 
 ## Delegation
 
@@ -50,15 +53,19 @@ The two most common techniques for reusing functionality in object-oriented syst
 
 ## Inheritance
 
-- Define the implementation of one class in terms of another's
-- White-box reuse (reuse by subclassing) - the internals of parent classes are often visible to subclasses
+* Define the implementation of one class in terms of another's.
+
+* White-box reuse (reuse by subclassing) - the internals of parent classes are often visible to subclasses.
 
 ## Object composition
 
-- Alternative to class inheritance
-- New functionality is obtained by assembling or composing objects to get more complex functionality
-- Requires that the object being composed have well-defined interfaces
-- Black-box reuse - no internal details of objects are visible
+* Alternative to class inheritance.
+
+* New functionality is obtained by assembling or composing objects to get more complex functionality.
+
+* Requires that the object being composed have well-defined interfaces.
+
+* Black-box reuse - no internal details of objects are visible.
 
 Use a textual description of the problem you're trying to solve to make sure that your design lines up with the intended functionality of your application.
 
@@ -77,7 +84,7 @@ The result? Fewer unintended consequences
 from code changes and more flexibility
 in your systems!
 
-Design Principle
+**Design Principle:**
 
 * Identify the aspects of your application that vary and separate them from what stays the same.
 
