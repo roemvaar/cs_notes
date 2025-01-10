@@ -41,5 +41,4 @@ Data Structure Brainstorm:
 
 Hacky approach.. we can simply run through a list of data structures and try to apply each one.
 
-Note: The more problems you do, the more developed your instinct on which data structure to apply will be. You will also
-develop a more finely tuned instinct as to which of these approaches is the most useful.
+Note: The more problems you do, the more developed your instinct on which data structure to apply will be. You will also develop a more finely tuned instinct as to which of these approaches is the most useful.

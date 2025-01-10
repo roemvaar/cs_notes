@@ -11,22 +11,22 @@ Docker is an open-source platform for developing, shipping, and running applicat
 
 ## Key Features
 
-- **Containers**: Lightweight, portable units of software that run isolated processes.
-- **Images**: Immutable templates used to create containers. Built using `Dockerfile`.
-- **Portability**: Ensures applications run consistently across development, testing, and production environments.
-- **Efficiency**: Shares the host OS kernel, making containers more efficient than virtual machines.
-- **Docker Hub**: A public repository for finding and sharing container images.
+* **Containers**: Lightweight, portable units of software that run isolated processes.
+* **Images**: Immutable templates used to create containers. Built using `Dockerfile`.
+* **Portability**: Ensures applications run consistently across development, testing, and production environments.
+* **Efficiency**: Shares the host OS kernel, making containers more efficient than virtual machines.
+* **Docker Hub**: A public repository for finding and sharing container images.
 
 ## Common Commands
 
-- `docker run` - Run a new container from an image.
-- `docker ps` - List running containers.
-- `docker build` - Build an image from a `Dockerfile`.
-- `docker pull` - Download an image from Docker Hub.
-- `docker exec` - Run commands inside a running container.
-- `docker stop` - Stop a running container.
-- `docker rm` - Remove stopped containers.
-- `docker rmi` - Remove unused images.
+* `docker run` - Run a new container from an image.
+* `docker ps` - List running containers.
+* `docker build` - Build an image from a `Dockerfile`.
+* `docker pull` - Download an image from Docker Hub.
+* `docker exec` - Run commands inside a running container.
+* `docker stop` - Stop a running container.
+* `docker rm` - Remove stopped containers.
+* `docker rmi` - Remove unused images.
 
 ## Example Workflow
 
@@ -60,13 +60,13 @@ Docker is an open-source platform for developing, shipping, and running applicat
 
 ## Key Concepts
 
-- **Dockerfile**: A text file with instructions to build a Docker image.
-- **Volumes**: Persistent storage for containers.
-- **Networks**: Virtual networks connecting containers and services.
-- **Orchestration**: Tools like Kubernetes work with Docker to manage clusters of containers.
+* **Dockerfile**: A text file with instructions to build a Docker image.
+* **Volumes**: Persistent storage for containers.
+* **Networks**: Virtual networks connecting containers and services.
+* **Orchestration**: Tools like Kubernetes work with Docker to manage clusters of containers.
 
 ## Useful Resources
 
-- **Docker Documentation**: [docker.com/docs](https://docs.docker.com)
-- **Docker Hub**: [hub.docker.com](https://hub.docker.com)
-- **Play with Docker**: A free online environment to practice Docker ([play-with-docker.com](https://labs.play-with-docker.com)).
+* **Docker Documentation**: [docker.com/docs](https://docs.docker.com)
+* **Docker Hub**: [hub.docker.com](https://hub.docker.com)
+* **Play with Docker**: A free online environment to practice Docker ([play-with-docker.com](https://labs.play-with-docker.com)).

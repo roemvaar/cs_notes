@@ -25,8 +25,7 @@ To use these fixed-width integers, you need to: `#include <stdint.h>`.
 
 ## What's a pointer? What's its size?
 
-It's a variable that holds the address of another variable. In this way, the variable that the
-pointer variable points to can be modified indirectly. 
+It's a variable that holds the address of another variable. In this way, the variable that the pointer variable points to can be modified indirectly. 
 
 The size is system-specific. Typically, it is the same size as the processor word; e.g., in an ARM32 board, the pointers usually have a 4-byte size (32 bits).
 
@@ -53,14 +52,11 @@ task on the translation unit (.c file):
 * Expands macros
 * Expands included files
 
-It takes care of all the commands that begin with #, such as
-#define, #include, #pragma, etc.
+It takes care of all the commands that begin with #, such as #define, #include, #pragma, etc.
 
-If you included a header file such as #include <stdio.h>, it will look for the stdio.h
-file and copy the header file into the source code file.
+If you included a header file such as #include <stdio.h>, it will look for the stdio.h file and copy the header file into the source code file.
 
-The preprocessor also generates macro code and replaces symbolic constants defined
-using #define with their values.
+The preprocessor also generates macro code and replaces symbolic constants defined using #define with their values.
 
 Output: hello.i
 
@@ -68,17 +64,14 @@ Output: hello.i
 
 Output: hello.s
 
-3) Assembler: assembly is the third step of compilation. The assembler will convert the assembly
-code into pure binary code or machine code (zeros and ones). This code is also known as object
-code.
+3) Assembler: assembly is the third step of compilation. The assembler will convert the assembly code into pure binary code or machine code (zeros and ones). This code is also known as object code.
 
 Output: hello.o
 
-4) Linker: Linking is the final step of compilation. The linker merges all the object code from
-multiple modules into one. If we use a function from libraries, the linker will link
-our code with that library function code.
+4) Linker: Linking is the final step of compilation. The linker merges all the object code from multiple modules into one. If we use a function from libraries, the linker will link our code with that library function code.
 
 In static linking, the linker copies all used library functions to the executable file.
+
 In dynamic linking, the code is not copied; it is done by just placing the library's name
 in the binary file.
 
@@ -90,9 +83,7 @@ in the binary file.
 
 ## C reserved words - const (in parameters), extern, private, volatile, static (variables), etc. for both variables and functions.
 
-**Static Functions:** Static functions in C are restricted to the same file in which they are defined. The functions in C
-are, by default, global. If we want to limit the function's scope, we use the keyword static before the function. Doing so restricts the
-scope of the function in other files, and the function remains callable only in the file in which it is defined.
+**Static Functions:** Static functions in C are restricted to the same file in which they are defined. The functions in C are, by default, global. If we want to limit the function's scope, we use the keyword static before the function. Doing so restricts the scope of the function in other files, and the function remains callable only in the file in which it is defined.
 
 ## Pointers to functions
 
@@ -102,16 +93,13 @@ Libraries are collections of precompiled functions that have been written to be 
 
 The C compiler (or, more exactly, the linker) needs to be told which libraries to search because, by default, it searches only the standard C library.
 
-A library filename always starts with lib. Then follow the part indicating what library this is (like c for the C library,
-or m for the mathematical library). The last part starts with a dot (.), and specifies the type of library:
+A library filename always starts with lib. Then follow the part indicating what library this is (like c for the C library, or m for the mathematical library). The last part starts with a dot (.), and specifies the type of library:
 
   - .a for static libraries
   - .so for shared libraries
 
 The simplest form of library is just a collection of object files kept together in a ready-to-use form.
-When a program needs to use a function stored in the library, it includes a header file that
-declares the function. The compiler and linker take care of combining the program code and the library
-into a single executable program. You must use the -l option to indicate which libraries other than
+When a program needs to use a function stored in the library, it includes a header file that declares the function. The compiler and linker take care of combining the program code and the library into a single executable program. You must use the -l option to indicate which libraries other than
 the standard C runtime library are required.
 
   - **Static libraries**, also known as archives, conventionally have names that end with .a. Example,
@@ -165,31 +153,25 @@ where argc is a count of the program arguments and argv is an array of character
 
 ## Macros
 
-A macro is a fragment of code which has been given a name. Whenever
-the name is used, it is replaced by the contents of the macro.
+A macro is a fragment of code which has been given a name. Whenever the name is used, it is replaced by the contents of the macro.
 
 ## Using macros vs constants, what's the difference?
 
-Macros are handled by the pre-processor - the pre-processor does text replacement in your source
-file, replacing all occurances of 'A' with the literal 8.
+Macros are handled by the pre-processor - the pre-processor does text replacement in your source file, replacing all occurances of 'A' with the literal 8.
 
 Constants are handled by the compiler. They have the added benefit of type safety.
 
-For the actual compiled code, with any modern compiler, there should be zero performance difference
-between the two.
+For the actual compiled code, with any modern compiler, there should be zero performance difference between the two.
 
 ### Inline Functions
 
-Both C99 and GNU C support inline functions. An inline functions is, as its name suggests, inserted inline
-into each function call site. 
+Both C99 and GNU C support inline functions. An inline functions is, as its name suggests, inserted inline into each function call site. 
 
 Developers use inline functions for small time-critical functions.
 
-Making large functions inline, specially those used more than once or that are not exceedingly time critical,
-is frowned upon.
+Making large functions inline, specially those used more than once or that are not exceedingly time critical, is frowned upon.
 
-An inline function is declared when the keywords ```static``` and ```inline``` are used as part of the function
-definition. For example:
+An inline function is declared when the keywords ```static``` and ```inline``` are used as part of the function definition. For example:
 
 ```c
     static inline void wolf(unsigned long tail_size);
@@ -226,8 +208,6 @@ Which is better for a for loop, count up or count down? Hint: count down - some 
 Dynamic memory allocation - safest way to check that a pointer was created successfully with malloc and it’s not a NULL pointer
 assert(p != NULL);
 if(p == NULL) return(-1);
-
-<!-- Implement a Queue in C - Hacer la struct, y 4 funciones, Init, push, pop y destroy - general const void * -->
 
 Malloc - Own implementation of malloc, then they increased the difficulty by saying that the memory had to be aligned to 16.
 

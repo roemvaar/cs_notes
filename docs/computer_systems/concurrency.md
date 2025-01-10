@@ -17,10 +17,10 @@ program.
 
 Synchronization:
 
-- Mutex (locks)
-- Semaphores
+* Mutex (locks)
+* Semaphores
 
 Communication:
 
-- Queues
-- Shared-memory
+* Queues
+* Shared-memory

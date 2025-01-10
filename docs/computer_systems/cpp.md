@@ -152,44 +152,38 @@ performed on it.
 A declaration is a statement that introduces a name into the program. It specifies a
 type for the named entity:
 
-- A _type_ defines a set of possible values and a set of operations (for an object)
-- An _object_ is some memory that holds a value of some type
-- A _value_ is a set of bits interpreted according to a type
-- A _variable_ is a named object
+* A _type_ defines a set of possible values and a set of operations (for an object)
+* An _object_ is some memory that holds a value of some type
+* A _value_ is a set of bits interpreted according to a type
+* A _variable_ is a named object
 
 C++ fundamental types: bool, char, int, double, unsigned
 
-A char variable is of the natural size to hold a character on a given machine
-(typically an 8-bit byte), and the sizes of other types are quoted in multiples of
-the size of a char. The size of a type is implementation-defined and can be obtained
+A char variable is of the natural size to hold a character on a given machine (typically an 8-bit byte), and the sizes of other types are quoted in multiples of the size of a char. The size of a type is implementation-defined and can be obtained
 using the `sizeof` operator.
 
-A constant cannot be left uninitialized, and a variable should only be left
-uninitialized in rare circumstances. Don't introduce a name until you have a suitable value for it.
+A constant cannot be left uninitialized, and a variable should only be left uninitialized in rare circumstances. Don't introduce a name until you have a suitable value for it.
 
 ## Scope and Lifetime
 
 A declaration introduces its name into a scope:
 
-- Local scope: a name declared in a function or lambda
-- Class scope: a name is called a member name (or class member name) if
-  defined in a class, outside any function, lambda, or enum class.
-- Namespace scope: a name is called namespace member name if defined in
-  a namespaces outside any function, lambda, class, or enum class.
+* Local scope: a name declared in a function or lambda.
 
-A name not declared inside any other construct is called a global name and is said
-to be in the global namespace.
+* Class scope: a name is called a member name (or class member name) if defined in a class, outside any function, lambda, or enum class.
 
-**const**: means roughly "I promise not to change this value." This is used primarily
-to specify interfaces, so that data can be passed to functions without fear of it
-being modified. The compiler enforces the promise made by const.
+* Namespace scope: a name is called namespace member name if defined in a namespaces outside any function, lambda, class, or enum class.
+
+A name not declared inside any other construct is called a global name and is said to be in the global namespace.
+
+**const**: means roughly "I promise not to change this value." This is used primarily to specify interfaces, so that data can be passed to functions without fear of it being modified. The compiler enforces the promise made by const.
 
 ## User-Defined Types
 
 **Structs**
 
-- . (dot): to access struct members through a name (and through a reference)
-- ->: to access struct members through a pointer
+* . (dot): to access struct members through a name (and through a reference)
+* ->: to access struct members through a pointer
 
 ```c++
     void f(Vector v, Vector & rv, Vector* pv)
@@ -242,7 +236,7 @@ member access, access modification and friends. -->
 The first and most important step is to distinguish between the interface to a part
 and its implementation.
 
-- Declaration
+* Declaration
 
 At the language level, C++ represents interfaces by declarations. A declaration
 specifies all that's needed to use a function or a type.
@@ -251,7 +245,7 @@ specifies all that's needed to use a function or a type.
     double sqrt(double num)  // the square root function takes a double and returns a double
 ```
 
-- Definition
+* Definition
 
 The key point here is that the function bodies, the function definitions, are
 "elsewhere", i.e., the implementation is done in another part of the program.
@@ -267,7 +261,7 @@ double sqrt(double d) // definition of sqrt()
 
 ## Modularity
 
-- Header files (\*.h)
+* Header files (\*.h)
 
 Typically, we place the declarations that specify the interface to a module in a
 file with a name indicating its intended use
@@ -275,7 +269,7 @@ file with a name indicating its intended use
 The declarations would be placed in a file \*.h, and users will include that file,
 called a header file, to access that interface.
 
-- Namespaces
+* Namespaces
 
 In addition to functions, classes, and enumerations, C++ offers namespaces as a
 mechanism for expressing that some declarations belong together and that their
@@ -283,10 +277,10 @@ names shouldn’t clash with other names.
 
 ## Concrete Type vs Abstract Type
 
-- Concrete types: their representation is part of their definition. In that, they
+* Concrete types: their representation is part of their definition. In that, they
   resemble built-in types
 
-- Abstract types: is a type that completely insulates a user from implementation
+* Abstract types: is a type that completely insulates a user from implementation
   details. Example:
 
 ```cpp
