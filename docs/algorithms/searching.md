@@ -9,6 +9,11 @@ nav_order: 1
 
 Looking for specific information in memory is a key operation in computing.
 
+<!-- ## The Searching Problem
+
+Input:
+Output -->
+
 ## Linear Search
 
 ```

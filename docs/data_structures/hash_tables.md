@@ -45,6 +45,11 @@ Altough searching for an element in a hash table can take as long as O(n), in pr
 
 <!-- How can we find things quickly in an unsorted array? with a hash table. -->
 
+<!-- Hash Tables
+
+    Efficient for lookups, insertions, and handling collisions.
+    Focus: Hash maps and sets, and understanding how they're implemented (e.g., hash functions). -->
+
 ---
 
 ## **4. Important Techniques**
@@ -60,6 +65,8 @@ Altough searching for an element in a hash table can take as long as O(n), in pr
 * **Problem 1:** Brief description of the problem and why it's important.
 * **Problem 2:** Another key problem and how it tests your understanding.  
 * Organize problems into categories if needed (e.g., traversal, searching, etc.).
+
+<!-- * Minimum Characters for Words - algoexpert -->
 
 ---
 

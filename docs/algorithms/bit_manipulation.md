@@ -70,6 +70,16 @@ A better approach - [Brian Kernighan's Algorithm](https://github.com/alanrubik/C
 
 - **Reverse Bits**
 
+<!-- ## Bit Manipulation - Must-Know Problems
+
+* Hamming Distance (and Number of 1 Bits)
+* isPowerOfTwo / isPowerOfFour
+* isUnique
+* Operations using shifts - e.g. power of 2 - left shift+
+* Rotate image - using bit manipulation (1 bit = 1 pixel)
+* Write an algorithm to reverse the bits of an UNSIGNED binary number
+* Boolean flags (e.g., 0 through ALPHABET_SIZE) -->
+
 ## Bit Numbering (MSB vs LSB and Little Endian vs Big Endian)
 
 "The order in which the bytes are stored in data memory"
@@ -85,3 +95,10 @@ MSB is stored in the first data memory address (lowest memory address), and LSB 
 Little-endian:
 
 LSB is in the first memory address, and MSB is in the last.
+
+<!-- ## Common Bit Tasks
+
+* Get Bit
+* Set Bit
+* Clear Bit
+* Update Bit -->

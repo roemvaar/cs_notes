@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **1. Overview**
 
-* **Definition:** A brief description of the data structure, its key purpose, and how it works.
+* **Definition:** A tree is a data structure composed of nodes. Each tree has a root node. The root node has zero or more childs. Each child node has zero or more child nodes. The tree cannot contain cycles.
 
 * **Use Cases:** 
   * Git Trees: git uses trees to keep track of commits, branches, and BLOBS.
@@ -60,3 +60,12 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 - The left and right subtree each must also be a binary search tree
 
 ![bst](../../assets/img/bst.png)
+
+---
+
+## **5. Must-Know Problems**
+
+* **[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)**
+* **[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)**
+
+---

@@ -11,6 +11,8 @@ nav_order: 1
 
 - **Definition:** An array is a data structure consisting of a collection of elements (values), of same data type, each identified by at least one array index. Arrays are used as the basis for most other data structures. The elements are stored in neighboring (contiguous) memory locations. Arrays can hold up to N elements.
 
+Arrays are fixed in C and C++. The size of the array is defined when you create the array.
+
 ```c
     // Declare an array of 10 int elements in C
     int array[10];
@@ -38,7 +40,7 @@ identify the element
 
 | Operation      | Time Complexity | Notes                                        |
 |----------------|-----------------|----------------------------------------------|
-| Search         | O(...)          | Details about the operation if applicable    |
+| Search         | O(n)          | Linear search to find the key in the array    |
 | Insert         | O(...)          | Special cases (e.g., balanced or unbalanced) |
 | Delete         | O(...)          |                                              |
 | Slicing        | O(...)          |                                              |
@@ -77,9 +79,11 @@ identify the element
 
 ## **5. Must-Know Problems**
 
-- **Problem 1:** Brief description of the problem and why it's important.
-- **Problem 2:** Another key problem and how it tests your understanding.  
-- Organize problems into categories if needed (e.g., traversal, searching, etc.).
+- **[Rotate Image](https://leetcode.com/problems/rotate-image/solution/)**
+
+<!-- * Best Time to Buy and Sell Stock II
+* Count and Say
+* Design a stack (linked list vs arrays/vectors) -->
 
 ---
 

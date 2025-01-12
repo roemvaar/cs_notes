@@ -45,8 +45,8 @@ nav_order: 1
 
 ## **5. Must-Know Problems**
 
-* **Problem 1:** Brief description of the problem and why it's important.
-* **Problem 2:** Another key problem and how it tests your understanding.  
+* **[Problem 1]():** Brief description of the problem and why it's important.
+* **[Problem 2]():** Another key problem and how it tests your understanding.  
 * Organize problems into categories if needed (e.g., traversal, searching, etc.).
 
 ---

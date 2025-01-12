@@ -29,8 +29,18 @@ For starters, the bulk of the work in creating a trie happens early. When first 
 
 A trie is used to store the entire (English) language for quick prefix lookups. While a hash table can quickly look up wheter a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
 
-## Big O
+---
+
+## **2. Operations and Complexities**
+
+| Operation      | Time Complexity | Notes                                      |
+|----------------|-----------------|--------------------------------------------|
+| Search         | O(a*n)          |  |
+| Insert         | O(a*n)          | |
+| Delete         | O(a*n)          |                                            |
 
 The worst-case runtime for creating a trie structure is dependent on how many words the trie contains and how long they might potentially be, known as O(m*n) time, where m is the length of the longest word, and n is the total number of words.
 
 The time of searching, inserting, and deleting from a trie depends on the length of the word a and the total number of words, O(a*n) time.
+
+---
