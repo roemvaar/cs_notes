@@ -100,6 +100,7 @@ A real-time system is required to react to stimuli from the environment (includi
 - Examples: Streaming video, online gaming.
 
 ### Key Differences:
+
 | Feature                | Hard Real-Time System   | Soft Real-Time System    |
 |------------------------|-------------------------|--------------------------|
 | **Deadline Enforcement**| Strict                 | Best-effort              |

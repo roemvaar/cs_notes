@@ -7,15 +7,35 @@ nav_order: 1
 
 # Trees
 
+## **1. Overview**
+
+* **Definition:** A brief description of the data structure, its key purpose, and how it works.
+
+* **Use Cases:** 
+  * Git Trees: git uses trees to keep track of commits, branches, and BLOBS.
+  * Example: Suitable for priority-based tasks (e.g., heaps for priority queues).
+
 **It's important to understand queues and recursion deeply to solve tree-related problems.**
 
 The height of a tree equals the height of its tallest subtree plus one.
+
+A tree is a connected graph without cycles, i.e., a type of graph, but not all graphs are trees.
 
 Types:
   
 * Binary Trees
 * Binary Search Trees
 * Heaps
+
+## **2. Operations and Complexities**
+
+| Operation      | Time Complexity | Notes                                      |
+|----------------|-----------------|--------------------------------------------|
+| Search         | O(...)          | Details about the operation if applicable |
+| Insert         | O(...)          | Special cases (e.g., balanced or unbalanced)|
+| Delete         | O(...)          |                                            |
+
+---
 
 Operations:
   
@@ -40,7 +60,3 @@ Binary Search Tree is a node-based binary tree data structure which has the foll
 - The left and right subtree each must also be a binary search tree
 
 ![bst](../../assets/img/bst.png)
-
-Usage:
-  
-* Git trees - to keep track of commits, trees and blobs
