@@ -7,33 +7,29 @@ nav_order: 1
 
 # Stacks
 
-### Discuss the stack data structure. 
+## **1. Overview**
+
+* **Definition:** a stack is a data structure that uses the FILO mechanism (First In, Last Out), i.e., you only have access to the last element (top element) inserted into the stack.
 
 ![stack](../../assets/img/stack.jpg)
 
-A stack is a data structure that uses the FILO mechanism (First In, Last Out), i.e., you only have access to the last element (top element) inserted into the stack.
+* **Use Cases:**
+  * To implement the "undo" feature in a text editor, every edition you make is pushed onto a stack. Should you want to undo it, the text editor pops an edition from the stack and reverts it.
+  * Stack region of memory: Used for tracking the return addresses, parameters, and local variables for subroutines.
+  * Tracking tokens when parsing a programming language.
 
-### Operations:
-  
-* push(elem): add an item elem to the top of the stack
-* pop(): retrieve and remove the item on top of the stack
+---
 
-More "advanced" stacks may provide more operations to check whether the stack is
-empty, to get the top element but don't remove it from the stack (top ()), or to get
-the number of items currently in the stack.
+## **2. Operations and Complexities**
 
-### Use cases:
+| Operation      | Time Complexity | Notes                                      |
+|----------------|-----------------|--------------------------------------------|
+| Push           | O(1)            | Add an element to the top of the stack     |
+| Pop            | O(1)          | Retrieve and remove the element on top of the stack|
 
-Useful for tasks that are divided into multiple subtasks:
+More "advanced" stacks may provide more operations to check whether the stack is empty, to get the top element but don't remove it from the stack `top()`, or to get the number of items currently in the stack.
 
-* To implement the "undo" feature in a text editor, every edition you make is pushed
-onto a stack. Should you want to undo it, the text editor pops an edition from the
-stack and reverts it.
-
-* Stack region of memory: Used for tracking the return addresses, parameters, and
-local variables for subroutines.
-
-* Tracking tokens when parsing a programming language.
+---
 
 ### Stack Implementation - Dynamic Arrays vs Linked Lists:
 

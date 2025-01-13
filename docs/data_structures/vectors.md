@@ -7,9 +7,17 @@ nav_order: 1
 
 # Vectors
 
-Arrays are fixed in C and C++, when you need an array-like data structure that offers dynamic resizing, you would use a `std::vector` in C++.
+## **1. Overview**
 
-A vector is an array that resizes itself as needed while still providing O(1) access.
+* **Definition:** A vector is an array that resizes itself as needed while still providing O(1) access.
+
+* **Use Cases:**
+  * Example: Efficient searching and sorting (e.g., database indexing).
+  * Example: Suitable for priority-based tasks (e.g., heaps for priority queues).
+
+---
+
+Arrays are fixed in C and C++, when you need an array-like data structure that offers dynamic resizing, you would use a `std::vector` in C++.
 
 <!-- Special types of arrays. Dynamic arrays help us improve static arrays' performance by implementing certain operations differently. Python: lists. C++: vectors. -->
 

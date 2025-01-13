@@ -7,17 +7,6 @@ nav_order: 1
 
 # Graphs
 
-Graphs are important — more than you think. Even if you already think they're important, it's more than you think.
-
-A tree is a connected graph without cycles, i.e., a type of graph, but not all graphs are trees.
-
-You should know the basic graph traversal algorithms: breadth-first search and depth-first search. You should know their computational complexity, their tradeoffs and how to implement them in real code.
-
-If possible, try to study fancier algorithms, such as Dijkstra and A*. They're great for just about anything, from game programming to distributed computing, to you name it. You should know them.
-
-Whenever someone gives you a problem, think of graphs. They are the most fundamental and flexible way of representing any relationship, so it's about a 50-50 shot that any interesting design problem has a graph involved in it. Make sure you can't think of a way to solve it using graphs before moving on to other solution types. This tip is important!
-
-
 ## **1. Overview**
 
 * **Definition:** Graphs are flexible data structures that use nodes and edges to store information. A graph is a collection of nodes with edges between (some of) them.
@@ -33,6 +22,28 @@ A graph can also have cycles (or not). An **acyclic graph** is one without cycle
   * Example: Suitable for priority-based tasks (e.g., heaps for priority queues).
 
 ---
+
+## **2. Operations and Complexities**
+
+| Operation      | Time Complexity | Notes                                      |
+|----------------|-----------------|--------------------------------------------|
+| Search         | O(...)          | Details about the operation if applicable |
+| Insert         | O(...)          | Special cases (e.g., balanced or unbalanced)|
+| Delete         | O(...)          |                                            |
+
+---
+
+Graphs are important — more than you think. Even if you already think they're important, it's more than you think.
+
+A tree is a connected graph without cycles, i.e., a type of graph, but not all graphs are trees.
+
+You should know the basic graph traversal algorithms: breadth-first search and depth-first search. You should know their computational complexity, their tradeoffs and how to implement them in real code.
+
+If possible, try to study fancier algorithms, such as Dijkstra and A*. They're great for just about anything, from game programming to distributed computing, to you name it. You should know them.
+
+Whenever someone gives you a problem, think of graphs. They are the most fundamental and flexible way of representing any relationship, so it's about a 50-50 shot that any interesting design problem has a graph involved in it. Make sure you can't think of a way to solve it using graphs before moving on to other solution types. This tip is important!
+
+
 
 ## Representing a Graph
 

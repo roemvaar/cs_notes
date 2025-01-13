@@ -7,9 +7,17 @@ nav_order: 1
 
 # Linked Lists
 
-<!-- Focus: Reversals, detecting cycles, and merging sorted lists. -->
+## **1. Overview**
 
-A linked list is a simple data structure, which is the basis for a surprising number of problem solutions regarding the handling of dynamic data. A linked list is a data structure that represents a sequence of nodes.
+* **Definition:** A linked list is a simple data structure, which is the basis for a surprising number of problem solutions regarding the handling of dynamic data. A linked list is a data structure that represents a sequence of nodes.
+
+* **Use Cases:**
+  * Example: Efficient searching and sorting (e.g., database indexing).
+  * Example: Suitable for priority-based tasks (e.g., heaps for priority queues).
+
+---
+
+<!-- Focus: Reversals, detecting cycles, and merging sorted lists. -->
 
 Linked lists can implement other data structures, such as a dynamic array.
 

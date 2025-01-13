@@ -7,7 +7,15 @@ nav_order: 1
 
 # Tries
 
-Tries are based on trees. Tries are used to solve the problem of representing a set of words. The term "trie" comes from the word re**trie**val. A trie is a tree data structure used to store and retrieve keys in a dataset of strings efficiently. This data structure has various applications, such as autocomplete and spellchecker.
+## **1. Overview**
+
+* **Definition:** Tries are based on trees. Tries are used to solve the problem of representing a set of words. The term "trie" comes from the word re**trie**val. A trie is a tree data structure used to store and retrieve keys in a dataset of strings efficiently. This data structure has various applications, such as autocomplete and spellchecker.
+ 
+* **Use Cases:**
+  * Example: Efficient searching and sorting (e.g., database indexing).
+  * Example: Suitable for priority-based tasks (e.g., heaps for priority queues).
+
+---
 
 Tries are also called prefix trees.
 
