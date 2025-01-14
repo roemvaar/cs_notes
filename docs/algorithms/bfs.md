@@ -7,6 +7,8 @@ nav_order: 1
 
 # Breadth-First Search (BFS)
 
+## **1. Overview**
+
 **Bread-first search** is one of the simplest algorithms for searching a graph and the archetype for many important graph algorithms.
 
 Given a graph `G = (V,E)` and a distinguished **source** vertex `s`, breadth-first search systematically explores the edges of G to "discover" every vertex that is reachable from `s`. It computes the distance from s to each reachable vertex, where the distance to a vertex v equals the samllest number of edges needed to go from `s` to `v`.
@@ -23,9 +25,17 @@ In order to keep track of the waves of vertices, breadth-first search could main
 
 To keep track of progress, breadth-first search colors each vertex white, gray, or black. All vertices start out white, and vertices not reachable from the source vertex `s` stay white the entire time. A vertex that is reachable from `s` is **discovered** the first time it is encountered during the search, at which time it becomes gray, indicating that is now on the frontier of the search: the boundary between discovered and undiscovered vertices. The queue contains all the gray vertices. Eventually, all the edges of a gray vertex will be explored, so that all of its neighbors will be discovered. Once all of a vertex's edges have been explored, the vertex is behind the frontier of the search, and it goes from gray to black.
 
-## Implementation
+---
 
-BFS is less intuitive than DFS. The main tripping point is the (false) assumption that BFS is recursive. It's not. Instead, it uses a queue.
+## **2. Key Concepts**
+
+* BFS is less intuitive than DFS. The main tripping point is the (false) assumption that BFS is recursive. It's not. Instead, it uses a queue.
+
+* If you are asked to implement BFS, the **key thing to remember is using a queue**. The rest of the algorithm flows from this fact.
+
+---
+
+## **4. Implementation**
 
 In BFS, node `a` visits each of `a's` neighbours before visiting any of their neighbours. You can think of this as searching level by level out from a. An iterative solution involving a queue usually works best.
 
@@ -49,4 +59,4 @@ void bfs(Node root)
 }
 ```
 
-If you are asked to implement BFS, the key thing to remember is using a queue. The rest of the algorithm flows from this fact.
+---
