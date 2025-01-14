@@ -1,37 +1,13 @@
 ---
 layout: default
-title: Sorting
-parent: Algorithms
+title: Merge Sort
+parent: Sorting
 nav_order: 1
 ---
 
-# Sorting
+# Merge Sort
 
-<!-- ## The sorting problem -->
-
-
-Insertion sort usually runs faster than merge sort for small input sizes; once the input size n becomes large enough, merge sort's advantage of `log n` versus `n` compensates for the difference in constant factors [CLRS, p. 12].
-
-You need to know how to sort. You should know the details of at least one `n log (n)` sorting algorithm. You must know merge sort and quick sort. Don't use bubble-sort.
-
-## Selection Sort
-
-O(n<sup>2</sup>).
-
-## Insertion Sort
-
-Time complexity: O(n<sup>2</sup>).
-
-Insertion sort is an efficient algorithm for sorting a small number of elements. Insertion sort is very efficient at sorting nearly sorted
-datasets, even if they're huge.
-
-Insertion sort is more efficient in practice than most other simple quadratic algorithms, such as selectionsort or bubble sort.
-
-Insertion sort works the same way you would sort cards. Start with your left hand empty, and the cards on the table. You pull a card from the deck and find the correct position for the card by comparing it with each of the cards already in your left hand, starting at the right and moving to the left. At all times, the cards held in your left hand are sorted.
-
-## Merge Sort
-
-O(n log(n))
+Time complexity: O(n log(n))
 
 Merge sort can be highly useful in situations where quicksort is impractical.
 
@@ -47,9 +23,13 @@ The recursion reaches the base case when the subarray A[p:r] to be sorted has ju
 
 The key operation of the merge sort algorithm occurs in the "combine" step, which merges two adjacent, sorted subarrays. The merge operation is performed by the auxiliary procedure `merge(A, p, q, r)` where A is an array and p, q, and r are indices into the array such that p <= q < r. The procedure assumes that the adjacent subarrays A[p:q] and A[q+1:r] were already recursively sorted. It **merges** the two sorted subarrays to form a single sorted subarray that replaces the current subarray A[p:r].
 
-![merge_sort](../../assets/img/merge_sort.png)
+![merge_sort](../../../assets/img/merge_sort.png)
 
 Merging takes O(n) time.
+
+---
+
+## **4. Implementation**
 
 Merge sort pseudocode:
 
@@ -64,8 +44,4 @@ Merge-Sort(A, p, r):
     Merge(A,p,q,r)
 ```
 
-## Quicksort
-
-```
-O(n log(n))
-```
+---
