@@ -25,6 +25,8 @@ items to realize it's not there.
 
 ## Binary Search
 
+<!-- Focus: variations like finding boundaries, rotated arrays, etc. -->
+
 ```
 O(log(n))
 ```

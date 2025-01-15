@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **1. Overview**
 
-- **Definition:** An array is a data structure consisting of a collection of elements (values), of same data type, each identified by at least one array index. Arrays are used as the basis for most other data structures. The elements are stored in neighboring (contiguous) memory locations. Arrays can hold up to N elements.
+An array is a data structure consisting of a collection of elements (values), of same data type, each identified by at least one array index. Arrays are used as the basis for most other data structures. The elements are stored in neighboring (contiguous) memory locations. Arrays can hold up to N elements.
 
 Arrays are fixed in C and C++. The size of the array is defined when you create the array.
 
@@ -64,7 +64,7 @@ identify the element
 
 | **Strengths**                | **Weaknesses**                |
 |------------------------------|------------------------------|
-| Example: Fast insertions      | Example: Memory overhead     |
+| Direct access to any element   | Example: Memory overhead     |
 | Example: Supports ordered data| Example: Inefficient for...  |
 
 ---
@@ -73,7 +73,6 @@ identify the element
 
 * **Sliding Window:** Brief explanation (e.g., balancing for AVL Trees).  
 * **Two Pointers:** Description (e.g., traversal methods like Inorder, Preorder).
-* Add diagrams or pseudocode snippets if necessary.
 
 ---
 

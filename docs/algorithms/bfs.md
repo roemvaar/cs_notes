@@ -33,6 +33,10 @@ To keep track of progress, breadth-first search colors each vertex white, gray, 
 
 * If you are asked to implement BFS, the **key thing to remember is using a queue**. The rest of the algorithm flows from this fact.
 
+* In BFS, you need to keep track of the visited nodes.
+
+* BFS conceptually is traverse a graph the same way a virus would do it. The virus starts from a starting point (or points), and it then visits its neighbors, and then its neighbors, until all the nodes are visited.
+
 ---
 
 ## **4. Implementation**

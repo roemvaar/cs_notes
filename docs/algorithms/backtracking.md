@@ -7,6 +7,8 @@ nav_order: 1
 
 # Backtracking
 
+## **1. Overview**
+
 A backtracking algorithm works by recursively exploring all possible solutions to a problem. It starts by choosing an initial solution, and then it explores all possible extensions of that solution. If an extension leads to a solution, the algorithm returns that solution. If an extension does not lead to a solution, the algorithm backtracks to the previous solution and tries a different extension.
 
 You have a decision space you can choice from. Your decisions are restricted somehow and your goal is to do something (solve something, like solve a sudoku board or fill n slots).
@@ -27,9 +29,11 @@ The following is a general outline of how a backtracking algorithm works:
 
 5. Repeat steps 2-4 until all possible solutions have been explored.
 
-## Three Keys for Backtracking
+---
 
-### 1. Choice
+## **2. Key Concepts**
+
+* **Choice**
 
 You make choices.
 
@@ -38,13 +42,15 @@ each step. This is how you decide on each step.
 
 To solve a "cell," you must minimize the problem and find subproblems.
 
-### 2. Constraints
+* **Constraints**
 
 You have constraints on the choices.
 
-### 3. Goal
+* **Goal**
 
 In the end, you are going to converge toward a goal. Our goal is to reach the base cases.
+
+---
 
 ### Tips
 
