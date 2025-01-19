@@ -33,19 +33,19 @@ Options:
 
 2. Clone Linux [mainline](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git) repository using `git clone`.
 
-3. Configure and Build the Kernel
+3. Configure and build the Kernel
 
 ```bash
-$ cd /linux_work/linux_mainline
-$ make mrproper
+cd /linux_work/linux_mainline
+make mrproper
 ```
 
 Configure and build the kernel:
 
 ```bash
-$ make x86_64_defconfig
-$ make menuconfig
-$ make -j$(nproc)
+make x86_64_defconfig
+make menuconfig
+make -j$(nproc)
 ```
 
 Detailed instructions [here](https://krinkinmu.github.io/2020/07/05/beaglebone-software-update.html).

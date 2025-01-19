@@ -7,7 +7,7 @@ nav_order: 1
 
 # Commands
 
-### Bash
+## Bash
 
 ``grep``
 
@@ -37,7 +37,7 @@ Run rsync of a large file over ssh
 
 ``scp username@b:/path/to/file /path/to/destination``
 
-### Git
+## Git
 
 ``git checkout -b <branch_name>``
 
@@ -50,43 +50,3 @@ Run rsync of a large file over ssh
 ``./scripts/checkpatch.pl <patch>``
 
 ``git send-email <patch>``
-
-### Linux Kernel Development
-
-* Apply patches:
-
-```patch -p1 < file.patch```
-
-```git apply --index file.patch```
-
-note: Prefer git apply in order to track new files that may be
-contained in the git patch
-
-* Compiling a single source file: make path/file.o
-
-```make drivers/media/test-drivers/vimc/vimc-core.o```
-
-* Compiling at the directory level: make path
-
-```make drivers/media/test-drivers/vimc/```
-
-* Compile file as module, e.g., ```vimc```:
-
-```make M=drivers/media/test-drivers/vimc```
-
-note: It's better to use ```make menuconfig``` to configure the file
-as a module because of all the dependencies.
-
-``sudo insmod <module>.ko``
-
-``sudo insmod args_module.ko name=roberto``
-
-``sudo modprobe <module>``
-
-``sudo rmmod <module>``
-
-``sudo dmesg``
-
-Count context switches:
-
-``sudo perf stat -e sched:sched_switch --timeout 1000``

@@ -11,6 +11,8 @@ Every kernel module registers itself to serve future requests, and its initializ
 
 A module is linked only to the kernel, and the only functions it can call are the ones exported by the kernel; there are no libraries to link to. Only functions that are part of the kernel itself may be used in kernel modules. Anything related to the kernel is declared in the kernel source tree headers. Most relevant headers live in `include/linux`, but other subdirectories of the `include` directory has been added to host material associated with specific kernel subsystems.
 
+To use modules on the Linux kernel, the `CONFIG_MODULES` needs to be enabled during kernel configuration. 
+
 The role of a module is to extend kernel functionality; modularized code runs in **kernel space**. Usually, in a driver, some functions are executed as part of system calls, and some are in charge of interrupt handling.
 
 A kernel fault kills the current process, at least, if not the whole system.
