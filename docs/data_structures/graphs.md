@@ -100,3 +100,52 @@ If we want to find the **shortest path** (or just any path) between two nodes, B
 
 * Bidirectional Search
 * Dijkstra
+
+---
+
+## **3. Strengths and Weaknesses**
+
+| **Strengths**                | **Weaknesses**                |
+|------------------------------|------------------------------|
+| Direct access to any element   | Example: Memory overhead     |
+| Example: Supports ordered data| Example: Inefficient for...  |
+
+---
+
+## **4. Important Techniques**
+
+* **Sliding Window:** Brief explanation (e.g., balancing for AVL Trees).  
+* **Two Pointers:** Description (e.g., traversal methods like Inorder, Preorder).
+
+---
+
+## **5. Must-Know Problems**
+
+- **[200. Number of Islands](https://leetcode.com/problems/number-of-islands/description/)**
+
+---
+
+## **6. Common Mistakes**
+
+- Forgetting edge cases like empty/null structures.
+- Misunderstanding amortized complexities (e.g., hash table operations).
+
+---
+
+## **7. Cheat Sheet / Key Formulas**
+
+- Key patterns or pseudocode templates.  
+- Example: Recursion template for binary tree traversal:
+
+  ```python
+  def traverse(node):
+      if not node:
+          return
+      traverse(node.left)
+      process(node)
+      traverse(node.right)
+  ```
+
+## **8. References**
+
+-
