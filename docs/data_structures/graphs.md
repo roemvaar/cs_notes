@@ -27,9 +27,8 @@ A graph can also have cycles (or not). An **acyclic graph** is one without cycle
 
 | Operation      | Time Complexity | Notes                                      |
 |----------------|-----------------|--------------------------------------------|
-| Search         | O(...)          | Details about the operation if applicable |
-| Insert         | O(...)          | Special cases (e.g., balanced or unbalanced)|
-| Delete         | O(...)          |                                            |
+| Depth-First Search (DFS)         | O(V + E)          | V is the number of vertices. E is the number of edges |
+| Breadth-First Search (BFS)         | O(V + E)          |                      |
 
 ---
 
@@ -114,38 +113,92 @@ If we want to find the **shortest path** (or just any path) between two nodes, B
 
 ## **4. Important Techniques**
 
-* **Sliding Window:** Brief explanation (e.g., balancing for AVL Trees).  
-* **Two Pointers:** Description (e.g., traversal methods like Inorder, Preorder).
+* Ensure you are correctly keeping track of visited nodes and not visiting each node more than once. Otherwise your code could end up in an infinite loop.
 
 ---
 
 ## **5. Must-Know Problems**
 
-- **[200. Number of Islands](https://leetcode.com/problems/number-of-islands/description/)**
+* **[200. Number of Islands](https://leetcode.com/problems/number-of-islands/description/)**
+* **[733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)**
+* **[542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/)**
 
 ---
 
 ## **6. Common Mistakes**
 
-- Forgetting edge cases like empty/null structures.
-- Misunderstanding amortized complexities (e.g., hash table operations).
+**Corner cases:**
+
+* Empty graph
+* Graph with one or two nodes
+* Disconnected graphs
+* Graph with cycles
 
 ---
 
 ## **7. Cheat Sheet / Key Formulas**
 
-- Key patterns or pseudocode templates.  
-- Example: Recursion template for binary tree traversal:
+* Depth-First Search (DFS)
 
-  ```python
-  def traverse(node):
-      if not node:
-          return
-      traverse(node.left)
-      process(node)
-      traverse(node.right)
-  ```
+```python
+def dfs(matrix):
+    # Check for an empty matrix/graph
+    if not matrix:
+        return []
+    
+    rows, cols = len(matrix), len(matrix[0])
+    visited = set()
+    directions = ((0,1), (0,-1), (1,0), (-1,0))
+
+    def traverse(i, j):
+        if (i, j) in visited:
+            return
+        
+        visited.add((i, j))
+        # Traverse neighbors
+        for direction in directions:
+            next_i, next_j = i + direction[0], j + direction[1]
+            if 0 <= next_i < rows and 0 <= next_j <= cols:
+                # Add in question-specific checks, where relevant
+                traverse(next_i, next_j)
+        
+    for i in range(cols):
+        for j in range(cols):
+            traverse(i, j)
+```
+
+* Breadth-First Search (BFS)
+
+```python
+from collections import dequeue
+
+def bfs(matrix):
+    # Check for an empty matrix/graph
+    if not matrix:
+        return []
+    
+    rows, cols = len(matrix), len(matrix[0])
+    visited = set()
+    directions = ((0,1), (0,-1), (1,0), (-1,0))     # right, left, up, down
+
+    def traverse(i, j):
+        queue = dequeue([(i, j)])
+        while queue:
+            curr_i, curr_j = queue.popleft()
+            if (curr_i, curr_j) not in visited:
+                visited.add((curr_i, curr_j))
+                # Traverse neighbors
+                for direction in directions:
+                    next_i, next_j = curr_i + direction[0], curr_j + direction[1]
+                    if 0 <= next_i < rows and 0 <= next_j < cols:
+                        # Add in question-specific checks, where relevant
+                        queue.append((next_i, next_j))
+    
+    for i in range(rows):
+        for j in range(cols):
+            traverse(i, j)S
+```
 
 ## **8. References**
 
--
+* [Tech Interview Handbook - Graphs](https://www.techinterviewhandbook.org/algorithms/graph/)
