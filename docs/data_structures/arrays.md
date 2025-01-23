@@ -40,10 +40,10 @@ identify the element
 
 | Operation      | Time Complexity | Notes                                        |
 |----------------|-----------------|----------------------------------------------|
-| Search         | O(n)          | Linear search to find the key in the array    |
-| Insert         | O(...)          | Special cases (e.g., balanced or unbalanced) |
-| Delete         | O(...)          |                                              |
-| Slicing        | O(...)          |                                              |
+| Access         | O(1)            |                                              |
+| Search         | O(n)            | Linear search to find the key in the array   |
+| Insertion      | O(n)            |                                              |
+| Deletion       | O(n)            |                                              |
 
 <!-- Operations:
 
