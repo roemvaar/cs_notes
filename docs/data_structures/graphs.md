@@ -30,7 +30,6 @@ A graph can also have cycles (or not). An **acyclic graph** is one without cycle
 | Depth-First Search (DFS)         | O(V + E)          | V is the number of vertices. E is the number of edges |
 | Breadth-First Search (BFS)         | O(V + E)          |                      |
 
----
 
 Graphs are important — more than you think. Even if you already think they're important, it's more than you think.
 
@@ -73,33 +72,6 @@ In an nudirected graph, an adjacency matrix will be symmetric. In a directed gra
 
 ![graph_matrix](../../assets/img/graph_matrix.png)
 
-## Graph Search
-
-If the graph's structure offers no navigation help, you must visit every node until you find the one you want. The two most common ways to search a graph are depth-first search and breadth-first search.
-
-* **Depth First Search (DFS):** searching a graph via DFS, we keep following edges going deeper and deeper into the graph. When you reach a node with no edges to any new nodes, you return to the previous node and continue the process.
-
-More information [here](https://roemvaar.github.io/computer_science_notes/docs/algorithms/dfs.html).
-
-* **Breadth First Search (BFS):** starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
-
-More information [here](https://roemvaar.github.io/computer_science_notes/docs/algorithms/bfs.html).
-
-See the below depiction of a graph and its depth-first and breadth-first search (assuming neighbors are iterated in numerical order).
-
-![dfs_vs_bfs](../../assets/img/dfs_vs_bfs.png)
-
-## DFS vs BFS
-
-Breadth-first search and depth-first search tend to be used in different scenarios. DFS is often preferred if we want to visit every node in the graph.
-
-If we want to find the **shortest path** (or just any path) between two nodes, BFS is generally better.
-
-## Shortest-Path
-
-* Bidirectional Search
-* Dijkstra
-
 ---
 
 ## **3. Strengths and Weaknesses**
@@ -138,7 +110,13 @@ If we want to find the **shortest path** (or just any path) between two nodes, B
 
 ## **7. Cheat Sheet / Key Formulas**
 
-* Depth-First Search (DFS)
+## Graph Search
+
+If the graph's structure offers no navigation help, you must visit every node until you find the one you want. The two most common ways to search a graph are depth-first search and breadth-first search.
+
+* **Depth First Search (DFS):** searching a graph via DFS, we keep following edges going deeper and deeper into the graph. When you reach a node with no edges to any new nodes, you return to the previous node and continue the process.
+
+More information [here](https://roemvaar.github.io/computer_science_notes/docs/algorithms/dfs.html).
 
 ```python
 def dfs(matrix):
@@ -167,7 +145,7 @@ def dfs(matrix):
             traverse(i, j)
 ```
 
-* Breadth-First Search (BFS)
+* **Breadth First Search (BFS):** starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
 
 ```python
 from collections import dequeue
@@ -198,6 +176,22 @@ def bfs(matrix):
         for j in range(cols):
             traverse(i, j)S
 ```
+
+More information [here](https://roemvaar.github.io/computer_science_notes/docs/algorithms/bfs.html).
+
+See the below depiction of a graph and its depth-first and breadth-first search (assuming neighbors are iterated in numerical order).
+
+![dfs_vs_bfs](../../assets/img/dfs_vs_bfs.png)
+
+## DFS vs BFS
+
+Breadth-first search and depth-first search tend to be used in different scenarios. DFS is often preferred if we want to visit every node in the graph.
+
+If we want to find the **shortest path** (or just any path) between two nodes, BFS is generally better.
+
+## Shortest-Path
+
+* Dijkstra
 
 ## **8. References**
 
