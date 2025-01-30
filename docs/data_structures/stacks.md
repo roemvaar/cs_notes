@@ -25,7 +25,9 @@ nav_order: 1
 | Operation      | Time Complexity | Notes                                      |
 |----------------|-----------------|--------------------------------------------|
 | Push           | O(1)            | Add an element to the top of the stack     |
-| Pop            | O(1)          | Retrieve and remove the element on top of the stack|
+| Pop            | O(1)          | Retrieve and remove the element on top of the stack |
+| Top / Peek     | O(1)          |                                              |
+
 
 More "advanced" stacks may provide more operations to check whether the stack is empty, to get the top element but don't remove it from the stack `top()`, or to get the number of items currently in the stack.
 
@@ -52,3 +54,13 @@ performance implications as processors are faster than arrays. Usually, an array
 stack is faster than a linked list.
 
 * Conversely, a linked list is easier to implement than a dynamic array.
+
+## **5. Must-Know Problems**
+
+- **[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)**
+
+## **6. Common Mistakes / Corner Cases**
+
+* Empty stack. Popping from an empty stack.
+* Stack with one item.
+* Stack with two items.

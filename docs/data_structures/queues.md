@@ -13,6 +13,8 @@ nav_order: 1
 
 ![queue](../../assets/img/queue.png)
 
+In C++, the standard library provides a queue implementation named `std::queue`. In Python, we use `queue`.
+
 * **Use Cases:** 
   * [Breadth-First Search (BFS)](https://roemvaar.github.io/computer_science_notes/docs/algorithms/bfs.html)
   * Implementing a cache
@@ -25,12 +27,22 @@ nav_order: 1
 |----------------|-----------------|--------------------------------------------|
 | Enqueue         | O(1)          | Insert                                      |
 | Dequeue         | O(1)          | Delete takes no argument                    |
-| Peek            | O(1)        |                                               |
+| Front            | O(1)        |                                               |
+| Back            | O(1)        |                                               |
 
 ---
 
-## **6. Common Mistakes**
+## **5. Must-Know Problems**
+
+* **[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/):.**
+
+---
+
+## **6. Common Mistakes / Corner Cases **
 
 * Easy to mess up updating of the first and last nodes in a queue.
+* Empty queue.
+* Queue with one item.
+* Queue with two items.
 
 ---

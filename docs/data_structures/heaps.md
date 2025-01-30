@@ -32,7 +32,7 @@ We have two key operations on a min-heap: `insert` and `extract_min`.
 Priority queues are often referred to as "heaps", regardless of how they may
 be implemented.
 
-In C++, the standard library provides a priority queue `std::priority_queue`.
+In C++, the standard library provides a priority queue `std::priority_queue`. In Python, we use `heapq`.
 
 * **Use Cases:** 
   * Example: Efficient searching and sorting (e.g., database indexing).
@@ -78,9 +78,7 @@ This takes `O log (n)` time, where n is the number of nodes in the heap.
 
 ## **4. Important Techniques**
 
-* **Technique 1:** Brief explanation (e.g., balancing for AVL Trees).
-* **Technique 2:** Description (e.g., traversal methods like Inorder, Preorder).
-* Add diagrams or pseudocode snippets if necessary.
+* **Mention of K:** If you see a top or lowest **k** being mentioned in the question, it is usually a signal that a heap can be used to solve the problem.
 
 ---
 
