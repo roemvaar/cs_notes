@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **1. Overview**
 
-**Depth-First Search (DFS)** is a tree and graph traversal algorithm. DFS visit the nodes in the three or graphs.
+**Depth-First Search (DFS)** is a tree and graph traversal algorithm. DFS visit all the nodes in a tree or a graph.
 
 A DFS follows one tree branch down as many levels as possible until the target node is found or the end is reached.
 
