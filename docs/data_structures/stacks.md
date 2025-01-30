@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **1. Overview**
 
-* **Definition:** a stack is a data structure that uses the FILO mechanism (First In, Last Out), i.e., you only have access to the last element (top element) inserted into the stack.
+A stack is a data structure that uses the FILO mechanism (First In, Last Out), i.e., you only have access to the last element (top element) inserted into the stack.
 
 ![stack](../../assets/img/stack.jpg)
 

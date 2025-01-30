@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **1. Overview**
 
-* **Definition:** A queue is a dynamic set in which the element removed from the set by the delete operation is prespecified. In a queue, the element deleted is always the one that has been in the set for the longest time. The queue implements a first-in, first-out (FIFO) policy.
+A queue is a dynamic set in which the element removed from the set by the delete operation is prespecified. In a queue, the element deleted is always the one that has been in the set for the longest time. The queue implements a first-in, first-out (FIFO) policy.
 
 ![queue](../../assets/img/queue.png)
 

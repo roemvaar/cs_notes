@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **1. Overview**
 
-* **Definition:** A hash table is dynamic set that is an effective data structure for implementing dictionaries.
+A hash table is dynamic set that is an effective data structure for implementing dictionaries.
 
 A **Hash Function** maps data, e.g. strings, to numbers. There are some requirements for a hash function:
 
