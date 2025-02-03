@@ -7,6 +7,8 @@ nav_order: 1
 
 # Bit Manipulation
 
+## **1. Overview**
+
 Must know:
 
 * Logical Operations 
@@ -34,7 +36,9 @@ number of places to shift.
 
 ![bitwise](../../assets/img/bitwise.png)
 
-## Bitwise Operators Hacks
+---
+
+## **5. Important Techniques - Bitwise Operators Hacks**
 
 1. Right shift (>>) operator is equivalent to division by 2
 2. Left shift (<<) operator is equivalent to multiplication by 2
@@ -47,9 +51,11 @@ number of places to shift.
 
 More bit twiddling hacks [here](https://graphics.stanford.edu/~seander/bithacks.html).
 
-## Classic Bit Manipulation Problems
+---
 
-- **Hamming Weight**
+## **7. Must-Study Problems - Classic Bit Manipulation Problems**
+
+* **Hamming Weight**
 
 Write a function that takes an unsigned integer and returns the number of '1' 
 bits it has.
@@ -68,7 +74,7 @@ A better approach - [Brian Kernighan's Algorithm](https://github.com/alanrubik/C
 3. Else return count
 ```
 
-- **Reverse Bits**
+* **Reverse Bits**
 
 <!-- ## Bit Manipulation - Must-Know Problems
 

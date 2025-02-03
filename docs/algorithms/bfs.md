@@ -39,6 +39,13 @@ To keep track of progress, breadth-first search colors each vertex white, gray, 
 
 ---
 
+## **3. Applications**
+
+* A minimal and clean code snippet in your preferred language (e.g., Python, C++).
+* Focus on readability and clarity.
+
+---
+
 ## **4. Implementation**
 
 In BFS, node `a` visits each of `a's` neighbours before visiting any of their neighbours. You can think of this as searching level by level out from a. An iterative solution involving a queue usually works best.
@@ -64,3 +71,32 @@ void bfs(Node root)
 ```
 
 ---
+
+## **5. Important Techniques**
+
+* **Technique 1:** Brief explanation (e.g., balancing for AVL Trees).
+* **Technique 2:** Description (e.g., traversal methods like Inorder, Preorder).
+* **Techniques/Variants**
+* Any important variations or optimizations of the algorithm (if applicable).
+
+---
+
+## **6. Common Mistakes**
+
+* Pitfalls to avoid when implementing or using the algorithm.
+
+---
+
+## **7. Must-Study Problems**
+
+* A list of highly recommended LeetCode/other platform problems to practice.
+  * Include problem names, categories, and difficulty levels (Easy, Medium, Hard).
+* **[Problem 1]():** Brief description of the problem and why it's important.
+* **[Problem 2]():** Another key problem and how it tests your understanding.  
+* Organize problems into categories if needed (e.g., traversal, searching, etc.).
+
+---
+
+## **8. References**
+
+* Links to further reading or videos, if needed.

@@ -52,6 +52,51 @@ In the end, you are going to converge toward a goal. Our goal is to reach the ba
 
 ---
 
+## **3. Applications**
+
+* A minimal and clean code snippet in your preferred language (e.g., Python, C++).
+* Focus on readability and clarity.
+
+---
+
+## **4. Implementation**
+
+* List of common problems or scenarios where this algorithm is applied.
+  * Example: Sorting, shortest path, pattern matching.
+
+---
+
+## **5. Important Techniques**
+
+* **Technique 1:** Brief explanation (e.g., balancing for AVL Trees).
+* **Technique 2:** Description (e.g., traversal methods like Inorder, Preorder).
+* **Techniques/Variants**
+* Any important variations or optimizations of the algorithm (if applicable).
+
+---
+
+## **6. Common Mistakes**
+
+* Pitfalls to avoid when implementing or using the algorithm.
+
+---
+
+## **7. Must-Study Problems**
+
+* A list of highly recommended LeetCode/other platform problems to practice.
+  * Include problem names, categories, and difficulty levels (Easy, Medium, Hard).
+* **[Problem 1]():** Brief description of the problem and why it's important.
+* **[Problem 2]():** Another key problem and how it tests your understanding.  
+* Organize problems into categories if needed (e.g., traversal, searching, etc.).
+
+---
+
+## **8. References**
+
+* Links to further reading or videos, if needed.
+
+---
+
 ### Tips
 
 If it says "Generate all" or "Compute all" (exhausting decision spaces) it might be a problem
