@@ -9,17 +9,16 @@ nav_order: 1
 
 ## **1. Overview**
 
+For embedded software engineers, it's the most important topic for interviews.
+
+Bitwise operations, bitlogic algorithms, and bit manipulation are topics that you need to master if you want to work in graphics or low-level development - learn about endianness.
+
 Must know:
 
 * Logical Operations 
 * Bit Rotation
 * Bit Shifting
 * Bit Clearing
-
-For embedded software engineers, it's the most important topic for interviews.
-
-Bitwise operations, bitlogic algorithms, and bit manipulation are topics that you need to master if you want to work
-in graphics or low-level development - learn about endianness.
 
 ## Bitwise Operators in C and C++
 
@@ -108,3 +107,9 @@ LSB is in the first memory address, and MSB is in the last.
 * Set Bit
 * Clear Bit
 * Update Bit -->
+
+---
+
+## **8. References**
+
+* [Stanford: Bit Twiddling Hacks ](https://graphics.stanford.edu/~seander/bithacks.html)
