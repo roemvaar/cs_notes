@@ -68,10 +68,7 @@ In the end, you are going to converge toward a goal. Our goal is to reach the ba
 
 ## **5. Important Techniques**
 
-* **Technique 1:** Brief explanation (e.g., balancing for AVL Trees).
-* **Technique 2:** Description (e.g., traversal methods like Inorder, Preorder).
-* **Techniques/Variants**
-* Any important variations or optimizations of the algorithm (if applicable).
+* If it says "generate all" or "compute all" (exhausting decision spaces) it might be a problem that can be solved with backtracking.
 
 ---
 
@@ -94,10 +91,3 @@ In the end, you are going to converge toward a goal. Our goal is to reach the ba
 ## **8. References**
 
 * Links to further reading or videos, if needed.
-
----
-
-### Tips
-
-If it says "Generate all" or "Compute all" (exhausting decision spaces) it might be a problem
-that can be solved with backtracking.

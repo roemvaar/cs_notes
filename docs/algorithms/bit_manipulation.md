@@ -37,6 +37,18 @@ number of places to shift.
 
 ---
 
+## **2. Key Concepts**
+
+---
+
+## **3. Applications**
+
+---
+
+## **4. Implementation**
+
+---
+
 ## **5. Important Techniques - Bitwise Operators Hacks**
 
 1. Right shift (>>) operator is equivalent to division by 2
@@ -49,6 +61,10 @@ number of places to shift.
 8. Swap to numbers without the third variable using XOR(^)
 
 More bit twiddling hacks [here](https://graphics.stanford.edu/~seander/bithacks.html).
+
+---
+
+## **6. Common Mistakes**
 
 ---
 
