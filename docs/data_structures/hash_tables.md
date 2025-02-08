@@ -11,10 +11,18 @@ nav_order: 1
 
 A hash table is dynamic set that is an effective data structure for implementing dictionaries.
 
+### Hash Functions
+
 A **Hash Function** maps data, e.g. strings, to numbers. There are some requirements for a hash function:
 
 * It needs to be consistent.
 * It should map words to different numbers.
+
+There are "infinite" number of hash functions but some are better than others.
+
+### Sets
+
+### Maps
 
 * **Use Cases:** 
   * DNS Resolution: mapping a web address to an IP address.
@@ -95,6 +103,4 @@ Altough searching for an element in a hash table can take as long as O(n), in pr
 
 ## **8. References**
 
-* [GeeksForGeeks: Data Structure]()
-* [LeetCode: Data Structure Problems]()
-* Any additional links or resources.
+* [Hash Tables: Hash Fucntions, Sets, & Maps](https://www.youtube.com/watch?v=iZyxNEBpqFY&list=PLKYEe2WisBTFEr6laH5bR2J19j7sl5O8R&index=5&ab_channel=GregHogg)
