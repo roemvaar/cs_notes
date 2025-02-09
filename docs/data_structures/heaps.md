@@ -53,7 +53,7 @@ In C++, the standard library provides a priority queue `std::priority_queue`. In
 
 Finding the minimum element of a min-heap is easy: it's always at the top.
 
-To remove the minimum element and swap it with the last element in the heap (the bottommost, rightmost element), we bubble down the minimum element, swapping it with one of its children until the min-heap property is restored.
+To remove the minimum element and swap it with the last element in the heap (the  most, rightmost element), we bubble down the minimum element, swapping it with one of its children until the min-heap property is restored.
 
 We can swap the min element with either its left child or its right child, but we need to swap it with the smaller children to maintain the min-heap ordering.
 
