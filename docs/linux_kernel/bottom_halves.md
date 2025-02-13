@@ -5,6 +5,8 @@ parent: Linux Kernel
 nav_order: 1
 ---
 
+<!-- TODO: Get the actual deferred-work mechanisms from here: https://lwn.net/Articles/960041/ -->
+
 # Bottom Halves and Deferring Work
 
 **Three mechanisms used to defer work in the Linux kernel: softirqs, tasklets, and work queues.**
