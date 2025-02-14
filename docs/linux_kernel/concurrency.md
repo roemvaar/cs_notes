@@ -11,13 +11,27 @@ One way kernel programming differs greatly from conventional application program
 
 Kernel code does not run in such a simple world (sequentially from beginning to end), and even the simplest kernel modules must be written with the idea that many things can happen simultaneously.
 
-There are many sources of concurrency in kernel programming:
+## Causes of Concurrency
+
+The kernel has these causes of concurrency [LKD, Ch 167]:
+
+* Interrupts
+
+* Softirqs and tasklets
+
+* Kernel preemption
+
+* Sleeping and synchronization with user-space
+
+* Symmetrical multiprocessing
+
+<!-- There are many sources of concurrency in kernel programming:
 
 * Linux systems run multiple processes.
 * Most devices are capable of interrupting the processor, interrupt handlers run asynchronously and can be invoked at any time.
 * Several software abstractions (such as kernel timers) run asynchronously.
 * Linux can run on symmetric multiprocessor (SMP) systems.
-* Kernel code is preemptible.
+* Kernel code is preemptible. -->
 
 As a consequence:
 

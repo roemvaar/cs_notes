@@ -68,3 +68,12 @@ Work queues defer work into a kernel thread - this bottom half always runs in pr
 
 ## Which Bottom Half Should I Use?
 
+Softirqs and tasklets run in interrupt context. Work queues run in process context.
+
+Softirqs are the fastest alternatie for timinig critical and high-frequency uses.
+
+Tasklets make more sense if the code is not finely threaded. A driver developer should always choose tasklets over softirqs.
+
+If your deferred work needs to run in process context, your only choice of the three is work queues.
+
+Work queues are the easiest to use.
